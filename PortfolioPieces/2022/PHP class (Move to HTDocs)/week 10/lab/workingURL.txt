@@ -1,3 +1,0 @@
-http://ianno.unaux.com/lab/guestbook/guestbook.php
-
-http://checklist.unaux.com/checklist/currentTasks.php

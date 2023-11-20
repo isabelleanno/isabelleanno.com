@@ -1,5 +1,0 @@
-Previous Exam:../Exam2/8.php
-Part 9:9.php
-Part 10:10.php
-Part 11:11.php
-Finale:finale.php
