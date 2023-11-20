@@ -1,0 +1,754 @@
+/*Isabelle Anno, 2/14/2022. 
+
+CSS Table of contents: PLEASE READ. THIS IS A LONG CSS DOCUMENT.
+(I use lots of classes so if you're looking for a particular class, use ctrl+f and search.)
+
+there are 2 parts to this CSS page. The first part has all the styles that are the same across all pages. It goes in
+this order:
+
+-Universal styles across pages
+-Navigation and header styles across all pages
+-Button styles 
+
+Next, for part 2, we look at each individual page at a time. They are organized in the same manner as they appear on 
+the nav bar from left to right. The styles for each page are laid out the same way- first we look at the desktop display,
+then we see the mobile display, and lastly we look at media queries for each page.
+
+The only page that's differerent is the home page, which has two different headers for desktop or mobile displays.
+Details below.
+
+-The home page only
+    +I made the home page have a different header and nav bar for the desktop display only. The styles for those are first.
+    +The actual content that's laid out for the desktop
+    +The content that's made for smaller displays
+    +Media queries that switch between desktop and mobile displays
+
+-The shop page only
+-Classes used on both the plant care page AND the about us page
+-The plant care page only
+-The about us page only
+-The contact me page only
+
+*/
+
+/*--------------------------------------------PART 1: STYLES ACROSS ALL PAGES. */
+
+/*--------------------------------------------Universal styles across all pages----------------------------------------------*/
+HTML {
+  /*this makes it so that when you press the "take a look around" button on the home page, it smoothly scrolls to the footer.*/
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend deca", sans-serif;
+}
+img {
+  border-radius: 6px;
+}
+.left-img {
+  margin-right: 3vh;
+}
+.right-img {
+  margin-left: 3vh;
+}
+
+h1 {
+  font-size: 55px;
+}
+h2 {
+  font-size: 33px;
+  margin: 2vh 0 2vh 0;
+}
+hr {
+  margin: 0 auto;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border: 0.5px solid black;
+  width: 93%;
+}
+/*-------------------------------This section is for the navigation, headers, and footers used on all pages. ------------------------------*/
+
+header {
+  background-color: #ffd9c8;
+}
+.mobile-header {
+  display: none;
+}
+.align-header-content {
+  /*This makes sure the header on every page is centered and aligned.*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.logo {
+  /*The logo for the header on every page besides the home page.*/
+  width: 30vw;
+  align-items: center;
+}
+/*Makes the logo bigger when the screen width gets smaller*/
+@media only screen and (max-width: 1000px) {
+  .logo {
+    width: 50vh;
+  }
+}
+nav {
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+nav > a {
+  color: black;
+  font-size: 0.7rem;
+  padding: 2vh;
+  text-align: center;
+  font-size: 1rem;
+}
+a:hover,
+.current {
+  /*.current shows the current page you are on. The same styles apply when you hover over something clickable.*/
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+footer {
+  padding: 3px;
+  background-color: #a2d5ab;
+  text-align: center;
+  font-size: 12px;
+  width: 100%;
+}
+.mobile-footer {
+  display: none;
+}
+/*The media query that determines which paragraph in the footer is displayed*/
+@media only screen and (max-width: 603px) {
+  .home-footer {
+    display: none;
+  }
+  .mobile-footer {
+    display: block;
+  }
+}
+
+/*Different colors for each page*/
+.home {
+  background-color: #e5efc1;
+  flex: 1;
+}
+.shop {
+  background-color: #a2d5ab;
+  flex: 1;
+}
+.plantcare {
+  background-color: #6ec2aa;
+  flex: 1;
+}
+.about {
+  background-color: #479596;
+  flex: 1;
+}
+.contact {
+  background-color: #557b83;
+  flex: 1;
+}
+/*----------------------------------------------------Button styles-----------------------------------------------------*/
+.button {
+  font-size: 15px !important;
+  border-radius: 7px;
+  border: 3px solid #6ec2aa;
+  padding: 10px;
+  color: black;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 12vw;
+}
+.button-inverted {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 12vw;
+  font-size: 15px !important;
+  border-radius: 7px;
+  color: white;
+  background-color: #6ec2aa;
+  border: 3px solid transparent;
+  padding: 10px;
+}
+.shop-button {
+  /*modifies the dimensions of the buttons to make the, smaller for the cards on the shop page.*/
+  font-size: 12px !important;
+  padding: 6px;
+  width: 30%;
+
+  margin-top: 1.5vh;
+}
+/*----------------------------------PART 2: STYLES FOR EACH INDIVIDUAL PAGE. */
+
+/*---------------------------------------------Home page styles ------------------------------------------------------*/
+
+/*--------------Here are the styles for the header and nav bar of the DESKTOP display.*/
+
+.sticky {
+  /*Makes the home page nav bar sticky so it goes below the pink*/
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.home-page-header {
+  height: 100vh;
+  display: block;
+}
+
+.hello {
+  /*The big H1 hello on the home page*/
+  margin-bottom: 6vw;
+  font-size: 6rem;
+
+  font-weight: 100;
+  font-family: "Neonderthaw", cursive;
+}
+.desktop-header-img {
+  /*The logo on the home page*/
+  width: 18%;
+  height: 22%;
+}
+.take-a-look {
+  /*the "take a look around" button*/
+  font-size: 2rem;
+  margin-top: 5vw;
+  font-family: "Pacifico", cursive;
+  font-weight: 200;
+  color: white;
+}
+.tobottom:hover {
+  /*This is the a element for when you hover over "take a look around" on the home page. I made it a separate class name because it also
+  encompasses the fontawesome double chevron down arrow, so you can click on that as well.*/
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+}
+/* -----------------Styles for the homepage content on the desktop.*/
+.mobile-welcome {
+  display: none;
+  flex-wrap: wrap;
+  color: black;
+  font-weight: 100;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  justify-content: center;
+}
+.desktop-home-content {
+  /*Perfect spacing between white and pink spaces so the nav bar still displays at the bottom of the page.*/
+  height: 90vh; /*Fallback if needed*/
+  height: calc(98vh - 3rem - 9px);
+  padding: 0px 2vw 0px 2vw;
+  display: flex;
+  flex-direction: column;
+}
+.home-content-alignment {
+  /*Aligns the content of only the home page.*/
+  display: flex;
+  flex: 1;
+  text-align: center;
+  align-items: center;
+}
+/*Image styles and alignment*/
+.home-imgs {
+  width: 25em;
+  height: 20em;
+  align-items: center;
+}
+
+/*These are for the text next to the images.*/
+.home-text-spacing h2 {
+  font-size: 30px;
+}
+.home-text-spacing p,
+.home-text-spacing a {
+  margin-top: 4vh;
+  text-align: left;
+  font-size: 20px;
+}
+
+/* -----------------Styles for homepage on mobile displays.*/
+
+/*-----------------------------Home page media queries. */
+
+/*This displays the mobile header and welcome h1 when the screen size hits 1162px. It hides the desktop header ON ALL PAGES. */
+@media only screen and (max-width: 1080px) {
+  .home-page-header {
+    display: none;
+  }
+  .desktop-header {
+    display: none;
+  }
+  .mobile-welcome {
+    display: block;
+    font-size: 2.9rem;
+  }
+  .desktop-home-content {
+    height: 100%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  .mobile-header {
+    display: block;
+  }
+  .button,
+  .button-inverted {
+    margin: 0 auto !important;
+    margin-bottom: 2vh !important;
+    width: 20vw;
+  }
+}
+
+@media only screen and (max-width: 916px) {
+  .home-content-alignment {
+    display: block;
+  }
+  .home-text-spacing a,
+  .home-text-spacing p {
+    margin: 2vh 0 2vh 0;
+    text-align: center;
+  }
+  .mobile-welcome {
+    display: flex;
+    padding: 0 1vh 0 1vh;
+    font-size: 2rem;
+  }
+  .button,
+  .button-inverted {
+    margin: 1vh 0 1vh 0;
+    width: 17vw;
+  }
+  .left-img {
+    margin: 0 0 0 0;
+  }
+  .right-img {
+    margin: 0 0 0 0;
+  }
+}
+/*-------------------------------------Content for the "Shop" page ---------------------------------------------*/
+
+/*-------------------Header for desktop*/
+.shop-desktop-header {
+  position: relative;
+  display: flex;
+  padding: 6.5vh;
+  justify-content: center;
+}
+.shop-mobile-header {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1vh 0 1vh;
+  text-align: center;
+}
+.shop-img-header {
+  border-radius: 0;
+  width: 75%;
+  height: 50vh;
+  margin: 5vh;
+}
+.header-bg-border {
+  position: absolute;
+  z-index: 2;
+  background-color: transparent;
+  border: 1px solid black;
+  justify-content: center;
+  transform: rotate(353deg);
+}
+.shop-header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+}
+.shop-header-text > h1 {
+  font-weight: 100;
+}
+.shop-header-text > h2,
+.shop-header-text a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.shop-fg {
+  position: relative;
+  z-index: 4;
+}
+.shop-bg {
+  z-index: 3;
+  transform: rotate(7deg);
+  position: absolute;
+}
+/*-----------------------------------shop body*/
+
+.shop-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 10vw 0 10vw;
+}
+.shop-rows {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin: 1vh;
+}
+
+.shop-card-reg {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  margin: 1vh 0 1vh 0;
+  border-radius: 0;
+  width: 100%;
+  height: 70vh;
+  padding: 2vh;
+}
+.shop-card-reg > h3 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 1vh;
+}
+.shop-card-reg > p {
+  margin-bottom: 1vh;
+  text-align: center;
+}
+.shop-img {
+  width: 100%;
+  height: 60%;
+}
+.shop-card-half {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border: 2px solid black;
+  margin: 1vh 0 1vh 0;
+  border-radius: 0;
+  width: 100%;
+  height: 50vh;
+}
+.shop-card-half-imgs {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  position: absolute;
+  z-index: 1;
+}
+.shop-card-half > h1,
+.shop-card-half > h3,
+.shop-card-half > p {
+  margin: 1vh;
+  position: relative;
+  z-index: 2;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+/*Heartbeat animation for the "follow us on social media" card.*/
+.heartbeat {
+  animation-name: heartbeat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    font-size: 15px;
+  }
+  50% {
+    font-size: 30px;
+  }
+  100% {
+    font-size: 15px;
+  }
+}
+
+/*Shop page media queries*/
+/*Makes more room for smaller screen*/
+@media only screen and (max-width: 1115px) {
+  .shop-container {
+    padding: 0;
+  }
+  .shop-desktop-header {
+    display: none;
+  }
+  .shop-mobile-header {
+    display: flex;
+  }
+}
+/*Switches to mobile display*/
+@media only screen and (max-width: 900px) {
+  .shop-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .shop-card-reg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+  .shop-card-half {
+    display: none;
+  }
+  .shop-rows {
+    align-items: center;
+    width: 90%;
+  }
+
+  .shop-img {
+    width: 95%;
+  }
+}
+/*Makes more room for smaller screens like phones*/
+@media only screen and (max-width: 600px) {
+  .shop-rows {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+/*-------------------------this section has classes used on BOTH the plant care page AND the about us page.----------- */
+
+.info-content {
+  /*These divs separate each of the sections of info (container div) */
+  padding: 3vh 6vh 0 6vh;
+  display: flex;
+  flex-direction: column;
+}
+.info-content > h1 {
+  margin: 0 auto;
+  font-size: 4.5rem;
+}
+.info-content > hr {
+  width: 100%;
+}
+.info-section {
+  /*This div bundles the images and paragraphs of each section together.*/
+  display: flex;
+
+  margin: 3vh 0 3vh 0;
+}
+
+.info-text {
+  /*This aligns the text of each section*/
+  flex-direction: row;
+  margin: 0 3vh 0 3vh;
+}
+.info-text h1 {
+  margin-bottom: 5vh;
+}
+
+/*For media query purposes- switches the images either above or below paragraph based on display*/
+.mobile-display-img {
+  display: none;
+}
+.desktop-display-img {
+  display: flex;
+}
+@media only screen and (max-width: 1094px) {
+  .info-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-desktop {
+    display: none;
+  }
+  .desktop-display-img {
+    display: none;
+  }
+  .mobile-display-img {
+    display: flex;
+  }
+  .about-imgs {
+    margin-bottom: 3vh;
+  }
+  .plantcare-imgs {
+    margin-bottom: 3vh;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .info-content {
+    margin: 0;
+    padding: 1vh;
+  }
+  .about-imgs,
+  .plantcare-imgs {
+    width: 80% !important;
+  }
+  .info-text > a {
+    width: 50%;
+  }
+  .info-text h1 {
+    margin-bottom: 2vh;
+  }
+  .info-text p {
+    margin-top: 2vh;
+    text-align: center;
+  }
+  .info-text h2 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    margin-bottom: 3vh;
+  }
+  .button,
+  .button-inverted {
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/*---------------------------------------This section is for the "plant care" page only --------------------------------------*/
+.plantcare-imgs {
+  /*This aligns each image and makes them the same dimensions. */
+  width: 50vh;
+  align-items: center;
+}
+.anchortags a {
+  /*Changes color of text that act as anchor tags on this page.*/
+  color: #6ec2aa;
+  margin-top: 1vh;
+}
+/*-----------------------------Plant care page media queries. */
+
+/*This is the smallest width that looks good on the plant care page. 
+
+@media only screen and (max-width: 1174px) {
+}
+I'll do more with this later.*/
+
+/*-------------------------------------Content for the "about us" page only ---------------------------------------------*/
+
+.about-imgs {
+  width: 70vh;
+  align-items: center;
+}
+/*-------------------------------------Content for the "contact us" page ---------------------------------------------*/
+
+.contact-h1 {
+  text-align: center;
+  font-size: 4.5rem;
+  color: black;
+  font-weight: 100;
+  font-family: "Pacifico", cursive;
+}
+.contact-p {
+  margin: 0vw 5vw 3vw 5vw;
+  text-align: center;
+}
+
+/*Formatting the two cards with "my information" and "your information" on them*/
+.contact-card-alignment {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+.contact-card {
+  padding: 0.5em;
+  text-align: center;
+  width: 33vw;
+  margin: 0vw 5vw 0vw 5vw;
+  border: 1px solid black;
+  border-radius: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.contact-card-contents {
+  margin: 0 7vh 0 7vh;
+}
+.contact-h2 {
+  font-size: 2.4rem;
+}
+
+/*Form styles for desktop display*/
+.form {
+  margin: 1rem 2.5rem 0 2.5rem;
+}
+.form-p {
+  text-align: left;
+  margin: 0.3rem 0 0.3rem 0;
+}
+.form input {
+  width: 100%;
+  height: 4vh;
+}
+.form textarea {
+  width: 100%;
+}
+.mobile-contact-content {
+  display: none;
+}
+/*------------------Contact us page media queries. */
+
+/*When the screen is 1162px or less, the cards become vertical instead of horizontal and 
+contact-card-alignment hides. */
+@media only screen and (max-width: 1239px) {
+  .contact-card-contents {
+    margin: 0 auto;
+  }
+  .button-inverted {
+    width: 20vh;
+  }
+}
+@media only screen and (max-width: 937px) {
+  .contact-card {
+    width: 55%;
+    margin: 2vh 0 2vh 0;
+  }
+  .contact-card-alignment {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-card-contents {
+    margin: 0 4vh 0 4vh;
+  }
+}
+@media only screen and (max-width: 667px) {
+  .contact-card {
+    width: 75%;
+    margin: 2vh 0 2vh 0;
+    align-items: center;
+  }
+  .contact-h1 {
+    font-size: 4rem;
+  }
+  .contact-card-contents {
+    margin: 0 4vh 0 4vh;
+  }
+}
+
+/*When the screen is 720px or less, the contact card widens from 80% to 95%.*/
+@media only screen and (max-width: 500px) {
+  .contact-h1 {
+    font-size: 3rem;
+  }
+  .contact-card {
+    width: 95%;
+    margin: 2vh 0 2vh 0;
+    align-items: center;
+  }
+}

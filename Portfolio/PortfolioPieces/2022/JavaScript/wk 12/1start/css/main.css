@@ -1,0 +1,60 @@
+* 
+	 {
+		padding:    	0;
+		margin:     	0;
+		box-sizing: 	border-box;
+	 }
+	 
+	html,body 
+	 {
+		font-family:	"Century Gothic";
+		background:  	#5f8eed;
+		text-align:		center;
+		padding:		20px;
+		color:			#fff;
+	 }
+	 
+	.wrapper 
+	 {
+		border:			4px solid #111;
+		display:		block;
+		height:			220px;
+		width:			220px;
+		margin:			20px auto;
+		padding:		20px;
+		border-radius:	50%;
+		background:		rgba(17,17,17,0.7);
+	 }
+	 
+	.timer 
+	 {
+		display:		flex;
+		padding:		5px 2px;
+		margin:			20px 10px;
+		background:		#202020;
+		color:			#fff;
+	 }
+	 
+	.timer div 
+	 {
+		flex:			1;
+		font-size:		18px;
+		padding:		5px 2px;
+		border-left:	1px solid #ddd;
+		border-right:	1px solid #ddd;
+	 }
+	 
+	button 
+	 {
+		border:			0;
+		font-size:		14px;
+		padding:		8px 10px;
+		background:		rgba(217,217,217,0.6);
+		cursor:			pointer;
+		transition:		0.3s all linear;
+	 }
+	 
+	button:hover 
+	 {
+		background:		rgba(217,217,217,1);
+	 }

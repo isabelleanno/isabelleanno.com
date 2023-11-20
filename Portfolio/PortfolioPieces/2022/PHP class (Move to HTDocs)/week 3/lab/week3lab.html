@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Isabelle Anno, 2/5/2022-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Week 3 lab</title>
+    <!--CSS-->
+    <style>
+      * {
+        font-family: "Montserrat", sans-serif;
+      }
+      .content {
+        display: flex;
+
+        justify-content: center;
+      }
+      fieldset {
+        align-items: center;
+        width: 60%;
+        color: black;
+        border: 1px solid black;
+        box-shadow: 8px 8px 14px 6px #fee7ff;
+        border-radius: 5px;
+        margin-bottom: 1vh;
+      }
+
+      h2 {
+        margin: 0;
+      }
+      .h2 {
+        color: #e284e6;
+      }
+      ul {
+        list-style-type: circle;
+      }
+      hr {
+        width: 90%;
+      }
+      .part1 {
+        margin: 1.7rem 0 1.7rem 0;
+      }
+      .formFormatter {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .form-cards {
+        margin-top: 2vh;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 2vh;
+        width: 40%;
+        text-align: center;
+      }
+
+      .submit {
+        margin-top: 2vh;
+        color: #e284e6;
+        background-color: white;
+        border: 1px solid black;
+        padding: 1.5vh;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <fieldset>
+        <legend><h1>Week 3 lab 🧪</h1></legend>
+        <h2 class="h2">Part 1:</h2>
+
+        <ul>
+          <li>
+            <p class="part1">
+              There are two types of scripting languages: client-side and
+              server-side. We need a server to view PHP code because unlike
+              Javascript, PHP is a server-side scripting language. Because PHP
+              is a server-side language, it can be more secure than client-side
+              languages which are more out in the open and can possibly be seen
+              by users.
+            </p>
+          </li>
+          <hr />
+          <li>
+            <p class="part1">
+              GET and POST are two types of http requests. Http requests are how
+              the client and the server talk to each other. Usually, we only use
+              GET to retrieve information that's not sensitive or confidential.
+              GET requests are sent through the URL of a webpage. They can be
+              bookmarked, and have length restrictions. On the other hand, POST
+              is more secure and the data gets transferred behind the scenes.
+              For example, setting or changing a password should always be used
+              with POST, while retrieving weather information from an API can be
+              used with GET.
+            </p>
+          </li>
+        </ul>
+        <h2 class="h2">Part 2:</h2>
+        <form
+          action="week3labformhandler.php"
+          name="color-generator"
+          method="post"
+        >
+          <div class="formFormatter">
+            <div class="form-cards">
+              <h2>Color Generator🎨</h2>
+              <h4>Give me 3 random numbers between 0 to 255:</h4>
+              <p>Number 1:</p>
+              <input type="text" name="red" />
+              <p>Number 2:</p>
+              <input type="text" name="green" />
+              <p>Number 3:</p>
+              <input type="text" name="blue" />
+              <br />
+              <br />
+            </div>
+            <div class="form-cards">
+              <h2>Weight on the moon 🌙</h2>
+              <div>
+                <h4>
+                  Give me a weight and I'll tell you how much it weighs on the
+                  moon:
+                </h4>
+                <p>weight:</p>
+                <input type="text" name="earth" />
+                <p>Units:</p>
+                <select name="units" id="units" method="post">
+                  <option value="lb">lb</option>
+                  <option value="kg">kg</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <p align="center">
+            <input type="submit" class="submit" value="submit all items" />
+          </p>
+        </form>
+      </fieldset>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+p,
+h1,
+h2 {
+  font-family: "Quicksand", sans-serif;
+}
+p {
+  font-size: 1.2rem;
+}
+div.frame {
+  border: 5px solid black;
+  border-radius: 2.5vh;
+}

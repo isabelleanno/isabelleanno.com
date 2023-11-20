@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(250, 245, 239) !important;
+  height: 100%;
+}
+
+#header {
+  background: rgba(99, 219, 141, 0.606); /*Remove or change as desired*/
+  padding: 10px;
+  flex-direction: column;
+}
+#body {
+  padding: 12px;
+}
+.img-display {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 5px solid black;
+}
+.text-align-center {
+  text-align: center;
+}
+img {
+  width: 80%;
+  height: 80%;
+}
+hr {
+  width: 85%;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--3/22/2021-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Dog Henry🐕</title>
+    <style>
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h2 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      img {
+        border-radius: 6px;
+        width: 300px;
+      }
+      button {
+        margin: 10px 25px 25px 25px;
+        border-radius: 6px;
+        background-color: #df9e79;
+        border-color: rgb(73, 73, 73);
+        padding: 10px 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: rgba(37, 37, 37, 0.5) 3px 3px 0px 0px;
+      }
+      button:hover {
+        background-color: #dabbaa;
+        border-color: rgb(104, 102, 102);
+        transition: all 200ms ease-in-out;
+        cursor: url(http://www.zingerbugimages.com/cursors/paws1.ani),
+          url(http://www.zingerbug.com/cursors/cursors/paws1.gif), progress !important;
+      }
+
+      .border {
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 6px;
+        text-align: center;
+        font-family: "dancing script", cursive;
+        line-height: 2em;
+        background-image: linear-gradient(#faf1ec, #d7a99a);
+      }
+      .conclusion {
+        font-weight: 600;
+      }
+      .coder {
+        text-align: center;
+        font-size: 12px;
+        font-family: monospace;
+      }
+      .cockapoos {
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="border">
+      <header>
+        <br />
+        <h1>🐾I love my dog Henry!</h1>
+        <h2>About Henry:</h2>
+      </header>
+
+      <p>
+        Henry is <b>15 years old!</b> We rescued him from a shelter when he was
+        a puppy. He's like my younger brother! I grew up with him. I'm fond of
+        all my pets, but he's got a special place in my heart.
+      </p>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/005/822/original/Henny_Boo.png?1616167217
+  "
+        alt="A photo of Henry"
+      />
+
+      <br />
+
+      <p>
+        Henry is a <dfn><em>cockapoo</em>,</dfn> which is a mix between a cocker
+        spaniel and a poodle. He is very intelligent, charming, and funny. He's
+        super well-behaved and would never hurt a fly. Henry loves small animals
+        like mice, insects and ferrets. He's very gentle around them, and adores
+        their cuteness with us.
+      </p>
+      <p class="cockapoos">
+        <a href="https://en.wikipedia.org/wiki/Cockapoo" target="_blank"
+          >Learn more about cockapoos here!</a
+        >
+      </p>
+      <hr />
+      <p>
+        4 years ago, we adopted another cockapoo puppy named Reggie. Henry
+        helped us raise him to be the best of boys, and he is! They still play
+        together, and Reggie helps keep Henry young.
+      </p>
+
+      <p class="conclusion">I'm so blessed to have such a great dog!</p>
+
+      <button id="infoButton">🐩Learn more about Henry!🐩</button>
+      <br />
+
+      <p class="coder">Coded by Isabelle Anno</p>
+    </div>
+    <script>
+      function learnMore() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let animalPreference = prompt("Do you prefer dogs or cats?");
+        animalPreference = animalPreference.toLowerCase();
+        animalPreference = animalPreference.trim();
+        if (animalPreference === "dogs") {
+          alert(
+            "Thank you," +
+              " " +
+              name +
+              "! We'll get back to you with more information about Henry."
+          );
+        } else {
+          alert(
+            "What are you doing here, " +
+              name +
+              "? This is a website for dog lovers!"
+          );
+        }
+      }
+      document
+        .getElementById("infoButton")
+        .addEventListener("click", learnMore);
+    </script>
+  </body>
+</html>

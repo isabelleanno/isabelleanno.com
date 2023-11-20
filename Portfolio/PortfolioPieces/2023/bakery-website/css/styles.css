@@ -1,0 +1,171 @@
+/*Made by Isabelle Anno, Ariana Smith, Dreher  on 4/25/2023*/
+
+/*utility Classes used throughout the site*/
+
+* {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  color: #545454;
+}
+
+.fit-img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "AesthetNova";
+  src: url(../fonts/Aesthet-Nova-Font/Aesthet-Nova-Medium.ttf);
+}
+.aesthetnova {
+  font-family: "AesthetNova";
+}
+/*Nav bar styles*/
+nav {
+  box-shadow: 2px 6px 16px 2px rgba(198, 198, 198, 0.75);
+  position: relative;
+  z-index: 3;
+}
+nav#mobile-nav {
+  display: none;
+}
+img#logo {
+  width: 21vw;
+  margin-top: 6px;
+}
+img#mobile-logo {
+  width: 31vw;
+  margin-top: 6px;
+}
+a {
+  color: #545454 !important;
+}
+a:hover {
+  text-decoration: underline !important;
+}
+/*Home page styles*/
+div.home-bg {
+  background-image: url(../images/home/marble-modified.jpg);
+  background-size: cover;
+}
+div.home-bg-2 {
+  background-image: url(../images/home/home-bg-2.png);
+  background-repeat: repeat;
+}
+h1.display-h1 {
+  font-size: calc(1.475rem + 2.2vw);
+}
+.translucent {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.carousel-img {
+  border-radius: 6%;
+}
+a.learn-more:hover {
+  color: white !important;
+}
+/*Recipes page Styles*/
+div.recipes-gradient {
+  background: linear-gradient(
+    0deg,
+    rgba(248, 240, 240, 0.75) 0%,
+    rgba(215, 235, 225, 0.75) 100%
+  );
+}
+main.recipes-bg {
+  background-image: url(../images/recipes/bakery-background.png);
+}
+div.recipe-content {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+img[src="images/recipes/placeholder.png"] {
+  width: 50%;
+  align-self: center;
+}
+/*About Us/Contact Us page styles*/
+.about-banner {
+  background-color: #e1fbf0;
+}
+
+.contact-bg {
+  background-image: url(../images/about-contact/multi-polkadot.jpg);
+  background-repeat: repeat;
+}
+.form-border {
+  border: 1px solid #545454 !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+}
+.form-btn:hover {
+  background-color: #545454 !important ;
+}
+/*Login Page Styles*/
+.login-form-btn {
+  background-color: #545454 !important ;
+  color: white !important;
+}
+.login-form-btn:hover {
+  background-color: transparent !important ;
+  color: #545454 !important ;
+}
+#flex-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+#flex-container > footer {
+  margin-top: auto;
+}
+/*Footer Styles*/
+footer {
+  background-color: #f8f0f0;
+}
+
+.small > a {
+  font-size: 10px;
+  text-decoration: none;
+}
+#mobile-footer {
+  display: none;
+}
+/*Media Queries to make stuff responsive*/
+
+/*Footer*/
+@media screen and (max-width: 1033px) {
+  footer > div.row {
+    display: flex;
+    flex-direction: column;
+  }
+  #desktop-footer {
+    display: none;
+  }
+  #mobile-footer {
+    display: block;
+  }
+}
+/*Nav and all pages*/
+@media screen and (max-width: 768px) {
+  nav#desktop-nav {
+    display: none;
+  }
+  nav#mobile-nav {
+    display: block;
+  }
+
+  div.translucent > h1 {
+    text-align: center !important;
+  }
+
+  div.flex-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  div.flex-mobile-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/*Backend CSS*/
+
+/*Table Styles*/

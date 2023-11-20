@@ -1,0 +1,49 @@
+p,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Nunito", sans-serif;
+}
+a.nav-link.active {
+  color: black;
+}
+
+/*Home Page*/
+img[src="images/earth.jpg"],
+img[src="images/wedding.jpg"],
+img[src="images/Optimized-happy_dog.jpg"] {
+  width: 100%;
+}
+
+span.big-letter {
+  font-size: 3rem;
+}
+/*About Us page*/
+.card-reg {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0;
+  width: 100%;
+  height: 80vh;
+}
+.card-reg-img {
+  width: 100%;
+  height: 100%;
+}
+.card-half {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border-radius: 0;
+  width: 100%;
+  height: 60vh;
+}
+.card-half-imgs {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  position: absolute;
+  z-index: 1;
+}

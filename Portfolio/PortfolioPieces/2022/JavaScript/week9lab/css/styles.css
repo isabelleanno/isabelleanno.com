@@ -1,0 +1,118 @@
+html {
+  overflow-x: hidden;
+}
+* {
+  font-family: "Nunito", sans-serif;
+  user-select: none;
+}
+body {
+  height: 100vh;
+  align-items: center;
+}
+h1,
+p,
+button,
+#totalTip {
+  color: white;
+}
+i {
+  font-size: 55px;
+  color: #7be87b;
+}
+select,
+input {
+  color: rgb(122, 122, 122);
+}
+option {
+  color: #000;
+}
+option:first-child {
+  color: rgb(122, 122, 122);
+}
+
+::placeholder {
+  color: rgb(122, 122, 122);
+}
+
+#container {
+  border-radius: 15px;
+  border: 2px solid white;
+  min-height: 81vh;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.inner-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+input,
+select {
+  border: none;
+  background: rgba(255, 255, 255, 0.644);
+  padding: 2vh;
+}
+button {
+  border-radius: 15px !important;
+  border: 1px solid #095a80;
+  padding: 2vh;
+  background: #095a80;
+}
+
+/*The next two selectors were inspired by a solution on stackoverflow.com. I didn't think of this code by myself
+because I couldn't figure out how to change the radio button's appearance. Credit to JamieD. 
+Link here: https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons */
+
+input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: white;
+  content: "";
+  display: inline-block;
+  border: 2px solid white;
+}
+
+input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #095a80;
+  content: "";
+  display: inline-block;
+  border: 2px solid white;
+}
+.checkboxes {
+  display: inline;
+  border-radius: 5px;
+}
+#more-than-one-dude {
+  display: none;
+  margin-bottom: 2vh;
+}
+.hide-me {
+  color: #588397;
+}
+
+.reminder {
+  color: #7be87b;
+  margin: 0px;
+  font-size: 12px;
+}
+a[href="https://www.flaticon.com/free-icons/accounting"]
+{
+  color: white;
+  text-decoration: underline;
+}
+a[href="https://www.flaticon.com/free-icons/accounting"]:hover
+{
+  color: rgb(166, 200, 203);
+}

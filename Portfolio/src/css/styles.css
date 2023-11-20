@@ -1,0 +1,576 @@
+/*    Isabelle Anno, Oct 5, 2023
+           
+Table of contents:
+1.) Universal Styles for all pages
+2.) Utility Classes
+3.) Loader, Header and nav bar
+4.) Buttons
+5.) Sections of each page (fullPage.js)
+6.) Small, Easy animations. (most animations on app.js)
+
+*/
+
+/*-------------------------------------1.) Universal Stlyes for all pages------------------------------------------------*/
+:root {
+  --text-color: #2c0a52;
+}
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: local("Avenir Next Bold"), local("Avenir-Next-Bold"),
+    url("../fonts/AvenirNextCyr-Bold/AvenirNextCyr-Bold.woff2") format("woff2"),
+    url("../fonts/AvenirNextCyr-Bold/AvenirNextCyr-Bold.woff") format("woff"),
+    url("../fonts/AvenirNextCyr-Bold/AvenirNextCyr-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f6e3e3;
+}
+
+p,
+input.form-control,
+textarea,
+label {
+  font-family: "Twemoji Country Flags", "Roboto Mono", monospace;
+}
+
+p,
+a:link,
+a:visited,
+button.hidden-button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+  text-decoration: none;
+}
+#Hello,
+#Education,
+#Projects,
+#Reviews,
+#Contact {
+  font-size: 22vw;
+  font-family: "Avenir Next";
+  user-select: none;
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+div.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+a:hover {
+  text-decoration: underline;
+}
+hr {
+  opacity: 100% !important;
+}
+.fp-watermark {
+  display: none !important;
+}
+.fp-watermark > a {
+  display: none !important;
+}
+/*--------------------------------------------2.) Utility Classes--------------------------------------------------------*/
+
+.IBM {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+.avenir {
+  font-family: "Avenir Next";
+}
+
+span.title {
+  display: none;
+}
+.bold {
+  font-weight: bold;
+}
+.frame {
+  border: 1px solid black;
+  border-radius: 24px;
+}
+
+/*--------------------------------------------3.) Header and nav bar styles--------------------------------------------*/
+
+/*Header*/
+#header {
+  opacity: 0;
+  position: fixed;
+  z-index: 70;
+  width: 100vw;
+  top: 0px;
+  padding: 1vh 18vh;
+  font-family: "Roboto Mono", monospace;
+}
+/*navbar*/
+.nav-item {
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+.nav-item > a.nav-link {
+  color: var(--text-color) !important;
+}
+
+i.fa-gear {
+  color: var(--text-color);
+  margin-bottom: 0.1vh;
+}
+
+img[src*="Initials"] {
+  width: 4vw;
+}
+
+/*The switches on the dropdown menu*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  border-radius: 34px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #979797;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*Dot navigation. Opacity 0 by default before GSAP Animation*/
+#fp-nav {
+  opacity: 0;
+}
+/* Display:none for sections that aren't the start of the topic, to reduce clutter*/
+#fp-nav > ul > li:nth-child(1),
+#fp-nav > ul > li:nth-child(4),
+#fp-nav > ul > li:nth-child(7),
+#fp-nav > ul > li:nth-child(9) {
+  display: none;
+}
+/*Center horizontal nav for slides*/
+.fp-slidesNav {
+  display: flex;
+  justify-content: center;
+}
+
+/*---------------------------------------------4.) buttons & a's---------------------------------------------------*/
+a:hover {
+  color: #814ebd;
+}
+
+button.hidden-button,
+a#whatsAppModalButton {
+  border: none;
+  margin: 0;
+  color: #814ebd;
+  background-color: transparent;
+}
+
+a.btn-link {
+  display: inline-block;
+  border: 1px solid var(--text-color);
+  padding: 1vw;
+  color: var(--text-color);
+  background-size: 200% 100%;
+  background-image: linear-gradient(to left, #a082d5 50%, transparent 50%);
+  color: var(--text-color);
+  text-decoration: none;
+}
+a.btn-link:hover {
+  color: white;
+  text-decoration: none;
+  background-position: -100% 0;
+  -webkit-transition: background-position 0.75s;
+  -moz-transition: background-position 0.75s;
+  transition: background-position 0.75s;
+  animation: fade-color 0.75s;
+}
+a.clickMe {
+  color: #814ebd;
+  text-decoration: none;
+}
+a.clickMe:hover,
+button.hidden-button:hover,
+a#whatsAppModalButton:hover {
+  color: #643a94;
+  text-decoration: underline;
+}
+
+.fp-arrow.fp-next {
+  border-width: 20.5px 0 20.5px 34px !important;
+}
+.fp-arrow.fp-prev {
+  border-width: 20.5px 34px 20.5px 0 !important;
+}
+
+a.btn-link-reverse {
+  font-family: "Roboto Mono", monospace;
+  display: inline-block;
+  border: 1px solid var(--text-color);
+  padding: 1vw;
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, #9fc9e1 50%, transparent 50%);
+  color: var(--text-color);
+  text-decoration: none;
+}
+a.btn-link-reverse:hover {
+  font-family: "Roboto Mono", monospace;
+  color: var(--text-color);
+  text-decoration: underline;
+  background-position: -100% 0;
+  -webkit-transition: background-position 0.75s;
+  -moz-transition: background-position 0.75s;
+  transition: background-position 0.75s;
+}
+/*--------------------------------------------5.) Sections & Slides-------------------------------------------------------------*/
+
+/*-----------------------------First Section*/
+.hs1 {
+  background-color: #f6e3e3;
+}
+
+.learnMore {
+  opacity: 0;
+  margin-left: 1vh;
+}
+#myName {
+  margin-left: 1vh;
+}
+#hs1Overlay {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#Hello {
+  opacity: 0;
+  font-size: 30vw;
+  color: #f0d4d4;
+}
+#Isabelle {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 80px;
+  opacity: 1;
+  position: relative;
+  z-index: 6;
+  color: #ff44a9;
+}
+#Isabelle2 {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 80px;
+  opacity: 1;
+  position: absolute;
+  opacity: 0;
+  user-select: none;
+  transform: translate(5px, -101px);
+  color: #44baff;
+}
+span.nl {
+  font-family: "Noto Color Emoji", sans-serif;
+}
+
+/*----------------------------Second Section */
+.hs2 {
+  background-color: #d5c3f5;
+}
+/*Fist Slide*/
+.about {
+  opacity: 0;
+  font-size: 22vw;
+  text-align: center;
+  color: #d6f6d6;
+  margin: 0;
+  font-family: "Avenir Next";
+}
+
+/*Second Slide */
+img[src*="isabelleanno"] {
+  width: 95%;
+}
+.highlight-s2 {
+  color: #d6f6d6 !important;
+}
+/*Third Slide*/
+.icons {
+  font-size: 20px;
+  width: 3vh;
+}
+div.progress {
+  background-color: transparent;
+  align-items: center;
+  margin-left: 1vh;
+}
+div.progress-bar {
+  width: 20%;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  background-color: #d6f6d6;
+  height: 1vh;
+}
+div.progress-bar-empty {
+  background-color: #d5c3f5;
+}
+
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+  border: none;
+  background-color: transparent;
+}
+
+/*Fifth Slide*/
+img[src*="patrick"] {
+  width: 87%;
+}
+img[src*="isabelleanno"],
+img[src*="patrick"] {
+  box-shadow: 0 0 0 20px #d6f6d6b1;
+  border-radius: 13px;
+}
+div.img-frame {
+  margin: 20px;
+}
+/*----------------------------Third & Fourth Sections */
+.hs3,
+.hs4 {
+  background-color: #d9e4f1;
+}
+#Education {
+  font-size: 20vw;
+  color: #9fc9e1;
+}
+div.col.my-5 > img {
+  border-radius: 10px;
+}
+div#certs-border {
+  border: 25px solid white;
+  border-radius: 10px;
+}
+#Degrees {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#timeline-frame {
+  width: 100%;
+  background: #d0ddeb;
+  box-shadow: -20px 20px 3px #9fc9e1;
+}
+.sidenav-btn {
+  display: flex;
+  transform: translate(13px);
+  z-index: 2;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+}
+.separator {
+  overflow-y: hidden !important;
+  z-index: 1;
+  width: 1px;
+  height: 100%;
+  border-radius: 3px;
+  background-color: black;
+  align-self: center;
+}
+
+/*---------------------------Fifth Section */
+.hs5 {
+  background-color: white;
+}
+#Projects {
+  color: #7eb4a1;
+  margin-bottom: 10vh;
+}
+div.hs5 > .fp-controlArrow.fp-prev {
+  left: 15px;
+  width: 0;
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent #dedede transparent transparent !important;
+}
+div.hs5 > .fp-controlArrow.fp-next {
+  right: 15px;
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent#dedede !important;
+}
+/*Slides 2 and beyond*/
+.btn-horizontal {
+  border: 2px solid #ff3c00;
+  position: relative;
+  z-index: 3;
+  bottom: 30px;
+}
+.timeline {
+  position: relative;
+  top: 13px;
+  border: 1px solid #ff3c00;
+}
+
+.date {
+  z-index: 5;
+  position: RELATIVE;
+  bottom: 23px;
+}
+
+hr.timelineHR {
+  width: 100vw;
+  border: 1px solid #ff3c00;
+}
+hr#firstHR {
+  width: calc(70vw + 8px);
+}
+hr#timelineHREnd {
+  width: calc(30vw - 18px);
+}
+/*---------------------------Sixth and seventh Section */
+.hs6,
+.hs7 {
+  background-color: #ffe3d6;
+}
+#Reviews {
+  color: white;
+}
+.review-frame {
+  background-color: #fde6dc;
+  box-shadow: -20px 20px 3px #f7d7c7;
+}
+/*----------------------------eighth and nineth Section, as well as modal*/
+.hs8,
+.hs9 {
+  background-color: #cad8cf;
+}
+#Contact {
+  color: #f7f6ec;
+}
+.chat {
+  font-family: "Avenir Next";
+  color: white;
+}
+.alert {
+  opacity: 0;
+}
+label {
+  margin-top: 1vh;
+  color: var(--text-color);
+}
+textarea.form-control {
+  margin-bottom: 2vh;
+  font-family: "Roboto Mono", monospace;
+}
+.form-control:focus {
+  border-color: #00a884 !important;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px white !important;
+}
+button.submit-btn:hover {
+  color: var(--text-color);
+  background-color: white;
+  border: 1px solid #00a884;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px white !important;
+  font-family: "Roboto Mono", monospace;
+}
+button.submit-btn {
+  color: rgb(250, 251, 241);
+  border: 1px solid var(--text-color);
+  font-family: "Roboto Mono", monospace;
+  background-color: var(--text-color);
+}
+
+.contact-frame {
+  background-color: #c9dcd0;
+  box-shadow: -20px 20px 3px #b5c7bd;
+}
+/*Modal*/
+img[src*="WhatsApp"] {
+  border-radius: 10px;
+}
+
+div.modal-footer {
+  justify-content: start;
+}
+a.btn-success {
+  border: 1px solid#00a884;
+  color: #00a884;
+  background-color: transparent;
+  font-family: "Roboto Mono", monospace;
+}
+a.btn-success:hover {
+  text-decoration: underline;
+  color: white;
+  border: 1px solid white;
+  font-family: "Roboto Mono", monospace;
+}
+/*---------------------------------------------------6.) Animations-------------------------------------------------------*/
+@keyframes fade-color {
+  0% {
+    color: var(--text-color);
+  }
+  100% {
+    color: white;
+  }
+}

@@ -1,0 +1,15 @@
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+a.active {
+  color: purple;
+}
+
+img {
+  margin: 0 auto;
+}
+.p-block {
+  max-width: 800px;
+  margin: 0 auto;
+}

@@ -1,0 +1,7 @@
+login: lblog_31349339 pw: guulvkh38na
+
+OR
+
+ianno0423@starkstate.net pw: Nintendogs1234
+
+You used this in this class to host a few websites in php but they should all be in this folder so idk

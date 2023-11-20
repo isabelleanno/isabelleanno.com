@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Wk 7 Lab Final Activity, Isabelle Anno, 3/4/2022-->
+    <!---Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <!--Favicons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicons/site.webmanifest" />
+    <!--Font awesome-->
+    <script
+      src="https://kit.fontawesome.com/d0e89170d1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta charset="utf-8" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/app.js"></script>
+    <title>Arcade games</title>
+  </head>
+
+  <body>
+    <div class="lavalamp">
+      <div id="wrapper">
+        <header>
+          <div id="page-banner">
+            <div class="top-img">
+              <img class="pacman" src="images/Pacman.svg" alt="pacman" />
+              <i class="fas fa-ellipsis-h"
+                ><img src="images/ghost.png" alt="pacman ghost" class="pacman"
+              /></i>
+            </div>
+            <h1 class="title">Let's Go To The Arcade!</h1>
+            <h2>The best classic arcade games in the world!</h2>
+            <br />
+          </div>
+        </header>
+        <div class="game-list">
+          <h3 class="title">🕹️Games to play:</h3>
+          <ul id="game-list">
+            <li>
+              <span class="name">Pacman 👻</span>
+              <span class="delete">delete</span>
+            </li>
+
+            <li>
+              <span class="name">Space Invaders 👾</span>
+              <span class="delete">delete</span>
+            </li>
+
+            <li>
+              <span class="name">Frogger 🐸</span>
+              <span class="delete">delete</span>
+            </li>
+
+            <li>
+              <span class="name">Galaga 🚀</span>
+              <span class="delete">delete</span>
+            </li>
+          </ul>
+        </div>
+
+        <form id="add-game">
+          <input
+            type="text"
+            id="suggestion"
+            placeholder="Add your game suggestion..."
+          />
+          <button>Add</button>
+        </form>
+        <div class="img">
+          <img
+            src="images/cute.jpg"
+            alt="A cartoon-like drawing of a boy playing in an arcade"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

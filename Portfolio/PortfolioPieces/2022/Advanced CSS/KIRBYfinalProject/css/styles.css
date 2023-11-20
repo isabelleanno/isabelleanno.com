@@ -1,0 +1,282 @@
+/*    Isabelle Anno, 5/3/2022
+           
+       Table of contents:
+1.) Universal styles for all pages
+2.)Utility Classes
+3.) Images
+4.) Home page
+5.) Meta Knight Page
+6.) Kirby Club Page
+7.) Media Queries
+*/
+
+/*-------------------------------------1.) Universal Stlyes for all pages------------------------------------------------*/
+:root {
+  --star-bg: #fbf365;
+  --border: #21adef;
+  --font-color: #1423a6;
+  --nav-footer: #9645bf;
+
+  --gradient: linear-gradient(
+    90deg,
+    rgba(212, 84, 167, 1) 0%,
+    rgba(168, 45, 172, 1) 25%,
+    rgba(141, 40, 240, 1) 50%,
+    rgba(80, 97, 201, 1) 75%,
+    rgba(29, 55, 139, 1) 100%
+  );
+}
+* {
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+}
+
+a:hover,
+button:hover {
+  cursor: url(https://cur.cursors-4u.net/games/gam-9/gam859.ani),
+    url(https://cur.cursors-4u.net/games/gam-9/gam859.png), auto !important;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/*These next few classes are the skeleton of the page. They allow the footer to always stay at the bottom of the page.*/
+#container {
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.white-bg {
+  background-color: white;
+}
+
+#container {
+  height: auto;
+}
+#header {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.305);
+}
+#body {
+  padding: 10px;
+  padding-bottom: 30px;
+}
+#footer {
+  margin-top: 5vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background: var(--nav-footer);
+  color: white;
+}
+/*Navigation and links*/
+a {
+  text-decoration: none;
+}
+.expand-nav {
+  width: 60vw;
+  margin: 0 auto;
+}
+ul.nav-tabs .nav-link {
+  color: var(--nav-footer);
+}
+ul.nav-tabs:hover .nav-link:hover {
+  border: 1px solid var(--nav-footer);
+}
+ul.nav-tabs {
+  border-bottom: 1px solid var(--nav-footer);
+}
+/*text*/
+h1 {
+  color: var(--font-color);
+  z-index: 2;
+}
+
+/*--------------------------------------------2.) Utility Classes--------------------------------------------------------*/
+
+.list-style-type-none {
+  list-style-type: none;
+}
+.sniglet {
+  font-family: "Sniglet", cursive;
+}
+.pink {
+  color: #e83e8c;
+}
+/*------------------------------------------------3.) Images ------------------------------------------------------------*/
+
+img[src="images/home/logo.png"] {
+  width: 100%;
+}
+img[src="images/backgroundsandborders/clouds.png"],
+img[src="images/backgroundsandborders/clouds-upsidown.png"] {
+  height: 20vh;
+  width: 100vw;
+}
+
+.gifs {
+  width: 35vh;
+  height: 30vh;
+}
+.home-card-imgs {
+  width: 70%;
+  margin: 5vh;
+}
+img[src="images/home/nostalgic.png"] {
+  width: 55%;
+}
+.home-card-img-frame {
+  margin: 2vh;
+  border: 5px solid white;
+  border-radius: 50px 0 50px 0;
+  background-color: rgba(255, 255, 255, 0.599);
+}
+.abilities {
+  width: 24px;
+  height: 37px;
+}
+/*metaknight page*/
+
+img[src="images/meta-knight/meta-knight.png"],
+img[src="images/meta-knight/rival.png"] {
+  width: 75%;
+}
+img[src="images/meta-knight/friends.png"] {
+  width: 74%;
+}
+
+/*------------------------------------------------4.) Home page----------------------------------------------------------*/
+.section-intro {
+  background-image: url(../images/backgroundsandborders/pink-kirby-bg.jpg);
+  background-size: 35%;
+}
+.about-kirby {
+  background-color: white;
+}
+.description-section {
+  border: 4px solid var(--border);
+  border-radius: 25px;
+}
+.favorite {
+  background-color: var(--star-bg);
+  background-image: url(../images/backgroundsandborders/star-pattern.png);
+}
+.home-cards {
+  border: 7px solid white;
+  background-color: #f8dd4495;
+}
+/*------------------------------------------5.) Meta Knight Page-------------------------------------------------------*/
+#metaknight-header {
+  padding: 10px;
+  background-color: rgba(27, 41, 97, 0.373);
+  color: white;
+}
+.metaknight-s1 {
+  background-color: white;
+}
+#metaknight-intro {
+  background-image: url(../images/backgroundsandborders/starry.jpg);
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#story {
+  background-image: url(../images/backgroundsandborders/dreamLand.png);
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#story-box {
+  flex-direction: column;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  justify-content: center;
+  padding: 10px 5rem;
+  background-color: rgba(255, 255, 255, 0.644);
+  border: 5px solid white;
+}
+/*------------------------------------------6.) Kirby Club Page-------------------------------------------------------*/
+
+div #kirby-club-header ul.nav-tabs .nav-link,
+div #metaknight-header ul.nav-tabs .nav-link {
+  color: white;
+}
+div #kirby-club-header ul.nav-tabs:hover .nav-link:hover,
+div #metaknight-header ul.nav-tabs:hover .nav-link:hover {
+  border: 1px solid white;
+}
+div #kirby-club-header ul.nav-tabs,
+div #metaknight-header ul.nav-tabs {
+  border-bottom: 1px solid white;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+#kirby-club-header nav ul li {
+  color: white !important;
+}
+.lavalamp {
+  background-image: var(--gradient);
+  background-size: 250%;
+  animation: bg-animation 4s infinite;
+  border-radius: 6px;
+}
+#wrapper {
+  background-color: #0c1249;
+
+  border-radius: 6px;
+}
+.dark-bg {
+  background-color: #3d4470;
+}
+
+#carousel-border {
+  border: 10px solid white;
+}
+
+/*------------------------------------------7.) Media Queries-------------------------------------------------------*/
+
+#mobile-nav,
+.club-mobile-nav {
+  display: none;
+}
+@media only screen and (max-width: 1068px) {
+  .expand-nav {
+    width: 100vw;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 642px) {
+  #desktop-nav {
+    display: none;
+  }
+  #mobile-nav {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1303px) {
+  #cards {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 797px) {
+  .club-nav {
+    display: none;
+  }
+  .club-mobile-nav {
+    display: block;
+  }
+}

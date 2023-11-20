@@ -1,0 +1,20 @@
+html {
+  background-color: antiquewhite;
+  font-family: "Nunito", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  margin: 0 auto;
+}
+h1,
+p {
+  text-align: center;
+  margin: 15px 0 15px 0;
+}
+div {
+  max-width: 800px;
+  margin: 0 auto;
+}

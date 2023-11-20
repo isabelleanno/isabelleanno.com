@@ -1,0 +1,598 @@
+/*Isabelle Anno, 4/5/2022
+
+This is going to be a long css document. Use ctrl+f to find specific classes/styles.
+
+Table of contents:
+1.)General document styles- the styles for the skeleton of my website, across multiple pages.
+2.)Utility classes used across all pages
+3.)Navigation footer and 'a' element styles across all pages
+4.) Styling for text used on all pages
+5.) Styling for images used on all pages
+6.) Animations on all pages
+7.)divs, spacing, layout and content of each page- one at a time
+8.) Making each page responsive- one at a time
+
+*/
+
+/*-------------------------------------------1.) general document styles-----------------------------------------------*/
+/*Set variables for all the colors I use so I don't have to keep typing hex codes and can change colors in one place*/
+:root {
+  --bgColor: #f7f3ef;
+  --bgColorHover: #f1e1d5;
+  --nav-footer-color: #e6c6af;
+  --onyx-txt-color: #424342;
+  --terracotta: #cd8c64;
+  --translucent-terracotta: #cd8c6411;
+  --card-gray: #d5d8dd;
+  --card-dark: #2d3e50;
+}
+* {
+  box-sizing: border-box;
+  z-index: 3;
+  position: relative;
+  font-family: "poppins", sans-serif;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: var(--bgColor) !important;
+  scroll-behavior: smooth;
+}
+/*This keeps the footer always at the bottom- for more info about how it works visit https://matthewjamestaylor.com/bottom-footer*/
+#container {
+  min-height: 100%;
+  position: relative;
+}
+#body {
+  padding: 10px;
+  padding-bottom: 30px; /* Height of the footer */
+}
+#footer {
+  width: 100%;
+  height: 30px; /* Height of the footer */
+  background: var(--nav-footer-color);
+}
+/*Modal styles*/
+#footer button {
+  border: none;
+  background-color: transparent;
+}
+#footer button:hover {
+  text-decoration: underline;
+}
+.modal-body {
+  font-size: 14px;
+}
+/*Used across all pages, defines a chunk of info*/
+.section {
+  display: flex;
+  padding: 0 !important;
+}
+
+#header p,
+#header h1 {
+  margin: 0;
+  padding: 10px 0 0 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .row {
+    flex-wrap: nowrap !important;
+  }
+}
+/*---------------------------------------------2.) Utility classes----------------------------------------------------*/
+.text-align-center {
+  text-align: center;
+}
+.text-align-right {
+  text-align: right;
+}
+.text-align-left {
+  text-align: left;
+}
+.list-style-type-none {
+  list-style-type: none;
+}
+.list-style-type-square {
+  list-style: square;
+}
+.btn {
+  background-color: var(--nav-footer-color) !important;
+  margin: 0 auto;
+}
+
+/*---------------------------------------3.) Nav, footer and "a" styles-------------------------------------------------*/
+nav {
+  background: var(--nav-footer-color);
+}
+/*navpage is a class for each clickable page in the nav bar.*/
+.navpage {
+  border-left: 1px solid var(--bgColor);
+  color: white;
+}
+.navpage:hover {
+  background-color: var(--bgColorHover);
+  color: var(--onyx-txt-color);
+}
+.mobile-nav {
+  display: none !important;
+}
+.desktop-nav {
+  display: flex;
+}
+@media only screen and (max-width: 887px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex !important;
+  }
+  #mobile-logo {
+    width: 6.5vw;
+  }
+}
+.current {
+  border: none;
+  background-color: var(--bgColor);
+  color: var(--onyx-txt-color) !important;
+}
+#footer a,
+#footer a:hover {
+  color: var(--onyx-txt-color) !important;
+}
+/*Makes the font size smaller when screen is smaller*/
+@media screen and (max-width: 574px) {
+  #footer p {
+    font-size: 12px;
+  }
+}
+/*-------------------------------------------------4.) Text-------------------------------------------------------*/
+h1,
+p {
+  color: var(--onyx-txt-color);
+}
+
+hr {
+  border-top: 1px solid var(--terracotta) !important;
+  width: 100%;
+}
+intro-hr {
+  width: 65%;
+  position: absolute;
+  right: 0;
+}
+
+h1[class="h1 text-align-center"] > span {
+  color: var(--terracotta);
+}
+/*----------------------------------------5.) images on all pages------------------------------------------------------*/
+/*Logo on nav bar*/
+img[src="images/logo.svg"] {
+  width: 3.5vw;
+}
+/*----------------------------------------------------Home Page--------------*/
+/*Little animated button on home page*/
+img[src="images/home/littlebutton.svg"] {
+  width: 25px;
+  height: 25px;
+  margin: 4vw 11vw 0 0;
+  animation-name: BouncyButton;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+/*Animation for button on home page*/
+@keyframes BouncyButton {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 65%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+/*Home page white background line svg picture*/
+img[src="images/home/chairing-is-caring-bg.svg"] {
+  z-index: 2;
+  position: absolute;
+  left: calc(-31vh - 30px);
+  top: -70vh;
+  height: 256vh;
+  width: 115%;
+  overflow: hidden;
+}
+/*Prevents overflow for the white background svg on the home page*/
+.overflow-prevent {
+  overflow: hidden !important;
+}
+/*Home page orange image on the top left*/
+#elements-img {
+  margin-top: 15vh;
+  position: absolute;
+}
+/*Background for the orange image on the top left*/
+#elements-img-bg {
+  top: 17vh;
+  left: 3vh;
+  position: absolute;
+  z-index: 1;
+  width: 155px;
+  height: 462px;
+  background-color: var(--terracotta);
+}
+/*---------------------------------------------------Contact Us page ----------------*/
+/*Background image for contact us page*/
+.contact-container {
+  background-image: url("../images/contact/bg-3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/*----------------------------------------------------About us page ---------------*/
+img[src="images/about/3.webp"] {
+  width: 100%;
+  height: 100%;
+}
+img[src="images/about/4.webp"] {
+  width: 100%;
+  height: 100%;
+}
+.team-profile {
+  width: 100%;
+  height: 90%;
+}
+/*----------------------------------------------------6.) Animations-------------------------------------------------*/
+
+/*----------------------------------------------------Home Page--------------*/
+/*Animation for text slide-in on home page*/
+@keyframes slideInRight {
+  0% {
+    opacity: 2%;
+    margin-right: -50vh;
+  }
+  100% {
+    opacity: 100%;
+    margin-right: 0px;
+  }
+}
+.home-h1-animator-right {
+  animation: slideInRight 1.7s;
+  margin-top: 20vh;
+}
+.h1-animator-right {
+  animation: slideInRight 1.7s;
+}
+.h4-animator-right {
+  animation: slideInRight 2.6s;
+}
+
+/*----------------------------------------------------About Us Page--------------*/
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 2%;
+    margin-left: -50vh;
+  }
+  100% {
+    opacity: 100%;
+    margin-right: 0px;
+  }
+}
+.h1-animator-left {
+  animation: slideInLeft 1.7s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.fadeIn {
+  animation: fadeIn 3.7s;
+}
+/*----------------------------------------------------Contact Us Page--------------*/
+/* Card flip animation code below. This code is not completely my own- I modified it to look good on my website,
+but it was inspired by this website here: https://www.nicesnippets.com/snippet/bootstrap-4-user-card-design-with-flip-animation*/
+.card-body {
+  padding: 0 !important;
+}
+.card-body img {
+  height: 110px !important;
+}
+.flip-div {
+  cursor: pointer;
+}
+.flip-div:hover .back,
+.flip-div.hover .back {
+  transform: rotateY(0deg);
+}
+.flip-div:hover .front,
+.flip-div.hover .front {
+  transform: rotateY(180deg);
+}
+.flip-main {
+  transition: 1s;
+  transform: perspective(1000px);
+  transform-style: preserve-3d;
+  position: relative;
+}
+.front {
+  position: relative;
+  transform: rotateY(0deg);
+}
+.back {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: rotateY(-180deg);
+}
+.front,
+.back {
+  backface-visibility: hidden;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+/*-----------------------------------7.) divs, spacing, and content of each page--------------------------------------------*/
+
+/*--------------------------------------------------Home page---------*/
+.spacer {
+  margin-top: 15vh;
+}
+
+/*Cards on the bottom of the home page*/
+.homecards {
+  border: 1px solid var(--nav-footer-color);
+  background-color: var(--translucent-terracotta);
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+}
+.showcase {
+  width: 80%;
+  height: 40%;
+}
+/*---------------------------------------------Contact Us Page----------*/
+
+.contact-spacer {
+  margin: 20vh 0 5vh 0;
+}
+
+.col-1 {
+  margin-top: 7vh !important;
+}
+
+/*These next few styles are for the orange side nav on the left side*/
+.sidenav {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  z-index: 1 !important;
+  padding: 0;
+}
+/*Long line in the center*/
+.separator {
+  position: absolute;
+  overflow-y: hidden !important;
+  z-index: 2;
+  width: 1px;
+  height: 325vh;
+  border-radius: 3px;
+  background-color: var(--terracotta);
+  align-self: center;
+}
+/*The column that the sidenav bubbles will be in*/
+.button-col {
+  display: flex;
+  position: absolute !important;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+}
+/*Sidenav buttons/bubbles themselves*/
+.sidenav-btn {
+  display: flex;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid var(--terracotta);
+  background-color: var(--bgColor);
+}
+
+/*this class is for javascript to apply to the bubbles when you scroll to a certain point*/
+.current-step {
+  background-color: var(--terracotta) !important;
+}
+
+/*These are for the form on step 1*/
+input,
+textarea {
+  background-color: transparent !important;
+  border: 1px solid var(--terracotta) !important;
+}
+input::after,
+textarea::after {
+  box-shadow: none !important;
+}
+/*These are for the cards on step 2*/
+
+.card-dark {
+  border-radius: 6px !important;
+  background-color: var(--card-dark) !important;
+}
+.card-dark p {
+  color: white;
+}
+.card-light {
+  border-radius: 6px !important;
+  background-color: var(--card-gray) !important;
+}
+.cards ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.card-btn {
+  color: white !important;
+  border: 2px solid var(--card-gray) !important;
+  background-color: var(--card-dark) !important;
+  margin: 0 auto;
+}
+.card-btn:hover {
+  color: var(--card-dark) !important;
+  border: 2px solid var(--card-dark) !important;
+  background-color: white !important;
+  margin: 0 auto;
+  transition: 0.3s ease-in-out;
+}
+.card p {
+  font-size: 14px;
+}
+.card {
+  align-items: center !important;
+  height: 100% !important;
+}
+
+/*------------------------------------------------Design Studio Page------------*/
+.carousel-holder {
+  width: 70%;
+  height: 80%;
+}
+.project2 {
+  width: 52vh;
+  height: 70vh;
+}
+/*---------------------------------------------8.) Making pages responsive------------------------------------------*/
+
+/*------------------------------------------------Home page------------*/
+#mobile-intro {
+  display: none;
+}
+div[class="col-9 offset-3"] {
+  display: none;
+}
+.mobile-hr {
+  display: none;
+}
+#mobile-elements-img {
+  position: absolute;
+  left: 0;
+  bottom: -3vh;
+}
+@media only screen and (max-width: 1200px) {
+  img[src="images/home/chairing-is-caring-bg.svg"] {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #desktop-intro {
+    display: none !important;
+  }
+  #mobile-intro {
+    display: block;
+  }
+  div[class="col-9 offset-3"] {
+    display: block;
+  }
+  .h4-animator {
+    margin-top: 8vh;
+  }
+  .cards ul {
+    list-style-type: none;
+  }
+}
+@media only screen and (max-width: 638px) {
+  div[class="col-9 offset-3"] {
+    display: none;
+  }
+  .mobile-hr {
+    display: block;
+  }
+  #mobile-elements-img {
+    display: none;
+  }
+  div[class="col-12 text-align-right"] {
+    text-align: center;
+  }
+}
+/*------------------------------------------------Contact Us page------------*/
+.mobile-heading {
+  display: none;
+  font-size: 3rem;
+}
+.mobile-location-info {
+  display: none;
+}
+#mobile-contact-intro {
+  display: none;
+}
+
+/*Get rid of the background image when it no longer looks good*/
+@media screen and (max-width: 1090px) {
+  .contact-container {
+    background-image: none;
+  }
+}
+/*Get rid of the side nav when it no longer looks good*/
+
+@media screen and (max-width: 1200px) {
+  .button-col,
+  .sidenav,
+  .sidenav-btn {
+    display: none;
+  }
+}
+/*Get rid of the table when it no longer looks good, add the mobile version of the information.
+Get rid of the desktop h1, add the mobile h1, and make the spacer between the two smaller on mobile.
+*/
+@media screen and (max-width: 769px) {
+  table {
+    display: none;
+  }
+  .mobile-location-info {
+    display: block;
+  }
+  #desktop-contact-intro {
+    display: none;
+  }
+  #mobile-contact-intro {
+    display: block;
+  }
+  .contact-spacer {
+    margin: 15vh 0 5vh 0;
+  }
+}
+/*Replace the large font size of all the headings on the contact us page with smaller fonts on mobile*/
+@media screen and (max-width: 513px) {
+  .mobile-heading {
+    display: block;
+  }
+  .desktop-heading {
+    display: none;
+  }
+}
+/*------------------------------------------------About Us page------------*/
+.about-mobile-h1 {
+  display: none;
+}
+.about-desktop-h1 {
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  .about-mobile-h1 {
+    display: block;
+  }
+  .about-desktop-h1 {
+    display: none;
+  }
+}

@@ -1,0 +1,85 @@
+* {
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: beige !important;
+}
+img {
+  width: 100%;
+}
+h2 {
+  font-family: "Mooli", sans-serif;
+}
+.cedarville {
+  font-family: "Cedarville Cursive", cursive;
+}
+p {
+  font-size: 1.75rem;
+  margin: 1rem 0;
+}
+/*Content*/
+.cursive {
+  font-size: 8.7em;
+  margin: 0;
+  font-family: "Cedarville Cursive", cursive;
+}
+#pi {
+  font-size: 12.7em;
+}
+img[src="images/decorativeheader-mobile.png"] {
+  display: none;
+}
+#footer-img,
+#footer-img-mobile {
+  rotate: 180deg;
+}
+#btn-frame {
+  margin: 2rem;
+}
+a#detailsLink {
+  font-family: "Mooli", sans-serif;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-size: 1.75rem;
+  border: 2px solid black;
+  color: black;
+}
+a#detailsLink:hover {
+  color: rgb(36, 36, 36);
+  background-color: rgba(175, 199, 181, 0.466);
+}
+
+#details-intro {
+  font-size: 1.5rem;
+}
+.dp {
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  h1.cursive {
+    font-size: 7.5rem;
+  }
+  #pi {
+    font-size: 10.7em;
+  }
+}
+@media screen and (max-width: 550px) {
+  h1.cursive {
+    font-size: 6rem;
+  }
+  .cedarville {
+    font-size: 2.5rem;
+  }
+  #pi {
+    font-size: 8.5em;
+  }
+  img[src="images/decorativeheader-mobile.png"] {
+    display: block;
+  }
+  img[src="images/decorativeheader.png"] {
+    display: none;
+  }
+}

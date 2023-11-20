@@ -1,0 +1,89 @@
+/*Isabelle Anno, 3/31/2022*/
+/*--------------------------------Styles for every page and utility classes---------------------------------------------------*/
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Nunito", sans-serif;
+  color: #130c59;
+}
+.text-align-center {
+  text-align: center;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+/*-----------------------------------------------Navigation styles------------------------------------------------------*/
+
+#nav-wrapper {
+  list-style: none !important;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5ch;
+  margin: 0;
+  margin-bottom: 2vh;
+  padding: 2.3vh 0;
+  border: 2px solid #a0c0e2;
+  background: #f2f7fb;
+  box-shadow: rgba(92, 139, 190, 0.315) 2px 3px 2px;
+}
+
+.navitem {
+  text-decoration: none;
+  padding: 1.5vh 7vh;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5ch;
+}
+.navitem:hover {
+  background-color: rgba(92, 139, 190, 0.425);
+  color: white;
+}
+.active,
+input[type="submit"] {
+  text-decoration: none;
+  padding: 1.5vh 7vh;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5ch;
+  background-color: rgb(92, 140, 190);
+  color: white;
+}
+/*--------------------------------------------Text/buttons styles--------------------------------------------------------*/
+h3 {
+  text-align: center;
+  font-size: 3.3rem;
+  margin: 2vh;
+}
+
+i {
+  color: #f0a693;
+}
+#intro {
+  width: 75%;
+  text-align: center;
+}
+/*------------------------------------------------------layout styles--------------------------------------------------*/
+.content {
+  background: #f2f7fb;
+  border: 2px solid #a0c0e2;
+  padding: 20px;
+  border-radius: 9px;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(92, 139, 190, 0.178) 3px 5px 4px;
+  margin-bottom: 2vh;
+}
+.footer {
+  margin: 0 auto;
+}
+table {
+  border: 2px solid #a0c0e2;
+  border-radius: 9px;
+}
