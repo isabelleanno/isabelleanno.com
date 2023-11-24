@@ -1,5 +1,7 @@
 import React from "react";
 import { gsap } from "gsap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import ContactModal from "./contactModal";
 //Import fontawesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,7 +10,6 @@ import {
   faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-
 export default function Sect9() {
   return (
     <div className="section hs9  d-flex align-items-center">
@@ -103,14 +104,7 @@ export default function Sect9() {
                       className="me-3"
                     />
                   </h2>
-                  <a
-                    className="clickMe"
-                    id="whatsAppModalButton"
-                    data-bs-toggle="modal"
-                    data-bs-target="#whatsappModal"
-                  >
-                    Message me on WhatsApp
-                  </a>
+                  <ContactModal />
                 </span>
 
                 <div className="col-10 mt-3">

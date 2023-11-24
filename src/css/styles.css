@@ -219,6 +219,7 @@ a#whatsAppModalButton {
   margin: 0;
   color: #814ebd;
   background-color: transparent;
+  text-decoration: none;
 }
 
 a.btn-link {
@@ -249,6 +250,8 @@ button.hidden-button:hover,
 a#whatsAppModalButton:hover {
   color: #643a94;
   text-decoration: underline;
+  border: none;
+  background-color: transparent;
 }
 
 .fp-arrow.fp-next {
@@ -548,6 +551,7 @@ button.submit-btn {
 /*Modal*/
 img[src*="WhatsApp"] {
   border-radius: 10px;
+  width: 75%;
 }
 
 div.modal-footer {
