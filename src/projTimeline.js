@@ -29,7 +29,7 @@ export default function ProjTimeline(props) {
         <hr className="timelineHR" id="timelineHREnd" />
         <div className="container">
           <div className="row">
-            <div className="col-6 d-flex flex-column align-items-center justify-content-center">
+            <div className="col-6 offset-6 d-flex flex-column align-items-center justify-content-center">
               <a className="sidenav-btn btn-horizontal"></a>
               <p className="date m-0">{props.Date}</p>
             </div>

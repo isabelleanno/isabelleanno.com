@@ -25,6 +25,12 @@ Add a new project here, as the first call to createProject().*/
   var projects = [
     //Newest project below vv Add a new project right below this line to keep it in order.
     createProject(
+      "Newest Project",
+      "Newest Description",
+      "./Images/placeholder.png",
+      "24 November, 2023"
+    ),
+    createProject(
       "This is my project",
       "Test description",
       "./Images/placeholder.png",
