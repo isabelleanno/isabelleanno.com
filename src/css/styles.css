@@ -489,7 +489,7 @@ hr#firstHR {
   width: calc(70vw + 8px);
 }
 hr#timelineHREnd {
-  width: calc(30vw - 18px);
+  width: calc(30vw + 2px);
 }
 /*---------------------------Sixth and seventh Section */
 .hs6,
