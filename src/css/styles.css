@@ -385,6 +385,7 @@ div.progress-bar-empty {
 .table-borderless > thead > tr > th {
   border: none;
   background-color: transparent;
+  padding: 3px;
 }
 
 /*Fifth Slide*/
@@ -471,6 +472,7 @@ div.hs5 > .fp-controlArrow.fp-next {
   position: relative;
   z-index: 3;
   bottom: 30px;
+  right: 2px;
 }
 .timeline {
   position: relative;
@@ -480,8 +482,14 @@ div.hs5 > .fp-controlArrow.fp-next {
 
 .date {
   z-index: 5;
+  margin: 0;
   position: RELATIVE;
   bottom: 23px;
+  left: 10px;
+  font-weight: bold;
+}
+#date-start {
+  left: -51px;
 }
 
 hr.timelineHR {
@@ -489,10 +497,15 @@ hr.timelineHR {
   border: 1px solid #ff3c00;
 }
 hr#firstHR {
-  width: calc(70vw + 8px);
+  width: 73vw;
 }
 hr#timelineHREnd {
   width: calc(73vw - 4px);
+}
+.project-photo-frame {
+  width: 100%;
+  height: 55vh;
+  overflow: hidden;
 }
 /*---------------------------Sixth and seventh Section */
 .hs6,

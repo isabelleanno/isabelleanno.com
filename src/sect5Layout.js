@@ -27,7 +27,7 @@ export default function Sect5Layout(props) {
         return (
           <div key={index}>
             <div className="slide">
-              <div className="container">
+              <div className="container mb-4">
                 <div className="row">
                   {(() => {
                     //If the index is even, render it so the image is on the left side
@@ -35,13 +35,16 @@ export default function Sect5Layout(props) {
                       return (
                         <div className="col-12 d-flex">
                           <div className="col-6 d-flex flex-column align-items-center justify-content-center">
-                            <img
-                              src={require("./Images/placeholder.png")}
-                              alt=""
-                            />
+                            <div className="project-photo-frame d-flex flex-column justify-content-center">
+                              <img
+                                src={require("./Images/projects/" +
+                                  slide.PhotoSrc)}
+                                alt=""
+                              />{" "}
+                            </div>
                           </div>
-                          <div className="col-6 d-flex flex-column align-items-center justify-content-center mx-3">
-                            <h1 className="text-center IBM">{slide.Title}</h1>
+                          <div className="col-6 d-flex flex-column justify-content-center mx-3 px-3">
+                            <h1 className="IBM">{slide.Title}</h1>
                             <p>{slide.Description}</p>
                           </div>
                         </div>
@@ -50,15 +53,18 @@ export default function Sect5Layout(props) {
                       //If the index is odd, render it so the image is on the right side
                       return (
                         <div className="col-12 d-flex">
-                          <div className="col-6 d-flex flex-column align-items-center justify-content-center mx-3">
-                            <h1 className="text-center IBM">{slide.Title}</h1>
+                          <div className="col-6 d-flex flex-column  justify-content-center mx-3 px-3">
+                            <h1 className="IBM">{slide.Title}</h1>
                             <p>{slide.Description}</p>
                           </div>
                           <div className="col-6 d-flex flex-column align-items-center justify-content-center">
-                            <img
-                              src={require("./Images/placeholder.png")}
-                              alt=""
-                            />
+                            <div className="project-photo-frame d-flex flex-column justify-content-center">
+                              <img
+                                src={require("./Images/projects/" +
+                                  slide.PhotoSrc)}
+                                alt=""
+                              />{" "}
+                            </div>
                           </div>
                         </div>
                       );

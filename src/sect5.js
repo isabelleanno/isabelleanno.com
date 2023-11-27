@@ -25,29 +25,29 @@ Add a new project here, as the first call to createProject().*/
   var projects = [
     //Newest project below vv Add a new project right below this line to keep it in order.
     createProject(
-      "Newest Project",
+      "AI Text generator",
       "Newest Description",
-      "./Images/placeholder.png",
+      "placeholder.png",
       "24 November, 2023"
     ),
     createProject(
-      "This is my project",
-      "Test description",
-      "./Images/placeholder.png",
-      "23 September, 2021"
+      "Seize the Clay Pottery Studio",
+      "This was my first project in college. It helped me expand on my HTML and CSS knowledge.",
+      "Henry.png",
+      "October 18, 2021"
     ),
     createProject(
-      "This is my other project",
-      "Test description 2",
-      "Test Photo",
-      "23 September, 2021"
+      "Weather Website",
+      "This weather site was made during my SheCodes Plus course. It uses an API from openweathermap.com to get real-time weather data. It taught me basic JavaScript and introduced me to the concept of APIs. I am proud of it, but I still haven't yet learned responsive techniques for making it look good on every device.",
+      "Henry.png",
+      "May 26, 2021"
     ),
     //Oldest project below
     createProject(
-      "This is my first-ever project",
-      "Test description 3",
-      "Test Photo",
-      "20 November, 2020"
+      "My dog Henry 🐾",
+      "This was my first official website. I made it while learning HTML and CSS through SheCodes Basic. Henry is my best buddy. He passed away peacefully in his bed at age 15 in 2022, and had a great life. He'll always have a special place in my heart. Even though this website is not the best, we all have to start somewhere and I'm glad to have started my career with him by my side.",
+      "Henry.png",
+      "March 22, 2021"
     ),
   ];
 
