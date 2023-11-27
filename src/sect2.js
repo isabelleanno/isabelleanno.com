@@ -1,10 +1,12 @@
 import { useRef, useEffect } from "react";
-import Progress from "./progress";
-import Age from "./age";
-import { gsap } from "gsap";
-//Import fontawesome icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDatabase, faServer } from "@fortawesome/free-solid-svg-icons";
+//Import individual fontawesome icons
+import {
+  faDatabase,
+  faServer,
+  faPaintbrush,
+  faWheelchair,
+  faRobot,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faHtml5,
   faCss3Alt,
@@ -15,6 +17,9 @@ import {
   faBootstrap,
   faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
+import Age from "./age";
+import { gsap } from "gsap";
+import Sect2Layout from "./sect2Layout";
 
 export default function Sect2() {
   //Create GSAP animations for this section
@@ -136,7 +141,7 @@ export default function Sect2() {
           <div className="row">
             <div className="col-12 d-flex flex-column align-items-center">
               <div className="col-8">
-                <h1 className="mb-4">
+                <h1 className="mb-2 text-center">
                   My <span className="highlight-s2">Knowledge</span> and Skills
                 </h1>
               </div>
@@ -144,159 +149,51 @@ export default function Sect2() {
                 <div className="table-responsive">
                   <table className="table table-borderless">
                     <tbody>
-                      <tr>
-                        <td className="col-6">
-                          <p className="m-0">
-                            <FontAwesomeIcon
-                              icon={faHtml5}
-                              className="icons mx-1"
-                            />
-                            HTML
-                          </p>
-                        </td>
-
-                        <td>
-                          <Progress value={4} />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p className="m-0">
-                            <FontAwesomeIcon
-                              icon={faCss3Alt}
-                              className="icons mx-1"
-                            />
-                            CSS
-                          </p>
-                        </td>
-                        <td>
-                          {" "}
-                          <Progress value={4} />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p className="m-0">
-                            <FontAwesomeIcon
-                              icon={faSquareJs}
-                              className="icons mx-1"
-                            />
-                            JavaScript & JQuery
-                          </p>
-                        </td>
-                        <td>
-                          {" "}
-                          <Progress value={3} />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p className="m-0">
-                            <FontAwesomeIcon
-                              icon={faReact}
-                              className="icons mx-1"
-                            />
-                            React.js
-                          </p>
-                        </td>
-                        <td>
-                          <Progress value={3} />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p className="m-0">
-                            <FontAwesomeIcon
-                              icon={faPhp}
-                              className="icons mx-1"
-                            />
-                            PHP
-                          </p>
-                        </td>
-                        <td>
-                          <Progress value={2} />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p className="m-0">
-                            {" "}
-                            <FontAwesomeIcon
-                              icon={faDatabase}
-                              className="icons mx-1"
-                            />
-                            SQL & Database Management
-                          </p>
-                        </td>
-                        <td>
-                          {" "}
-                          <Progress value={3} />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p className="m-0">
-                            {" "}
-                            <FontAwesomeIcon
-                              icon={faWordpress}
-                              className="icons mx-1"
-                            />
-                            WordPress
-                          </p>
-                        </td>
-                        <td>
-                          {" "}
-                          <Progress value={3} />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p className=" m-0">
-                            {" "}
-                            <FontAwesomeIcon
-                              icon={faBootstrap}
-                              className="icons mx-1"
-                            />
-                            Bootstrap & Responsive Design{" "}
-                          </p>
-                        </td>
-                        <td>
-                          {" "}
-                          <Progress value={4} />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p className="m-0">
-                            {" "}
-                            <FontAwesomeIcon
-                              icon={faServer}
-                              className="icons mx-1"
-                            />
-                            APIs and Hosting{" "}
-                          </p>
-                        </td>
-                        <td>
-                          {" "}
-                          <Progress value={3} />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p className="m-0">
-                            {" "}
-                            <FontAwesomeIcon
-                              icon={faGoogle}
-                              className="icons mx-1"
-                            />
-                            SEO{" "}
-                          </p>
-                        </td>
-                        <td>
-                          {" "}
-                          <Progress value={2} />
-                        </td>
-                      </tr>
+                      <Sect2Layout skill="HTML" icon={faHtml5} value="5" />
+                      <Sect2Layout
+                        skill="CSS & Animations"
+                        icon={faCss3Alt}
+                        value="5"
+                      />
+                      <Sect2Layout
+                        skill="Web Graphics Design"
+                        icon={faPaintbrush}
+                        value="4"
+                      />
+                      <Sect2Layout
+                        skill="JavaScript & JQuery"
+                        icon={faSquareJs}
+                        value="4"
+                      />
+                      <Sect2Layout skill="React.js" icon={faReact} value="3" />
+                      <Sect2Layout skill="PHP" icon={faPhp} value="2" />
+                      <Sect2Layout
+                        skill="SQL & Database Management"
+                        icon={faDatabase}
+                        value="3"
+                      />
+                      <Sect2Layout
+                        skill="WordPress"
+                        icon={faWordpress}
+                        value="3"
+                      />
+                      <Sect2Layout
+                        skill="Bootstrap & Responsive Design"
+                        icon={faBootstrap}
+                        value="4"
+                      />
+                      <Sect2Layout
+                        skill="APIs and Hosting"
+                        icon={faServer}
+                        value="3"
+                      />
+                      <Sect2Layout skill="SEO" icon={faGoogle} value="2" />
+                      <Sect2Layout
+                        skill="Accessible Design"
+                        icon={faWheelchair}
+                        value="3"
+                      />
+                      <Sect2Layout skill="AI" icon={faRobot} value="1" />
                     </tbody>
                   </table>
                 </div>
