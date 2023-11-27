@@ -91,17 +91,17 @@ const Fullpage = function loadFullPage() {
         anchors={["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9"]}
         navigation={true}
         navigationPosition={"left"}
-        navigationToolTips={[
+        navigationTooltips={[
           "Home",
           "About",
-          "Resume",
-          "Resume",
+          "Education",
+          "Education",
           "Projects",
           "Reviews",
           "Reviews",
           "Contact",
-          "Contact",
         ]}
+        showActiveTooltip={false}
         slidesNavigation={true}
         //fullpage extensions & keys
         scrollHorizontally={scrollHorizontallyBool}
