@@ -491,6 +491,9 @@ div.hs5 > .fp-controlArrow.fp-next {
 #date-start {
   left: -51px;
 }
+.position-absolute {
+  bottom: 6.5vh;
+}
 
 hr.timelineHR {
   width: 100vw;
