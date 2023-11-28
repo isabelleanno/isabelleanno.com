@@ -140,6 +140,7 @@ const Fullpage = function loadFullPage() {
           (but the user can still easily toggle them back on.)*/
 
           let activeSection = fullpage_api.getActiveSection();
+          let activeSlide = fullpage_api.getActiveSlide();
           let isChecked = $("#horizNav").is(":checked");
           /*"Click counter" ensures that the conditions in the if statement will only be met once per
           session. This basically allows the user to be able to toggle the horizontal nav dots back on if they want to. */
@@ -155,6 +156,7 @@ const Fullpage = function loadFullPage() {
             $("#horizNav").trigger("click");
             clickCounter = clickCounter + 1;
           }
+          //Make it so every other slide on projects section is rendered with flex-row-reverse
         }}
         afterSlideLoad={function (origin, destination, direction) {
           let activeSlide = fullpage_api.getActiveSlide();
