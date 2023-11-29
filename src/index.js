@@ -122,11 +122,20 @@ const Fullpage = function loadFullPage() {
 
         //Us the afterload and afterSlideLoad fullpage.js methods
         afterLoad={function (origin, destination, direction) {
+          let activeSection = fullpage_api.getActiveSection();
+          let activeSlide = fullpage_api.getActiveSlide();
           //Run the header/nav gsap timeline animation
-          gsap
-            .timeline()
-            .to("#header", { delay: 4, duration: 2, opacity: 1 })
-            .to("#fp-nav", { duration: 1, opacity: 1 });
+          if (activeSection.anchor === "s1") {
+            gsap
+              .timeline()
+              .to("#header", { delay: 4, duration: 2, opacity: 1 })
+              .to("#fp-nav", { duration: 1, opacity: 1 });
+          } else {
+            gsap
+              .timeline()
+              .to("#header", { duration: 0.001, opacity: 1 })
+              .to("#fp-nav", { duration: 0.001, opacity: 1 });
+          }
           //Grab the navigation dots (vertical and horizontal)
           const vertNavDots = $("#fp-nav");
           const horizNavDots = $(".fp-slidesNav");
@@ -139,8 +148,6 @@ const Fullpage = function loadFullPage() {
           /*Make it so that on the projects section, the horizontal nav dots are toggled off by default 
           (but the user can still easily toggle them back on.)*/
 
-          let activeSection = fullpage_api.getActiveSection();
-          let activeSlide = fullpage_api.getActiveSlide();
           let isChecked = $("#horizNav").is(":checked");
           /*"Click counter" ensures that the conditions in the if statement will only be met once per
           session. This basically allows the user to be able to toggle the horizontal nav dots back on if they want to. */
