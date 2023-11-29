@@ -16,14 +16,14 @@ class Sect5Layout extends Component {
 
     return (
       <div>
-        {/*Map the props passed from sect5.js */}
+        {/* Map the props passed from sect5.js */}
         {slides.map(function (slide, index) {
-          //check if the index is even
+          // check if the index is even
           function isEven(index) {
             return index % 2 === 0;
           }
           {
-            /*Return generic outer wrapping of each slide with unique key */
+            /* Return generic outer wrapping of each slide with a unique key */
           }
           return (
             <div key={index}>
@@ -33,12 +33,7 @@ class Sect5Layout extends Component {
                     <div className="col-12 d-flex layoutCol">
                       <div className="col-6 d-flex flex-column align-items-center justify-content-center">
                         <div className="project-photo-frame d-flex flex-column">
-                          <img
-                            src={require("./Images/projects/" +
-                              slide.PhotoSrc +
-                              ".png")}
-                            alt=""
-                          />{" "}
+                          {slide.PhotoSrc}
                         </div>
                       </div>
                       <div className="col-6 d-flex flex-column justify-content-center mx-3 px-3">
@@ -48,7 +43,7 @@ class Sect5Layout extends Component {
                     </div>
                   </div>
                 </div>
-                {/* Passing the index, the date and the lastSlide variable to the projTimeline component to display timeline */}
+                {/* Passing the index, the date, and the lastSlide variable to the projTimeline component to display the timeline */}
                 <ProjTimeline
                   index={index}
                   Date={slide.Date}
