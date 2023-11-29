@@ -33,9 +33,7 @@ export default function Sect5Layout(props) {
                     <div className="col-6 d-flex flex-column align-items-center justify-content-center">
                       <div className="project-photo-frame d-flex flex-column">
                         <img
-                          src={require("./Images/projects/" +
-                            slide.PhotoSrc +
-                            ".png")}
+                          src={"./Images/projects/" + slide.PhotoSrc + ".png"}
                           alt=""
                         />{" "}
                       </div>
