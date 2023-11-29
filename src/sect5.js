@@ -71,7 +71,7 @@ Add a new project here, as the first call to createProject().*/
     createProject(
       "My dog Henry 🐾",
       "This was my first official website. I made it while learning HTML and CSS through SheCodes Basic. Henry is my best buddy. He passed away peacefully in his bed at age 15 in 2022, and had a great life. He'll always have a special place in my heart. Even though this website is not the best, we all have to start somewhere and I'm glad to have started my career with him by my side.",
-      "placeholder",
+      "placeholder2",
       "March 22, 2021"
     ),
   ];
