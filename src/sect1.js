@@ -14,7 +14,7 @@ export default function Sect1() {
         .timeline()
         .to("#Hello", { delay: 0.12, duration: 2, opacity: 0.8 })
         .to("#Hello", { opacity: 0.35 })
-        .to("#myName", { duration: 1, delay: 0.4, text: "My name is" })
+        .to("#myName", { duration: 0.75, delay: 0.4, text: "My name is" })
         .from("#Isabelle", { duration: 2, xPercent: -200, opacity: 0 })
         .to("#Isabelle2", { opacity: 1 })
         .to(

@@ -57,7 +57,8 @@ export default function Sect2() {
       ],
       autoStart: true,
       loop: true,
-      delay: 20,
+      delay: 35,
+      deleteSpeed: 20,
     });
   }, []);
 
@@ -86,11 +87,10 @@ export default function Sect2() {
               </h1>
               <h5 className="mb-4 IBM" id="typewriter"></h5>
               <p className="mb-4">
-                I am <Age /> years old, born April 23, 2001 and raised in Ohio.
+                I am <Age /> years old, born on April 23 and raised in Ohio.
                 I've been passionate about web development for over <Career />{" "}
-                years. In 2019, I met and fell in love with my Dutch husband
-                Patrick, and in February of 2022, I moved to the Netherlands
-                where I currently live. :)
+                years. In February 2022, I moved to the Netherlands to live with
+                my Dutch husband.
               </p>
               <p>
                 I like reading, video games, traveling, motorcycling, and

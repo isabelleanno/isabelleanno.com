@@ -83,14 +83,7 @@ Add a new project here, as the first call to createProject().*/
         <span className="title">Projects</span>
         <h1 id="Projects">Projects</h1>
       </div>
-      <div className="slide">
-        <span className="title">Projects</span>
-        <div className="container">
-          <div className="row">
-            <p>Test</p>
-          </div>
-        </div>
-      </div>
+
       <Sect5Layout slides={projects} />
     </div>
   );

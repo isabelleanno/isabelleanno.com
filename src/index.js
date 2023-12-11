@@ -128,7 +128,7 @@ const Fullpage = function loadFullPage() {
           if (activeSection.anchor === "s1") {
             gsap
               .timeline()
-              .to("#header", { delay: 4, duration: 2, opacity: 1 })
+              .to("#header", { delay: 2, duration: 1, opacity: 1 })
               .to("#fp-nav", { duration: 1, opacity: 1 });
           } else {
             gsap
