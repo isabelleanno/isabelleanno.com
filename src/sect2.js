@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+import Typewriter from "typewriter-effect/dist/core";
 //Import individual fontawesome icons
 import {
   faDatabase,
@@ -18,6 +19,7 @@ import {
   faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
 import Age from "./age";
+import Career from "./careerLength";
 import { gsap } from "gsap";
 import Sect2Layout from "./sect2Layout";
 
@@ -45,6 +47,15 @@ export default function Sect2() {
     //Else just do nothing, return an empty useEffect (otherwise there will be an error since useEffect wasn't used.)
   } else useEffect(() => {});
 
+  new Typewriter("#typewriter", {
+    strings: [
+      "Junior Web Developer",
+      "Eater of Too Much Chocolate",
+      "UX/UI Design Connoisseur",
+    ],
+    autoStart: true,
+    loop: true,
+  });
   //Return JSX
   return (
     /*------------------------------------------- Slide 1 START vvv---------------------- */
@@ -68,19 +79,18 @@ export default function Sect2() {
               <h1 className="mb-2">
                 I am <span className="highlight-s2">Isabelle</span>
               </h1>
-              <h5 className="mb-4 IBM">
-                Web Designer & Developer👩‍💻 Eater of Chocolate🍫
-              </h5>
+              <h5 className="mb-4 IBM" id="typewriter"></h5>
               <p className="mb-4">
-                I am <Age /> years old. Born April 23, and raised in Ohio, I've
-                been passionate about web design for years. My love for my now
-                fiance took me all the way to the Netherlands in February of
-                2022, where I currently live. :)
+                I am <Age /> years old, born April 23, 2001 and raised in Ohio.
+                I've been passionate about web development for over <Career />{" "}
+                years. In 2019, I met and fell in love with my Dutch husband
+                Patrick, and in February of 2022, I moved to the Netherlands
+                where I currently live. :)
               </p>
               <p>
-                Some of my hobbies include reading, video games, traveling,
-                cross-stitching, motorcycling, card-making and basically
-                anything creative. I'm an only child, left-handed, and have an{" "}
+                I like reading, video games, traveling, motorcycling, and
+                drawing - basically anything creative or adventurous. I'm an
+                only child, left-handed, and have an{" "}
                 <a
                   href="https://www.16personalities.com/infj-personality"
                   target="_blank"
