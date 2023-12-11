@@ -163,7 +163,6 @@ const Fullpage = function loadFullPage() {
             $("#horizNav").trigger("click");
             clickCounter = clickCounter + 1;
           }
-          //Make it so every other slide on projects section is rendered with flex-row-reverse
         }}
         afterSlideLoad={function (origin, destination, direction) {
           let activeSlide = fullpage_api.getActiveSlide();
@@ -246,7 +245,8 @@ $("#horizNav").on("click", function (event) {
     horizNavDots.css("visibility", "visible");
   }
 });
-/* -------------------------------------------END OF DOCUMENT---------------------------------------------------*/
 
-//well actually, let's load everything first.... That's important, I guess.
+//let's load everything... That's important, I guess.
 ReactDOM.render(<Fullpage />, document.getElementById("react-root"));
+
+/* -------------------------------------------END OF DOCUMENT---------------------------------------------------*/

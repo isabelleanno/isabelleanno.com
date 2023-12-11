@@ -33,7 +33,7 @@ export default function Sect2() {
   var url = window.location.href.split("/");
   var lastPart = url.slice(-1);
 
-  //If last part of URL is #s2, AKA the first slide of this section, animare as so:
+  //If last part of URL is #s2, AKA the first slide of this section, animate as so:
   if (lastPart[0] === "#s2") {
     useEffect(() => {
       let ctx2 = gsap.context(() => {
@@ -47,15 +47,20 @@ export default function Sect2() {
     //Else just do nothing, return an empty useEffect (otherwise there will be an error since useEffect wasn't used.)
   } else useEffect(() => {});
 
-  new Typewriter("#typewriter", {
-    strings: [
-      "Junior Web Developer",
-      "Eater of Too Much Chocolate",
-      "UX/UI Design Connoisseur",
-    ],
-    autoStart: true,
-    loop: true,
-  });
+  //Add typewriter animation after the whole thing loads.
+  useEffect(() => {
+    new Typewriter("#typewriter", {
+      strings: [
+        "Junior Web Developer🤖",
+        "Eater of Too Much Chocolate 🍫",
+        "UX/UI Design Connoisseur 💻",
+      ],
+      autoStart: true,
+      loop: true,
+      delay: 20,
+    });
+  }, []);
+
   //Return JSX
   return (
     /*------------------------------------------- Slide 1 START vvv---------------------- */
