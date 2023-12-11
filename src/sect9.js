@@ -62,7 +62,7 @@ export default function Sect9() {
                     />
                   </h2>
                   <a
-                    href="https://www.linkedin.com/in/isabelle-anno-06aa36275/"
+                    href="https://www.linkedin.com/in/isabelle-anno/"
                     target="_blank"
                     className="clickMe"
                   >
