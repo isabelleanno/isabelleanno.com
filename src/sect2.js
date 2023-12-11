@@ -115,42 +115,8 @@ export default function Sect2() {
           </div>
         </div>
       </div>
-      {/*---------------------------------------End of slide 2 ^^^ | Start of slide 3 vvv-----*/}
-      <div className="slide">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 mb-2">
-              <h1>
-                My <span className="highlight-s2">favorite</span> tunes
-              </h1>
-              <p>Nothing beats coding alongside some good music </p>
-            </div>
-            <div className="col-6">
-              <iframe
-                style={{ borderRadius: 12 + "px" }}
-                src="https://open.spotify.com/embed/playlist/5GIwo59HwP5JfVcSFsPikO?utm_source=generator"
-                width="100%"
-                height="352"
-                allowFullScreen=""
-                allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-            </div>
-            <div className="col-6">
-              <iframe
-                style={{ borderRadius: 12 + "px" }}
-                src="https://open.spotify.com/embed/playlist/4IAV2A84msFhX4Jue4jZFV?utm_source=generator"
-                width="100%"
-                height="352"
-                allowFullScreen=""
-                allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/*--------------------------End of slide 3 ^^^ | Start of slide 4 vvv ----------------*/}
+
+      {/*--------------------------End of slide 2 ^^^ | Start of slide 3 vvv ----------------*/}
       <div className="slide">
         <div className="container">
           <div className="row">
@@ -217,7 +183,7 @@ export default function Sect2() {
           </div>
         </div>
       </div>
-      {/*--------------------------End of slide 4 ^^^ | Start of slide 5 vvv ----------------*/}
+      {/*--------------------------End of slide 3 ^^^ | Start of slide 4 vvv ----------------*/}
       <div className="slide">
         <div className="container">
           <div className="row">
@@ -320,6 +286,41 @@ export default function Sect2() {
               <div className="img-frame">
                 <img src={require("./Images/about/patrick.jpg")} alt="" />
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/*---------------------------------------End of slide 4 ^^^ | Start of slide 5 vvv-----*/}
+      <div className="slide">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 mb-2">
+              <h1>
+                My <span className="highlight-s2">favorite</span> tunes
+              </h1>
+              <p>Nothing beats coding alongside some good music </p>
+            </div>
+            <div className="col-6">
+              <iframe
+                style={{ borderRadius: 12 + "px" }}
+                src="https://open.spotify.com/embed/playlist/5GIwo59HwP5JfVcSFsPikO?utm_source=generator"
+                width="100%"
+                height="352"
+                allowFullScreen=""
+                allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div className="col-6">
+              <iframe
+                style={{ borderRadius: 12 + "px" }}
+                src="https://open.spotify.com/embed/playlist/4IAV2A84msFhX4Jue4jZFV?utm_source=generator"
+                width="100%"
+                height="352"
+                allowFullScreen=""
+                allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
         </div>
