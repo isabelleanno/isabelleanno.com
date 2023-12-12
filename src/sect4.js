@@ -206,7 +206,29 @@ export default function Sect4() {
                   <img src={require("./Images/certs/React.png")} alt="" />
                 </div>
               </div>
-              {/*-------------------------End of entry 8 ^^^ | Start of PRESENT vvv ----------------*/}
+              {/*-------------------------End of entry 8 ^^^ | Start of entry 9 vvv ----------------*/}
+              <div className="col-12 d-flex">
+                <div className="col-2 d-flex align-items-center justify-content-end">
+                  <p className="m-0 bold">December 4, 2023</p>
+                </div>
+                <div className="col-1 d-flex justify-content-center align-items-center">
+                  <a className="sidenav-btn"></a>
+                  <a className="separator"></a>
+                </div>
+                <div className="col my-5">
+                  <h1 className="IBM bold">SheCodes AI Addon Certification</h1>
+                  <p>
+                    With this certificate, I learned more about AI technology
+                    and prompt engineering. It's certainly an intruguing topic
+                    for me. Since AI is changing so rapidly, it was hard to find
+                    a place to start learning about it. This course helped me
+                    realize that, when used correctly, AI can be a great tool
+                    for a variety of purposes, and to not be afraid of it.
+                  </p>
+                  <img src={require("./Images/certs/AI.png")} alt="" />
+                </div>
+              </div>
+              {/*-------------------------End of Last Entry ^^^ | Start of PRESENT vvv ----------------*/}
               <div className="col-12 d-flex">
                 <div className="col-2 d-flex align-items-center justify-content-end">
                   <p className="m-0 bold">Today</p>

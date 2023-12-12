@@ -54,6 +54,7 @@ export default function Sect2() {
         "Junior Web Developer🤖",
         "Eater of Too Much Chocolate 🍫",
         "UX/UI Design Connoisseur 💻",
+        "Likes making logos 🎨",
       ],
       autoStart: true,
       loop: true,
@@ -228,7 +229,7 @@ export default function Sect2() {
                   <i className="fa-brands fa-linkedin me-3"></i>
                 </h2>
                 <a
-                  href="https://www.linkedin.com/in/isabelle-anno-06aa36275/"
+                  href="https://www.linkedin.com/in/isabelle-anno/"
                   target="_blank"
                   className="clickMe"
                 >
