@@ -9,7 +9,16 @@ Passes the date, the index, and the lastSlide var to ProjTimeline.js to determin
 visual with date.
 */
 class Sect5Layout extends Component {
-  componentDidMount() {}
+  //After mounting, add flex-row-reverse class to odd numbered projects, so they appear differently.
+  componentDidMount() {
+    let rowArray = Array.from(document.getElementsByClassName("layoutCol"));
+    //LayoutCol is a div on each project that encompasses the project image and description.
+    rowArray.map(function (row, index) {
+      if (index % 2 !== 0) {
+        row.classList.add("flex-row-reverse");
+      }
+    });
+  }
   render() {
     var slides = this.props.slides;
     var lastSlide = this.props.slides.length - 1;

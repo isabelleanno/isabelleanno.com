@@ -1,7 +1,5 @@
 import React from "react";
 import Sect5Layout from "./sect5Layout";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 /*
 This section is unique from all the other sections. It is responsible for displaying the projects section and slides.
 My goal is to easily be able to add a project to the code, without having to reformat everything in the timeline,
@@ -41,8 +39,8 @@ Add a new project here, as the first call to createProject().*/
     createProject(
       "Better Balance Safer You",
       "My old tae kwon do instructor is starting a self-defense program for seniors, and needs my help making a website for it. Eagerly, I deployed my WordPress skills learned in my Content Management Systems class to make him a site. I'm using WordPress since he needs to manage the site's users and add blog posts. This way, we already thave that in the site via the wordpress dashboard, which saves me from building those features from scratch. Although it's not hand-coded, I did have to add custom CSS and JavaScript- something non-developers can't offer. Although it's still a work in progress,  I'm proud of it. I'm curious about how to create and manage a theme.",
-      "placeholder",
-      "November, 2023- TODAY. Work in progress."
+      "BBSU",
+      "November, 2023 - TODAY"
     ),
     createProject(
       "React Dictionary App",
@@ -59,43 +57,43 @@ Add a new project here, as the first call to createProject().*/
     createProject(
       "Mama Lu's",
       "This was my absolute favorite project in college. I made this site for my PHP professor, Kathy Ison. She is retiring soon and loves baking, so I made the logo in inkscape and coded site from scratch using PHP. It was a group project and a special honor. No other students besides my team got this privelage - I felt so lucky. Professor Ison and I are still in touch, and I am very fond of her.",
-      "placeholder",
+      "mamalu's",
       "May 5, 2023"
     ),
     createProject(
       "The Book Nook",
       "I polished and improved my skills with this project. Each image was edited to fit the color scheme, and I made the background images myself. It was a fun process and really gave me confidence in my abilities.",
-      "placeholder",
+      "booknook",
       "March 2, 2023"
     ),
     createProject(
       "Web Graphics Design",
       "This was one of my favorite classes in college. We learned how to use GIMP and InkScape, and the difference between vector images, JPG and PNG. I benefitted tremendously from these projects and still use image editing skills to this day.",
-      "placeholder",
+      "graphicdesign",
       "September-November of 2022"
     ),
     createProject(
       "A Thousand Words Co.",
       "This site taught me more about using images online. We discussed copyright laws, licenses and fair use. I decided to source all the images from unplash.com, which is fair use.",
-      "placeholder",
+      "athousandwords",
       "October 26, 2022"
     ),
     createProject(
       "Chairing Is Caring Co.",
       "I made a fake architecture company using Bootstrap as the final project of my advanced CSS class. It's fully responsive, and I'm proud of the color scheme and fonts used.",
-      "placeholder",
+      "chairing",
       "May 24, 2022"
     ),
     createProject(
       "JavaScript Puzzle Final Project",
       "Although not responsive on mobile devices, I'm proud of this puzzle game as it goes above and beyond and uses the unsplash API- a skill I learned from SheCodes- to find pictures on the web. You can use the settings to choose the difficulty, and every image is unique.",
-      "placeholder",
+      "JSPuzzle",
       "May 4, 2022"
     ),
     createProject(
       "Kirby Club",
       "This site was coded with Bootstrap. It taught me the grid system and other features of the popular framework.",
-      "placeholder",
+      "kirby",
       "May 3, 2022"
     ),
     createProject(
@@ -140,31 +138,6 @@ Add a new project here, as the first call to createProject().*/
         <h1 id="Projects">Projects</h1>
       </div>
       <span className="title">Projects</span>
-      {/*------------------------------------------- Slide 1 START vvv---------------------- */}
-      <div className="slide">
-        <div className="container mt-5">
-          <div className="row mb-4">
-            <div className="col d-flex p-5">
-              {/*-----------------------------------------Start of LEFT SIDE vvv --------------------------*/}
-              <div className="col-5">
-                <h1 className="display-1 avenir">A Timeline</h1>
-                <div className="col-10"></div>
-              </div>
-              {/*-------------------------End of LEFT SIDE ^^^ | Start of RIGHT SIDE vvv ----------------*/}
-              <div className="col-7">
-                <img
-                  src={require("./Images/projects/turn-on-nav.gif")}
-                  alt=""
-                />
-                <a className="btn-link-reverse mt-3 ms-1" href="#s5/2">
-                  Let's go <FontAwesomeIcon icon={faArrowRight} />
-                </a>
-              </div>
-              {/*-------------------------End of RIGHT SIDE ^^^ | END OF SLIDE vvv ----------------*/}
-            </div>
-          </div>
-        </div>
-      </div>
       <Sect5Layout slides={projects} />
     </div>
   );

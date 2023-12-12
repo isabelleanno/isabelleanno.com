@@ -474,11 +474,6 @@ div.hs5 > .fp-controlArrow.fp-next {
   bottom: 30px;
   right: 2px;
 }
-.timeline {
-  position: relative;
-  top: 13px;
-  border: 1px solid #ff3c00;
-}
 
 .date {
   z-index: 5;
@@ -487,6 +482,7 @@ div.hs5 > .fp-controlArrow.fp-next {
   bottom: 23px;
   left: 10px;
   font-weight: bold;
+  color: #ff3c00;
 }
 #date-start {
   left: -51px;
@@ -497,7 +493,7 @@ div.hs5 > .fp-controlArrow.fp-next {
 
 hr.timelineHR {
   width: 100vw;
-  border: 1px solid #ff3c00;
+  border: 1px solid var(--text-color);
 }
 hr#firstHR {
   width: 73vw;
