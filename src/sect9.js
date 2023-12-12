@@ -25,7 +25,7 @@ export default function Sect9() {
                 <div
                   className="alert alert-success text-center"
                   role="alert"
-                  id="email-alert"
+                  id="email-alert2"
                 >
                   ✅Email address copied successfully:{" "}
                   <strong>isabelleanno.webdev@gmail.com</strong>
@@ -79,15 +79,15 @@ export default function Sect9() {
                   </h2>
                   <button
                     className="hidden-button"
-                    id="emailAddress"
+                    id="emailAddress2"
                     onClick={() => {
                       //Copy the email address text and show alert for 4 seconds, then hide it again.
                       var copyText = "isabelleanno.webdev@gmail.com";
                       navigator.clipboard.writeText(copyText);
-                      let bootstrapAlert =
-                        document.getElementById("email-alert");
-                      bootstrapAlert.style.opacity = 1;
-                      gsap.to(bootstrapAlert, {
+                      let bootstrapAlert2 =
+                        document.getElementById("email-alert2");
+                      bootstrapAlert2.style.opacity = 1;
+                      gsap.to(bootstrapAlert2, {
                         delay: 4,
                         opacity: 0,
                       });
