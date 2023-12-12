@@ -82,7 +82,7 @@ export default function Sect2() {
       <div className="slide">
         <div className="container">
           <div className="row">
-            <div className="col-6">
+            <div className="col-6 d-flex flex-column justify-content-center">
               <h1 className="mb-2">
                 I am <span className="highlight-s2">Isabelle</span>
               </h1>
@@ -199,89 +199,92 @@ export default function Sect2() {
                 <strong>isabelleanno.webdev@gmail.com</strong>
               </div>
               {/* Alert Body End*/}
-              <h2 className="mb-3">
-                Where to <span className="highlight-s2">Find</span> Me
-              </h2>
-              <p>
-                Take a look at my little corner of the internet. Or
-                <a
-                  href="https://isabelleanno.com/#s7"
-                  className="highlight-s2 ms-2"
-                >
-                  Contact Me
-                </a>
-                ! Let's be friends :-)
-              </p>
-              <span className="d-flex align-items-center">
-                <h2 className="d-inline">
-                  <i className="fa-brands fa-github me-3"></i>
+              <div>
+                <h2 className="mb-3">
+                  Where to <span className="highlight-s2">Find</span> Me
                 </h2>
-                <a
-                  href="https://github.com/isabelleanno"
-                  target="_blank"
-                  className="clickMe"
-                >
-                  Check out my GitHub
-                </a>
-              </span>
-              <span className="d-flex align-items-center">
-                <h2 className="d-inline">
-                  <i className="fa-brands fa-linkedin me-3"></i>
-                </h2>
-                <a
-                  href="https://www.linkedin.com/in/isabelle-anno/"
-                  target="_blank"
-                  className="clickMe"
-                >
-                  See my LinkedIn
-                </a>
-              </span>
-              <span className="d-flex align-items-center">
-                <h2 className="d-inline">
-                  <i className="fa-solid fa-envelope-circle-check me-3"></i>
-                </h2>
-                <button
-                  className="hidden-button"
-                  id="emailAddress"
-                  onClick={() => {
-                    //Copy the email address text and show alert for 4 seconds, then hide it again.
-                    var copyText = "isabelleanno.webdev@gmail.com";
-                    navigator.clipboard.writeText(copyText);
-                    let bootstrapAlert = document.getElementById("email-alert");
-                    bootstrapAlert.style.opacity = 1;
-                    gsap.to(bootstrapAlert, {
-                      delay: 4,
-                      opacity: 0,
-                    });
-                  }}
-                >
-                  Email me at isabelleanno.webdev@gmail.com
-                </button>
-              </span>
-              <span className="d-flex align-items-center">
-                <h2 className="d-inline">
-                  <i className="fa-solid fa-mug-saucer me-3"></i>
-                </h2>
-                <a
-                  href="https://www.buymeacoffee.com/isabelleanno"
-                  target="_blank"
-                  className="clickMe"
-                >
-                  Buy me a coffee (if you so desire)
-                </a>
-              </span>
-              <span className="d-flex align-items-center">
-                <h2 className="d-inline">
-                  <i className="fa-solid fa-code me-3"></i>
-                </h2>
-                <a
-                  href="https://www.shecodes.io/graduates/15539-isabelle-anno"
-                  target="_blank"
-                  className="clickMe"
-                >
-                  See my SheCodes Profile
-                </a>
-              </span>
+                <p>
+                  Take a look at my little corner of the internet. Or
+                  <a
+                    href="https://isabelleanno.com/#s7"
+                    className="highlight-s2 ms-2"
+                  >
+                    Contact Me
+                  </a>
+                  ! Let's be friends :-)
+                </p>
+                <span className="d-flex align-items-center">
+                  <h2 className="d-inline">
+                    <i className="fa-brands fa-github me-3"></i>
+                  </h2>
+                  <a
+                    href="https://github.com/isabelleanno"
+                    target="_blank"
+                    className="clickMe"
+                  >
+                    Check out my GitHub
+                  </a>
+                </span>
+                <span className="d-flex align-items-center">
+                  <h2 className="d-inline">
+                    <i className="fa-brands fa-linkedin me-3"></i>
+                  </h2>
+                  <a
+                    href="https://www.linkedin.com/in/isabelle-anno/"
+                    target="_blank"
+                    className="clickMe"
+                  >
+                    See my LinkedIn
+                  </a>
+                </span>
+                <span className="d-flex align-items-center">
+                  <h2 className="d-inline">
+                    <i className="fa-solid fa-envelope-circle-check me-3"></i>
+                  </h2>
+                  <button
+                    className="hidden-button"
+                    id="emailAddress"
+                    onClick={() => {
+                      //Copy the email address text and show alert for 4 seconds, then hide it again.
+                      var copyText = "isabelleanno.webdev@gmail.com";
+                      navigator.clipboard.writeText(copyText);
+                      let bootstrapAlert =
+                        document.getElementById("email-alert");
+                      bootstrapAlert.style.opacity = 1;
+                      gsap.to(bootstrapAlert, {
+                        delay: 4,
+                        opacity: 0,
+                      });
+                    }}
+                  >
+                    Email me at isabelleanno.webdev@gmail.com
+                  </button>
+                </span>
+                <span className="d-flex align-items-center">
+                  <h2 className="d-inline">
+                    <i className="fa-solid fa-mug-saucer me-3"></i>
+                  </h2>
+                  <a
+                    href="https://www.buymeacoffee.com/isabelleanno"
+                    target="_blank"
+                    className="clickMe"
+                  >
+                    Buy me a coffee (if you so desire)
+                  </a>
+                </span>
+                <span className="d-flex align-items-center">
+                  <h2 className="d-inline">
+                    <i className="fa-solid fa-code me-3"></i>
+                  </h2>
+                  <a
+                    href="https://www.shecodes.io/graduates/15539-isabelle-anno"
+                    target="_blank"
+                    className="clickMe"
+                  >
+                    See my SheCodes Profile
+                  </a>
+                </span>
+              </div>
             </div>
             <div className="col-5">
               <div className="img-frame">
