@@ -467,6 +467,16 @@ div.hs5 > .fp-controlArrow.fp-next {
   border-color: transparent transparent transparent#dedede !important;
 }
 /*Slides 2 and beyond*/
+a.proj-link {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 5.5vh;
+  text-decoration: none;
+}
+.project-photo-frame {
+  width: 100%;
+  height: 55vh;
+  margin-bottom: 5vh;
+}
 .btn-horizontal {
   border: 2px solid #ff3c00;
   position: relative;
@@ -501,11 +511,7 @@ hr#firstHR {
 hr#timelineHREnd {
   width: calc(73vw - 4px);
 }
-.project-photo-frame {
-  width: 100%;
-  height: 55vh;
-  margin-bottom: 5vh;
-}
+
 /*---------------------------Sixth and seventh Section */
 .hs6,
 .hs7 {

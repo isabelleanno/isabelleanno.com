@@ -41,12 +41,21 @@ class Sect5Layout extends Component {
                   <div className="row">
                     <div className="col-12 d-flex layoutCol">
                       <div className="col-6 d-flex flex-column align-items-center justify-content-center">
-                        <div className="project-photo-frame d-flex flex-column">
-                          {slide.PhotoSrc}
-                        </div>
+                        <a href={slide.link} target="_blank">
+                          {" "}
+                          <div className="project-photo-frame d-flex flex-column">
+                            {slide.PhotoSrc}
+                          </div>
+                        </a>
                       </div>
                       <div className="col-6 d-flex flex-column justify-content-center mx-3 px-3">
-                        <h1 className="IBM">{slide.Title}</h1>
+                        <a
+                          href={slide.link}
+                          target="_blank"
+                          className="proj-link"
+                        >
+                          {slide.Title}
+                        </a>
                         <p>{slide.Description}</p>
                       </div>
                     </div>
