@@ -18,8 +18,8 @@ PART 3: Miscellaneous JavaScript functions/event listeners with plenty of commen
 
 //Dependencies
 import React, { useState, useEffect } from "react";
+import ReactDOM from "react-dom/client";
 import $, { event } from "jquery";
-import ReactDOM from "react-dom";
 import { gsap } from "gsap";
 import ReactFullpage from "@fullpage/react-fullpage";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -245,8 +245,9 @@ $("#horizNav").on("click", function (event) {
     horizNavDots.css("visibility", "visible");
   }
 });
+const root = ReactDOM.createRoot(document.getElementById("react-root"));
 
 //let's load everything... That's important, I guess.
-ReactDOM.render(<Fullpage />, document.getElementById("react-root"));
+root.render(<Fullpage />);
 
 /* -------------------------------------------END OF DOCUMENT---------------------------------------------------*/
