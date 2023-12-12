@@ -44,7 +44,7 @@ export default function Sect9() {
                     please read the next slide to{" "}
                     <b>
                       <a
-                        href="https://isabelleanno.com/#s8/1"
+                        href="https://isabelleanno.com/#s9/1"
                         className="clickMe"
                       >
                         see what I'm looking for in a job{" "}
@@ -206,7 +206,7 @@ export default function Sect9() {
                 <b>contribute to a better, more vibrant web</b> that leaves a
                 unique impression on the user. I'm really excited about what the
                 future holds! Do we share similar values?{" "}
-                <a href="https://isabelleanno.com/#s8" className="clickMe">
+                <a href="https://isabelleanno.com/#s9" className="clickMe">
                   <b>Get in touch with me</b>
                 </a>{" "}
                 and let's create something magical together!🤍
