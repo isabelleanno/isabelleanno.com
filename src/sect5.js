@@ -51,7 +51,7 @@ Add a new project here, as the first call to createProject().*/
     createProject(
       "React Weather App",
       "I finished college and learned React.js from SheCodes, where I built this working weather app in React. It's a significant improvement from the one I made in 2021 and was the first time I used react. I learned about components and the UseState hook. I grew fond of React. It's much more organized and powerful than vanilla JS.",
-      "placeholder",
+      "weather-react",
       "July 7, 2023"
     ),
     createProject(
@@ -118,7 +118,7 @@ Add a new project here, as the first call to createProject().*/
     createProject(
       "Weather Website",
       "This weather site was made during my SheCodes Plus course. It uses an API from openweathermap.com to get real-time weather data. I also learned basic JavaScript and the concept of APIs. I am proud of it, but I still haven't yet learned responsive techniques for making it look good on every device.",
-      "placeholder",
+      "weather",
       "May 26, 2021"
     ),
     //Oldest project below
