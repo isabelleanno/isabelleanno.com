@@ -57,8 +57,8 @@ const Fullpage = function loadFullPage() {
   const [isLoading, setLoading] = useState(true);
 
   function fakeRequest() {
-    //Simulates a request; makes a "promise" that'll run for 50 milliseconds
-    return new Promise((resolve) => setTimeout(() => resolve(), 500));
+    //Simulates a request; makes a "promise" that'll run for 500 milliseconds
+    return new Promise((resolve) => setTimeout(() => resolve(), 5000));
   }
   //After render, remove spinner element and set change setLoading to false.
   useEffect(() => {
