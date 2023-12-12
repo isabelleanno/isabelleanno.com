@@ -45,7 +45,7 @@ Add a new project here, as the first call to createProject().*/
     createProject(
       "React Dictionary App",
       "This was my second React project, using two API's: one for the definition, and the other for the images. I enjoyed this project and am proud of it. It cemented the concepts I learned from my first ever React project.",
-      "placeholder",
+      "dictionary",
       "July 7, 2023"
     ),
     createProject(
