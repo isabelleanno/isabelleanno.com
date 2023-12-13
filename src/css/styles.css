@@ -348,7 +348,10 @@ span.nl {
   margin: 0;
   font-family: "Avenir Next";
 }
-
+.about-frame {
+  background-color: #dbcbf7;
+  box-shadow: -20px 20px 3px #b7a5d5de;
+}
 /*Second Slide */
 img[src*="isabelleanno"] {
   width: 95%;
@@ -399,6 +402,9 @@ img[src*="patrick"] {
 }
 div.img-frame {
   margin: 20px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
 }
 /*----------------------------Third & Fourth Sections */
 .hs3,
