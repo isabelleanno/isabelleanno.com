@@ -1,10 +1,14 @@
 import { useRef, useEffect } from "react";
 import Typewriter from "typewriter-effect/dist/core";
 //Import individual fontawesome icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDatabase,
   faServer,
   faPaintbrush,
+  faArrowRight,
+  faFile,
+  faUserTie,
   faWheelchair,
   faRobot,
 } from "@fortawesome/free-solid-svg-icons";
@@ -83,7 +87,7 @@ export default function Sect2() {
         <div className="container">
           <div className="row d-flex flex-column align-items-center mb-4">
             <div className="col-11 frame about-frame p-5">
-              <div className="col-12 m-3 d-flex">
+              <div className="col m-1 d-flex">
                 <div className="col-6 d-flex flex-column justify-content-center">
                   <h1 className="mb-2">
                     I am <span className="highlight-s2">Isabelle</span>
@@ -110,7 +114,7 @@ export default function Sect2() {
                     healthy work environment filled with humor & good coffee.
                   </p>
                 </div>
-                <div className="col-6">
+                <div className="col d-flex flex-column justify-content-center">
                   <div className="img-frame">
                     <img
                       src={require("./Images/about/isabelleanno.jpg")}
@@ -123,13 +127,12 @@ export default function Sect2() {
           </div>
         </div>
       </div>
-
       {/*--------------------------End of slide 2 ^^^ | Start of slide 3 vvv ----------------*/}
       <div className="slide">
         <div className="container">
           <div className="row d-flex flex-column align-items-center mb-4">
-            <div className="col-11 frame about-frame p-4">
-              <div className="col-12 m-2 d-flex flex-column align-items-center">
+            <div className="col frame about-frame p-4">
+              <div className="col m-2 d-flex flex-column align-items-center">
                 <div className="col-8">
                   <h1 className="mb-2 text-center">
                     My <span className="highlight-s2">Knowledge</span> and
@@ -198,12 +201,71 @@ export default function Sect2() {
           </div>
         </div>
       </div>
-      {/*------------------------------------------- Slide 1 START vvv---------------------- */}
+      {/*------------------------------------------- Slide 3 end ^^^ Slide 4 START vvv---------------------- */}
+      <div className="slide">
+        <div className="container">
+          <div className="row d-flex flex-column align-items-center mb-4">
+            <div className="col frame about-frame p-5">
+              <div className="col m-5 d-flex">
+                <div className="col-7 d-flex flex-column justify-content-center">
+                  <h1 className="mb-2">
+                    Why <span className="highlight-s2">choose</span> me?
+                  </h1>
+                  <p>
+                    My associate's degree provides me with a{" "}
+                    <b>solid foundation</b> in web development and graphic
+                    design, alongside my <b>diverse portfolio</b> showcasing my
+                    skills. While I am a junior developer, my fresh perspective,
+                    <b>enthusiasm, and commitment</b> to continuous learning
+                    make me an ideal candidate for your website, whether you’re
+                    an individual or a company. There are many options out
+                    there, and <b>I’m honored</b> that you’re considering me for
+                    your project!{" "}
+                  </p>
+                  <p>
+                    To learn more, please take the time to look at these
+                    documents <FontAwesomeIcon icon={faArrowRight} />{" "}
+                  </p>
+                </div>
+                <div className="col-5 d-flex flex-column align-items-center">
+                  <h2>Learn More</h2>
+                  <div className="col-10 d-flex flex-column align-items-center ">
+                    <a
+                      className="btn-link-reverse about-btn first-btn-lr my-3"
+                      href="isabelleanno-resume.pdf"
+                      download="isabelleanno-resume.pdf"
+                    >
+                      <FontAwesomeIcon icon={faFile} /> Download my Resume
+                    </a>
+                    <a
+                      className="btn-link-reverse-left about-btn second-btn-lr my-3"
+                      href="isabelleanno-resume.pdf"
+                      download="isabelleanno-resume.pdf"
+                    >
+                      <FontAwesomeIcon icon={faUserTie} /> Hire me for Freelance
+                      Work
+                    </a>
+                    <a
+                      className="btn-link-reverse about-btn third-btn-lr my-3"
+                      href="isabelleanno-resume.pdf"
+                      download="isabelleanno-resume.pdf"
+                    >
+                      <FontAwesomeIcon icon={faPaintbrush} /> Collaborate on a
+                      project
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/*-----------------------------------------------End ^^ start vvv------------------------------------------*/}
       <div className="slide">
         <div className="container">
           <div className="row mb-4">
             <div className="col p-2 d-flex d-flex justify-content-center frame about-frame">
-              <div className="col-5 ps-5 d-flex flex-column">
+              <div className="col-5 ps-4 d-flex flex-column">
                 {/*Alert start */}
                 <div className="col-12 d-flex flex-column m-0 align-items-center">
                   {/*Alert Body */}
@@ -225,7 +287,7 @@ export default function Sect2() {
                   <p>
                     Take a look at my little corner of the internet. Or
                     <a
-                      href="https://isabelleanno.com/#s7"
+                      href="https://isabelleanno.com/#s9"
                       className="highlight-s2 ms-2"
                     >
                       Contact Me
@@ -305,8 +367,8 @@ export default function Sect2() {
                   </span>
                 </div>
               </div>
-              <div className="col-6 px-5 py-4">
-                <div className="img-frame">
+              <div className="col-6 m-1 p-4 d-flex justify-content-center">
+                <div className="img-frame img-frame-2">
                   <img src={require("./Images/about/patrick.jpg")} alt="" />
                 </div>
               </div>
@@ -314,8 +376,7 @@ export default function Sect2() {
           </div>
         </div>
       </div>
-
-      {/*---------------------------------------End of slide 3 ^^^ | Start of slide 4 vvv-----*/}
+      {/*---------------------------------------End of slide 5 ^^^ | Start of slide 6 vvv-----*/}
       <div className="slide">
         <div className="container">
           <div className="row d-flex flex-column align-items-center mb-4">
@@ -329,7 +390,7 @@ export default function Sect2() {
                     Nothing beats coding alongside some good music{" "}
                   </p>
                 </div>
-                <div class="col py-3 d-flex justify-content-center">
+                <div className="col py-3 d-flex justify-content-center">
                   <div className="col-6 mx-2">
                     <iframe
                       style={{ borderRadius: 12 + "px" }}
@@ -358,7 +419,7 @@ export default function Sect2() {
           </div>
         </div>
       </div>
-      {/*---------------------------End of slide 4 ^^^ | END OF COMPONENT vvv ----------------*/}
+      {/*---------------------------End of slide 6 ^^^ | END OF COMPONENT vvv ----------------*/}
     </div>
   );
 }

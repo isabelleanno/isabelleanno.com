@@ -264,7 +264,8 @@ a#whatsAppModalButton:hover {
   border-width: 20.5px 34px 20.5px 0 !important;
 }
 
-a.btn-link-reverse {
+a.btn-link-reverse,
+a.btn-link-reverse-left {
   font-family: "Roboto Mono", monospace;
   display: inline-block;
   border: 1px solid var(--text-color);
@@ -274,7 +275,8 @@ a.btn-link-reverse {
   color: var(--text-color);
   text-decoration: none;
 }
-a.btn-link-reverse:hover {
+a.btn-link-reverse:hover,
+a.btn-link-reverse-left:hover {
   font-family: "Roboto Mono", monospace;
   color: var(--text-color);
   text-decoration: underline;
@@ -282,6 +284,22 @@ a.btn-link-reverse:hover {
   -webkit-transition: background-position 0.75s;
   -moz-transition: background-position 0.75s;
   transition: background-position 0.75s;
+}
+a.btn-link-reverse-left:hover {
+  background-position: 100% 0;
+}
+a.about-btn {
+  width: 100%;
+  text-align: center;
+}
+a.first-btn-lr {
+  background-image: linear-gradient(to right, #d6f6d65b 50%, transparent 50%);
+}
+a.second-btn-lr {
+  background-image: linear-gradient(to right, #d6f6d6bd 50%, transparent 50%);
+}
+a.third-btn-lr {
+  background-image: linear-gradient(to right, #d6f6d6 50%, transparent 50%);
 }
 /*--------------------------------------------5.) Sections & Slides-------------------------------------------------------------*/
 
@@ -402,9 +420,11 @@ img[src*="patrick"] {
 }
 div.img-frame {
   margin: 20px;
-  width: 90%;
   display: flex;
   justify-content: center;
+}
+div.img-frame-2 {
+  width: 80%;
 }
 /*----------------------------Third & Fourth Sections */
 .hs3,
