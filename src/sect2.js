@@ -239,7 +239,7 @@ export default function Sect2() {
                     </a>
                     <a
                       className="btn-link-reverse-left about-btn second-btn-lr my-3"
-                      href="isabelleanno-resume.pdf"
+                      href="IsabelleAnno-Freelancing-FAQ.pdf"
                       download="isabelleanno-resume.pdf"
                     >
                       <FontAwesomeIcon icon={faUserTie} /> Hire me for Freelance
