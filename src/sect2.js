@@ -240,7 +240,7 @@ export default function Sect2() {
                     <a
                       className="btn-link-reverse-left about-btn second-btn-lr my-3"
                       href="IsabelleAnno-Freelancing-FAQ.pdf"
-                      download="isabelleanno-resume.pdf"
+                      target="_blank"
                     >
                       <FontAwesomeIcon icon={faUserTie} /> Hire me for Freelance
                       Work
@@ -248,7 +248,6 @@ export default function Sect2() {
                     <a
                       className="btn-link-reverse about-btn third-btn-lr my-3"
                       href="isabelleanno-resume.pdf"
-                      download="isabelleanno-resume.pdf"
                     >
                       <FontAwesomeIcon icon={faPaintbrush} /> Collaborate on a
                       project
