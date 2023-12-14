@@ -16,7 +16,12 @@ export default function Sect5() {
     return {
       Title: title,
       Description: description,
-      PhotoSrc: <img src={require(`./Images/projects/${photoSrc}.png`)}></img>,
+      PhotoSrc: (
+        <img
+          src={require(`./Images/projects/${photoSrc}.png`)}
+          alt="A display of the current project"
+        ></img>
+      ),
       link: link,
       Date: date,
     };

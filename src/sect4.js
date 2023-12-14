@@ -62,7 +62,10 @@ export default function Sect4() {
                     college. Through SheCodes Basic, I made my first real
                     website about my dog Henry.
                   </p>
-                  <img src={require("./Images/certs/basic.png")} alt="" />
+                  <img
+                    src={require("./Images/certs/basic.png")}
+                    alt="SheCodes Verified Certificate of Achievement. March 22, 2021. Isabelle Anno has successfully completed the introduction to Coding workshop."
+                  />
                 </div>
               </div>
               {/*-------------------------End of entry 2 ^^^ | Start of entry 3 vvv ----------------*/}
@@ -84,7 +87,10 @@ export default function Sect4() {
                     college in Ohio that taught web design & development,
                     preferably online.
                   </p>
-                  <img src={require("./Images/certs/plus.png")} alt="" />
+                  <img
+                    src={require("./Images/certs/plus.png")}
+                    alt="SheCodes Verified Certificate of Achievement. May 31, 2021. Isabelle Anno has successfully completed the web development workshop."
+                  />
                 </div>
               </div>
               {/*-------------------------End of entry 3 ^^^ | Start of entry 4 vvv ----------------*/}
@@ -105,7 +111,10 @@ export default function Sect4() {
                     accomplished! I will go on to greatly refine my Bootstrap
                     skills in college.
                   </p>
-                  <img src={require("./Images/certs/Responsive.png")} alt="" />
+                  <img
+                    src={require("./Images/certs/Responsive.png")}
+                    alt="SheCodes Verified Certificate of Achievement. July 5, 2021. Isabelle Anno has successfully completed the Responsive Web Development workshop."
+                  />
                 </div>
               </div>
               {/*-------------------------End of entry 4 ^^^ | Start of entry 5 vvv ----------------*/}
@@ -154,7 +163,10 @@ export default function Sect4() {
                     there's always change happening and something new to
                     contribute to.
                   </p>
-                  <img src={require("./Images/certs/degree.jpg")} alt="" />
+                  <img
+                    src={require("./Images/certs/degree.jpg")}
+                    alt="Stark State College. North Canton, Ohio. May 14, 2023. Associate's of applied business web design and development."
+                  />
                 </div>
               </div>
               {/*-------------------------End of entry 6 ^^^ | Start of entry 7 vvv ----------------*/}
@@ -175,12 +187,15 @@ export default function Sect4() {
                   </p>
                   <div className="col-12 d-flex" id="certs-border">
                     <div className="col-6">
-                      <img src={require("./Images/certs/sql.jpg")} alt="" />
+                      <img
+                        src={require("./Images/certs/sql.jpg")}
+                        alt="Stark State College Career Enhancement Certificate in Microsoft SQL Server. May 14, 2023."
+                      />
                     </div>
                     <div className="col-6">
                       <img
                         src={require("./Images/certs/webdesign.jpg")}
-                        alt=""
+                        alt="Stark State College Career Enhancement Certificate in Web Design. May 14, 2023."
                       />
                     </div>
                   </div>
@@ -203,7 +218,10 @@ export default function Sect4() {
                     and built another weather interface using react, as well as
                     a working dictionary.
                   </p>
-                  <img src={require("./Images/certs/React.png")} alt="" />
+                  <img
+                    src={require("./Images/certs/React.png")}
+                    alt="SheCodes Verified Certificate of Achievement. July 19, 2023. Isabelle Anno has successfully completed the Advanced React Development workshop."
+                  />
                 </div>
               </div>
               {/*-------------------------End of entry 8 ^^^ | Start of entry 9 vvv ----------------*/}
@@ -225,7 +243,10 @@ export default function Sect4() {
                     realize that, when used correctly, AI can be a great tool
                     for a variety of purposes, and to not be afraid of it.
                   </p>
-                  <img src={require("./Images/certs/AI.png")} alt="" />
+                  <img
+                    src={require("./Images/certs/AI.png")}
+                    alt="SheCodes Verified Certificate of Achievement. December 4, 2023. Isabelle Anno has successfully completed the Introduction to Artificial Intelligence workshop."
+                  />
                 </div>
               </div>
               {/*-------------------------End of Last Entry ^^^ | Start of PRESENT vvv ----------------*/}

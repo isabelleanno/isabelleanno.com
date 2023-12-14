@@ -118,7 +118,7 @@ export default function Sect2() {
                   <div className="img-frame">
                     <img
                       src={require("./Images/about/isabelleanno.jpg")}
-                      alt=""
+                      alt="Isabelle Anno admiring a view from a mountaintop in Cochem, Germany"
                     />
                   </div>
                 </div>
@@ -368,7 +368,10 @@ export default function Sect2() {
               </div>
               <div className="col-6 m-1 p-4 d-flex justify-content-center">
                 <div className="img-frame img-frame-2">
-                  <img src={require("./Images/about/patrick.jpg")} alt="" />
+                  <img
+                    src={require("./Images/about/patrick.jpg")}
+                    alt="Isabelle and her husband Patrick kissing at a botanical garden"
+                  />
                 </div>
               </div>
             </div>
