@@ -220,11 +220,23 @@ settings.addEventListener("mouseover", (event) => {
   const sectionColor =
     window.getComputedStyle(sectionBackgrounds).backgroundColor; //Grab the background color of active section
   const dropdownMenu = document.getElementById("dropdownMenu"); //Grab the dropdown menu
-  dropdownMenu.style.backgroundColor = sectionColor; //Do the thing (make it the same backround color)
+  dropdownMenu.style.backgroundColor = sectionColor; //Do the thing (make it the same background color)
 });
 
 /*Now that that's done, let's make the dropdown menu actually work. */
-
+//Toggle accessibility on and off
+$("#accessibility").on("click", function (event) {
+  const accessibilityMenuBG = $(".uai");
+  const accessibilityMenu = $(".uwy");
+  const accessibilityToggle = $("#accessibility").is(":checked");
+  if (accessibilityToggle === false) {
+    accessibilityMenu.css("display", "none");
+    accessibilityMenuBG.css("visibility", "hidden");
+  } else {
+    accessibilityMenu.css("display", "block");
+    accessibilityMenuBG.css("visibility", "visible");
+  }
+});
 //Toggle vertical nav on and off
 $("#vertNav").on("click", function (event) {
   const vertNavDots = $("#fp-nav");
