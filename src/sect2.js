@@ -402,6 +402,7 @@ export default function Sect2() {
                       allowFullScreen=""
                       allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                       loading="lazy"
+                      alt="A Spotify music playlist titled Calm Down"
                     ></iframe>
                   </div>
                   <div className="col-6 mx-2">
@@ -413,6 +414,7 @@ export default function Sect2() {
                       allowFullScreen=""
                       allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                       loading="lazy"
+                      alt="A Spotify music playlist titled Positive Jams Everyone Loves"
                     ></iframe>
                   </div>
                 </div>
