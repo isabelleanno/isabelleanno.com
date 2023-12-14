@@ -242,8 +242,8 @@ export default function Sect2() {
                       href="IsabelleAnno-Freelancing-FAQ.pdf"
                       target="_blank"
                     >
-                      <FontAwesomeIcon icon={faUserTie} /> Hire me for Freelance
-                      Work
+                      <FontAwesomeIcon icon={faUserTie} /> Hire me for your
+                      project
                     </a>
                     <a
                       className="btn-link-reverse about-btn third-btn-lr my-3"
