@@ -48,6 +48,42 @@ Table of contents:
   --formBG: white;
   --formHover: white;
 }
+[data-theme="dark"] {
+  --text-color: #4ab795;
+  --text-color-2: #ffc107;
+  --s1: #16052b;
+  --s1H1: #0e021b;
+  --dropdownFocus: #060606;
+  --sliderBG: #323135;
+  --sliderChecked: #351196;
+  --arrowNav: #766a85;
+  --s2: var(--s1);
+  --s2H1: #7f5cbb;
+  --s2FrameBG: #0e021b;
+  --s2FrameShadow: #21124d;
+  --highlight: #b191e8;
+  --s2Buttons: #21124daf;
+  --icons: var(--highlight);
+  --s2Progress: var(--text-color);
+  --s3s4: #011b39;
+  --s3H1: #043554;
+  --s4FrameBG: #032143;
+  --s4FrameShadow: #001429;
+  --s4Button: #054268;
+  --s5: #161515;
+  --s5H1: #000000;
+  --s5Timeline: #ff44a9;
+  --s6s7: #311828;
+  --s6H1: #230b1a;
+  --s7FrameBG: #291321;
+  --s7FrameShadow: var(--s6H1);
+  --s8s9: #002529;
+  --s8H1: #011619;
+  --s9FrameBG: var(--s8s9);
+  --s9FrameShadow: #021a1d;
+  --formBG: var(--s8H1);
+  --formHover: #000c0e;
+}
 
 * {
   box-sizing: border-box;
