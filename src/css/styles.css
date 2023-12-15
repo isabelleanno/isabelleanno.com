@@ -54,7 +54,8 @@ h6 {
   color: var(--text-color);
   text-decoration: none;
 }
-.uai {
+.uai,
+.uwy {
   display: none;
 }
 #Hello,
