@@ -52,7 +52,7 @@ class Sect5Layout extends Component {
                         <a
                           href={slide.link}
                           target="_blank"
-                          className="proj-link highlight-s2"
+                          className="proj-link highlight"
                         >
                           {slide.Title}
                         </a>
