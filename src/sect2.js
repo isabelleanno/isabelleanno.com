@@ -228,7 +228,9 @@ export default function Sect2() {
                   </p>
                 </div>
                 <div className="col-5 d-flex flex-column align-items-center">
-                  <h2>Learn More</h2>
+                  <h2>
+                    <span className="highlight-s2">Learn</span> More
+                  </h2>
                   <div className="col-10 d-flex flex-column align-items-center ">
                     <a
                       className="btn-link-reverse about-btn first-btn-lr my-3"

@@ -12,24 +12,40 @@ Table of contents:
 
 /*-------------------------------------1.) Universal Stlyes for all pages------------------------------------------------*/
 :root {
-  --text-color: #2c0a52;
-  --frame: #2c0a52;
-  --s1: #f6e3e3;
-  --s1H1: #f0d4d4;
-  --s2: #d5c3f5;
-  --s2FrameBG: #dbcbf7;
-  --s2H1: #d6f6d6;
-  --s3s4: #d9e4f1;
-  --s3H1: #9fc9e1;
-  --s4FrameBG: #d0ddeb;
-  --s5: #ffffff;
-  --s5H1: #7eb4a1;
-  --s5Timeline: #ff3c00;
-  --s6s7: #ffe3d6;
-  --s6H1: #ffffff;
-  --s7FrameBG: #fde6dc;
-  --s8s9: #cad8cf;
-  --s9H1: #f7f6ec;
+  --text-color: #4ab795;
+  --text-color-2: #ffc107;
+  --s1: #16052b;
+  --s1H1: #0e021b;
+  --dropdownFocus: #060606;
+  --sliderBG: #323135;
+  --sliderChecked: #351196;
+  --arrowNav: #766a85;
+  --s2: #16052b;
+  --s2H1: #7f5cbb;
+  --s2FrameBG: #0e021b;
+  --s2FrameShadow: #21124d;
+  --highlight: #b191e8;
+  --icons: #b191e8;
+  --s2Progress: #4ab795;
+  --s2Buttons: #21124daf;
+  --s3s4: #011b39;
+  --s3H1: #043554;
+  --s4FrameBG: #032143;
+  --s4FrameShadow: #001429;
+  --s4Button: #054268;
+  --s5: #161515;
+  --s5H1: #000000;
+  --s5Timeline: #ff44a9;
+  --s6s7: #311828;
+  --s6H1: #230b1a;
+  --s7FrameBG: #291321;
+  --s7FrameShadow: #230b1a;
+  --s8s9: #002529;
+  --s8H1: #011619;
+  --s9FrameBG: #002529;
+  --s9FrameShadow: #021a1d;
+  --formBG: #011619;
+  --formHover: #000c0e;
 }
 * {
   box-sizing: border-box;
@@ -57,9 +73,11 @@ textarea,
 label {
   font-family: "Twemoji Country Flags", "Roboto Mono", monospace;
 }
-#fp-nav ul li a span {
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
   background: var(--text-color);
 }
+
 p,
 a:link,
 a:visited,
@@ -72,6 +90,9 @@ h5,
 h6 {
   color: var(--text-color);
   text-decoration: none;
+}
+i {
+  color: var(--icons);
 }
 .uai,
 .uwy {
@@ -123,7 +144,7 @@ span.title {
   font-weight: bold;
 }
 .frame {
-  border: 1px solid var(--frame);
+  border: 1px solid var(--text-color);
   border-radius: 24px;
 }
 
@@ -145,11 +166,11 @@ span.title {
   margin-right: 2vh;
 }
 .nav-item > a.nav-link {
-  color: var(--text-color) !important;
+  color: var(--text-color-2) !important;
 }
 
 i.fa-gear {
-  color: var(--text-color);
+  color: var(--text-color-2);
   margin-bottom: 0.1vh;
 }
 
@@ -182,7 +203,7 @@ img[src*="Initials"] {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #979797;
+  background-color: var(--sliderBG);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -201,7 +222,7 @@ img[src*="Initials"] {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: var(--sliderChecked);
 }
 
 input:checked + .slider:before {
@@ -213,6 +234,10 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--dropdownFocus);
 }
 /*Dot navigation. Opacity 0 by default before GSAP Animation*/
 #fp-nav {
@@ -248,6 +273,29 @@ a#whatsAppModalButton {
   text-decoration: none;
 }
 
+a.clickMe {
+  color: #814ebd;
+  text-decoration: none;
+}
+a.clickMe:hover,
+button.hidden-button:hover,
+a#whatsAppModalButton:hover {
+  color: #643a94;
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
+}
+
+.fp-arrow.fp-next {
+  border-width: 20.5px 0 20.5px 34px !important;
+  border-color: transparent transparent transparent var(--arrowNav);
+}
+.fp-arrow.fp-prev {
+  border-width: 20.5px 34px 20.5px 0 !important;
+
+  border-color: transparent var(--arrowNav) transparent transparent;
+}
+
 a.btn-link {
   display: inline-block;
   border: 1px solid var(--text-color);
@@ -267,25 +315,6 @@ a.btn-link:hover {
   transition: background-position 0.75s;
   animation: fade-color 0.75s;
 }
-a.clickMe {
-  color: #814ebd;
-  text-decoration: none;
-}
-a.clickMe:hover,
-button.hidden-button:hover,
-a#whatsAppModalButton:hover {
-  color: #643a94;
-  text-decoration: underline;
-  border: none;
-  background-color: transparent;
-}
-
-.fp-arrow.fp-next {
-  border-width: 20.5px 0 20.5px 34px !important;
-}
-.fp-arrow.fp-prev {
-  border-width: 20.5px 34px 20.5px 0 !important;
-}
 
 a.btn-link-reverse,
 a.btn-link-reverse-left {
@@ -294,7 +323,11 @@ a.btn-link-reverse-left {
   border: 1px solid var(--text-color);
   padding: 1vw;
   background-size: 200% 100%;
-  background-image: linear-gradient(to right, #9fc9e1 50%, transparent 50%);
+  background-image: linear-gradient(
+    to right,
+    var(--s4Button) 50%,
+    transparent 50%
+  );
   color: var(--text-color);
   text-decoration: none;
 }
@@ -316,13 +349,25 @@ a.about-btn {
   text-align: center;
 }
 a.first-btn-lr {
-  background-image: linear-gradient(to right, #d6f6d65b 50%, transparent 50%);
+  background-image: linear-gradient(
+    to right,
+    var(--s2Buttons) 50%,
+    transparent 50%
+  );
 }
 a.second-btn-lr {
-  background-image: linear-gradient(to right, #d6f6d6bd 50%, transparent 50%);
+  background-image: linear-gradient(
+    to right,
+    var(--s2Buttons) 50%,
+    transparent 50%
+  );
 }
 a.third-btn-lr {
-  background-image: linear-gradient(to right, #d6f6d6 50%, transparent 50%);
+  background-image: linear-gradient(
+    to right,
+    var(--s2Buttons) 50%,
+    transparent 50%
+  );
 }
 /*--------------------------------------------5.) Sections & Slides-------------------------------------------------------------*/
 
@@ -391,18 +436,19 @@ span.nl {
 }
 .about-frame {
   background-color: var(--s2FrameBG);
-  box-shadow: -20px 20px 3px #b7a5d5de;
+  box-shadow: -20px 20px 3px var(--s2FrameShadow);
 }
 /*Second Slide */
 img[src*="isabelleanno"] {
   width: 95%;
 }
 .highlight-s2 {
-  color: var(--s2H1) !important;
+  color: var(--highlight) !important;
 }
 /*Third Slide*/
 .icons {
   font-size: 20px;
+  color: var(--icons);
   width: 3vh;
 }
 div.progress {
@@ -412,9 +458,9 @@ div.progress {
 }
 div.progress-bar {
   width: 20%;
-  border: 1px solid var(--text-color);
+  border: 1px solid #2c0a52;
   border-radius: 5px;
-  background-color: var(--s2H1);
+  background-color: var(--s2Progress);
   height: 1vh;
 }
 div.progress-bar-empty {
@@ -446,6 +492,7 @@ div.img-frame {
   display: flex;
   justify-content: center;
 }
+
 div.img-frame-2 {
   width: 80%;
 }
@@ -474,7 +521,7 @@ div#certs-border {
 #timeline-frame {
   width: 100%;
   background: var(--s4FrameBG);
-  box-shadow: -20px 20px 3px #9fc9e1;
+  box-shadow: -20px 20px 3px var(--s4FrameShadow);
 }
 .sidenav-btn {
   display: flex;
@@ -483,8 +530,8 @@ div#certs-border {
   height: 26px;
   width: 26px;
   border-radius: 50%;
-  border: 1px solid var(--frame);
-  background-color: white;
+  border: 1px solid var(--text-color);
+  background-color: var(--s4FrameBG);
 }
 .separator {
   overflow-y: hidden !important;
@@ -504,17 +551,7 @@ div#certs-border {
   color: var(--s5H1);
   margin-bottom: 10vh;
 }
-div.hs5 > .fp-controlArrow.fp-prev {
-  left: 15px;
-  width: 0;
-  border-width: 38.5px 34px 38.5px 0;
-  border-color: transparent #dedede transparent transparent !important;
-}
-div.hs5 > .fp-controlArrow.fp-next {
-  right: 15px;
-  border-width: 38.5px 0 38.5px 34px;
-  border-color: transparent transparent transparent#dedede !important;
-}
+
 /*Slides 2 and beyond*/
 a.proj-link {
   font-family: "IBM Plex Sans Arabic", sans-serif;
@@ -528,6 +565,7 @@ a.proj-link {
 }
 .btn-horizontal {
   border: 2px solid var(--s5Timeline);
+  background-color: var(--s5);
   position: relative;
   z-index: 3;
   bottom: 30px;
@@ -571,7 +609,7 @@ hr#timelineHREnd {
 }
 .review-frame {
   background-color: var(--s7FrameBG);
-  box-shadow: -20px 20px 3px #f7d7c7;
+  box-shadow: -20px 20px 3px var(--s7FrameShadow);
 }
 /*----------------------------eighth and nineth Section, as well as modal*/
 .hs8,
@@ -579,15 +617,35 @@ hr#timelineHREnd {
   background-color: var(--s8s9);
 }
 #Contact {
-  color: var(--s9H1);
+  color: var(--s8H1);
 }
 .chat {
   font-family: "Avenir Next";
-  color: white;
+  color: var(--text-color);
 }
 .alert {
   opacity: 0;
 }
+
+.form-control,
+input,
+input.form-control,
+input.form-control:hover,
+input.form-control:focus,
+input.form-control:active,
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill::first-letter,
+input:-webkit-autofill:active {
+  font-family: "Roboto Mono", monospace !important;
+  -webkit-box-shadow: 0 0 0 30px var(--formBG) inset !important;
+  -webkit-text-fill-color: var(--text-color-2) !important;
+  background-color: var(--formBG) !important;
+  border: 1px solid var(--text-color);
+  color: var(--text-color-2) !important;
+}
+
 label {
   margin-top: 1vh;
   color: var(--text-color);
@@ -615,8 +673,8 @@ button.submit-btn {
 }
 
 .contact-frame {
-  background-color: #c9dcd0;
-  box-shadow: -20px 20px 3px #b5c7bd;
+  background-color: var(--s9FrameBG);
+  box-shadow: -20px 20px 3px var(--s9FrameShadow);
 }
 /*Modal*/
 img[src*="WhatsApp"] {
