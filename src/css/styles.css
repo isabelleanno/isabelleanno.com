@@ -81,6 +81,7 @@ Table of contents:
   --s8H1: #011619;
   --s9FrameBG: var(--s8s9);
   --s9FrameShadow: #021a1d;
+  --chat: rgb(160, 196, 160);
   --formBG: var(--s8H1);
   --formHover: #000c0e;
 }
@@ -479,6 +480,9 @@ span.nl {
 /*Second Slide */
 img[src*="isabelleanno"] {
   width: 95%;
+}
+.highlight {
+  color: var(--highlight);
 }
 .highlight-s2 {
   color: #d6f6d6 !important;

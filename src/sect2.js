@@ -90,7 +90,7 @@ export default function Sect2() {
               <div className="col m-1 d-flex">
                 <div className="col-6 d-flex flex-column justify-content-center">
                   <h1 className="mb-2">
-                    I am <span className="highlight-s2">Isabelle</span>
+                    I am <span className="highlight">Isabelle</span>
                   </h1>
                   <h5 className="mb-4 IBM" id="typewriter"></h5>
                   <p className="mb-4">
@@ -106,7 +106,7 @@ export default function Sect2() {
                     <a
                       href="https://www.16personalities.com/infj-personality"
                       target="_blank"
-                      className="highlight-s2"
+                      className="highlight"
                     >
                       INFJ-T
                     </a>{" "}
@@ -135,8 +135,7 @@ export default function Sect2() {
               <div className="col m-2 d-flex flex-column align-items-center">
                 <div className="col-8">
                   <h1 className="mb-2 text-center">
-                    My <span className="highlight-s2">Knowledge</span> and
-                    Skills
+                    My <span className="highlight">Knowledge</span> and Skills
                   </h1>
                 </div>
                 <div className="col-8">
@@ -209,7 +208,7 @@ export default function Sect2() {
               <div className="col m-5 d-flex">
                 <div className="col-7 d-flex flex-column justify-content-center">
                   <h1 className="mb-2">
-                    Why <span className="highlight-s2">choose</span> me?
+                    Why <span className="highlight">choose</span> me?
                   </h1>
                   <p>
                     My associate's degree provides me with a{" "}
@@ -229,7 +228,7 @@ export default function Sect2() {
                 </div>
                 <div className="col-5 d-flex flex-column align-items-center">
                   <h2>
-                    <span className="highlight-s2">Learn</span> More
+                    <span className="highlight">Learn</span> More
                   </h2>
                   <div className="col-10 d-flex flex-column align-items-center ">
                     <a
@@ -283,13 +282,13 @@ export default function Sect2() {
                 {/*Alert End */}
                 <div>
                   <h2 className="mb-3">
-                    Where to <span className="highlight-s2">Find</span> Me
+                    Where to <span className="highlight">Find</span> Me
                   </h2>
                   <p>
                     Take a look at my little corner of the internet. Or
                     <a
                       href="https://isabelleanno.com/#s9"
-                      className="highlight-s2 ms-2"
+                      className="highlight ms-2"
                     >
                       Contact Me
                     </a>
@@ -388,7 +387,7 @@ export default function Sect2() {
               <div className="my-2">
                 <div className="col-12 d-flex flex-column align-items-center">
                   <h1>
-                    My <span className="highlight-s2">favorite</span> tunes
+                    My <span className="highlight">favorite</span> tunes
                   </h1>
                   <p className="m-0">
                     Nothing beats coding alongside some good music{" "}
