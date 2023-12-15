@@ -13,6 +13,23 @@ Table of contents:
 /*-------------------------------------1.) Universal Stlyes for all pages------------------------------------------------*/
 :root {
   --text-color: #2c0a52;
+  --frame: #2c0a52;
+  --s1: #f6e3e3;
+  --s1H1: #f0d4d4;
+  --s2: #d5c3f5;
+  --s2FrameBG: #dbcbf7;
+  --s2H1: #d6f6d6;
+  --s3s4: #d9e4f1;
+  --s3H1: #9fc9e1;
+  --s4FrameBG: #d0ddeb;
+  --s5: #ffffff;
+  --s5H1: #7eb4a1;
+  --s5Timeline: #ff3c00;
+  --s6s7: #ffe3d6;
+  --s6H1: #ffffff;
+  --s7FrameBG: #fde6dc;
+  --s8s9: #cad8cf;
+  --s9H1: #f7f6ec;
 }
 * {
   box-sizing: border-box;
@@ -31,7 +48,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #f6e3e3;
+  background-color: var(--s1);
 }
 
 p,
@@ -40,7 +57,9 @@ textarea,
 label {
   font-family: "Twemoji Country Flags", "Roboto Mono", monospace;
 }
-
+#fp-nav ul li a span {
+  background: var(--text-color);
+}
 p,
 a:link,
 a:visited,
@@ -104,7 +123,7 @@ span.title {
   font-weight: bold;
 }
 .frame {
-  border: 1px solid black;
+  border: 1px solid var(--frame);
   border-radius: 24px;
 }
 
@@ -213,7 +232,7 @@ input:checked + .slider:before {
 }
 #fp-nav ul li .fp-tooltip.fp-left {
   font-family: "Roboto Mono", monospace;
-  color: #333;
+  color: var(--text-color);
 }
 /*---------------------------------------------4.) buttons & a's---------------------------------------------------*/
 a:hover {
@@ -309,7 +328,7 @@ a.third-btn-lr {
 
 /*-----------------------------First Section*/
 .hs1 {
-  background-color: #f6e3e3;
+  background-color: var(--s1);
 }
 
 .learnMore {
@@ -333,7 +352,7 @@ a.third-btn-lr {
 #Hello {
   opacity: 0;
   font-size: 30vw;
-  color: #f0d4d4;
+  color: var(--s1H1);
 }
 #Isabelle {
   font-family: "IBM Plex Sans Arabic", sans-serif;
@@ -359,19 +378,19 @@ span.nl {
 
 /*----------------------------Second Section */
 .hs2 {
-  background-color: #d5c3f5;
+  background-color: var(--s2);
 }
 /*Fist Slide*/
 .about {
   opacity: 0;
   font-size: 22vw;
   text-align: center;
-  color: #d6f6d6;
+  color: var(--s2H1);
   margin: 0;
   font-family: "Avenir Next";
 }
 .about-frame {
-  background-color: #dbcbf7;
+  background-color: var(--s2FrameBG);
   box-shadow: -20px 20px 3px #b7a5d5de;
 }
 /*Second Slide */
@@ -379,7 +398,7 @@ img[src*="isabelleanno"] {
   width: 95%;
 }
 .highlight-s2 {
-  color: #d6f6d6 !important;
+  color: var(--s2H1) !important;
 }
 /*Third Slide*/
 .icons {
@@ -395,11 +414,11 @@ div.progress-bar {
   width: 20%;
   border: 1px solid var(--text-color);
   border-radius: 5px;
-  background-color: #d6f6d6;
+  background-color: var(--s2H1);
   height: 1vh;
 }
 div.progress-bar-empty {
-  background-color: #d5c3f5;
+  background-color: transparent;
 }
 
 .table-borderless > tbody > tr > td,
@@ -433,11 +452,11 @@ div.img-frame-2 {
 /*----------------------------Third & Fourth Sections */
 .hs3,
 .hs4 {
-  background-color: #d9e4f1;
+  background-color: var(--s3s4);
 }
 #Education {
   font-size: 20vw;
-  color: #9fc9e1;
+  color: var(--s3H1);
 }
 div.col.my-5 > img {
   border-radius: 10px;
@@ -454,7 +473,7 @@ div#certs-border {
 }
 #timeline-frame {
   width: 100%;
-  background: #d0ddeb;
+  background: var(--s4FrameBG);
   box-shadow: -20px 20px 3px #9fc9e1;
 }
 .sidenav-btn {
@@ -464,7 +483,7 @@ div#certs-border {
   height: 26px;
   width: 26px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid var(--frame);
   background-color: white;
 }
 .separator {
@@ -473,16 +492,16 @@ div#certs-border {
   width: 1px;
   height: 100%;
   border-radius: 3px;
-  background-color: black;
+  background-color: var(--text-color);
   align-self: center;
 }
 
 /*---------------------------Fifth Section */
 .hs5 {
-  background-color: white;
+  background-color: var(--s5);
 }
 #Projects {
-  color: #7eb4a1;
+  color: var(--s5H1);
   margin-bottom: 10vh;
 }
 div.hs5 > .fp-controlArrow.fp-prev {
@@ -508,7 +527,7 @@ a.proj-link {
   margin-bottom: 5vh;
 }
 .btn-horizontal {
-  border: 2px solid #ff3c00;
+  border: 2px solid var(--s5Timeline);
   position: relative;
   z-index: 3;
   bottom: 30px;
@@ -522,7 +541,7 @@ a.proj-link {
   bottom: 23px;
   left: 10px;
   font-weight: bold;
-  color: #ff3c00;
+  color: var(--s5Timeline);
 }
 #date-start {
   left: -51px;
@@ -533,7 +552,7 @@ a.proj-link {
 
 hr.timelineHR {
   width: 100vw;
-  border: 1px solid #ff3c00;
+  border: 1px solid var(--s5Timeline);
 }
 hr#firstHR {
   width: 73vw;
@@ -545,22 +564,22 @@ hr#timelineHREnd {
 /*---------------------------Sixth and seventh Section */
 .hs6,
 .hs7 {
-  background-color: #ffe3d6;
+  background-color: var(--s6s7);
 }
 #Reviews {
-  color: white;
+  color: var(--s6H1);
 }
 .review-frame {
-  background-color: #fde6dc;
+  background-color: var(--s7FrameBG);
   box-shadow: -20px 20px 3px #f7d7c7;
 }
 /*----------------------------eighth and nineth Section, as well as modal*/
 .hs8,
 .hs9 {
-  background-color: #cad8cf;
+  background-color: var(--s8s9);
 }
 #Contact {
-  color: #f7f6ec;
+  color: var(--s9H1);
 }
 .chat {
   font-family: "Avenir Next";
