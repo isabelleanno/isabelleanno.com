@@ -24,7 +24,7 @@ import { gsap } from "gsap";
 import ReactFullpage from "@fullpage/react-fullpage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import "./css/styles.css";
+
 //Components
 import Sect1 from "./sect1";
 import Sect2 from "./sect2";
@@ -250,6 +250,7 @@ $("#darkMode").on("click", function (event) {
     document.querySelector("body").setAttribute("data-theme", "light");
     changeDropdown();
   }
+  $("body").css("transition", "all 0.5s ease-in-out");
 });
 //Toggle vertical nav on and off
 $("#vertNav").on("click", function (event) {
