@@ -132,7 +132,7 @@ textarea.form-control {
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background: var(--text-color);
+  background: var(--text-color) !important;
 }
 
 p,
