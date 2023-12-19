@@ -214,13 +214,17 @@ dropdown menu the same color as the background color of the current slide we are
 //grab the settings icon on the navbar
 let settings = document.getElementById("dropdownMenuClickableInside");
 
-//Create event listener
-settings.addEventListener("mouseover", (event) => {
+function changeDropdown() {
   const sectionBackgrounds = document.querySelector("div.section.active"); //Grab the active section
   const sectionColor =
     window.getComputedStyle(sectionBackgrounds).backgroundColor; //Grab the background color of active section
   const dropdownMenu = document.getElementById("dropdownMenu"); //Grab the dropdown menu
   dropdownMenu.style.backgroundColor = sectionColor; //Do the thing (make it the same background color)
+}
+
+//Create event listener
+settings.addEventListener("mouseover", (event) => {
+  changeDropdown();
 });
 
 /*Now that that's done, let's make the dropdown menu actually work. */
@@ -235,6 +239,16 @@ $("#accessibility").on("click", function (event) {
   } else {
     accessibilityMenu.css("display", "block");
     accessibilityMenuBG.css("visibility", "visible");
+  }
+});
+//Dark Mode
+$("#darkMode").on("click", function (event) {
+  if ($("#darkMode").is(":checked")) {
+    document.querySelector("body").setAttribute("data-theme", "dark");
+    changeDropdown();
+  } else {
+    document.querySelector("body").setAttribute("data-theme", "light");
+    changeDropdown();
   }
 });
 //Toggle vertical nav on and off

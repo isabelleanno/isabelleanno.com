@@ -12,7 +12,7 @@ import {
 import { faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 export default function Sect9() {
   return (
-    <div className="section hs9  d-flex align-items-center">
+    <div className="section hs9 d-flex align-items-center">
       <span className="title">Contact Body</span>
       {/*------------------------------------------- Slide 1 START vvv---------------------- */}
       <div className="slide">
@@ -37,7 +37,7 @@ export default function Sect9() {
             <div className="col d-flex frame contact-frame p-5">
               {/*-----------------------------------------Start of LEFT SIDE vvv --------------------------*/}
               <div className="col-7">
-                <h1 className="display-1 chat">Let's Chat</h1>
+                <h1 className="display-1 avenir chat">Let's Chat</h1>
                 <div className="col-10">
                   <p>
                     <b> I'm currently on a job search!</b> Before you reach out,
@@ -209,7 +209,7 @@ export default function Sect9() {
                 <a href="https://isabelleanno.com/#s9" className="clickMe">
                   <b>Get in touch with me</b>
                 </a>{" "}
-                and let's create something magical together!🤍
+                and let's create something magical together!💚
               </p>
             </div>
           </div>

@@ -106,7 +106,7 @@ export default function Sect2() {
                     <a
                       href="https://www.16personalities.com/infj-personality"
                       target="_blank"
-                      className="highlight"
+                      className="highlight-s2"
                     >
                       INFJ-T
                     </a>{" "}
@@ -118,6 +118,7 @@ export default function Sect2() {
                   <div className="img-frame">
                     <img
                       src={require("./Images/about/isabelleanno.jpg")}
+                      className="dim"
                       alt="Isabelle Anno admiring a view from a mountaintop in Cochem, Germany"
                     />
                   </div>
@@ -288,7 +289,7 @@ export default function Sect2() {
                     Take a look at my little corner of the internet. Or
                     <a
                       href="https://isabelleanno.com/#s9"
-                      className="highlight ms-2"
+                      className="highlight-s2 ms-2"
                     >
                       Contact Me
                     </a>
@@ -371,6 +372,7 @@ export default function Sect2() {
                 <div className="img-frame img-frame-2">
                   <img
                     src={require("./Images/about/patrick.jpg")}
+                    className="dim"
                     alt="Isabelle and her husband Patrick kissing at a botanical garden"
                   />
                 </div>

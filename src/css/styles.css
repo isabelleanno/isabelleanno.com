@@ -10,7 +10,7 @@ Table of contents:
 
 */
 
-/*-------------------------------------1.) Universal Stlyes for all pages------------------------------------------------*/
+/*-------------------------------------1.) Universal Styles for all pages------------------------------------------------*/
 :root {
   --text-color: #2c0a52;
   --text-color-2: (var(--text-color));
@@ -47,18 +47,22 @@ Table of contents:
   --chat: white;
   --formBG: white;
   --formHover: white;
+  --clickText: #814ebd;
+  --clickTextHover: #643a94;
+  --dim: 100%;
+  --ExtraDim: 100%;
 }
+
 [data-theme="dark"] {
-  --text-color: #4ab795;
-  --text-color-2: #ffc107;
+  --text-color: #3d9f80;
   --s1: #16052b;
-  --s1H1: #0e021b;
+  --s1H1: #0a0113;
   --dropdownFocus: #060606;
   --sliderBG: #323135;
   --sliderChecked: #351196;
   --arrowNav: #766a85;
   --s2: var(--s1);
-  --s2H1: #7f5cbb;
+  --s2H1: #5c3a97;
   --s2FrameBG: #0e021b;
   --s2FrameShadow: #21124d;
   --highlight: #b191e8;
@@ -72,7 +76,7 @@ Table of contents:
   --s4Button: #054268;
   --s5: #161515;
   --s5H1: #000000;
-  --s5Timeline: #ff44a9;
+  --s5Timeline: #c43582;
   --s6s7: #311828;
   --s6H1: #230b1a;
   --s7FrameBG: #291321;
@@ -81,9 +85,13 @@ Table of contents:
   --s8H1: #011619;
   --s9FrameBG: var(--s8s9);
   --s9FrameShadow: #021a1d;
-  --chat: rgb(160, 196, 160);
+  --chat: rgb(155, 195, 155);
   --formBG: var(--s8H1);
   --formHover: #000c0e;
+  --clickText: var(--chat);
+  --clickTextHover: rgb(75, 164, 115);
+  --dim: 60%;
+  --ExtraDim: 50%;
 }
 
 * {
@@ -107,11 +115,21 @@ body {
 }
 
 p,
+a,
+a:hover,
 input.form-control,
 textarea,
-label {
-  font-family: "Twemoji Country Flags", "Roboto Mono", monospace;
+label,
+#header,
+#fp-nav ul li .fp-tooltip.fp-left,
+a.btn-link-reverse,
+a.btn-link-reverse-left,
+a.btn-link-reverse:hover,
+a.btn-link-reverse-left:hover,
+textarea.form-control {
+  font-family: "Roboto Mono", monospace !important;
 }
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background: var(--text-color);
@@ -138,6 +156,7 @@ i {
   display: none;
 }
 #Hello,
+.about,
 #Education,
 #Projects,
 #Reviews,
@@ -150,6 +169,14 @@ i {
 img {
   width: 100%;
 }
+
+img.dim {
+  opacity: var(--dim);
+}
+.ExtraDim {
+  opacity: var(--ExtraDim);
+}
+
 div.slide {
   display: flex;
   flex-direction: column;
@@ -167,10 +194,11 @@ hr {
 .fp-watermark > a {
   display: none !important;
 }
+
 /*--------------------------------------------2.) Utility Classes--------------------------------------------------------*/
 
 .IBM {
-  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif !important;
 }
 .avenir {
   font-family: "Avenir Next";
@@ -197,19 +225,17 @@ span.title {
   width: 100vw;
   top: 0px;
   padding: 1vh 18vh;
-  font-family: "Roboto Mono", monospace;
 }
 /*navbar*/
 .nav-item {
-  margin-left: 2vh;
-  margin-right: 2vh;
+  margin: 0vh 2vh;
 }
 .nav-item > a.nav-link {
-  color: var(--text-color-2) !important;
+  color: var(--text-color) !important;
 }
 
 i.fa-gear {
-  color: var(--text-color-2);
+  color: var(--text-color);
   margin-bottom: 0.1vh;
 }
 
@@ -295,31 +321,30 @@ input:checked + .slider:before {
   justify-content: center;
 }
 #fp-nav ul li .fp-tooltip.fp-left {
-  font-family: "Roboto Mono", monospace;
   color: var(--text-color);
 }
 /*---------------------------------------------4.) buttons & a's---------------------------------------------------*/
 a:hover {
-  color: #814ebd;
+  color: var(--clickText);
 }
 
 button.hidden-button,
 a#whatsAppModalButton {
   border: none;
   margin: 0;
-  color: #814ebd;
+  color: var(--clickText);
   background-color: transparent;
   text-decoration: none;
 }
 
 a.clickMe {
-  color: #814ebd;
+  color: var(--clickText);
   text-decoration: none;
 }
 a.clickMe:hover,
 button.hidden-button:hover,
 a#whatsAppModalButton:hover {
-  color: #643a94;
+  color: var(--clickTextHover);
   text-decoration: underline;
   border: none;
   background-color: transparent;
@@ -342,7 +367,6 @@ a.btn-link {
   color: var(--text-color);
   background-size: 200% 100%;
   background-image: linear-gradient(to left, #a082d5 50%, transparent 50%);
-  color: var(--text-color);
   text-decoration: none;
 }
 a.btn-link:hover {
@@ -357,7 +381,6 @@ a.btn-link:hover {
 
 a.btn-link-reverse,
 a.btn-link-reverse-left {
-  font-family: "Roboto Mono", monospace;
   display: inline-block;
   border: 1px solid var(--text-color);
   padding: 1vw;
@@ -372,7 +395,6 @@ a.btn-link-reverse-left {
 }
 a.btn-link-reverse:hover,
 a.btn-link-reverse-left:hover {
-  font-family: "Roboto Mono", monospace;
   color: var(--text-color);
   text-decoration: underline;
   background-position: -100% 0;
@@ -418,6 +440,7 @@ a.third-btn-lr {
 .learnMore {
   opacity: 0;
   margin-left: 1vh;
+  font-family: "Twemoji Country Flags", "Roboto Mono", monospace;
 }
 #myName {
   margin-left: 1vh;
@@ -439,7 +462,6 @@ a.third-btn-lr {
   color: var(--s1H1);
 }
 #Isabelle {
-  font-family: "IBM Plex Sans Arabic", sans-serif;
   font-size: 80px;
   opacity: 1;
   position: relative;
@@ -447,7 +469,6 @@ a.third-btn-lr {
   color: #ff44a9;
 }
 #Isabelle2 {
-  font-family: "IBM Plex Sans Arabic", sans-serif;
   font-size: 80px;
   opacity: 1;
   position: absolute;
@@ -471,7 +492,6 @@ span.nl {
   text-align: center;
   color: var(--s2H1);
   margin: 0;
-  font-family: "Avenir Next";
 }
 .about-frame {
   background-color: var(--s2FrameBG);
@@ -538,6 +558,9 @@ div.img-frame {
 div.img-frame-2 {
   width: 80%;
 }
+iframe {
+  opacity: var(--dim);
+}
 /*----------------------------Third & Fourth Sections */
 .hs3,
 .hs4 {
@@ -596,8 +619,8 @@ div#certs-border {
 
 /*Slides 2 and beyond*/
 a.proj-link {
-  font-family: "IBM Plex Sans Arabic", sans-serif;
   font-size: 5.5vh;
+  font-family: "IBM Plex Sans Arabic", sans-serif !important;
   text-decoration: none;
 }
 .project-photo-frame {
@@ -662,7 +685,6 @@ hr#timelineHREnd {
   color: var(--s8H1);
 }
 .chat {
-  font-family: "Avenir Next";
   color: var(--chat);
 }
 .alert {
@@ -682,10 +704,10 @@ input:-webkit-autofill::first-letter,
 input:-webkit-autofill:active {
   font-family: "Roboto Mono", monospace !important;
   -webkit-box-shadow: 0 0 0 30px var(--formBG) inset !important;
-  -webkit-text-fill-color: var(--text-color-2) !important;
+  -webkit-text-fill-color: var(--clickText) !important;
   background-color: var(--formBG) !important;
   border: 1px solid var(--text-color);
-  color: var(--text-color-2) !important;
+  color: var(--text-color) !important;
 }
 
 label {
@@ -694,7 +716,6 @@ label {
 }
 textarea.form-control {
   margin-bottom: 2vh;
-  font-family: "Roboto Mono", monospace;
 }
 .form-control:focus {
   border-color: #00a884 !important;
@@ -705,12 +726,10 @@ button.submit-btn:hover {
   background-color: white;
   border: 1px solid #00a884;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px white !important;
-  font-family: "Roboto Mono", monospace;
 }
 button.submit-btn {
   color: rgb(250, 251, 241);
   border: 1px solid var(--text-color);
-  font-family: "Roboto Mono", monospace;
   background-color: var(--text-color);
 }
 
@@ -731,13 +750,11 @@ a.btn-success {
   border: 1px solid#00a884;
   color: #00a884;
   background-color: transparent;
-  font-family: "Roboto Mono", monospace;
 }
 a.btn-success:hover {
   text-decoration: underline;
   color: white;
   border: 1px solid white;
-  font-family: "Roboto Mono", monospace;
 }
 /*---------------------------------------------------6.) Animations-------------------------------------------------------*/
 @keyframes fade-color {

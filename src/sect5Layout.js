@@ -43,7 +43,7 @@ class Sect5Layout extends Component {
                       <div className="col-6 d-flex flex-column align-items-center justify-content-center">
                         <a href={slide.link} target="_blank">
                           {" "}
-                          <div className="project-photo-frame d-flex flex-column">
+                          <div className="project-photo-frame d-flex flex-column ExtraDim">
                             {slide.PhotoSrc}
                           </div>
                         </a>
@@ -52,7 +52,7 @@ class Sect5Layout extends Component {
                         <a
                           href={slide.link}
                           target="_blank"
-                          className="proj-link highlight"
+                          className="proj-link highlight IBM"
                         >
                           {slide.Title}
                         </a>

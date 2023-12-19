@@ -11,7 +11,7 @@ export default function Sect4() {
             id="timeline-frame"
           >
             <div className="col-12 d-flex justify-content-center py-5 my-1">
-              <h1 className="display-1 text-center">
+              <h1 className="display-1 text-center ">
                 A Timeline of my Education
               </h1>
             </div>
@@ -64,6 +64,7 @@ export default function Sect4() {
                   </p>
                   <img
                     src={require("./Images/certs/basic.png")}
+                    className="ExtraDim"
                     alt="SheCodes Verified Certificate of Achievement. March 22, 2021. Isabelle Anno has successfully completed the introduction to Coding workshop."
                   />
                 </div>
@@ -89,6 +90,7 @@ export default function Sect4() {
                   </p>
                   <img
                     src={require("./Images/certs/plus.png")}
+                    className="dim"
                     alt="SheCodes Verified Certificate of Achievement. May 31, 2021. Isabelle Anno has successfully completed the web development workshop."
                   />
                 </div>
@@ -113,6 +115,7 @@ export default function Sect4() {
                   </p>
                   <img
                     src={require("./Images/certs/Responsive.png")}
+                    className="dim"
                     alt="SheCodes Verified Certificate of Achievement. July 5, 2021. Isabelle Anno has successfully completed the Responsive Web Development workshop."
                   />
                 </div>
@@ -165,6 +168,7 @@ export default function Sect4() {
                   </p>
                   <img
                     src={require("./Images/certs/degree.jpg")}
+                    className="ExtraDim"
                     alt="Stark State College. North Canton, Ohio. May 14, 2023. Associate's of applied business web design and development."
                   />
                 </div>
@@ -185,7 +189,7 @@ export default function Sect4() {
                     the way. One in web design, and another in SQL, specifically
                     using SSMS.
                   </p>
-                  <div className="col-12 d-flex" id="certs-border">
+                  <div className="col-12 d-flex ExtraDim" id="certs-border">
                     <div className="col-6">
                       <img
                         src={require("./Images/certs/sql.jpg")}
@@ -220,6 +224,7 @@ export default function Sect4() {
                   </p>
                   <img
                     src={require("./Images/certs/React.png")}
+                    className="dim"
                     alt="SheCodes Verified Certificate of Achievement. July 19, 2023. Isabelle Anno has successfully completed the Advanced React Development workshop."
                   />
                 </div>
@@ -245,6 +250,7 @@ export default function Sect4() {
                   </p>
                   <img
                     src={require("./Images/certs/AI.png")}
+                    className="dim"
                     alt="SheCodes Verified Certificate of Achievement. December 4, 2023. Isabelle Anno has successfully completed the Introduction to Artificial Intelligence workshop."
                   />
                 </div>

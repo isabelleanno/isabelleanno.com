@@ -33,8 +33,12 @@ export default function Sect1() {
       <div id="hs1Overlay">
         <div id="hs1Info">
           <p className="my-4 pl-1" id="myName"></p>
-          <h1 id="Isabelle">Isabelle Anno</h1>
-          <h1 id="Isabelle2">Isabelle Anno</h1>
+          <h1 className="IBM" id="Isabelle">
+            Isabelle Anno
+          </h1>
+          <h1 className="IBM" id="Isabelle2">
+            Isabelle Anno
+          </h1>
           <p className="my-4 learnMore">
             I'm a web developer living in the Netherlands 🇳🇱
           </p>
