@@ -1,5 +1,4 @@
 import React from "react";
-import "./css/styles.css";
 export default function Sect4() {
   return (
     /*---------------------------------------------------- INTRO START vvv---------------------- */

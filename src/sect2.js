@@ -1,5 +1,4 @@
 import { useRef, useEffect } from "react";
-import "./css/styles.css";
 import Typewriter from "typewriter-effect/dist/core";
 //Import individual fontawesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
