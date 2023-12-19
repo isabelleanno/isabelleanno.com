@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./css/styles.css";
 import ProjTimeline from "./projTimeline";
 /*This file maps and displays the image, title, and description of each project. 
 

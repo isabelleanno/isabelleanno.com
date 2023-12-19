@@ -1,5 +1,6 @@
 import React from "react";
 import Sect5Layout from "./sect5Layout";
+import "./css/styles.css";
 /*
 This section is unique from all the other sections. It is responsible for displaying the projects section and slides.
 My goal is to easily be able to add a project to the code, without having to reformat everything in the timeline,
