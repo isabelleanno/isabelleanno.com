@@ -56,11 +56,11 @@ Table of contents:
 [data-theme="dark"] {
   --text-color: #3d9f80;
   --s1: #16052b;
-  --s1H1: #0a0113;
+  --s1H1: #0e021b;
   --dropdownFocus: #060606;
   --sliderBG: #323135;
   --sliderChecked: #351196;
-  --arrowNav: #766a85;
+  --arrowNav: var(--text-color);
   --s2: var(--s1);
   --s2H1: #5c3a97;
   --s2FrameBG: #0e021b;
