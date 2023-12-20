@@ -235,9 +235,8 @@ export default function Sect2() {
                     <a
                       className="btn-link-reverse about-btn first-btn-lr my-3"
                       href="isabelleanno-resume.pdf"
-                      download="isabelleanno-resume.pdf"
                     >
-                      <FontAwesomeIcon icon={faFile} /> Download my Resume
+                      <FontAwesomeIcon icon={faFile} /> View my Resume
                     </a>
                     <a
                       className="btn-link-reverse-left about-btn second-btn-lr my-3"
