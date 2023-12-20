@@ -323,7 +323,7 @@ export default function Sect2() {
                   </span>
                   <span className="d-flex align-items-center">
                     <h2 className="d-inline">
-                      <i className="fa-solid fa-envelope-circle-check me-3"></i>
+                      <i className="fa-solid fa-envelope-circle-check me-1"></i>
                     </h2>
                     <button
                       className="hidden-button"
@@ -346,7 +346,7 @@ export default function Sect2() {
                   </span>
                   <span className="d-flex align-items-center">
                     <h2 className="d-inline">
-                      <i class="fa-solid fa-hand-holding-heart me-3"></i>
+                      <i className="fa-solid fa-hand-holding-heart me-3"></i>
                     </h2>
                     <a
                       href="https://www.givewell.org/"
