@@ -369,7 +369,7 @@ export default function Sect2() {
                     </a>
                   </span>
 
-                  <span className="d-flex align-items-center">
+                  <span className="d-flex align-items-center mb-5">
                     <h2 className="d-inline">
                       <i className="fa-solid fa-code me-3"></i>
                     </h2>
