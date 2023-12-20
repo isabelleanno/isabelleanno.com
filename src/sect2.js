@@ -249,7 +249,7 @@ export default function Sect2() {
                     </a>
                     <a
                       className="btn-link-reverse about-btn third-btn-lr my-3"
-                      href="isabelleanno-resume.pdf"
+                      href="Collaboration-FAQ.pdf"
                     >
                       <FontAwesomeIcon icon={faPaintbrush} /> Collaborate on a
                       project
