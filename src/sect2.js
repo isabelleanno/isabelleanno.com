@@ -273,7 +273,7 @@ export default function Sect2() {
                 <div className="col-12 d-flex flex-column m-0 align-items-center">
                   {/*Alert Body */}
                   <div
-                    className="alert alert-success text-center"
+                    className="alert alert-success text-center m-0"
                     role="alert"
                     id="email-alert"
                   >
