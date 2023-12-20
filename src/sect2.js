@@ -341,20 +341,8 @@ export default function Sect2() {
                         });
                       }}
                     >
-                      Email me at isabelleanno.webdev@gmail.com
+                      isabelleanno.webdev@gmail.com
                     </button>
-                  </span>
-                  <span className="d-flex align-items-center">
-                    <h2 className="d-inline">
-                      <i className="fa-solid fa-mug-saucer me-3"></i>
-                    </h2>
-                    <a
-                      href="https://www.buymeacoffee.com/isabelleanno"
-                      target="_blank"
-                      className="clickMe"
-                    >
-                      Buy me a coffee
-                    </a>
                   </span>
                   <span className="d-flex align-items-center">
                     <h2 className="d-inline">
@@ -368,6 +356,19 @@ export default function Sect2() {
                       Givewell.org - My Favorite Charity
                     </a>
                   </span>
+                  <span className="d-flex align-items-center">
+                    <h2 className="d-inline">
+                      <i className="fa-solid fa-mug-saucer me-3"></i>
+                    </h2>
+                    <a
+                      href="https://www.buymeacoffee.com/isabelleanno"
+                      target="_blank"
+                      className="clickMe"
+                    >
+                      Buy me a coffee
+                    </a>
+                  </span>
+
                   <span className="d-flex align-items-center">
                     <h2 className="d-inline">
                       <i className="fa-solid fa-code me-3"></i>

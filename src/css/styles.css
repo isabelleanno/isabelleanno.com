@@ -126,6 +126,7 @@ a.btn-link-reverse,
 a.btn-link-reverse-left,
 a.btn-link-reverse:hover,
 a.btn-link-reverse-left:hover,
+button.hidden-button,
 textarea.form-control {
   font-family: "Roboto Mono", monospace !important;
 }
@@ -335,6 +336,7 @@ a#whatsAppModalButton {
   color: var(--clickText);
   background-color: transparent;
   text-decoration: none;
+  text-align: left;
 }
 
 a.clickMe {
