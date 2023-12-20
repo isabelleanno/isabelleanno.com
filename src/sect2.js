@@ -235,6 +235,7 @@ export default function Sect2() {
                     <a
                       className="btn-link-reverse about-btn first-btn-lr my-3"
                       href="isabelleanno-resume.pdf"
+                      target="_blank"
                     >
                       <FontAwesomeIcon icon={faFile} /> View my Resume
                     </a>
@@ -249,6 +250,7 @@ export default function Sect2() {
                     <a
                       className="btn-link-reverse about-btn third-btn-lr my-3"
                       href="Collaboration-FAQ.pdf"
+                      target="_blank"
                     >
                       <FontAwesomeIcon icon={faPaintbrush} /> Collaborate on a
                       project
