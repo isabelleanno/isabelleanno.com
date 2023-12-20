@@ -10,6 +10,7 @@ import {
   faFile,
   faUserTie,
   faWheelchair,
+  faHandHoldingHeart,
   faRobot,
 } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -352,7 +353,19 @@ export default function Sect2() {
                       target="_blank"
                       className="clickMe"
                     >
-                      Buy me a coffee (if you so desire)
+                      Buy me a coffee
+                    </a>
+                  </span>
+                  <span className="d-flex align-items-center">
+                    <h2 className="d-inline">
+                      <i class="fa-solid fa-hand-holding-heart me-3"></i>
+                    </h2>
+                    <a
+                      href="https://www.givewell.org/"
+                      target="_blank"
+                      className="clickMe"
+                    >
+                      Givewell.org - My Favorite Charity
                     </a>
                   </span>
                   <span className="d-flex align-items-center">
