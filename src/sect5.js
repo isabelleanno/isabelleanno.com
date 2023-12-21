@@ -75,7 +75,7 @@ Add a new project here, as the first call to createProject().*/
       "The Book Nook",
       "I polished and improved my skills with this project. Each image was edited to fit the color scheme, and I made the background images myself. It was a fun process and really gave me confidence in my abilities.",
       "booknook",
-      "#",
+      "https://the-book-nook-ia.netlify.app/",
       "March 2, 2023"
     ),
     createProject(
@@ -89,28 +89,28 @@ Add a new project here, as the first call to createProject().*/
       "A Thousand Words Co.",
       "This site taught me more about using images online. We discussed copyright laws, licenses and fair use. I decided to source all the images from unplash.com, which is fair use.",
       "athousandwords",
-      "#",
+      "https://a-thousand-words.netlify.app/",
       "October 26, 2022"
     ),
     createProject(
       "Chairing Is Caring Co.",
       "I made a fake architecture company using Bootstrap as the final project of my advanced CSS class. It's fully responsive, and I'm proud of the color scheme and fonts used.",
       "chairing",
-      "#",
+      "https://chairing-is-caring.netlify.app/",
       "May 24, 2022"
     ),
     createProject(
       "JavaScript Puzzle Final Project",
       "Although not responsive on mobile devices, I'm proud of this puzzle game as it goes above and beyond and uses the unsplash API- a skill I learned from SheCodes- to find pictures on the web. You can use the settings to choose the difficulty, and every image is unique.",
       "JSPuzzle",
-      "#",
+      "https://javascript-puzzle.netlify.app/",
       "May 4, 2022"
     ),
     createProject(
       "Kirby Club",
       "This site was coded with Bootstrap. It taught me the grid system and other features of the popular framework.",
       "kirby",
-      "#",
+      "https://kirby-club.netlify.app/",
       "May 3, 2022"
     ),
     createProject(
@@ -124,7 +124,7 @@ Add a new project here, as the first call to createProject().*/
       "Green Thumb Succulent Co.",
       "I created this fake plant store company for my advanced CSS class. I doodled the logo myself using Krita. I'm proud of the layout of the shop page. All in all, it's a good site considering the little experience I had with coding at this point.",
       "greenthumb",
-      "#",
+      "https://green-thumb-succulents.netlify.app/",
       "February 3, 2022"
     ),
 
@@ -132,7 +132,7 @@ Add a new project here, as the first call to createProject().*/
       "Seize the Clay Pottery Studio",
       "One of my first ever projects in college. It helped me expand my HTML and CSS knowledge.",
       "pottery",
-      "#",
+      "https://seize-the-clay.netlify.app/",
       "October 18, 2021"
     ),
     createProject(
