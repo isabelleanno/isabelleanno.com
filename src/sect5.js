@@ -117,7 +117,7 @@ Add a new project here, as the first call to createProject().*/
       "Early JavaScript Projects",
       "Here is a collection of simple javascript projects. They were made in my first semester of college. They taught me a lot about vanilla JavaScript. I expanded these skills with JQuery and React.js. In this collection of projects, I made a tip calculator, a quiz and a list of items that the user can add or delete.",
       "arcade",
-      "#",
+      "https://javascript.isabelleanno.com/",
       "March-May of 2022"
     ),
     createProject(

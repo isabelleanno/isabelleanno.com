@@ -38,7 +38,6 @@ import Sect9 from "./sect9";
 
 //Initializing variables & constants that will be used later
 
-var scrollHorizontallyBool = true;
 var dragAndMoveBool = false;
 var horizNavDotsBool = true;
 var vertNavDotsBool = false;
@@ -102,7 +101,7 @@ const Fullpage = function loadFullPage() {
         showActiveTooltip={false}
         slidesNavigation={true}
         //fullpage extensions & keys
-        scrollHorizontally={scrollHorizontallyBool}
+        scrollHorizontally={true}
         scrollHorizontallyKey={
           "R1FhWE5oWW1Wc2JHVmhibTV2TG1OdmJRPT0zT19mSVdjMk55YjJ4c1NHOXlhWHB2Ym5SaGJHeDU4VWw="
         }
@@ -272,7 +271,7 @@ $("#horizNav").on("click", function (event) {
     horizNavDots.css("visibility", "visible");
   }
 });
-const root = ReactDOM.createRoot(document.getElementById("react-root"));
+const root = createRoot(document.getElementById("react-root"));
 
 //let's load everything... That's important, I guess.
 root.render(<Fullpage />);
