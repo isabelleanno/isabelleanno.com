@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 import initialsImg from "./Images/Initials.svg";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./css/styles.css";
-
+import { BrowserRouter } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [menuIcon, setMenuIcon] = useState(faBars);
@@ -34,23 +34,11 @@ const Navbar = () => {
           <FontAwesomeIcon icon={menuIcon} />
         </div>
         <div className={`nav-elements  ${showNavbar && "active"}`}>
-          <ul className="justify-content-end">
-            <li>
+          <BrowserRouter>
+            <ul className="justify-content-end">
               <Link to="#s2">About</Link>
-            </li>
-            <li>
-              <Link to="#s3">Resumé</Link>
-            </li>
-            <li>
-              <Link to="#s5">Projects</Link>
-            </li>
-            <li>
-              <Link to="#s6">Reviews</Link>
-            </li>
-            <li>
-              <Link to="#s8">Contact</Link>
-            </li>
-          </ul>
+            </ul>
+          </BrowserRouter>
         </div>
       </div>
     </nav>

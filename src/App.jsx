@@ -17,7 +17,6 @@ PART 3: Miscellaneous JavaScript functions/event listeners with plenty of commen
 /* ----------------------------PART 1- Import stuff & initialize variables. ----------------------------------*/
 import { useState, useEffect } from "react";
 import "./css/styles.css";
-import { BrowserRouter, Link } from "react-router-dom";
 import { gsap } from "gsap";
 import $ from "jquery";
 import ReactFullpage from "@fullpage/react-fullpage";
@@ -167,20 +166,18 @@ const Fullpage = function loadFullPage() {
 
         render={({ state, fullpageApi }) => {
           return (
-            <BrowserRouter>
-              <ReactFullpage.Wrapper>
-                <Navbar />
-                <Sect1 />
-                <Sect2 />
-                <Sect3 />
-                <Sect4 />
-                <Sect5 />
-                <Sect6 />
-                <Sect7 />
-                <Sect8 />
-                <Sect9 />
-              </ReactFullpage.Wrapper>
-            </BrowserRouter>
+            <ReactFullpage.Wrapper>
+              <Navbar />
+              <Sect1 />
+              <Sect2 />
+              <Sect3 />
+              <Sect4 />
+              <Sect5 />
+              <Sect6 />
+              <Sect7 />
+              <Sect8 />
+              <Sect9 />
+            </ReactFullpage.Wrapper>
           );
         }}
       />

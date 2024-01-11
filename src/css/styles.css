@@ -221,7 +221,7 @@ span.title {
 
 /*navbar*/
 
-.navContainer {
+div.container.navContainer {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 77px;
