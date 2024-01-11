@@ -20,7 +20,7 @@ Table of contents:
   --dropdownFocus: #f8f9fa;
   --sliderBG: #979797;
   --sliderChecked: #2196f3;
-  --arrowNav: #fff;
+  --arrowNav: #dedede;
   --s2: #d5c3f5;
   --s2H1: #d6f6d6;
   --s2FrameBG: #dbcbf7;
@@ -220,7 +220,28 @@ span.title {
 /*--------------------------------------------3.) Header and nav bar styles--------------------------------------------*/
 
 /*navbar*/
-
+#dropdown-settings {
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  box-shadow: none;
+}
+#dropdown-settings:focus {
+  box-shadow: none;
+}
+.settings-item {
+  display: flex;
+  width: 100%;
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  clear: both;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  border-radius: var(--bs-dropdown-item-border-radius, 0);
+  align-items: center;
+  justify-content: space-between;
+}
 div.container.navContainer {
   max-width: 1100px;
   margin: 0 auto;
@@ -251,6 +272,7 @@ div.container.navContainer {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  align-items: center;
 }
 
 .nav-elements ul li:not(:last-child) {
@@ -258,6 +280,7 @@ div.container.navContainer {
 }
 
 .nav-elements ul a {
+  display: flex;
   font-size: 16px;
   font-weight: 400;
   color: #2f234f;
@@ -314,6 +337,7 @@ div.container.navContainer {
   display: inline-block;
   width: 40px;
   height: 24px;
+  margin: 0;
 }
 
 /* Hide default HTML checkbox */

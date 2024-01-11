@@ -46,7 +46,7 @@ const Fullpage = function loadFullPage() {
 
   function fakeRequest() {
     //Simulates a request; makes a "promise" that'll run for 900 milliseconds
-    return new Promise((resolve) => setTimeout(() => resolve(), 900));
+    return new Promise((resolve) => setTimeout(() => resolve(), 100));
   }
   //After render, remove spinner element and set change setLoading to false.
   useEffect(() => {
@@ -62,8 +62,6 @@ const Fullpage = function loadFullPage() {
   if (isLoading) {
     return null;
   } else {
-    //Display header
-    $(".top-nav").removeClass("d-none");
     //Return fullpage
     return (
       <ReactFullpage
@@ -107,13 +105,10 @@ const Fullpage = function loadFullPage() {
         scrollOverflowResetKey={
           "ejJhWE5oWW1Wc2JHVmhibTV2TG1OdmJRPT0zM19mRzFjMk55YjJ4c1QzWmxjbVpzYjNkU1pYTmxkQT09WUls"
         }
-        //End of extensions ^^ Beginning of fullpage methods and some custom JQuery stuff vvv
-
-        //Us the afterload and afterSlideLoad fullpage.js methods
-        afterLoad={function (origin, destination, direction) {
+        //Use the afterload and afterSlideLoad fullpage.js methods
+        afterLoad={() => {
           let activeSection = fullpage_api.getActiveSection();
           let activeSlide = fullpage_api.getActiveSlide();
-          //Run the header/nav gsap timeline animation
 
           //Grab the navigation dots (vertical and horizontal)
           const vertNavDots = $("#fp-nav");
@@ -189,27 +184,7 @@ const Fullpage = function loadFullPage() {
 };
 /* ---------------------------------------PART 3- Miscellaneous JavaScript----------------------------------------*/
 
-/*Next I want to focus on the fixed navbar found in index.html. 
-Here we will create an event listener that waits for the user to click on the settings icon. We're going to make the
-dropdown menu the same color as the background color of the current slide we are on. Why? It's prettier that way! :) */
-/*
-//grab the settings icon on the navbar
-let settings = document.getElementById("dropdownMenuClickableInside");
-
-function changeDropdown() {
-  const sectionBackgrounds = document.querySelector("div.section.active"); //Grab the active section
-  const sectionColor =
-    window.getComputedStyle(sectionBackgrounds).backgroundColor; //Grab the background color of active section
-  const dropdownMenu = document.getElementById("dropdownMenu"); //Grab the dropdown menu
-  dropdownMenu.style.backgroundColor = sectionColor; //Do the thing (make it the same background color)
-}
-
-//Create event listener
-settings.addEventListener("mouseover", (event) => {
-  changeDropdown();
-});
-*/
-/*Now that that's done, let's make the dropdown menu actually work. */
+/* let's make the dropdown menu actually work. */
 //Toggle accessibility on and off
 $("#accessibility").on("click", function (event) {
   const accessibilityMenuBG = $(".uai");
