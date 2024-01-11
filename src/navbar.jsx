@@ -5,8 +5,7 @@ import initialsImg from "./Images/Initials.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./css/styles.css";
-import { BrowserRouter } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
+
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [menuIcon, setMenuIcon] = useState(faBars);
@@ -34,11 +33,23 @@ const Navbar = () => {
           <FontAwesomeIcon icon={menuIcon} />
         </div>
         <div className={`nav-elements  ${showNavbar && "active"}`}>
-          <BrowserRouter>
-            <ul className="justify-content-end">
-              <Link to="#s2">About</Link>
-            </ul>
-          </BrowserRouter>
+          <ul className="justify-content-end">
+            <li>
+              <a href="#s2">About</a>
+            </li>
+            <li>
+              <a href="#s3">Resumé</a>
+            </li>
+            <li>
+              <a href="#s5">Projects</a>
+            </li>
+            <li>
+              <a href="#s6">Reviews</a>
+            </li>
+            <li>
+              <a href="#s8">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>

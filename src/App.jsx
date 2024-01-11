@@ -75,6 +75,7 @@ const Fullpage = function loadFullPage() {
         scrollOverflow={true}
         autoScrolling={true}
         anchors={["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9"]}
+        //menu={"#myMenu"}
         navigation={true}
         navigationPosition={"left"}
         navigationTooltips={[
