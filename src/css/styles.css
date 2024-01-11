@@ -20,6 +20,7 @@ Table of contents:
   --dropdownFocus: #f8f9fa;
   --sliderBG: #979797;
   --sliderChecked: #2196f3;
+  --sideNavBG: #fef7e5;
   --arrowNav: #dedede;
   --s2: #d5c3f5;
   --s2H1: #d6f6d6;
@@ -61,6 +62,7 @@ Table of contents:
   --dropdownFocus: #060606;
   --sliderBG: #323135;
   --sliderChecked: #351196;
+  --sideNavBG: #rgb(68, 67, 63);
   --arrowNav: var(--text-color);
   --s2: var(--s1);
   --s2H1: #5c3a97;
@@ -307,7 +309,7 @@ div.container.navContainer {
     z-index: 1000;
     right: 0;
     top: 0;
-    background-color: #fef7e5;
+    background-color: var(--sideNavBG);
     width: 0px;
     height: 100vh;
     transition: all 0.3s ease-in;
