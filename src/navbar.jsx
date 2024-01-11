@@ -1,7 +1,7 @@
 //This navbar was created with the help of this article: https://www.codevertiser.com/reactjs-responsive-navbar/
 
 import { useState } from "react";
-import initialsImg from "./Images/Initials.svg";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./css/styles.css";
@@ -27,12 +27,12 @@ const Navbar = () => {
     <nav className="top-nav">
       <div className="container navContainer">
         <div className="logo">
-          <img src={initialsImg} alt="" />
+          <img src="/Images/Initials.svg" alt="" />
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
           <FontAwesomeIcon icon={menuIcon} />
         </div>
-        <div className={`nav-elements  ${showNavbar && "active"}`}>
+        <div className={`nav-elements  ${showNavbar && "showing"}`}>
           <ul className="justify-content-end">
             <li>
               <a href="#s2">About</a>

@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
-import flagImg from "./Images/UsaAndNL.png";
 import { TextPlugin } from "gsap/TextPlugin";
 
 gsap.registerPlugin(TextPlugin);
@@ -42,7 +41,7 @@ export default function Sect1() {
           </h1>
           <p className="my-4 learnMore">
             I'm an American web developer living in the Netherlands{" "}
-            <img src={flagImg}></img>
+            <img src="/Images/UsaAndNL.png"></img>
           </p>
           <a
             className="btn-link learnMore"

@@ -167,18 +167,20 @@ const Fullpage = function loadFullPage() {
 
         render={({ state, fullpageApi }) => {
           return (
-            <ReactFullpage.Wrapper>
+            <>
               <Navbar />
-              <Sect1 />
-              <Sect2 />
-              <Sect3 />
-              <Sect4 />
-              <Sect5 />
-              <Sect6 />
-              <Sect7 />
-              <Sect8 />
-              <Sect9 />
-            </ReactFullpage.Wrapper>
+              <ReactFullpage.Wrapper>
+                <Sect1 />
+                <Sect2 />
+                <Sect3 />
+                <Sect4 />
+                <Sect5 />
+                <Sect6 />
+                <Sect7 />
+                <Sect8 />
+                <Sect9 />
+              </ReactFullpage.Wrapper>
+            </>
           );
         }}
       />

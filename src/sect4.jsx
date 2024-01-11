@@ -63,7 +63,7 @@ export default function Sect4() {
                     website about my dog Henry.
                   </p>
                   <img
-                    src="./Images/certs/basic.png"
+                    src="/Images/certs/basic.png"
                     className="ExtraDim"
                     alt="SheCodes Verified Certificate of Achievement. March 22, 2021. Isabelle Anno has successfully completed the introduction to Coding workshop."
                   />
@@ -89,7 +89,7 @@ export default function Sect4() {
                     preferably online.
                   </p>
                   <img
-                    src="./Images/certs/plus.png"
+                    src="/Images/certs/plus.png"
                     className="dim"
                     alt="SheCodes Verified Certificate of Achievement. May 31, 2021. Isabelle Anno has successfully completed the web development workshop."
                   />
@@ -114,7 +114,7 @@ export default function Sect4() {
                     skills in college.
                   </p>
                   <img
-                    src="./Images/certs/Responsive.png"
+                    src="/Images/certs/Responsive.png"
                     className="dim"
                     alt="SheCodes Verified Certificate of Achievement. July 5, 2021. Isabelle Anno has successfully completed the Responsive Web Development workshop."
                   />
@@ -167,7 +167,7 @@ export default function Sect4() {
                     contribute to.
                   </p>
                   <img
-                    src="./Images/certs/degree.jpg"
+                    src="/Images/certs/degree.jpg"
                     className="ExtraDim"
                     alt="Stark State College. North Canton, Ohio. May 14, 2023. Associate's of applied business web design and development."
                   />
@@ -192,13 +192,13 @@ export default function Sect4() {
                   <div className="col-12 d-flex ExtraDim" id="certs-border">
                     <div className="col-6">
                       <img
-                        src="./Images/certs/sql.jpg"
+                        src="/Images/certs/sql.jpg"
                         alt="Stark State College Career Enhancement Certificate in Microsoft SQL Server. May 14, 2023."
                       />
                     </div>
                     <div className="col-6">
                       <img
-                        src="./Images/certs/webdesign.jpg"
+                        src="/Images/certs/webdesign.jpg"
                         alt="Stark State College Career Enhancement Certificate in Web Design. May 14, 2023."
                       />
                     </div>
@@ -223,7 +223,7 @@ export default function Sect4() {
                     a working dictionary.
                   </p>
                   <img
-                    src="./Images/certs/React.png"
+                    src="/Images/certs/React.png"
                     className="dim"
                     alt="SheCodes Verified Certificate of Achievement. July 19, 2023. Isabelle Anno has successfully completed the Advanced React Development workshop."
                   />
@@ -249,7 +249,7 @@ export default function Sect4() {
                     for a variety of purposes, and to not be afraid of it.
                   </p>
                   <img
-                    src="./Images/certs/AI.png"
+                    src="/Images/certs/AI.png"
                     className="dim"
                     alt="SheCodes Verified Certificate of Achievement. December 4, 2023. Isabelle Anno has successfully completed the Introduction to Artificial Intelligence workshop."
                   />

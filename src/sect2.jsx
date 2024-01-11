@@ -28,9 +28,6 @@ import Career from "./careerLength";
 import { gsap } from "gsap";
 import Sect2Layout from "./sect2Layout";
 
-import IsabelleImg from "./Images/about/isabelleanno.jpg";
-import PatrickIsabelleImg from "./Images/about/patrick.jpg";
-
 export default function Sect2() {
   //Create GSAP animations for this section
 
@@ -121,7 +118,7 @@ export default function Sect2() {
                 <div className="col d-flex flex-column justify-content-center">
                   <div className="img-frame">
                     <img
-                      src={IsabelleImg}
+                      src="/Images/about/isabelleanno.jpg"
                       className="dim"
                       alt="Isabelle Anno admiring a view from a mountaintop in Cochem, Germany"
                     />
@@ -389,7 +386,7 @@ export default function Sect2() {
               <div className="col-6 m-1 p-4 d-flex justify-content-center">
                 <div className="img-frame img-frame-2">
                   <img
-                    src={PatrickIsabelleImg}
+                    src="/Images/about/patrick.jpg"
                     className="dim"
                     alt="Isabelle and her husband Patrick kissing at a botanical garden"
                   />

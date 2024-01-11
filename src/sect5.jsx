@@ -18,7 +18,7 @@ export default function Sect5() {
       Description: description,
       PhotoSrc: (
         <img
-          src={`./Images/projects/${photoSrc}.png`}
+          src={`/Images/projects/${photoSrc}.png`}
           alt="A display of the current project"
         ></img>
       ),

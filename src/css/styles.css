@@ -291,7 +291,7 @@ div.container.navContainer {
     overflow: hidden;
   }
 
-  .nav-elements.active {
+  .nav-elements.showing {
     width: 160px;
   }
 
