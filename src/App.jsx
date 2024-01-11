@@ -229,7 +229,5 @@ $("#horizNav").on("click", function (event) {
     horizNavDots.css("visibility", "visible");
   }
 });
-
 /* -------------------------------------------END OF DOCUMENT---------------------------------------------------*/
-
 export default Fullpage;
