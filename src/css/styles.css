@@ -220,28 +220,6 @@ span.title {
 /*--------------------------------------------3.) Header and nav bar styles--------------------------------------------*/
 
 /*navbar*/
-#dropdown-settings {
-  background: transparent;
-  border: none;
-  color: var(--text-color);
-  box-shadow: none;
-}
-#dropdown-settings:focus {
-  box-shadow: none;
-}
-.settings-item {
-  display: flex;
-  width: 100%;
-  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
-  clear: both;
-  text-align: inherit;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
-  border-radius: var(--bs-dropdown-item-border-radius, 0);
-  align-items: center;
-  justify-content: space-between;
-}
 div.container.navContainer {
   max-width: 1100px;
   margin: 0 auto;
@@ -383,15 +361,7 @@ input:checked + .slider:before {
   -ms-transform: translateX(16px);
   transform: translateX(16px);
 }
-.dropdown-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.dropdown-item:hover,
-.dropdown-item:focus {
-  background-color: var(--dropdownFocus);
-}
+
 /*Dot navigation. Opacity 0 by default before GSAP Animation*/
 #fp-nav {
   opacity: 0;
