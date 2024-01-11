@@ -182,9 +182,9 @@ const Fullpage = function loadFullPage() {
     );
   }
 };
-/* ---------------------------------------PART 3- Miscellaneous JavaScript----------------------------------------*/
+/*---------------------------------------PART 3- Miscellaneous JavaScript----------------------------------------
 
-/* let's make the dropdown menu actually work. */
+/* let's make the dropdown menu actually work. 
 //Toggle accessibility on and off
 $("#accessibility").on("click", function (event) {
   const accessibilityMenuBG = $(".uai");
@@ -229,5 +229,7 @@ $("#horizNav").on("click", function (event) {
     horizNavDots.css("visibility", "visible");
   }
 });
+
 /* -------------------------------------------END OF DOCUMENT---------------------------------------------------*/
+
 export default Fullpage;
