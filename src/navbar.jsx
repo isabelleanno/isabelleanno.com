@@ -57,49 +57,48 @@ const Navbar = () => {
             <li>
               <a href="#s8">Contact</a>
             </li>
-            <li>
-              <li className="nav-item align-self-center">
-                <Dropdown autoClose="outside" id="settings">
-                  <Dropdown.Toggle id="dropdown-settings">
-                    <FontAwesomeIcon icon={faGear} />
-                  </Dropdown.Toggle>
 
-                  <Dropdown.Menu>
-                    <div className="settings-item">
-                      <FontAwesomeIcon icon={faUniversalAccess} />
-                      <p className="m-0 mx-3">Accessibility</p>
-                      <label className="switch">
-                        <input type="checkbox" id="accessibility" />
-                        <span className="slider"></span>
-                      </label>
-                    </div>
-                    <div className="settings-item">
-                      <FontAwesomeIcon icon={faMoon} />
-                      <p className="m-0 mx-3">Dark Mode</p>
-                      <label className="switch">
-                        <input type="checkbox" id="darkMode" />
-                        <span className="slider"></span>
-                      </label>
-                    </div>
-                    <div className="settings-item">
-                      <FontAwesomeIcon icon={faEllipsis} />
-                      <p className="m-0 mx-3">Horizontal Nav</p>
-                      <label className="switch">
-                        <input type="checkbox" id="horizNav" />
-                        <span className="slider"></span>
-                      </label>
-                    </div>
-                    <div className="settings-item">
-                      <FontAwesomeIcon icon={faEllipsisVertical} />
-                      <p className="m-0 mx-3">Vertical Nav</p>
-                      <label className="switch">
-                        <input type="checkbox" id="vertNav" />
-                        <span className="slider"></span>
-                      </label>
-                    </div>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </li>
+            <li className="nav-item align-self-center">
+              <Dropdown autoClose="outside" id="settings">
+                <Dropdown.Toggle id="dropdown-settings">
+                  <FontAwesomeIcon icon={faGear} />
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <div className="settings-item">
+                    <FontAwesomeIcon icon={faUniversalAccess} />
+                    <p className="m-0 mx-3">Accessibility</p>
+                    <label className="switch">
+                      <input type="checkbox" id="accessibility" />
+                      <span className="slider"></span>
+                    </label>
+                  </div>
+                  <div className="settings-item">
+                    <FontAwesomeIcon icon={faMoon} />
+                    <p className="m-0 mx-3">Dark Mode</p>
+                    <label className="switch">
+                      <input type="checkbox" id="darkMode" />
+                      <span className="slider"></span>
+                    </label>
+                  </div>
+                  <div className="settings-item">
+                    <FontAwesomeIcon icon={faEllipsis} />
+                    <p className="m-0 mx-3">Horizontal Nav</p>
+                    <label className="switch">
+                      <input type="checkbox" id="horizNav" />
+                      <span className="slider"></span>
+                    </label>
+                  </div>
+                  <div className="settings-item">
+                    <FontAwesomeIcon icon={faEllipsisVertical} />
+                    <p className="m-0 mx-3">Vertical Nav</p>
+                    <label className="switch">
+                      <input type="checkbox" id="vertNav" />
+                      <span className="slider"></span>
+                    </label>
+                  </div>
+                </Dropdown.Menu>
+              </Dropdown>
             </li>
           </ul>
         </div>
