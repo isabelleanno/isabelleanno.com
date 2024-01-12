@@ -66,7 +66,7 @@ const Navbar = () => {
               >
                 <FontAwesomeIcon icon={faGear} />
               </button>
-              <ul className="dropdown-menu">
+              <ul className="dropdown-menu dropdown-menu-lg-end">
                 <li className="dropdown-options">
                   <FontAwesomeIcon icon={faUniversalAccess} />
                   <p className="m-0 mx-3">Accessibility</p>

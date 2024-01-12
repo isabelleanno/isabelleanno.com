@@ -252,6 +252,17 @@ button.dropdown-toggle:focus {
   box-shadow: none;
   color: var(--text-color);
 }
+
+.nav-elements-ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+
+.nav-elements-ul li:not(:last-child) {
+  margin-right: 60px;
+}
 .dropdown-options {
   width: 100%;
   padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
@@ -260,18 +271,9 @@ button.dropdown-toggle:focus {
   border: 0;
   border-radius: var(--bs-dropdown-item-border-radius, 0);
   display: flex;
-}
-.nav-elements-ul {
-  display: flex;
   justify-content: space-between;
-  list-style-type: none;
-  align-items: center;
+  margin-right: 0px !important;
 }
-
-.nav-elements ul li:not(:last-child) {
-  margin-right: 60px;
-}
-
 .nav-elements ul a {
   display: flex;
   font-size: 16px;
