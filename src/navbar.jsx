@@ -12,6 +12,7 @@ import {
   faEllipsisVertical,
 } from "@fortawesome/free-solid-svg-icons";
 import "./css/styles.css";
+import $ from "jquery";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -32,7 +33,50 @@ const Navbar = () => {
 
   //Add functionality to settings dropdown menu
   useEffect(() => {
-    const accessibility = document.querySelector("#accessibility");
+    //Toggle accessibility on and off
+    $("#accessibility").on("click", function (event) {
+      const accessibilityMenuBG = $(".uai");
+      const accessibilityMenu = $(".uwy");
+      const accessibilityToggle = $("#accessibility").is(":checked");
+      if (accessibilityToggle === false) {
+        accessibilityMenu.css("display", "none");
+        accessibilityMenuBG.css("visibility", "hidden");
+      } else {
+        accessibilityMenu.css("display", "block");
+        accessibilityMenuBG.css("visibility", "visible");
+      }
+    });
+    //Dark Mode
+    $("#darkMode").on("click", function (event) {
+      if ($("#darkMode").is(":checked")) {
+        document.querySelector("body").setAttribute("data-theme", "dark");
+        changeDropdown();
+      } else {
+        document.querySelector("body").setAttribute("data-theme", "light");
+        changeDropdown();
+      }
+      $("body").css("transition", "all 0.5s ease-in-out");
+    });
+    //Toggle vertical nav on and off
+    $("#vertNav").on("click", function (event) {
+      const vertNavDots = $("#fp-nav");
+      const vertNavToggle = $("#vertNav").is(":checked");
+      if (vertNavToggle === false) {
+        vertNavDots.css("visibility", "hidden");
+      } else {
+        vertNavDots.css("visibility", "visible");
+      }
+    });
+    //Toggle horizontal nav on and off
+    $("#horizNav").on("click", function (event) {
+      const horizNavDots = $(".fp-slidesNav");
+      const horizNavToggle = $("#horizNav").is(":checked");
+      if (horizNavToggle === false) {
+        horizNavDots.css("visibility", "hidden");
+      } else {
+        horizNavDots.css("visibility", "visible");
+      }
+    });
   });
   return (
     <nav className="top-nav">
@@ -88,18 +132,18 @@ const Navbar = () => {
                   </label>
                 </li>
                 <li className="dropdown-options">
-                  <FontAwesomeIcon icon={faEllipsis} />
-                  <p className="m-0 mx-3">Horizontal Nav</p>
-                  <label className="switch">
-                    <input type="checkbox" id="horizNav" />
-                    <span className="slider"></span>
-                  </label>
-                </li>
-                <li className="dropdown-options">
                   <FontAwesomeIcon icon={faEllipsisVertical} />
                   <p className="m-0 mx-3">Vertical Nav</p>
                   <label className="switch">
                     <input type="checkbox" id="vertNav" />
+                    <span className="slider"></span>
+                  </label>
+                </li>
+                <li className="dropdown-options">
+                  <FontAwesomeIcon icon={faEllipsis} />
+                  <p className="m-0 mx-3">Horizontal Nav</p>
+                  <label className="switch">
+                    <input type="checkbox" id="horizNav" />
                     <span className="slider"></span>
                   </label>
                 </li>

@@ -188,54 +188,6 @@ const Fullpage = function loadFullPage() {
   }
 };
 
-/*---------------------------------------PART 3- Miscellaneous JavaScript----------------------------------------
-
-/* let's make the dropdown menu actually work. 
-//Toggle accessibility on and off
-$("#accessibility").on("click", function (event) {
-  const accessibilityMenuBG = $(".uai");
-  const accessibilityMenu = $(".uwy");
-  const accessibilityToggle = $("#accessibility").is(":checked");
-  if (accessibilityToggle === false) {
-    accessibilityMenu.css("display", "none");
-    accessibilityMenuBG.css("visibility", "hidden");
-  } else {
-    accessibilityMenu.css("display", "block");
-    accessibilityMenuBG.css("visibility", "visible");
-  }
-});
-//Dark Mode
-$("#darkMode").on("click", function (event) {
-  if ($("#darkMode").is(":checked")) {
-    document.querySelector("body").setAttribute("data-theme", "dark");
-    changeDropdown();
-  } else {
-    document.querySelector("body").setAttribute("data-theme", "light");
-    changeDropdown();
-  }
-  $("body").css("transition", "all 0.5s ease-in-out");
-});
-//Toggle vertical nav on and off
-$("#vertNav").on("click", function (event) {
-  const vertNavDots = $("#fp-nav");
-  const vertNavToggle = $("#vertNav").is(":checked");
-  if (vertNavToggle === false) {
-    vertNavDots.css("visibility", "hidden");
-  } else {
-    vertNavDots.css("visibility", "visible");
-  }
-});
-//Toggle horizontal nav on and off
-$("#horizNav").on("click", function (event) {
-  const horizNavDots = $(".fp-slidesNav");
-  const horizNavToggle = $("#horizNav").is(":checked");
-  if (horizNavToggle === false) {
-    horizNavDots.css("visibility", "hidden");
-  } else {
-    horizNavDots.css("visibility", "visible");
-  }
-});
-
 /* -------------------------------------------END OF DOCUMENT---------------------------------------------------*/
 
 export default Fullpage;
