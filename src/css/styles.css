@@ -245,14 +245,14 @@ div.container.navContainer {
 .menu-icon {
   display: none;
 }
-button#dropdown-settings,
-button#dropdown-settings:focus {
+button.dropdown-toggle,
+button.dropdown-toggle:focus {
   border: none;
   background-color: transparent;
   box-shadow: none;
   color: var(--text-color);
 }
-.settings-item {
+.dropdown-options {
   width: 100%;
   padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
   clear: both;
@@ -261,7 +261,7 @@ button#dropdown-settings:focus {
   border-radius: var(--bs-dropdown-item-border-radius, 0);
   display: flex;
 }
-.nav-elements ul {
+.nav-elements-ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
