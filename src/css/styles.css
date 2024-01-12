@@ -379,10 +379,6 @@ input:checked + .slider:before {
   transform: translateX(16px);
 }
 
-/*Dot navigation. Opacity 0 by default before GSAP Animation*/
-#fp-nav {
-  opacity: 0;
-}
 /* Display:none for sections that aren't the start of the topic, to reduce clutter*/
 #fp-nav > ul > li:nth-child(1),
 #fp-nav > ul > li:nth-child(4),

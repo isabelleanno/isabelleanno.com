@@ -18,6 +18,7 @@ const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [menuIcon, setMenuIcon] = useState(faBars);
 
+  //change to an X when bar is open
   const changeMenuIcon = () => {
     if (showNavbar === false) {
       setMenuIcon(faXmark);
@@ -26,6 +27,7 @@ const Navbar = () => {
     }
   };
 
+  //Show either the desktop or mobile nav bar
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
     changeMenuIcon();
@@ -33,6 +35,10 @@ const Navbar = () => {
 
   //Add functionality to settings dropdown menu
   useEffect(() => {
+    //Having horizontal and vertical nav be checked by default
+    $("#vertNav").prop("checked", true);
+    $("#horizNav").prop("checked", true);
+
     //Toggle accessibility on and off
     $("#accessibility").on("click", function (event) {
       const accessibilityMenuBG = $(".uai");
@@ -78,6 +84,7 @@ const Navbar = () => {
       }
     });
   });
+  //Nav bar JSX vvv
   return (
     <nav className="top-nav">
       <div className="container navContainer">
@@ -144,7 +151,7 @@ const Navbar = () => {
                   <p className="m-0 mx-3">Horizontal Nav</p>
                   <label className="switch">
                     <input type="checkbox" id="horizNav" />
-                    <span className="slider"></span>
+                    <span className="slider sliderCheckedDefault"></span>
                   </label>
                 </li>
               </ul>
