@@ -1,6 +1,6 @@
 //This navbar was created with the help of this article: https://www.codevertiser.com/reactjs-responsive-navbar/
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
@@ -30,6 +30,10 @@ const Navbar = () => {
     changeMenuIcon();
   };
 
+  //Add functionality to settings dropdown menu
+  useEffect(() => {
+    const accessibility = document.querySelector("#accessibility");
+  });
   return (
     <nav className="top-nav">
       <div className="container navContainer">
