@@ -222,7 +222,7 @@ span.title {
 div.container.navContainer {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 77px;
+  padding: 0 5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -284,49 +284,6 @@ button.dropdown-toggle:focus {
   padding: 15px;
 }
 
-@media (max-width: 768px) {
-  .nav-elements ul li:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-@media (max-width: 600px) {
-  .menu-icon {
-    color: black;
-    display: block;
-    cursor: pointer;
-    position: relative;
-    z-index: 2000;
-  }
-
-  .nav-elements {
-    position: absolute;
-    z-index: 1000;
-    right: 0;
-    top: 0;
-    background-color: #fef7e5;
-    width: 0px;
-    height: 100vh;
-    transition: all 0.3s ease-in;
-    overflow: hidden;
-  }
-
-  .nav-elements.showing {
-    width: 160px;
-  }
-
-  .nav-elements ul {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    top: 25%;
-  }
-
-  .nav-elements ul li {
-    margin-right: unset;
-    margin-top: 22px;
-  }
-}
 /*The switches on the dropdown menu*/
 
 .switch {
@@ -863,12 +820,49 @@ a.btn-success:hover {
   img[src*="Initials"] {
     width: 6vw;
   }
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+/* Tablets- Portrait Mode */
+@media (max-width: 600px) {
+  .menu-icon {
+    color: black;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    z-index: 2000;
+  }
+
+  .nav-elements {
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+    top: 0;
+    background-color: #fef7e5;
+    width: 0px;
+    height: 100vh;
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+
+  .nav-elements.showing {
+    width: 160px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: 25%;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
 }
 /*
-
-Tablets- Portrait Mode
-@media screen and (max-width: 600px) {
-}
 Normal phone size
 @media screen and (max-width: 365px) {
 }
