@@ -20,9 +20,6 @@ import "./css/styles.css";
 import { gsap } from "gsap";
 import $ from "jquery";
 import ReactFullpage from "@fullpage/react-fullpage";
-import "bootstrap";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.js";
 
 import Popper from "popper.js";
 

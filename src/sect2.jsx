@@ -12,6 +12,9 @@ import {
   faWheelchair,
   faHandHoldingHeart,
   faRobot,
+  faEnvelopeCircleCheck,
+  faMugSaucer,
+  faCode,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faHtml5,
@@ -22,6 +25,8 @@ import {
   faWordpress,
   faBootstrap,
   faGoogle,
+  faGithub,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import Age from "./age";
 import Career from "./careerLength";
@@ -299,7 +304,7 @@ export default function Sect2() {
                   </p>
                   <span className="d-flex align-items-center">
                     <h2 className="d-inline">
-                      <i className="fa-brands fa-github me-3"></i>
+                      <FontAwesomeIcon icon={faGithub} className="me-3" />
                     </h2>
                     <a
                       href="https://github.com/isabelleanno"
@@ -311,7 +316,7 @@ export default function Sect2() {
                   </span>
                   <span className="d-flex align-items-center">
                     <h2 className="d-inline">
-                      <i className="fa-brands fa-linkedin me-3"></i>
+                      <FontAwesomeIcon icon={faLinkedin} className="me-3" />
                     </h2>
                     <a
                       href="https://www.linkedin.com/in/isabelle-anno/"
@@ -323,7 +328,10 @@ export default function Sect2() {
                   </span>
                   <span className="d-flex align-items-center">
                     <h2 className="d-inline">
-                      <i className="fa-solid fa-envelope-circle-check me-1"></i>
+                      <FontAwesomeIcon
+                        icon={faEnvelopeCircleCheck}
+                        className="me-3"
+                      />
                     </h2>
                     <button
                       className="hidden-button"
@@ -346,7 +354,10 @@ export default function Sect2() {
                   </span>
                   <span className="d-flex align-items-center">
                     <h2 className="d-inline">
-                      <i className="fa-solid fa-hand-holding-heart me-3"></i>
+                      <FontAwesomeIcon
+                        icon={faHandHoldingHeart}
+                        className="me-3"
+                      />
                     </h2>
                     <a
                       href="https://www.givewell.org/"
@@ -358,7 +369,7 @@ export default function Sect2() {
                   </span>
                   <span className="d-flex align-items-center">
                     <h2 className="d-inline">
-                      <i className="fa-solid fa-mug-saucer me-3"></i>
+                      <FontAwesomeIcon icon={faMugSaucer} className="me-3" />
                     </h2>
                     <a
                       href="https://www.buymeacoffee.com/isabelleanno"
@@ -371,7 +382,7 @@ export default function Sect2() {
 
                   <span className="d-flex align-items-center mb-5">
                     <h2 className="d-inline">
-                      <i className="fa-solid fa-code me-3"></i>
+                      <FontAwesomeIcon icon={faCode} className="me-3" />
                     </h2>
                     <a
                       href="https://www.shecodes.io/graduates/15539-isabelle-anno"

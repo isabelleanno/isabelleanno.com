@@ -56,10 +56,10 @@ const Navbar = () => {
     $("#darkMode").on("click", function (event) {
       if ($("#darkMode").is(":checked")) {
         document.querySelector("body").setAttribute("data-theme", "dark");
-        changeDropdown();
+        //changeDropdown();
       } else {
         document.querySelector("body").setAttribute("data-theme", "light");
-        changeDropdown();
+        //changeDropdown();
       }
       $("body").css("transition", "all 0.5s ease-in-out");
     });

@@ -1,6 +1,5 @@
 import React from "react";
 import { gsap } from "gsap";
-import "bootstrap/dist/css/bootstrap.min.css";
 import ContactModal from "./contactModal";
 //Import fontawesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

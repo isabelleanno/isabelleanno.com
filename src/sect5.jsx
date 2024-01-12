@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Sect5Layout from "./sect5Layout";
+import $ from "jquery";
 /*
 This section is unique from all the other sections. It is responsible for displaying the projects section and slides.
 My goal is to easily be able to add a project to the code, without having to reformat everything in the timeline,
@@ -151,7 +152,10 @@ Add a new project here, as the first call to createProject().*/
       "March 22, 2021"
     ),
   ];
-
+  useEffect(() => {
+    $(".fp-arrow.fp-next").addClass("sect5FPNext");
+    $(".fp-arrow.fp-prev").addClass("sect5FPPrev");
+  });
   //Returns the first two slides and then calls sect5Layout component to render the projects in the timeline
   return (
     <div className="section hs5">
