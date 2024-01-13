@@ -15,13 +15,10 @@ PART 3: Miscellaneous JavaScript functions/event listeners with plenty of commen
 */
 
 /* ----------------------------PART 1- Import stuff & initialize variables. ----------------------------------*/
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./css/styles.css";
-import { gsap } from "gsap";
 import $ from "jquery";
 import ReactFullpage from "@fullpage/react-fullpage";
-
-import Popper from "popper.js";
 
 //Components
 import Navbar from "./navbar";
@@ -35,6 +32,16 @@ import Sect7 from "./sect7";
 import Sect8 from "./sect8";
 import Sect9 from "./sect9";
 
+//Extensions
+const scrollHorizontally = React.lazy(() =>
+  import("./fullpage/fullpage.scrollHorizontally.min")
+);
+const scrollOverflowReset = React.lazy(() =>
+  import("./fullpage/fullpage.scrollOverflowReset.min.js")
+);
+const resetSlider = React.lazy(() =>
+  import("./fullpage/fullpage.resetSliders.min.js")
+);
 //Initializing variables & constants that will be used later
 
 var dragAndMoveBool = false;
@@ -64,11 +71,18 @@ const Fullpage = function loadFullPage() {
   if (isLoading) {
     return null;
   } else {
+    //Import Extensions
+    const pluginWrapper = () => {
+      scrollHorizontally;
+      scrollOverflowReset;
+      resetSlider;
+    };
+
     //Return fullpage
     return (
       <ReactFullpage
         //Add extensions
-
+        pluginWrapper={pluginWrapper}
         //Fullpage options
         licenseKey={"WLJ2I-6P0QK-MK3FI-M2JXJ-JVRNM"}
         keyboardScrolling={true}
