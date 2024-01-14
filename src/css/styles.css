@@ -893,8 +893,16 @@ a.btn-success:hover {
 /*Normal phone size*/
 
 @media screen and (max-width: 370px) {
+  /*Navbar*/
+  img[src*="Initials"] {
+    width: 10vw;
+  }
   .nav-elements.showing {
     width: 150px;
+  }
+  /*First Slide*/
+  #Hello {
+    font-size: 35vw;
   }
   #Isabelle {
     font-size: 50px;
@@ -916,6 +924,7 @@ a.btn-success:hover {
   a.btn-link {
     padding: 1.75vh;
   }
+  /*Second Slide*/
   .about {
     opacity: 0;
     font-size: 30vw;
