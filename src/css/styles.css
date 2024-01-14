@@ -217,6 +217,9 @@ span.title {
   border: 1px solid var(--text-color);
   border-radius: 24px;
 }
+.mobile-flex-column {
+  flex-direction: row;
+}
 
 /*--------------------------------------------3.) Header and nav bar styles--------------------------------------------*/
 
@@ -841,11 +844,12 @@ a.btn-success:hover {
 @media (max-width: 600px) {
   /*Get rid of a bunch of desktop elements*/
   #fp-nav ul,
-  .fp-slidesNav.fp-bottom,
+  .fp-slidesNav ul,
   ul.dropdown-menu.dropdown-menu-lg-end,
   button#desktop-settings {
     display: none;
   }
+
   /*Display mobile elements*/
   li.mobileSettings {
     display: flex;
@@ -890,10 +894,17 @@ a.btn-success:hover {
     margin-right: unset;
     margin-top: 22px;
   }
+  /*Second Slide*/
+  .about {
+    font-size: 30vw;
+  }
 }
 /*Normal phone size*/
 
 @media screen and (max-width: 370px) {
+  .mobile-flex-column {
+    flex-direction: column;
+  }
   /*Navbar*/
   img[src*="Initials"] {
     width: 10vw;
@@ -926,13 +937,6 @@ a.btn-success:hover {
     padding: 1.75vh;
   }
   /*Second Slide*/
-  .about {
-    opacity: 0;
-    font-size: 30vw;
-    text-align: center;
-    color: var(--s2H1);
-    margin: 0;
-  }
 }
 /*Galaxy Flip
 @media screen and (max-width: 280px) {
