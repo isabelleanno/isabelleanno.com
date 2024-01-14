@@ -890,9 +890,20 @@ a.btn-success:hover {
     margin-top: 22px;
   }
 }
-/*
-Normal phone size
+/*Normal phone size*/
+
 @media screen and (max-width: 365px) {
+  .nav-elements.showing {
+    width: 150px;
+  }
+  #Isabelle {
+    font-size: 50px;
+  }
+  #Isabelle2 {
+    font-size: 50px;
+    transform: translate(4px, -64px);
+    color: #44baff;
+  }
 }
 /*Galaxy Flip
 @media screen and (max-width: 280px) {
