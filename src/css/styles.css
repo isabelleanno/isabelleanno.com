@@ -897,10 +897,10 @@ a.btn-success:hover {
     width: 150px;
   }
   #Isabelle {
-    font-size: 50px;
+    font-size: 50px !important;
   }
   #Isabelle2 {
-    font-size: 50px;
+    font-size: 50px !important;
     transform: translate(4px, -64px);
     color: #44baff;
   }
