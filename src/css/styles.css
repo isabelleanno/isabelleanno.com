@@ -52,6 +52,7 @@ Table of contents:
   --clickTextHover: #643a94;
   --dim: 100%;
   --ExtraDim: 100%;
+  --mobileNav: #fef7e5;
 }
 
 [data-theme="dark"] {
@@ -93,6 +94,7 @@ Table of contents:
   --clickTextHover: rgb(75, 164, 115);
   --dim: 60%;
   --ExtraDim: 50%;
+  --mobileNav: #150c34;
 }
 
 * {
@@ -282,6 +284,8 @@ button.dropdown-toggle:focus {
 }
 .dropdown-menu {
   padding: 15px;
+  background-color: var(--mobileNav);
+  color: var(--text-color);
 }
 
 /*The switches on the dropdown menu*/
@@ -337,8 +341,17 @@ input:checked + .slider:before {
   -ms-transform: translateX(16px);
   transform: translateX(16px);
 }
+/*MobileSettings*/
+li.mobileSettings {
+  display: none;
+}
+hr.mobileHR {
+  width: 14vw;
+  margin: 0;
+  border: 0.75px solid var(--text-color);
+}
 
-/* Display:none for sections that aren't the start of the topic, to reduce clutter*/
+/* Display:none forthe nav dots on sections that aren't the start of the topic, to reduce clutter*/
 #fp-nav > ul > li:nth-child(1),
 #fp-nav > ul > li:nth-child(4),
 #fp-nav > ul > li:nth-child(7),
@@ -826,6 +839,21 @@ a.btn-success:hover {
 }
 /* Tablets- Portrait Mode */
 @media (max-width: 600px) {
+  /*Get rid of a bunch of desktop elements*/
+  #fp-nav ul,
+  ul.dropdown-menu.dropdown-menu-lg-end,
+  button#desktop-settings {
+    display: none;
+  }
+  /*Display mobile elements*/
+  li.mobileSettings {
+    display: flex;
+  }
+  li.mobileSettings > svg,
+  .menu-icon svg {
+    color: var(--text-color);
+  }
+  /*Nav Bar*/
   .menu-icon {
     color: black;
     display: block;
@@ -839,7 +867,7 @@ a.btn-success:hover {
     z-index: 1000;
     right: 0;
     top: 0;
-    background-color: #fef7e5;
+    background-color: var(--mobileNav);
     width: 0px;
     height: 100vh;
     transition: all 0.3s ease-in;
@@ -847,7 +875,7 @@ a.btn-success:hover {
   }
 
   .nav-elements.showing {
-    width: 160px;
+    width: 222px;
   }
 
   .nav-elements ul {

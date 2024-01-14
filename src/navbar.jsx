@@ -10,6 +10,7 @@ import {
   faUniversalAccess,
   faEllipsis,
   faEllipsisVertical,
+  faWheelchair,
 } from "@fortawesome/free-solid-svg-icons";
 import "./css/styles.css";
 import $ from "jquery";
@@ -40,29 +41,35 @@ const Navbar = () => {
     $("#horizNav").prop("checked", true);
 
     //Toggle accessibility on and off
-    $("#accessibility").on("click", function (event) {
-      const accessibilityMenuBG = $(".uai");
-      const accessibilityMenu = $(".uwy");
-      const accessibilityToggle = $("#accessibility").is(":checked");
-      if (accessibilityToggle === false) {
-        accessibilityMenu.css("display", "none");
-        accessibilityMenuBG.css("visibility", "hidden");
-      } else {
-        accessibilityMenu.css("display", "block");
-        accessibilityMenuBG.css("visibility", "visible");
-      }
+    $(".accessibility").each(function () {
+      $(this).on("click", function () {
+        const accessibilityMenuBG = $(".uai");
+        const accessibilityMenu = $(".uwy");
+        const accessibilityToggle = $(this).is(":checked");
+        if (accessibilityToggle === false) {
+          accessibilityMenu.css("display", "none");
+          accessibilityMenuBG.css("visibility", "hidden");
+        } else {
+          accessibilityMenu.css("display", "block");
+          accessibilityMenuBG.css("visibility", "visible");
+        }
+      });
     });
     //Dark Mode
-    $("#darkMode").on("click", function (event) {
-      if ($("#darkMode").is(":checked")) {
-        document.querySelector("body").setAttribute("data-theme", "dark");
-        //changeDropdown();
-      } else {
-        document.querySelector("body").setAttribute("data-theme", "light");
-        //changeDropdown();
-      }
-      $("body").css("transition", "all 0.5s ease-in-out");
+
+    $(".darkMode").each(function () {
+      $(this).on("click", function () {
+        if ($(this).is(":checked")) {
+          document.querySelector("body").setAttribute("data-theme", "dark");
+          //changeDropdown();
+        } else {
+          document.querySelector("body").setAttribute("data-theme", "light");
+          //changeDropdown();
+        }
+        $("body").css("transition", "all 0.5s ease-in-out");
+      });
     });
+
     //Toggle vertical nav on and off
     $("#vertNav").on("click", function (event) {
       const vertNavDots = $("#fp-nav");
@@ -111,9 +118,38 @@ const Navbar = () => {
             <li>
               <a href="#s8">Contact</a>
             </li>
+            <li className="mobileSettings">
+              <hr className="mobileHR" />
+            </li>
+            <li className="mobileSettings">
+              <FontAwesomeIcon
+                icon={faWheelchair}
+                size="xl"
+                title="Accessibility Settings"
+              />
+
+              <label className="switch">
+                <input type="checkbox" className="accessibility" />
+                <span className="slider"></span>
+              </label>
+            </li>
+            <li className="mobileSettings">
+              <FontAwesomeIcon
+                icon={faMoon}
+                size="xl"
+                title="Dark Mode"
+                className="me-1"
+              />
+              <label className="switch">
+                <input type="checkbox" className="darkMode" />
+                <span className="slider"></span>
+              </label>
+            </li>
+
             <div className="btn-group">
               <button
                 className="dropdown-toggle"
+                id="desktop-settings"
                 type="button"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
@@ -126,7 +162,7 @@ const Navbar = () => {
                   <FontAwesomeIcon icon={faUniversalAccess} />
                   <p className="m-0 mx-3">Accessibility</p>
                   <label className="switch">
-                    <input type="checkbox" id="accessibility" />
+                    <input type="checkbox" className="accessibility" />
                     <span className="slider"></span>
                   </label>
                 </li>
@@ -134,7 +170,7 @@ const Navbar = () => {
                   <FontAwesomeIcon icon={faMoon} />
                   <p className="m-0 mx-3">Dark Mode</p>
                   <label className="switch">
-                    <input type="checkbox" id="darkMode" />
+                    <input type="checkbox" className="darkMode" />
                     <span className="slider"></span>
                   </label>
                 </li>

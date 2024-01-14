@@ -31,6 +31,8 @@ import Sect6 from "./sect6";
 import Sect7 from "./sect7";
 import Sect8 from "./sect8";
 import Sect9 from "./sect9";
+
+//Extensions
 import "./fullpage/fullpage.resetSliders.min";
 import "./fullpage/fullpage.scrollHorizontally.min";
 import "./fullpage/fullpage.continuousHorizontal.min";
