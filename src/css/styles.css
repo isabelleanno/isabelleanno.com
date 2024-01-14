@@ -892,7 +892,7 @@ a.btn-success:hover {
 }
 /*Normal phone size*/
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 350px) {
   .nav-elements.showing {
     width: 150px;
   }
