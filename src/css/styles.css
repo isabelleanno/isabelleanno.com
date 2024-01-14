@@ -841,6 +841,7 @@ a.btn-success:hover {
 @media (max-width: 600px) {
   /*Get rid of a bunch of desktop elements*/
   #fp-nav ul,
+  .fp-slidesNav.fp-bottom,
   ul.dropdown-menu.dropdown-menu-lg-end,
   button#desktop-settings {
     display: none;
