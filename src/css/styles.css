@@ -827,6 +827,12 @@ a.btn-success:hover {
 
 /*------------------------------------------------7.) Media Queries--------------------------------------------------*/
 
+/*Elements start getting squished & screwed up*/
+@media only screen and (max-width: 991px) {
+  .mobile-flex-column {
+    flex-direction: column;
+  }
+}
 /*Tablets- Landscape Mode*/
 @media only screen and (max-width: 768px) {
   /*Nav bar*/
@@ -902,9 +908,16 @@ a.btn-success:hover {
 /*Normal phone size*/
 
 @media screen and (max-width: 370px) {
-  .mobile-flex-column {
-    flex-direction: column;
+  h1 {
+    font-size: calc(1.375rem);
   }
+  h5 {
+    font-size: 0.75rem;
+  }
+  p {
+    font-size: 12px;
+  }
+
   /*Navbar*/
   img[src*="Initials"] {
     width: 10vw;
