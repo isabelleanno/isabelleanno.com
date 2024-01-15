@@ -220,7 +220,9 @@ span.title {
 .mobile-flex-column {
   flex-direction: row;
 }
-
+.mobile {
+  display: none;
+}
 /*--------------------------------------------3.) Header and nav bar styles--------------------------------------------*/
 
 /*navbar*/
@@ -829,8 +831,17 @@ a.btn-success:hover {
 
 /*----------------------------------Elements start getting squished & screwed up*/
 @media only screen and (max-width: 991px) {
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: flex !important;
+  }
   .mobile-flex-column {
     flex-direction: column;
+  }
+  .mobile-flex-column-reverse {
+    flex-direction: column-reverse;
   }
 }
 /*-----------------------------------------------------Tablets- Landscape Mode----------------------------------------*/
@@ -959,6 +970,12 @@ a.btn-success:hover {
     padding: 1.75vh;
   }
   /*Second Slide*/
+  div.col-11.frame.about-frame.p-5 {
+    padding: 1rem 3rem !important;
+  }
+  div.img-frame.mobile {
+    margin: 0;
+  }
 }
 /*----------------------------------------Isabelle Anno breaks again*/
 @media screen and (max-width: 305px) {

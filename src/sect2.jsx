@@ -99,6 +99,13 @@ export default function Sect2() {
                     I am <span className="highlight">Isabelle</span>
                   </h1>
                   <h5 className="mb-4 IBM" id="typewriter"></h5>
+                  <div className="img-frame mobile mb-4">
+                    <img
+                      src="/Images/about/isabelleanno.jpg"
+                      className="dim"
+                      alt="Isabelle Anno admiring a view from a mountaintop in Cochem, Germany"
+                    />
+                  </div>
                   <p className="mb-4">
                     I am <Age /> years old, born on April 23 and raised in Ohio.
                     I've been passionate about web development for over{" "}
@@ -121,7 +128,7 @@ export default function Sect2() {
                   </p>
                 </div>
                 <div className="col d-flex flex-column justify-content-center">
-                  <div className="img-frame">
+                  <div className="img-frame desktop">
                     <img
                       src="/Images/about/isabelleanno.jpg"
                       className="dim"
