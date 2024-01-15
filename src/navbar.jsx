@@ -1,7 +1,6 @@
 //This navbar was created with the help of this article: https://www.codevertiser.com/reactjs-responsive-navbar/
 
-import { useState, useEffect } from "react";
-import StickyBox from "react-sticky-box";
+import { useState, useEffect, useRef } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -20,13 +19,17 @@ import $ from "jquery";
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [menuIcon, setMenuIcon] = useState(faBars);
+  const wrapperRef = useRef(null);
+  var mobileNavIsOpen = false;
 
   //change to an X when bar is open
   const changeMenuIcon = () => {
     if (showNavbar === false) {
       setMenuIcon(faXmark);
+      mobileNavIsOpen = true;
     } else {
       setMenuIcon(faBars);
+      mobileNavIsOpen = false;
     }
   };
 
@@ -36,13 +39,33 @@ const Navbar = () => {
     changeMenuIcon();
   };
 
+  //Close mobile menu when user clicks outside
+  function useOutsideAlerter(ref) {
+    useEffect(() => {
+      function handleClickOutside(event) {
+        if (
+          ref.current &&
+          !ref.current.contains(event.target) &&
+          mobileNavIsOpen === true
+        ) {
+          setShowNavbar(false);
+          setMenuIcon(faBars);
+        }
+      }
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [ref]);
+  }
+  useOutsideAlerter(wrapperRef);
   //Add functionality to settings dropdown menu
   useEffect(() => {
-    //Having horizontal and vertical nav be checked by default
+    //Have horizontal and vertical nav be checked by default
     $("#vertNav").prop("checked", true);
     $("#horizNav").prop("checked", true);
 
-    //Toggle accessibility on and off
+    //Toggle accessibility on and off (for mobile and desktop)
     $(".accessibility").each(function () {
       $(this).on("click", function () {
         const accessibilityMenuBG = $(".uai");
@@ -57,8 +80,7 @@ const Navbar = () => {
         }
       });
     });
-    //Dark Mode
-
+    //Dark Mode (for both mobile and desktop)
     $(".darkMode").each(function () {
       $(this).on("click", function () {
         if ($(this).is(":checked")) {
@@ -103,7 +125,10 @@ const Navbar = () => {
         <div className="menu-icon" onClick={handleShowNavbar}>
           <FontAwesomeIcon icon={menuIcon} />
         </div>
-        <div className={`nav-elements  ${showNavbar && "showing"}`}>
+        <div
+          className={`nav-elements  ${showNavbar && "showing"} `}
+          ref={wrapperRef}
+        >
           <ul className="nav-elements-ul justify-content-end">
             <li>
               <a href="#s2">About</a>
