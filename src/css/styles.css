@@ -827,13 +827,13 @@ a.btn-success:hover {
 
 /*------------------------------------------------7.) Media Queries--------------------------------------------------*/
 
-/*Elements start getting squished & screwed up*/
+/*----------------------------------Elements start getting squished & screwed up*/
 @media only screen and (max-width: 991px) {
   .mobile-flex-column {
     flex-direction: column;
   }
 }
-/*Tablets- Landscape Mode*/
+/*-----------------------------------------------------Tablets- Landscape Mode----------------------------------------*/
 @media only screen and (max-width: 768px) {
   /*Nav bar*/
   #header {
@@ -846,7 +846,7 @@ a.btn-success:hover {
     margin-right: 30px;
   }
 }
-/* Tablets- Portrait Mode */
+/* ------------------------------------------------Tablets- Portrait Mode ------------------------------------------------*/
 @media (max-width: 600px) {
   /*Get rid of a bunch of desktop elements*/
   #fp-nav ul,
@@ -905,8 +905,27 @@ a.btn-success:hover {
     font-size: 30vw;
   }
 }
-/*Normal phone size*/
 
+/*--------------------------------------"isabelle Anno" breaks on first section----------------------------------------*/
+@media screen and (max-width: 492px) {
+  #Isabelle {
+    font-size: 70px;
+  }
+  #Isabelle2 {
+    font-size: 70px;
+    transform: translate(6px, -89px);
+  }
+}
+@media screen and (max-width: 428px) {
+  #Isabelle {
+    font-size: 60px;
+  }
+  #Isabelle2 {
+    font-size: 60px;
+    transform: translate(6px, -75px);
+  }
+}
+/*-----------------------------------------------------------Normal phone size-------------------------------------------*/
 @media screen and (max-width: 370px) {
   h1 {
     font-size: calc(1.375rem);
@@ -926,32 +945,32 @@ a.btn-success:hover {
     width: 150px;
   }
   /*First Slide*/
-  #Hello {
-    font-size: 35vw;
-  }
   #Isabelle {
     font-size: 50px;
-    opacity: 1;
-    position: relative;
-    z-index: 6;
-    color: #ff44a9;
   }
   #Isabelle2 {
     font-size: 50px;
     transform: translate(4px, -64px);
-    opacity: 1;
-    position: absolute;
-    opacity: 0;
-    -webkit-user-select: none;
-    user-select: none;
-    color: #44baff;
+  }
+  #Hello {
+    font-size: 35vw;
   }
   a.btn-link {
     padding: 1.75vh;
   }
   /*Second Slide*/
 }
-/*Galaxy Flip
+/*----------------------------------------Isabelle Anno breaks again*/
+@media screen and (max-width: 305px) {
+  #Isabelle {
+    font-size: 40px;
+  }
+  #Isabelle2 {
+    font-size: 40px;
+    transform: translate(6px, -52px);
+  }
+}
+/*-----------------------------------------------------Galaxy Flip----------------------------------------
 @media screen and (max-width: 280px) {
 }
 
