@@ -940,7 +940,7 @@ a.btn-success:hover {
   }
 }
 /*-----------------------------------------------------------Larger phone size-------------------------------------------*/
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 360px) {
   h1 {
     font-size: 1.25rem;
   }
@@ -980,9 +980,7 @@ a.btn-success:hover {
     margin: 0;
   }
 }
-/*Normal/smaller Phone Size*/
-@media screen and (max-width: 360px) {
-}
+
 /*----------------------------------------Isabelle Anno breaks again*/
 @media screen and (max-width: 305px) {
   #Isabelle {
