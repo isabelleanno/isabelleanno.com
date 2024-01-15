@@ -157,13 +157,9 @@ export default function Sect2() {
                     <table className="table table-borderless">
                       <tbody>
                         <Sect2Layout skill="HTML" icon={faHtml5} value="5" />
+                        <Sect2Layout skill="CSS" icon={faCss3Alt} value="5" />
                         <Sect2Layout
-                          skill="CSS & Animations"
-                          icon={faCss3Alt}
-                          value="5"
-                        />
-                        <Sect2Layout
-                          skill="Web Graphics Design"
+                          skill="Graphic Design"
                           icon={faPaintbrush}
                           value="4"
                         />
@@ -179,7 +175,7 @@ export default function Sect2() {
                         />
                         <Sect2Layout skill="PHP" icon={faPhp} value="2" />
                         <Sect2Layout
-                          skill="SQL & Database Management"
+                          skill="SQL & Database"
                           icon={faDatabase}
                           value="3"
                         />
@@ -189,22 +185,22 @@ export default function Sect2() {
                           value="3"
                         />
                         <Sect2Layout
-                          skill="Bootstrap & Responsive Design"
+                          skill="Bootstrap"
                           icon={faBootstrap}
                           value="4"
                         />
                         <Sect2Layout
-                          skill="APIs and Hosting"
+                          skill="APIs/Hosting"
                           icon={faServer}
                           value="3"
                         />
                         <Sect2Layout skill="SEO" icon={faGoogle} value="2" />
                         <Sect2Layout
-                          skill="Accessible Design"
+                          skill="Accessibility"
                           icon={faWheelchair}
                           value="3"
                         />
-                        <Sect2Layout skill="AI" icon={faRobot} value="1" />
+                        <Sect2Layout skill="AI" icon={faRobot} value="2" />
                       </tbody>
                     </table>
                   </div>
