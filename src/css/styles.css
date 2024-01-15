@@ -906,7 +906,7 @@ a.btn-success:hover {
   }
 }
 
-/*--------------------------------------"isabelle Anno" breaks on first section----------------------------------------*/
+/*--------------------------------------"isabelle Anno" breaks on first section*/
 @media screen and (max-width: 492px) {
   #Isabelle {
     font-size: 70px;
