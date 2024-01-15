@@ -965,7 +965,7 @@ a.btn-success:hover {
   }
 }
 /*-----------------------------------------------------------Larger phone size-------------------------------------------*/
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 416px) {
   p,
   a {
     font-size: 10px;
@@ -979,7 +979,7 @@ a.btn-success:hover {
 
   /*Navbar*/
   img[src*="Initials"] {
-    width: 10vw;
+    width: 13vw;
   }
   .nav-elements.showing {
     width: 150px;
