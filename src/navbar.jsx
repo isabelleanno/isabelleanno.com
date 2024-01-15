@@ -1,6 +1,8 @@
 //This navbar was created with the help of this article: https://www.codevertiser.com/reactjs-responsive-navbar/
 
 import { useState, useEffect } from "react";
+import StickyBox from "react-sticky-box";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,

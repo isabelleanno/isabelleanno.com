@@ -20,6 +20,7 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.2",
     "react-dom": "^18.2.0",
+    "react-sticky-box": "^2.0.5",
     "typewriter-effect": "^2.21.0",
     "vite-plugin-require": "^1.1.14"
   },

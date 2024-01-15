@@ -70,121 +70,123 @@ const Fullpage = function loadFullPage() {
   } else {
     //Return fullpage
     return (
-      <ReactFullpage
-        //Add extensions
+      <>
+        <Navbar />
+        <ReactFullpage
+          //Add extensions
 
-        //Fullpage options
-        licenseKey={"WLJ2I-6P0QK-MK3FI-M2JXJ-JVRNM"}
-        keyboardScrolling={true}
-        scrollOverflow={true}
-        autoScrolling={true}
-        anchors={["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9"]}
-        //menu={"#myMenu"}
-        navigation={true}
-        navigationPosition={"left"}
-        navigationTooltips={[
-          "Home",
-          "About",
-          "Education",
-          "Education",
-          "Projects",
-          "Reviews",
-          "Reviews",
-          "Contact",
-        ]}
-        showActiveTooltip={false}
-        slidesNavigation={true}
-        //fullpage extensions & keys
-        scrollHorizontally={true}
-        scrollHorizontallyKey={
-          "R1FhWE5oWW1Wc2JHVmhibTV2TG1OdmJRPT0zT19mSVdjMk55YjJ4c1NHOXlhWHB2Ym5SaGJHeDU4VWw="
-        }
-        dragAndMove={dragAndMoveBool}
-        dragAndMoveKey={
-          "MjJhWE5oWW1Wc2JHVmhibTV2TG1OdmJRPT1PSV8yZGRaSEpoWjBGdVpFMXZkbVU9enJX"
-        }
-        resetSliders={true}
-        resetSlidersKey={
-          "T3JhWE5oWW1Wc2JHVmhibTV2TG1OdmJRPT0wSV9kaEVjbVZ6WlhSVGJHbGtaWEp6SWpF"
-        }
-        scrollOverflowReset={true}
-        scrollOverflowResetKey={
-          "ejJhWE5oWW1Wc2JHVmhibTV2TG1OdmJRPT0zM19mRzFjMk55YjJ4c1QzWmxjbVpzYjNkU1pYTmxkQT09WUls"
-        }
-        //Use the afterload and afterSlideLoad fullpage.js methods
-        afterLoad={() => {
-          let activeSection = fullpage_api.getActiveSection();
-          let activeSlide = fullpage_api.getActiveSlide();
-
-          //Grab the navigation dots (vertical and horizontal)
-          const vertNavDots = $("#fp-nav");
-          const horizNavDots = $(".fp-slidesNav");
-          //Make it so only the necessary arrows & navigation dots show up
-          $(".fp-prev").hide();
-          $(".fp-next").show();
-          vertNavDots.show();
-          horizNavDots.hide();
-
-          /*Make it so that on the projects section, the horizontal nav dots are toggled off by default 
-          (but the user can still easily toggle them back on.)*/
-
-          let isChecked = $("#horizNav").is(":checked");
-          /*"Click counter" ensures that the conditions in the if statement will only be met once per
-          session. This basically allows the user to be able to toggle the horizontal nav dots back on if they want to. */
-          let clickCounter = 0;
-          /*If the active section is s5 (the projects section), the horizontal nav bar is checked, 
-          and the "click counter" is less than 1, uncheck the horizontal nav dots by triggering a click event. */
-          if (
-            activeSection.anchor === "s5" &&
-            isChecked === true &&
-            clickCounter < 1
-          ) {
-            //trigger a click to uncheck the box, and set the click counter to 1 so it doesn't happen again.
-            $("#horizNav").trigger("click");
-            clickCounter = clickCounter + 1;
+          //Fullpage options
+          licenseKey={"WLJ2I-6P0QK-MK3FI-M2JXJ-JVRNM"}
+          keyboardScrolling={true}
+          scrollOverflow={true}
+          autoScrolling={true}
+          anchors={["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9"]}
+          //menu={"#myMenu"}
+          navigation={true}
+          navigationPosition={"left"}
+          navigationTooltips={[
+            "Home",
+            "About",
+            "Education",
+            "Education",
+            "Projects",
+            "Reviews",
+            "Reviews",
+            "Contact",
+          ]}
+          showActiveTooltip={false}
+          slidesNavigation={true}
+          //fullpage extensions & keys
+          scrollHorizontally={true}
+          scrollHorizontallyKey={
+            "R1FhWE5oWW1Wc2JHVmhibTV2TG1OdmJRPT0zT19mSVdjMk55YjJ4c1NHOXlhWHB2Ym5SaGJHeDU4VWw="
           }
-        }}
-        afterSlideLoad={function (origin, destination, direction) {
-          let activeSlide = fullpage_api.getActiveSlide();
+          dragAndMove={dragAndMoveBool}
+          dragAndMoveKey={
+            "MjJhWE5oWW1Wc2JHVmhibTV2TG1OdmJRPT1PSV8yZGRaSEpoWjBGdVpFMXZkbVU9enJX"
+          }
+          resetSliders={true}
+          resetSlidersKey={
+            "T3JhWE5oWW1Wc2JHVmhibTV2TG1OdmJRPT0wSV9kaEVjbVZ6WlhSVGJHbGtaWEp6SWpF"
+          }
+          scrollOverflowReset={true}
+          scrollOverflowResetKey={
+            "ejJhWE5oWW1Wc2JHVmhibTV2TG1OdmJRPT0zM19mRzFjMk55YjJ4c1QzWmxjbVpzYjNkU1pYTmxkQT09WUls"
+          }
+          //Use the afterload and afterSlideLoad fullpage.js methods
+          afterLoad={() => {
+            let activeSection = fullpage_api.getActiveSection();
+            let activeSlide = fullpage_api.getActiveSlide();
 
-          const vertNavDots = $("#fp-nav");
-          const horizNavDots = $(".fp-slidesNav");
-          if (activeSlide.isFirst === true) {
+            //Grab the navigation dots (vertical and horizontal)
+            const vertNavDots = $("#fp-nav");
+            const horizNavDots = $(".fp-slidesNav");
+            //Make it so only the necessary arrows & navigation dots show up
             $(".fp-prev").hide();
+            $(".fp-next").show();
             vertNavDots.show();
             horizNavDots.hide();
-          } else {
-            $(".fp-prev").show();
-            vertNavDots.hide();
-            horizNavDots.show();
-          }
-          if (activeSlide.isLast === true) {
-            $(".fp-next").hide();
-          } else {
-            $(".fp-next").show();
-          }
-        }}
-        //Render stuff
 
-        render={({ state, fullpageApi }) => {
-          return (
-            <>
-              <Navbar />
-              <ReactFullpage.Wrapper>
-                <Sect1 />
-                <Sect2 />
-                <Sect3 />
-                <Sect4 />
-                <Sect5 />
-                <Sect6 />
-                <Sect7 />
-                <Sect8 />
-                <Sect9 />
-              </ReactFullpage.Wrapper>
-            </>
-          );
-        }}
-      />
+            /*Make it so that on the projects section, the horizontal nav dots are toggled off by default 
+          (but the user can still easily toggle them back on.)*/
+
+            let isChecked = $("#horizNav").is(":checked");
+            /*"Click counter" ensures that the conditions in the if statement will only be met once per
+          session. This basically allows the user to be able to toggle the horizontal nav dots back on if they want to. */
+            let clickCounter = 0;
+            /*If the active section is s5 (the projects section), the horizontal nav bar is checked, 
+          and the "click counter" is less than 1, uncheck the horizontal nav dots by triggering a click event. */
+            if (
+              activeSection.anchor === "s5" &&
+              isChecked === true &&
+              clickCounter < 1
+            ) {
+              //trigger a click to uncheck the box, and set the click counter to 1 so it doesn't happen again.
+              $("#horizNav").trigger("click");
+              clickCounter = clickCounter + 1;
+            }
+          }}
+          afterSlideLoad={function (origin, destination, direction) {
+            let activeSlide = fullpage_api.getActiveSlide();
+
+            const vertNavDots = $("#fp-nav");
+            const horizNavDots = $(".fp-slidesNav");
+            if (activeSlide.isFirst === true) {
+              $(".fp-prev").hide();
+              vertNavDots.show();
+              horizNavDots.hide();
+            } else {
+              $(".fp-prev").show();
+              vertNavDots.hide();
+              horizNavDots.show();
+            }
+            if (activeSlide.isLast === true) {
+              $(".fp-next").hide();
+            } else {
+              $(".fp-next").show();
+            }
+          }}
+          //Render stuff
+
+          render={({ state, fullpageApi }) => {
+            return (
+              <>
+                <ReactFullpage.Wrapper>
+                  <Sect1 />
+                  <Sect2 />
+                  <Sect3 />
+                  <Sect4 />
+                  <Sect5 />
+                  <Sect6 />
+                  <Sect7 />
+                  <Sect8 />
+                  <Sect9 />
+                </ReactFullpage.Wrapper>
+              </>
+            );
+          }}
+        />
+      </>
     );
   }
 };
