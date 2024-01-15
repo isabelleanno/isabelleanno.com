@@ -89,24 +89,26 @@ export default function Sect2() {
         </div>
       </div>
       {/*-------------------------End of slide 1 ^^^ | Start of slide 2 vvv ----------------*/}
-      <div className="slide">
+      <div className="slide ">
         <div className="container">
           <div className="row d-flex flex-column align-items-center mb-4">
             <div className="col-11 frame about-frame p-5">
               <div className="col m-1 d-flex mobile-flex-column">
                 <div className="m col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column justify-content-center">
-                  <h1 className="mb-2">
-                    I am <span className="highlight">Isabelle</span>
-                  </h1>
-                  <h5 className="mb-4 IBM" id="typewriter"></h5>
-                  <div className="img-frame mobile mb-4">
+                  <span id="slide2-2txt">
+                    <h1 className="mb-2">
+                      I am <span className="highlight">Isabelle</span>
+                    </h1>
+                    <h5 className="IBM" id="typewriter"></h5>
+                  </span>
+                  <div className="img-frame mobile mt-3 mb-4">
                     <img
                       src="/Images/about/isabelleanno.jpg"
                       className="dim"
                       alt="Isabelle Anno admiring a view from a mountaintop in Cochem, Germany"
                     />
                   </div>
-                  <p className="mb-4">
+                  <p className="mb-4 mt-1">
                     I am <Age /> years old, born on April 23 and raised in Ohio.
                     I've been passionate about web development for over{" "}
                     <Career /> years. In February 2022, I moved to the
@@ -147,12 +149,12 @@ export default function Sect2() {
           <div className="row d-flex flex-column align-items-center mb-4">
             <div className="col frame about-frame p-4">
               <div className="col m-2 d-flex flex-column align-items-center">
-                <div className="col-xs-12 col-sm-12 col-md-8">
+                <div className="col-xs-12 col-sm-12 col-md-8 ">
                   <h1 className="mb-2 text-center">
                     My <span className="highlight">Knowledge</span> and Skills
                   </h1>
                 </div>
-                <div className="col-xs-12 col-sm-12 col-md-8">
+                <div className="col-xs-12 col-sm-12 col-md-8 table-frame">
                   <div className="table-responsive">
                     <table className="table table-borderless">
                       <tbody>

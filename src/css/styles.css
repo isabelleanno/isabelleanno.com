@@ -849,6 +849,10 @@ a.btn-success:hover {
 }
 /*-----------------------------------------------------Tablets- Landscape Mode----------------------------------------*/
 @media only screen and (max-width: 768px) {
+  p,
+  a {
+    font-size: 12px;
+  }
   /*Nav bar*/
   #header {
     padding: 1vh 8vh;
@@ -858,6 +862,10 @@ a.btn-success:hover {
   }
   .nav-elements ul li:not(:last-child) {
     margin-right: 30px;
+  }
+  /*Second Section*/
+  .table-frame {
+    width: 100%;
   }
 }
 /* ------------------------------------------------Tablets- Portrait Mode ------------------------------------------------*/
@@ -914,12 +922,23 @@ a.btn-success:hover {
     margin-right: unset;
     margin-top: 22px;
   }
+  /*First Slide*/
+  a.btn-link {
+    padding: 1.5vh;
+  }
   /*Second Slide*/
   .about {
     font-size: 30vw;
   }
-  .table-frame {
-    width: 100%;
+  .about-frame {
+    padding: 0 !important;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  #slide2-2txt {
+    text-align: center;
   }
 }
 
@@ -931,6 +950,9 @@ a.btn-success:hover {
   #Isabelle2 {
     font-size: 70px;
     transform: translate(6px, -89px);
+  }
+  p.skill {
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 428px) {
@@ -944,14 +966,15 @@ a.btn-success:hover {
 }
 /*-----------------------------------------------------------Larger phone size-------------------------------------------*/
 @media screen and (max-width: 360px) {
+  p,
+  a {
+    font-size: 10px;
+  }
   h1 {
     font-size: 1.25rem;
   }
   h5 {
     font-size: 0.75rem;
-  }
-  p {
-    font-size: 10px;
   }
 
   /*Navbar*/
@@ -972,9 +995,7 @@ a.btn-success:hover {
   #Hello {
     font-size: 35vw;
   }
-  a.btn-link {
-    padding: 1.75vh;
-  }
+
   /*Second Slide*/
   div.col-11.frame.about-frame.p-5 {
     padding: 0rem 3rem !important;
