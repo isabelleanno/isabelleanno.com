@@ -942,13 +942,13 @@ a.btn-success:hover {
 /*-----------------------------------------------------------Normal phone size-------------------------------------------*/
 @media screen and (max-width: 412px) {
   h1 {
-    font-size: calc(1.375rem);
+    font-size: 1.25rem;
   }
   h5 {
     font-size: 0.75rem;
   }
   p {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   /*Navbar*/
@@ -974,7 +974,7 @@ a.btn-success:hover {
   }
   /*Second Slide*/
   div.col-11.frame.about-frame.p-5 {
-    padding: 1rem 3rem !important;
+    padding: 0rem 3rem !important;
   }
   div.img-frame.mobile {
     margin: 0;
