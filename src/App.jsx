@@ -17,8 +17,8 @@ PART 3: Miscellaneous JavaScript functions/event listeners with plenty of commen
 /* ----------------------------PART 1- Import stuff & initialize variables. ----------------------------------*/
 import { useState, useEffect } from "react";
 import "./css/styles.css";
-
 import $ from "jquery";
+import { useResizeDetector } from "react-resize-detector";
 import ReactFullpage from "@fullpage/react-fullpage";
 //Components
 import Navbar from "./navbar";
@@ -38,15 +38,24 @@ import "./fullpage/fullpage.scrollHorizontally.min";
 import "./fullpage/fullpage.continuousHorizontal.min";
 import "./fullpage/fullpage.dragAndMove.min";
 import "./fullpage/fullpage.scrollOverflowReset.min";
+import "./fullpage/fullpage.responsiveSlides.min";
 
 //Initializing variables & constants that will be used later
-
 var dragAndMoveBool = false;
-
+var hasBecomeMobile = false;
 /* --------------------------------PART 2- set up fullpage.js and render content. ----------------------------------*/
 
 //Initialize fullpage
 const Fullpage = function loadFullPage() {
+  //Define responsive
+  const Mobile = 600;
+
+  const { width, ref } = useResizeDetector({
+    handleHeight: false,
+    refreshMode: "debounce",
+    refreshRate: 800,
+  });
+
   //Create a state for the loader that defaults to true.
   const [isLoading, setLoading] = useState(true);
 
@@ -68,9 +77,25 @@ const Fullpage = function loadFullPage() {
   if (isLoading) {
     return null;
   } else {
+    //Handle Responsive Slides
+    if (width <= Mobile) {
+      fullpage_api.responsiveSlides.toSections();
+      hasBecomeMobile = true;
+    }
+    if (width >= Mobile && hasBecomeMobile === true) {
+      hasBecomeMobile = false;
+      fullpage_api.responsiveSlides.toSlides();
+      /*
+      var lastCharURL = window.location.hash.charAt(2) - 1;
+
+      if (lastCharURL === 0) {
+        window.location.reload();
+      } */
+    }
     //Return fullpage
+
     return (
-      <>
+      <div ref={ref}>
         <Navbar />
         <ReactFullpage
           //Add extensions
@@ -101,6 +126,9 @@ const Fullpage = function loadFullPage() {
           scrollHorizontallyKey={
             "R1FhWE5oWW1Wc2JHVmhibTV2TG1OdmJRPT0zT19mSVdjMk55YjJ4c1NHOXlhWHB2Ym5SaGJHeDU4VWw="
           }
+          responsiveSlidesKey={
+            "ZlFhWE5oWW1Wc2JHVmhibTV2TG1OdmJRPT1JdF9PNkdjbVZ6Y0c5dWMybDJaVk5zYVdSbGN3PT04ajc="
+          }
           dragAndMove={dragAndMoveBool}
           dragAndMoveKey={
             "MjJhWE5oWW1Wc2JHVmhibTV2TG1OdmJRPT1PSV8yZGRaSEpoWjBGdVpFMXZkbVU9enJX"
@@ -115,6 +143,7 @@ const Fullpage = function loadFullPage() {
           }
           //Use the afterload and afterSlideLoad fullpage.js methods
           afterLoad={() => {
+            //Get active section and slide
             let activeSection = fullpage_api.getActiveSection();
             let activeSlide = fullpage_api.getActiveSlide();
 
@@ -186,7 +215,7 @@ const Fullpage = function loadFullPage() {
             );
           }}
         />
-      </>
+      </div>
     );
   }
 };
