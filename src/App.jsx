@@ -85,12 +85,6 @@ const Fullpage = function loadFullPage() {
     if (width >= Mobile && hasBecomeMobile === true) {
       hasBecomeMobile = false;
       fullpage_api.responsiveSlides.toSlides();
-      /*
-      var lastCharURL = window.location.hash.charAt(2) - 1;
-
-      if (lastCharURL === 0) {
-        window.location.reload();
-      } */
     }
     //Return fullpage
 
@@ -106,7 +100,6 @@ const Fullpage = function loadFullPage() {
           scrollOverflow={true}
           autoScrolling={true}
           anchors={["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9"]}
-          //menu={"#myMenu"}
           navigation={true}
           navigationPosition={"left"}
           navigationTooltips={[
@@ -126,6 +119,7 @@ const Fullpage = function loadFullPage() {
           scrollHorizontallyKey={
             "R1FhWE5oWW1Wc2JHVmhibTV2TG1OdmJRPT0zT19mSVdjMk55YjJ4c1NHOXlhWHB2Ym5SaGJHeDU4VWw="
           }
+          responsiveSlides={true}
           responsiveSlidesKey={
             "ZlFhWE5oWW1Wc2JHVmhibTV2TG1OdmJRPT1JdF9PNkdjbVZ6Y0c5dWMybDJaVk5zYVdSbGN3PT04ajc="
           }
