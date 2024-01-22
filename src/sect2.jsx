@@ -7,6 +7,7 @@ import {
   faServer,
   faPaintbrush,
   faArrowRight,
+  faArrowDown,
   faFile,
   faUserTie,
   faWheelchair,
@@ -217,8 +218,8 @@ export default function Sect2() {
         <div className="container">
           <div className="row d-flex flex-column align-items-center mb-4">
             <div className="col frame about-frame p-5">
-              <div className="col m-5 d-flex">
-                <div className="col-7 d-flex flex-column justify-content-center">
+              <div className="col m-5 d-flex mobile-flex-column">
+                <div className="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 d-flex flex-column justify-content-center">
                   <h1 className="mb-2">
                     Why <span className="highlight">choose</span> me?
                   </h1>
@@ -235,14 +236,16 @@ export default function Sect2() {
                   </p>
                   <p>
                     To learn more, please take the time to look at these
-                    documents <FontAwesomeIcon icon={faArrowRight} />{" "}
+                    documents{" "}
+                    <FontAwesomeIcon icon={faArrowRight} className="desktop" />
+                    <FontAwesomeIcon icon={faArrowDown} className="Mobile" />
                   </p>
                 </div>
-                <div className="col-5 d-flex flex-column align-items-center">
-                  <h2>
+                <div className="col-xs-12 col-sm-12 col-md-5 col-lg-5 d-flex flex-column learnMoreDiv">
+                  <h1>
                     <span className="highlight">Learn</span> More
-                  </h2>
-                  <div className="col-10 d-flex flex-column align-items-center ">
+                  </h1>
+                  <div className="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 d-flex flex-column align-items-center ">
                     <a
                       className="btn-link-reverse about-btn first-btn-lr my-3"
                       href="isabelleanno-resume.pdf"
@@ -277,8 +280,8 @@ export default function Sect2() {
       <div className="slide">
         <div className="container">
           <div className="row mb-4">
-            <div className="col p-2 d-flex d-flex justify-content-center frame about-frame">
-              <div className="col-5 ps-4 d-flex flex-column">
+            <div className="col p-2 d-flex d-flex justify-content-center frame about-frame mobile-flex-column">
+              <div className="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 ps-4 d-flex flex-column">
                 {/*Alert start */}
                 <div className="col-12 d-flex flex-column m-0 align-items-center">
                   {/*Alert Body */}

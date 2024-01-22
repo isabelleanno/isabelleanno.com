@@ -600,7 +600,10 @@ div.progress-bar-empty {
   background-color: transparent;
   padding: 3px;
 }
-
+/*Fourth Slide*/
+.learnMoreDiv {
+  align-items: center;
+}
 /*Fifth Slide*/
 img[src*="patrick"] {
   width: 87%;
@@ -850,7 +853,8 @@ a.btn-success:hover {
 /*-----------------------------------------------------Tablets- Landscape Mode----------------------------------------*/
 @media only screen and (max-width: 768px) {
   p,
-  a {
+  a,
+  button {
     font-size: 12px;
   }
   /*Nav bar*/
@@ -940,6 +944,13 @@ a.btn-success:hover {
   #slide2-2txt {
     text-align: center;
   }
+  .learnMoreDiv {
+    align-items: start;
+    margin-top: 20px;
+  }
+  a.about-btn {
+    padding: 15px;
+  }
 }
 
 /*--------------------------------------"isabelle Anno" breaks on first section*/
@@ -969,9 +980,6 @@ a.btn-success:hover {
   p,
   a {
     font-size: 10px;
-  }
-  h1 {
-    font-size: 1.25rem;
   }
   h5 {
     font-size: 0.75rem;
