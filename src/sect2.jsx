@@ -93,23 +93,23 @@ export default function Sect2() {
       <div className="slide ">
         <div className="container">
           <div className="row d-flex flex-column align-items-center mb-4">
-            <div className="col-11 frame about-frame p-5">
-              <div className="col m-1 d-flex mobile-flex-column">
-                <div className="m col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column justify-content-center">
+            <div className="col-11 frame about-frame" id="s2-2">
+              <div className="col m-1 d-flex mobile-flex-column-smaller">
+                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column justify-content-center">
                   <span id="slide2-2txt">
                     <h1 className="mb-2">
                       I am <span className="highlight">Isabelle</span>
                     </h1>
                     <h5 className="IBM" id="typewriter"></h5>
                   </span>
-                  <div className="img-frame mobile mt-3 mb-4">
+                  <div className="img-frame mobile-smaller mt-3 mb-4">
                     <img
                       src="/Images/about/isabelleanno.jpg"
                       className="dim"
                       alt="Isabelle Anno admiring a view from a mountaintop in Cochem, Germany"
                     />
                   </div>
-                  <p className="mb-4 mt-1">
+                  <p className="mb-2 mt-1">
                     I am <Age /> years old, born on April 23 and raised in Ohio.
                     I've been passionate about web development for over{" "}
                     <Career /> years. In February 2022, I moved to the
@@ -130,8 +130,8 @@ export default function Sect2() {
                     healthy work environment filled with humor & good coffee.
                   </p>
                 </div>
-                <div className="col d-flex flex-column justify-content-center">
-                  <div className="img-frame desktop">
+                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column justify-content-center">
+                  <div className="img-frame desktop-smaller">
                     <img
                       src="/Images/about/isabelleanno.jpg"
                       className="dim"
@@ -148,14 +148,14 @@ export default function Sect2() {
       <div className="slide">
         <div className="container">
           <div className="row d-flex flex-column align-items-center mb-4">
-            <div className="col frame about-frame p-4">
+            <div className="col frame about-frame" id="s2-3">
               <div className="col m-2 d-flex flex-column align-items-center">
                 <div className="col-xs-12 col-sm-12 col-md-8 ">
                   <h1 className="mb-2 text-center">
                     My <span className="highlight">Knowledge</span> and Skills
                   </h1>
                 </div>
-                <div className="col-xs-12 col-sm-12 col-md-8 table-frame">
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 table-frame">
                   <div className="table-responsive">
                     <table className="table table-borderless">
                       <tbody>
@@ -217,13 +217,13 @@ export default function Sect2() {
       <div className="slide">
         <div className="container">
           <div className="row d-flex flex-column align-items-center mb-4">
-            <div className="col frame about-frame p-5">
-              <div className="col m-5 d-flex mobile-flex-column">
-                <div className="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 d-flex flex-column justify-content-center">
+            <div className="col frame about-frame" id="s2-4">
+              <div className="col d-flex mobile-flex-column-smaller  px-5 ">
+                <div className="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7  d-flex flex-column justify-content-center">
                   <h1 className="mb-2">
                     Why <span className="highlight">choose</span> me?
                   </h1>
-                  <p>
+                  <p className="lh-lg">
                     My associate's degree provides me with a{" "}
                     <b>solid foundation</b> in web development and graphic
                     design, alongside my <b>diverse portfolio</b> showcasing my
@@ -238,23 +238,26 @@ export default function Sect2() {
                     To learn more, please take the time to look at these
                     documents{" "}
                     <FontAwesomeIcon icon={faArrowRight} className="desktop" />
-                    <FontAwesomeIcon icon={faArrowDown} className="Mobile" />
+                    <FontAwesomeIcon
+                      icon={faArrowDown}
+                      className="mobile-smaller"
+                    />
                   </p>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-5 col-lg-5 d-flex flex-column learnMoreDiv">
                   <h1>
                     <span className="highlight">Learn</span> More
                   </h1>
-                  <div className="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 d-flex flex-column align-items-center ">
+                  <div className="col-xs-10 col-sm-10 col-md-12 col-lg-12 col-xl-12 d-flex flex-column align-items-center ">
                     <a
-                      className="btn-link-reverse about-btn first-btn-lr my-3"
+                      className="btn-link-reverse about-btn first-btn-lr"
                       href="isabelleanno-resume.pdf"
                       target="_blank"
                     >
                       <FontAwesomeIcon icon={faFile} /> View my Resume
                     </a>
                     <a
-                      className="btn-link-reverse-left about-btn second-btn-lr my-3"
+                      className="btn-link-reverse-left about-btn second-btn-lr"
                       href="IsabelleAnno-Freelancing-FAQ.pdf"
                       target="_blank"
                     >
@@ -262,7 +265,7 @@ export default function Sect2() {
                       project
                     </a>
                     <a
-                      className="btn-link-reverse about-btn third-btn-lr my-3"
+                      className="btn-link-reverse about-btn third-btn-lr"
                       href="Collaboration-FAQ.pdf"
                       target="_blank"
                     >
@@ -276,17 +279,20 @@ export default function Sect2() {
           </div>
         </div>
       </div>
-      {/*-----------------------------------------------End ^^ start vvv------------------------------------------*/}
+      {/*-----------------------------------------------End slide 4 ^^ start slide 5 vvv------------------------------------------*/}
       <div className="slide">
         <div className="container">
           <div className="row mb-4">
-            <div className="col p-2 d-flex d-flex justify-content-center frame about-frame mobile-flex-column">
-              <div className="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 ps-4 d-flex flex-column">
+            <div
+              className="col d-flex d-flex justify-content-center frame about-frame mobile-flex-column"
+              id="s2-5"
+            >
+              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 d-flex flex-column">
                 {/*Alert start */}
-                <div className="col-12 d-flex flex-column m-0 align-items-center">
+                <div className="col-12 d-flex flex-column align-items-center">
                   {/*Alert Body */}
                   <div
-                    className="alert alert-success text-center m-0"
+                    className="alert alert-success text-center m-0 p-0 mt-1"
                     role="alert"
                     id="email-alert"
                   >
@@ -296,10 +302,10 @@ export default function Sect2() {
                   {/* Alert Body End*/}
                 </div>
                 {/*Alert End */}
-                <div>
-                  <h2 className="mb-3">
+                <div className="mb-3">
+                  <h1 className="mb-3">
                     Where to <span className="highlight">Find</span> Me
-                  </h2>
+                  </h1>
                   <p>
                     Take a look at my little corner of the internet. Or
                     <a
@@ -388,7 +394,7 @@ export default function Sect2() {
                     </a>
                   </span>
 
-                  <span className="d-flex align-items-center mb-5">
+                  <span className="d-flex align-items-center ">
                     <h2 className="d-inline">
                       <FontAwesomeIcon icon={faCode} className="me-3" />
                     </h2>
@@ -402,7 +408,7 @@ export default function Sect2() {
                   </span>
                 </div>
               </div>
-              <div className="col-6 m-1 p-4 d-flex justify-content-center">
+              <div className="col-6 m-1 p-4 d-flex justify-content-center desktop">
                 <div className="img-frame img-frame-2">
                   <img
                     src="/Images/about/patrick.jpg"
@@ -415,52 +421,8 @@ export default function Sect2() {
           </div>
         </div>
       </div>
-      {/*---------------------------------------End of slide 5 ^^^ | Start of slide 6 vvv-----*/}
-      <div className="slide">
-        <div className="container">
-          <div className="row d-flex flex-column align-items-center mb-4">
-            <div className="col-12 frame about-frame p-4 px-5">
-              <div className="my-2">
-                <div className="col-12 d-flex flex-column align-items-center">
-                  <h1>
-                    My <span className="highlight">favorite</span> tunes
-                  </h1>
-                  <p className="m-0">
-                    Nothing beats coding alongside some good music{" "}
-                  </p>
-                </div>
-                <div className="col py-3 d-flex justify-content-center">
-                  <div className="col-6 mx-2">
-                    <iframe
-                      style={{ borderRadius: 12 + "px" }}
-                      src="https://open.spotify.com/embed/playlist/5GIwo59HwP5JfVcSFsPikO?utm_source=generator"
-                      width="100%"
-                      height="352"
-                      allowFullScreen=""
-                      allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                      loading="lazy"
-                      alt="A Spotify music playlist titled Calm Down"
-                    ></iframe>
-                  </div>
-                  <div className="col-6 mx-2">
-                    <iframe
-                      style={{ borderRadius: 12 + "px" }}
-                      src="https://open.spotify.com/embed/playlist/4IAV2A84msFhX4Jue4jZFV?utm_source=generator"
-                      width="100%"
-                      height="352"
-                      allowFullScreen=""
-                      allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                      loading="lazy"
-                      alt="A Spotify music playlist titled Positive Jams Everyone Loves"
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/*---------------------------End of slide 6 ^^^ | END OF COMPONENT vvv ----------------*/}
+
+      {/*---------------------------End of slide 5 ^^^ | END OF COMPONENT vvv ----------------*/}
     </div>
   );
 }

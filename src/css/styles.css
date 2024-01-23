@@ -223,6 +223,9 @@ span.title {
 .mobile {
   display: none !important;
 }
+.mobile-smaller {
+  display: none !important;
+}
 /*--------------------------------------------3.) Header and nav bar styles--------------------------------------------*/
 
 /*navbar*/
@@ -441,7 +444,9 @@ a.btn-link-reverse,
 a.btn-link-reverse-left {
   display: inline-block;
   border: 1px solid var(--text-color);
-  padding: 1vw;
+  padding: 1.4vw;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   background-size: 200% 100%;
   background-image: linear-gradient(
     to right,
@@ -568,6 +573,9 @@ img[src*="isabelleanno"] {
 .highlight-s2 {
   color: #d6f6d6 !important;
 }
+#s2-2 {
+  padding: 4rem;
+}
 /*Third Slide*/
 .icons {
   font-size: 20px;
@@ -600,9 +608,17 @@ div.progress-bar-empty {
   background-color: transparent;
   padding: 3px;
 }
+
+#s2-3 {
+  padding: 2.65rem;
+}
+
 /*Fourth Slide*/
 .learnMoreDiv {
   align-items: center;
+}
+#s2-4 {
+  padding: 4.35rem;
 }
 /*Fifth Slide*/
 img[src*="patrick"] {
@@ -621,9 +637,14 @@ div.img-frame {
 
 div.img-frame-2 {
   width: 80%;
+  height: 80%;
+  align-self: center;
 }
 iframe {
   opacity: var(--dim);
+}
+#s2-5 {
+  padding: 1.7rem;
 }
 /*----------------------------Third & Fourth Sections */
 .hs3,
@@ -846,12 +867,25 @@ a.btn-success:hover {
   .mobile-flex-column-reverse {
     flex-direction: column-reverse;
   }
+  p.lh-lg {
+    line-height: normal !important;
+  }
 }
 /*-----------------------------------------------------------Phone- Portrait-----------------------------------------*/
 @media only screen and (min-width: 869px) and (orientation: landscape) {
 }
 /*-----------------------------------------------------Tablets- Landscape Mode----------------------------------------*/
 @media only screen and (max-width: 768px) {
+  .mobile-smaller {
+    display: flex !important;
+  }
+  .desktop-smaller {
+    display: none !important;
+  }
+  .mobile-flex-column-smaller {
+    flex-direction: column;
+  }
+
   p,
   a,
   button {
@@ -870,6 +904,19 @@ a.btn-success:hover {
   /*Second Section*/
   .table-frame {
     width: 100%;
+  }
+
+  #s2-5 {
+    padding: 1rem;
+  }
+  #s2-3,
+  #s2-4 {
+    padding: 2rem;
+  }
+
+  a.btn-link-reverse,
+  a.btn-link-reverse-left {
+    margin: 5px;
   }
 }
 /* ------------------------------------------------Tablets- Portrait Mode ------------------------------------------------*/
@@ -1023,8 +1070,12 @@ a.btn-success:hover {
     transform: translate(6px, -52px);
   }
 }
-/*-----------------------------------------------------Galaxy Flip----------------------------------------
+/*-----------------------------------------------------Galaxy Fold----------------------------------------*/
 @media screen and (max-width: 280px) {
+  #s2-2 {
+    padding: 0;
+  }
+  #s2-4 {
+    margin: 0;
+  }
 }
-
-*/
