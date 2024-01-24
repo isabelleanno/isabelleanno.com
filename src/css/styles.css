@@ -100,6 +100,7 @@ Table of contents:
 * {
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: "Avenir Next";
   src: local("Avenir Next Bold"), local("Avenir-Next-Bold"),
@@ -667,7 +668,6 @@ div#certs-border {
   border-radius: 10px;
 }
 #Degrees {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1056,10 +1056,6 @@ a.btn-success:hover {
   }
   p.skill {
     font-size: 10px;
-  }
-  /*Third Slide*/
-  #Degrees {
-    overflow: hidden;
   }
 }
 
