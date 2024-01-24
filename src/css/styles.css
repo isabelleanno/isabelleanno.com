@@ -629,6 +629,10 @@ img[src*="patrick"] {
   box-shadow: 0 0 0 20px #d6f6d6b1;
   border-radius: 13px;
 }
+img[src="/Images/about/profile.png"] {
+  width: 50%;
+  border-radius: 50%;
+}
 div.img-frame {
   margin: 20px;
   display: flex;

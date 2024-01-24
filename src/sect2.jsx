@@ -306,6 +306,11 @@ export default function Sect2() {
                   <h1 className="mb-3">
                     Where to <span className="highlight">Find</span> Me
                   </h1>
+                  <img
+                    src="/Images/about/profile.png"
+                    className="dim mb-3"
+                    alt="Isabelle Anno's Profile"
+                  />
                   <p>
                     Take a look at my little corner of the internet. Or
                     <a
@@ -316,6 +321,7 @@ export default function Sect2() {
                     </a>
                     ! Let's be friends :-)
                   </p>
+
                   <span className="d-flex align-items-center">
                     <h2 className="d-inline">
                       <FontAwesomeIcon icon={faGithub} className="me-3" />
@@ -344,7 +350,7 @@ export default function Sect2() {
                     <h2 className="d-inline">
                       <FontAwesomeIcon
                         icon={faEnvelopeCircleCheck}
-                        className="me-3"
+                        className="me-2"
                       />
                     </h2>
                     <button
