@@ -1057,6 +1057,10 @@ a.btn-success:hover {
   p.skill {
     font-size: 10px;
   }
+  /*Third Slide*/
+  #Degrees {
+    overflow: hidden;
+  }
 }
 
 /*----------------------------------------Isabelle Anno breaks again*/
