@@ -362,7 +362,7 @@ hr.mobileHR {
 
 /* Display:none forthe nav dots on sections that aren't the start of the topic, to reduce clutter*/
 #fp-nav > ul > li:nth-child(1),
-#fp-nav > ul > li:nth-child(4),
+#fp-nav > ul > li:nth-child(5),
 #fp-nav > ul > li:nth-child(7),
 #fp-nav > ul > li:nth-child(9) {
   display: none;
@@ -548,7 +548,7 @@ span.nl {
   font-family: "Noto Color Emoji", sans-serif;
 }
 
-/*----------------------------Second Section */
+/*----------------------------Second Section (About) */
 .hs2 {
   background-color: var(--s2);
 }
@@ -651,53 +651,7 @@ iframe {
 #s2-5 {
   padding: 1.7rem;
 }
-/*----------------------------Third & Fourth Sections */
-.hs3,
-.hs4 {
-  background-color: var(--s3s4);
-}
-#Education {
-  font-size: 20vw;
-  color: var(--s3H1);
-}
-div.col.my-5 > img {
-  border-radius: 10px;
-}
-div#certs-border {
-  border: 25px solid white;
-  border-radius: 10px;
-}
-#Degrees {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#timeline-frame {
-  width: 100%;
-  background: var(--s4FrameBG);
-  box-shadow: -20px 20px 3px var(--s4FrameShadow);
-}
-.sidenav-btn {
-  display: flex;
-  transform: translate(13px);
-  z-index: 2;
-  height: 26px;
-  width: 26px;
-  border-radius: 50%;
-  border: 1px solid var(--text-color);
-  background-color: var(--s4FrameBG);
-}
-.separator {
-  overflow-y: hidden !important;
-  z-index: 1;
-  width: 1px;
-  height: 100%;
-  border-radius: 3px;
-  background-color: var(--text-color);
-  align-self: center;
-}
-
-/*---------------------------Fifth Section */
+/*---------------------------Third Section (Projects) */
 .hs5 {
   background-color: var(--s5);
 }
@@ -753,7 +707,54 @@ hr#timelineHREnd {
   width: calc(73vw - 4px);
 }
 
-/*---------------------------Sixth and seventh Section */
+/*---------------------------- Fourth & Fifth Sections (Education) */
+.hs3,
+.hs4 {
+  background-color: var(--s3s4);
+}
+#Education {
+  font-size: 20vw;
+  color: var(--s3H1);
+}
+div.col.my-5 > img {
+  border-radius: 10px;
+}
+div#certs-border {
+  border: 25px solid white;
+  border-radius: 10px;
+}
+#Degrees {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#timeline-frame {
+  width: 100%;
+  background: var(--s4FrameBG);
+  box-shadow: -20px 20px 3px var(--s4FrameShadow);
+}
+.sidenav-btn {
+  display: flex;
+  transform: translate(13px);
+  z-index: 2;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--text-color);
+  background-color: var(--s4FrameBG);
+}
+.separator {
+  overflow-y: hidden !important;
+  z-index: 1;
+  width: 1px;
+  height: 100%;
+  border-radius: 3px;
+  background-color: var(--text-color);
+  align-self: center;
+}
+
+/*---------------------------Sixth and seventh Section (Reviews) */
 .hs6,
 .hs7 {
   background-color: var(--s6s7);
@@ -765,7 +766,7 @@ hr#timelineHREnd {
   background-color: var(--s7FrameBG);
   box-shadow: -20px 20px 3px var(--s7FrameShadow);
 }
-/*----------------------------eighth and nineth Section, as well as modal*/
+/*----------------------------eighth and nineth Section (Contact), as well as modal*/
 .hs8,
 .hs9 {
   background-color: var(--s8s9);
@@ -865,7 +866,6 @@ a.btn-success:hover {
   .mobile {
     display: flex !important;
   }
-
   .mobile-flex-column {
     flex-direction: column;
   }
@@ -901,6 +901,14 @@ a.btn-success:hover {
   button {
     font-size: 13px;
   }
+  /*Display mobile-small*/
+  .mobile-small {
+    display: flex !important;
+  }
+  .desktop-small {
+    display: none !important;
+  }
+
   /*Nav bar*/
   #header {
     padding: 1vh 8vh;
@@ -911,7 +919,7 @@ a.btn-success:hover {
   .nav-elements ul li:not(:last-child) {
     margin-right: 30px;
   }
-  /*Second Section*/
+  /*Second Section (About)*/
   .table-frame {
     width: 100%;
   }
@@ -955,7 +963,6 @@ a.btn-success:hover {
   .mobile-flex-column-smaller {
     flex-direction: column;
   }
-
   /*Nav Bar*/
   .menu-icon {
     color: black;
@@ -992,11 +999,11 @@ a.btn-success:hover {
     margin-right: unset;
     margin-top: 22px;
   }
-  /*First Slide*/
+  /*First Section ("hello") */
   a.btn-link {
     padding: 1.5vh;
   }
-  /*Second Slide*/
+  /*Second Section ("About") */
   .about {
     font-size: 30vw;
   }
@@ -1004,7 +1011,8 @@ a.btn-success:hover {
     width: 80% !important;
     align-self: center;
   }
-  .about-frame {
+  .about-frame,
+  #timeline-frame {
     padding: 0 !important;
     border: none;
     box-shadow: none;
@@ -1021,6 +1029,12 @@ a.btn-success:hover {
   a.about-btn {
     padding: 12px;
     margin: 7px 0;
+  }
+  /*Third Section (Projects)*/
+
+  /*Fourth and Fifth Section (Education)*/
+  #timeline-wrapper {
+    margin: 0 2rem;
   }
 }
 

@@ -105,9 +105,9 @@ const Fullpage = function loadFullPage() {
           navigationTooltips={[
             "Home",
             "About",
-            "Education",
-            "Education",
             "Projects",
+            "Education",
+            "Education",
             "Reviews",
             "Reviews",
             "Contact",
@@ -160,7 +160,7 @@ const Fullpage = function loadFullPage() {
             /*If the active section is s5 (the projects section), the horizontal nav bar is checked, 
           and the "click counter" is less than 1, uncheck the horizontal nav dots by triggering a click event. */
             if (
-              activeSection.anchor === "s5" &&
+              activeSection.anchor === "s3" &&
               isChecked === true &&
               clickCounter < 1
             ) {
