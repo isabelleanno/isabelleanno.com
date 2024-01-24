@@ -94,8 +94,8 @@ export default function Sect2() {
         <div className="container">
           <div className="row d-flex flex-column align-items-center mb-4">
             <div className="col-11 frame about-frame" id="s2-2">
-              <div className="col m-1 d-flex mobile-flex-column-smaller">
-                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column justify-content-center">
+              <div className="col m-1 d-flex mobile-flex-column">
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column justify-content-center">
                   <span id="slide2-2txt">
                     <h1 className="mb-2">
                       I am <span className="highlight">Isabelle</span>
@@ -130,8 +130,8 @@ export default function Sect2() {
                     healthy work environment filled with humor & good coffee.
                   </p>
                 </div>
-                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column justify-content-center">
-                  <div className="img-frame desktop-smaller">
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column justify-content-center">
+                  <div className="img-frame desktop">
                     <img
                       src="/Images/about/isabelleanno.jpg"
                       className="dim"
@@ -218,8 +218,8 @@ export default function Sect2() {
         <div className="container">
           <div className="row d-flex flex-column align-items-center mb-4">
             <div className="col frame about-frame" id="s2-4">
-              <div className="col d-flex mobile-flex-column-smaller">
-                <div className="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7  d-flex flex-column justify-content-center">
+              <div className="col d-flex mobile-flex-column">
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7  d-flex flex-column justify-content-center">
                   <h1 className="mb-2">
                     Why <span className="highlight">choose</span> me?
                   </h1>
@@ -238,13 +238,10 @@ export default function Sect2() {
                     To learn more, please take the time to look at these
                     documents{" "}
                     <FontAwesomeIcon icon={faArrowRight} className="desktop" />
-                    <FontAwesomeIcon
-                      icon={faArrowDown}
-                      className="mobile-smaller"
-                    />
+                    <FontAwesomeIcon icon={faArrowDown} className="mobile" />
                   </p>
                 </div>
-                <div className="col-xs-12 col-sm-12 col-md-5 col-lg-5 d-flex flex-column learnMoreDiv">
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-5 d-flex flex-column learnMoreDiv">
                   <h1>
                     <span className="highlight">Learn</span> More
                   </h1>
@@ -308,7 +305,7 @@ export default function Sect2() {
                   </h1>
                   <img
                     src="/Images/about/profile.png"
-                    className="dim mb-3"
+                    className="dim mb-3 mobile-smaller"
                     alt="Isabelle Anno's Profile"
                   />
                   <p>

@@ -631,7 +631,7 @@ img[src*="patrick"] {
   border-radius: 13px;
 }
 img[src="/Images/about/profile.png"] {
-  width: 50%;
+  width: 40%;
   border-radius: 50%;
 }
 div.img-frame {
@@ -865,6 +865,7 @@ a.btn-success:hover {
   .mobile {
     display: flex !important;
   }
+
   .mobile-flex-column {
     flex-direction: column;
   }
@@ -875,21 +876,26 @@ a.btn-success:hover {
     line-height: 1.5 !important;
   }
 }
-/*-----------------------------------------------------------Phone- Portrait-----------------------------------------*/
-@media only screen and (min-width: 869px) and (orientation: landscape) {
+/*----------------------------------------------Resizing Large Landscape Screens-----------------------------------------*/
+@media only screen and (max-width: 991px) and (orientation: landscape) {
+  div.img-frame desktop {
+    display: none !important;
+  }
+
+  img[src="/Images/about/profile.png"] {
+    width: 10%;
+  }
+  a.btn-link-reverse,
+  a.btn-link-reverse-left {
+    margin: 3px;
+    width: 80%;
+  }
+  #s2-4 {
+    padding: 2.35rem;
+  }
 }
 /*-----------------------------------------------------Tablets- Landscape Mode----------------------------------------*/
 @media only screen and (max-width: 768px) {
-  .mobile-smaller {
-    display: flex !important;
-  }
-  .desktop-smaller {
-    display: none !important;
-  }
-  .mobile-flex-column-smaller {
-    flex-direction: column;
-  }
-
   p,
   a,
   button {
@@ -939,6 +945,17 @@ a.btn-success:hover {
   .menu-icon svg {
     color: var(--text-color);
   }
+  /*Display mobile-smaller*/
+  .mobile-smaller {
+    display: flex !important;
+  }
+  .desktop-smaller {
+    display: none !important;
+  }
+  .mobile-flex-column-smaller {
+    flex-direction: column;
+  }
+
   /*Nav Bar*/
   .menu-icon {
     color: black;
@@ -982,6 +999,10 @@ a.btn-success:hover {
   /*Second Slide*/
   .about {
     font-size: 30vw;
+  }
+  div.img-frame {
+    width: 80% !important;
+    align-self: center;
   }
   .about-frame {
     padding: 0 !important;
