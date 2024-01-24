@@ -868,7 +868,7 @@ a.btn-success:hover {
     flex-direction: column-reverse;
   }
   p.lh-lg {
-    line-height: normal !important;
+    line-height: 1.5 !important;
   }
 }
 /*-----------------------------------------------------------Phone- Portrait-----------------------------------------*/
@@ -889,7 +889,7 @@ a.btn-success:hover {
   p,
   a,
   button {
-    font-size: 12px;
+    font-size: 13px;
   }
   /*Nav bar*/
   #header {
@@ -909,7 +909,7 @@ a.btn-success:hover {
   #s2-5,
   #s2-3,
   #s2-4 {
-    padding: 2rem !important;
+    padding: 1.25rem !important;
   }
 
   a.btn-link-reverse,
@@ -994,7 +994,8 @@ a.btn-success:hover {
     margin-top: 20px;
   }
   a.about-btn {
-    padding: 15px;
+    padding: 12px;
+    margin: 7px 0;
   }
 }
 
@@ -1048,6 +1049,9 @@ a.btn-success:hover {
   }
   div.img-frame.mobile {
     margin: 0;
+  }
+  p.skill {
+    font-size: 10px;
   }
 }
 

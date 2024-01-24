@@ -234,7 +234,7 @@ export default function Sect2() {
                     there, and <b>I’m honored</b> that you’re considering me for
                     your project!{" "}
                   </p>
-                  <p>
+                  <p className="mb-0">
                     To learn more, please take the time to look at these
                     documents{" "}
                     <FontAwesomeIcon icon={faArrowRight} className="desktop" />
