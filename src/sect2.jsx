@@ -218,7 +218,7 @@ export default function Sect2() {
         <div className="container">
           <div className="row d-flex flex-column align-items-center mb-4">
             <div className="col frame about-frame" id="s2-4">
-              <div className="col d-flex mobile-flex-column-smaller  px-5 ">
+              <div className="col d-flex mobile-flex-column-smaller">
                 <div className="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7  d-flex flex-column justify-content-center">
                   <h1 className="mb-2">
                     Why <span className="highlight">choose</span> me?

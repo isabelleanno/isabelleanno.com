@@ -906,12 +906,10 @@ a.btn-success:hover {
     width: 100%;
   }
 
-  #s2-5 {
-    padding: 1rem;
-  }
+  #s2-5,
   #s2-3,
   #s2-4 {
-    padding: 2rem;
+    padding: 2rem !important;
   }
 
   a.btn-link-reverse,
@@ -1009,9 +1007,6 @@ a.btn-success:hover {
     font-size: 70px;
     transform: translate(6px, -89px);
   }
-  p.skill {
-    font-size: 10px;
-  }
 }
 @media screen and (max-width: 428px) {
   #Isabelle {
@@ -1024,10 +1019,6 @@ a.btn-success:hover {
 }
 /*-----------------------------------------------------------Larger phone size-------------------------------------------*/
 @media screen and (max-width: 416px) {
-  p,
-  a {
-    font-size: 10px;
-  }
   h5 {
     font-size: 0.75rem;
   }
@@ -1073,7 +1064,7 @@ a.btn-success:hover {
 /*-----------------------------------------------------Galaxy Fold----------------------------------------*/
 @media screen and (max-width: 280px) {
   #s2-2 {
-    padding: 0;
+    padding: 1rem !important;
   }
   #s2-4 {
     margin: 0;
