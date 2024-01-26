@@ -11,12 +11,12 @@ export default function ProjTimeline(props) {
   if (props.index === 0) {
     return (
       <div className="col-12 mt-3 d-flex flex-column align-items-end">
-        <div className="position-absolute">
+        <div className="position-absolute desktop-small">
           <hr className="timelineHR" id="firstHR" />
           <div className="container p-0">
             <div className="row">
               <div className="col-6 p-0 d-flex flex-column align-items-start justify-content-start ">
-                <a className="sidenav-btn btn-horizontal"></a>
+                <a className="btn-horizontal"></a>
                 <p className="date" id="date-start">
                   {props.Date}
                 </p>
@@ -30,12 +30,12 @@ export default function ProjTimeline(props) {
   } else if (props.index == props.lastSlide) {
     return (
       <div className="col-12 mt-2 d-flex flex-column align-items-start">
-        <div className="position-absolute">
+        <div className="position-absolute desktop-small">
           <hr className="timelineHR" id="timelineHREnd" />
           <div className="container">
             <div className="row">
               <div className="col-6 offset-9 d-flex flex-column align-items-center justify-content-center">
-                <a className="sidenav-btn btn-horizontal"></a>
+                <a className="btn-horizontal"></a>
                 <p className="date">{props.Date}</p>
               </div>
             </div>
@@ -48,7 +48,7 @@ export default function ProjTimeline(props) {
     if (props.isEven === false) {
       return (
         <div className="col-12 mt-2 d-flex flex-column align-items-end">
-          <div className="position-absolute">
+          <div className="position-absolute desktop-small">
             <hr className="timelineHR" />
             <div className="container">
               <div className="row">
@@ -56,7 +56,7 @@ export default function ProjTimeline(props) {
                   className="col-6 offset-6 d-flex flex-column align-items-center justify-content-center"
                   id="timeline-col"
                 >
-                  <a className="sidenav-btn btn-horizontal"></a>
+                  <a className="btn-horizontal"></a>
                   <p className="date">{props.Date}</p>
                 </div>
               </div>
@@ -67,7 +67,7 @@ export default function ProjTimeline(props) {
     } else {
       return (
         <div className="col-12 mt-2 d-flex flex-column align-items-end">
-          <div className="position-absolute">
+          <div className="position-absolute desktop-small">
             <hr className="timelineHR" />
             <div className="container">
               <div className="row">
@@ -75,7 +75,7 @@ export default function ProjTimeline(props) {
                   className="col-6 d-flex flex-column align-items-center justify-content-center"
                   id="timeline-col"
                 >
-                  <a className="sidenav-btn btn-horizontal"></a>
+                  <a className="btn-horizontal"></a>
                   <p className="date">{props.Date}</p>
                 </div>
               </div>

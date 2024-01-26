@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Sect5Layout from "./sect5Layout";
+import Sect3Layout from "./sect3Layout";
 import $ from "jquery";
 /*
 This section is unique from all the other sections. It is responsible for displaying the projects section and slides.
@@ -39,7 +39,7 @@ Add a new project here, as the first call to createProject().*/
     */
     createProject(
       "Jokes & Poems AI Generator",
-      "At this point, I've been working on this portfolio for months, so I decided to learn more about AI as a fun side-project. I used the SheCodes AI API to make an interface for an AI joke generator and a poem generator. The user's input is trimmed and run through a profanity filter, then sent to the API using AJAX. The response is then displayed in a neat typewriter fashion. I learned about prompt engineering & giving the AI context to generate the best responses.",
+      "I decided to learn more about AI as a fun side-project. I used the SheCodes AI API to make an interface for an AI joke generator and a poem generator. The user's input is trimmed and run through a profanity filter, then sent to the API using AJAX. The response is then displayed in a neat typewriter fashion. I learned about prompt engineering & giving the AI context to generate the best responses.",
       "jokes",
       "https://ai-joke-generator.netlify.app/",
       "December 3, 2023"
@@ -152,10 +152,6 @@ Add a new project here, as the first call to createProject().*/
       "March 22, 2021"
     ),
   ];
-  useEffect(() => {
-    $(".fp-arrow.fp-next").addClass("sect5FPNext");
-    $(".fp-arrow.fp-prev").addClass("sect5FPPrev");
-  });
   //Returns the first two slides and then calls sect5Layout component to render the projects in the timeline
   return (
     <div className="section hs5">
@@ -164,7 +160,7 @@ Add a new project here, as the first call to createProject().*/
         <h1 id="Projects">Projects</h1>
       </div>
       <span className="title">Projects</span>
-      <Sect5Layout slides={projects} />
+      <Sect3Layout slides={projects} />
     </div>
   );
 }
