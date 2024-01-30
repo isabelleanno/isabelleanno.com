@@ -20,7 +20,7 @@ Table of contents:
   --dropdownFocus: #f8f9fa;
   --sliderBG: #979797;
   --sliderChecked: #2196f3;
-  --arrowNav: #fff;
+  --arrowNav: #ffffffa8;
   --s2: #d5c3f5;
   --s2H1: #d6f6d6;
   --s2FrameBG: #dbcbf7;
@@ -62,7 +62,7 @@ Table of contents:
   --dropdownFocus: #060606;
   --sliderBG: #323135;
   --sliderChecked: #351196;
-  --arrowNav: var(--text-color);
+  --arrowNav: #3d9f80a8;
   --s2: var(--s1);
   --s2H1: #5c3a97;
   --s2FrameBG: #0e021b;
@@ -221,12 +221,12 @@ span.title {
 .mobile-flex-column {
   flex-direction: row;
 }
-.mobile {
-  display: none !important;
-}
+.mobile,
+.mobile-small,
 .mobile-smaller {
   display: none !important;
 }
+
 /*--------------------------------------------3.) Header and nav bar styles--------------------------------------------*/
 
 /*navbar*/
@@ -364,7 +364,7 @@ hr.mobileHR {
 #fp-nav > ul > li:nth-child(1),
 #fp-nav > ul > li:nth-child(5),
 #fp-nav > ul > li:nth-child(7),
-#fp-nav > ul > li:nth-child(9) {
+#fp-nav > ul > li:nth-child(8) {
   display: none;
 }
 /*Center horizontal nav for slides*/
@@ -414,12 +414,19 @@ div.fp-arrow.fp-controlArrow.fp-prev {
 }
 
 .sect5FPNext {
-  border-color: transparent transparent transparent #dedede !important;
+  border-color: transparent transparent transparent #b8b8b861 !important;
+}
+.sect5FPNext:hover {
+  border-color: transparent transparent transparent #cccccc !important;
 }
 
 .sect5FPPrev {
   border-width: 20.5px 34px 20.5px 0 !important;
-  border-color: transparent #dedede transparent transparent !important;
+  border-color: transparent #b8b8b861 transparent transparent !important;
+}
+.sect5FPPrev:hover {
+  border-width: 20.5px 34px 20.5px 0 !important;
+  border-color: transparent #cccccc transparent transparent !important;
 }
 
 a.btn-link {
@@ -652,7 +659,7 @@ iframe {
   padding: 1.7rem;
 }
 /*---------------------------Third Section (Projects) */
-.hs3 {
+.hs5 {
   background-color: var(--s5);
 }
 #Projects {
@@ -666,12 +673,19 @@ a.proj-link {
   font-family: "IBM Plex Sans Arabic", sans-serif !important;
   text-decoration: none;
 }
+.proj-info-wrapper {
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
 .project-photo-frame {
   width: 100%;
-  height: 55vh;
-  margin-bottom: 5vh;
 }
 .btn-horizontal {
+  display: flex;
+  transform: translate(13px);
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
   border: 2px solid var(--s5Timeline);
   background-color: var(--s5);
   position: relative;
@@ -708,8 +722,8 @@ hr#timelineHREnd {
 }
 
 /*---------------------------- Fourth & Fifth Sections (Education) */
-.hs4,
-.hs5 {
+.hs3,
+.hs4 {
   background-color: var(--s3s4);
 }
 #Education {
@@ -826,6 +840,7 @@ button.submit-btn {
 .contact-frame {
   background-color: var(--s9FrameBG);
   box-shadow: -20px 20px 3px var(--s9FrameShadow);
+  padding: 3rem;
 }
 /*Modal*/
 img[src*="WhatsApp"] {
@@ -893,6 +908,24 @@ a.btn-success:hover {
   #s2-4 {
     padding: 2.35rem;
   }
+  /*Projects Section*/
+  a.proj-link {
+    font-size: 4vh;
+    font-weight: bold;
+  }
+  p.proj-description {
+    font-size: 13px;
+    margin: 0;
+  }
+  div.project-photo-frame {
+    justify-content: center;
+    margin-bottom: 0;
+    align-self: center;
+  }
+  div.proj-info-wrapper {
+    padding: 0;
+    margin: 0;
+  }
 }
 /*-----------------------------------------------------Tablets- Landscape Mode----------------------------------------*/
 @media only screen and (max-width: 768px) {
@@ -904,6 +937,9 @@ a.btn-success:hover {
   /*Display mobile-small*/
   .mobile-small {
     display: flex !important;
+  }
+  .mobile-small-flex-column {
+    flex-direction: column;
   }
   .desktop-small {
     display: none !important;
@@ -1091,6 +1127,29 @@ a.btn-success:hover {
   }
   p.skill {
     font-size: 10px;
+  }
+  /*Third Slide*/
+  a.proj-link {
+    font-size: 4vh;
+  }
+
+  .proj-info-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+  .proj-description {
+    font-size: 12px;
+  }
+
+  /*Contact Us Section*/
+  .contact-frame {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 0 0.5vh;
+  }
+  #emailAddress2 {
+    font-size: 12px;
   }
 }
 

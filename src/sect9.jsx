@@ -128,7 +128,6 @@ export default function Sect9() {
                         name="Full Name"
                         id="fullName"
                         className="form-control"
-                        autoComplete="true"
                       />
                       <label htmlFor="email">Email</label>
                       <input
@@ -136,7 +135,6 @@ export default function Sect9() {
                         name="email"
                         id="email"
                         className="form-control"
-                        autoComplete="true"
                       />
                       <label htmlFor="subject">Subject</label>
                       <input

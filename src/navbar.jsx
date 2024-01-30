@@ -129,11 +129,7 @@ const Navbar = () => {
               />
 
               <label className="switch">
-                <input
-                  type="checkbox"
-                  className="accessibility"
-                  name="accessibility"
-                />
+                <input type="checkbox" className="accessibility" />
                 <span className="slider"></span>
               </label>
             </li>
@@ -145,7 +141,7 @@ const Navbar = () => {
                 className="me-1"
               />
               <label className="switch">
-                <input type="checkbox" className="darkMode" name="darkMode" />
+                <input type="checkbox" className="darkMode" />
                 <span className="slider"></span>
               </label>
             </li>
@@ -165,11 +161,7 @@ const Navbar = () => {
                   <FontAwesomeIcon icon={faUniversalAccess} />
                   <p className="m-0 mx-3">Accessibility</p>
                   <label className="switch">
-                    <input
-                      type="checkbox"
-                      className="accessibility"
-                      name="accessibilityDesktop"
-                    />
+                    <input type="checkbox" className="accessibility" />
                     <span className="slider"></span>
                   </label>
                 </li>
@@ -177,11 +169,7 @@ const Navbar = () => {
                   <FontAwesomeIcon icon={faMoon} />
                   <p className="m-0 mx-3">Dark Mode</p>
                   <label className="switch">
-                    <input
-                      type="checkbox"
-                      className="darkMode"
-                      name="darkModeDesktop"
-                    />
+                    <input type="checkbox" className="darkMode" />
                     <span className="slider"></span>
                   </label>
                 </li>
