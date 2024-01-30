@@ -181,7 +181,7 @@ export default function Sect9() {
               </div>
             </div>
             {/*Alert End */}
-            <div className="col-11 frame contact-frame">
+            <div className="col-12 frame contact-frame">
               <h1 className="display-1 chat m-0">What am I looking for</h1>
               <h2 className="mb-3 avenir ">
                 in a project, new position, and/or work environment?

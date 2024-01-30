@@ -825,6 +825,7 @@ button.submit-btn {
 .contact-frame {
   background-color: var(--s9FrameBG);
   box-shadow: -20px 20px 3px var(--s9FrameShadow);
+  padding: 3rem;
 }
 /*Modal*/
 img[src*="WhatsApp"] {
@@ -1004,7 +1005,8 @@ a.btn-success:hover {
     width: 80% !important;
     align-self: center;
   }
-  .about-frame {
+  .about-frame,
+  .contact-frame {
     padding: 0 !important;
     border: none;
     box-shadow: none;
@@ -1040,7 +1042,7 @@ a.btn-success:hover {
     background-color: transparent;
     box-shadow: none;
     border: none;
-    padding: 0 0.5vh;
+    padding: 0 1vh !important;
   }
   #emailAddress2 {
     font-size: 12px;
