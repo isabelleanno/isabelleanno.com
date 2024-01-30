@@ -1,5 +1,5 @@
 import React from "react";
-export default function Sect4() {
+export default function Sect5() {
   return (
     /*---------------------------------------------------- INTRO START vvv---------------------- */
     <div className="section hs4">
@@ -15,17 +15,22 @@ export default function Sect4() {
                 A Timeline of my Education
               </h1>
             </div>
-            <div className="col-9 d-flex flex-column">
+            <div
+              className="col-xs-12 col-sm-9 col-md-9 col-lg-9 col-xl-9
+             d-flex flex-column"
+              id="timeline-wrapper"
+            >
               {/*-------------------------End of INTRO ^^^ | Start of ENTRY 1 vvv ----------------*/}
               <div className="col-12 d-flex">
-                <div className="col-2 d-flex align-items-center justify-content-end">
+                <div className="col-2 d-flex align-items-center justify-content-end  desktop-small">
                   <p className="m-0 bold">Feb. 18, 2021</p>
                 </div>
-                <div className="col-1 d-flex justify-content-center align-items-center">
+                <div className="col-1 d-flex justify-content-center align-items-center desktop-small">
                   <a className="sidenav-btn"></a>
                   <a className="separator"></a>
                 </div>
                 <div className="col my-5">
+                  <p className=" bold mobile-small">Feb. 18, 2021</p>
                   <h1 className="IBM bold">Made my first website</h1>
                   <p>
                     I was 19, and it was just an experimental index.html. It's
@@ -43,14 +48,15 @@ export default function Sect4() {
               </div>
               {/*-------------------------End of entry 1 ^^^ | Start of entry 2 vvv ----------------*/}
               <div className="col-12 d-flex">
-                <div className="col-2 d-flex align-items-center justify-content-end">
+                <div className="col-2 d-flex align-items-center justify-content-end  desktop-small">
                   <p className="m-0 bold">March 22, 2021</p>
                 </div>
-                <div className="col-1 d-flex justify-content-center align-items-center">
+                <div className="col-1 d-flex justify-content-center align-items-center desktop-small">
                   <a className="sidenav-btn"></a>
                   <a className="separator"></a>
                 </div>
                 <div className="col my-5">
+                  <p className=" bold mobile-small">March 22, 2021</p>
                   <h1 className="IBM bold">Graduated SheCodes Basic</h1>
                   <p>
                     Wanting to learn more about coding, I embarked on a journey
@@ -71,14 +77,15 @@ export default function Sect4() {
               </div>
               {/*-------------------------End of entry 2 ^^^ | Start of entry 3 vvv ----------------*/}
               <div className="col-12 d-flex">
-                <div className="col-2 d-flex align-items-center justify-content-end">
+                <div className="col-2 d-flex align-items-center justify-content-end  desktop-small">
                   <p className="m-0 bold">May 31, 2021</p>
                 </div>
-                <div className="col-1 d-flex justify-content-center align-items-center">
+                <div className="col-1 d-flex justify-content-center align-items-center  desktop-small">
                   <a className="sidenav-btn"></a>
                   <a className="separator"></a>
                 </div>
                 <div className="col my-5">
+                  <p className=" bold mobile-small">May 31, 2021</p>
                   <h1 className="IBM bold">Graduated SheCodes Plus</h1>
                   <p>
                     After gaining confidence & skills from SheCodes Basic, I
@@ -97,14 +104,15 @@ export default function Sect4() {
               </div>
               {/*-------------------------End of entry 3 ^^^ | Start of entry 4 vvv ----------------*/}
               <div className="col-12 d-flex">
-                <div className="col-2 d-flex align-items-center justify-content-end">
+                <div className="col-2 d-flex align-items-center justify-content-end  desktop-small">
                   <p className="m-0 bold">July 5, 2021</p>
                 </div>
-                <div className="col-1 d-flex justify-content-center align-items-center">
+                <div className="col-1 d-flex justify-content-center align-items-center  desktop-small">
                   <a className="sidenav-btn"></a>
                   <a className="separator"></a>
                 </div>
                 <div className="col my-5">
+                  <p className=" bold mobile-small">July 5, 2021</p>
                   <h1 className="IBM bold">Graduated SheCodes Responsive</h1>
                   <p>
                     This is where I was first introduced to Bootstrap. I made a
@@ -122,14 +130,15 @@ export default function Sect4() {
               </div>
               {/*-------------------------End of entry 4 ^^^ | Start of entry 5 vvv ----------------*/}
               <div className="col-12 d-flex">
-                <div className="col-2 d-flex align-items-center justify-content-end">
+                <div className="col-2 d-flex align-items-center justify-content-end  desktop-small">
                   <p className="m-0 bold">Aug 29, 2021</p>
                 </div>
-                <div className="col-1 d-flex justify-content-center align-items-center">
+                <div className="col-1 d-flex justify-content-center align-items-center  desktop-small">
                   <a className="sidenav-btn"></a>
                   <a className="separator"></a>
                 </div>
                 <div className="col my-5">
+                  <p className=" bold mobile-small">Aug 29, 2021</p>
                   <h1 className="IBM bold">Started College at Stark State</h1>
                   <p>
                     After enjoying a summer vacation, I was ready to start
@@ -145,14 +154,15 @@ export default function Sect4() {
               </div>
               {/*-------------------------End of entry 5 ^^^ | Start of entry 6 vvv ----------------*/}
               <div className="col-12 d-flex">
-                <div className="col-2 d-flex align-items-center justify-content-end">
+                <div className="col-2 d-flex align-items-center justify-content-end  desktop-small">
                   <p className="m-0 bold">May 14, 2023</p>
                 </div>
-                <div className="col-1 d-flex justify-content-center align-items-center">
+                <div className="col-1 d-flex justify-content-center align-items-center  desktop-small">
                   <a className="sidenav-btn"></a>
                   <a className="separator"></a>
                 </div>
                 <div className="col my-5">
+                  <p className=" bold mobile-small">May 14, 2023</p>
                   <h1 className="IBM bold">Graduated College</h1>
                   <p>
                     Getting my associate's degree was a rewarding experience. I
@@ -175,21 +185,22 @@ export default function Sect4() {
               </div>
               {/*-------------------------End of entry 6 ^^^ | Start of entry 7 vvv ----------------*/}
               <div className="col-12 d-flex">
-                <div className="col-2 d-flex align-items-center justify-content-end">
+                <div className="col-2 d-flex align-items-center justify-content-end  desktop-small">
                   <p className="m-0 bold">May 14, 2023</p>
                 </div>
-                <div className="col-1 d-flex justify-content-center align-items-center">
+                <div className="col-1 d-flex justify-content-center align-items-center  desktop-small">
                   <a className="sidenav-btn"></a>
                   <a className="separator"></a>
                 </div>
                 <div className="col my-5">
+                  <p className=" bold mobile-small">May 14, 2023</p>
                   <h1 className="IBM bold">Got two certificates</h1>
                   <p>
                     Alongside my college degree, I earned two certificates along
                     the way. One in web design, and another in SQL, specifically
                     using SSMS.
                   </p>
-                  <div className="col-12 d-flex ExtraDim" id="certs-border">
+                  <div className="col d-flex ExtraDim" id="certs-border">
                     <div className="col-6">
                       <img
                         src="/Images/certs/sql.jpg"
@@ -207,14 +218,15 @@ export default function Sect4() {
               </div>
               {/*-------------------------End of entry 7 ^^^ | Start of entry 8 vvv ----------------*/}
               <div className="col-12 d-flex">
-                <div className="col-2 d-flex align-items-center justify-content-end">
+                <div className="col-2 d-flex align-items-center justify-content-end  desktop-small">
                   <p className="m-0 bold">July 19, 2023</p>
                 </div>
-                <div className="col-1 d-flex justify-content-center align-items-center">
+                <div className="col-1 d-flex justify-content-center align-items-center  desktop-small">
                   <a className="sidenav-btn"></a>
                   <a className="separator"></a>
                 </div>
                 <div className="col my-5">
+                  <p className=" bold mobile-small">July 19, 2023</p>
                   <h1 className="IBM bold">Graduated SheCodes React</h1>
                   <p>
                     College takes up a lot of time, so after graduating, I
@@ -231,14 +243,15 @@ export default function Sect4() {
               </div>
               {/*-------------------------End of entry 8 ^^^ | Start of entry 9 vvv ----------------*/}
               <div className="col-12 d-flex">
-                <div className="col-2 d-flex align-items-center justify-content-end">
+                <div className="col-2 d-flex align-items-center justify-content-end  desktop-small">
                   <p className="m-0 bold">December 4, 2023</p>
                 </div>
-                <div className="col-1 d-flex justify-content-center align-items-center">
+                <div className="col-1 d-flex justify-content-center align-items-center  desktop-small">
                   <a className="sidenav-btn"></a>
                   <a className="separator"></a>
                 </div>
                 <div className="col my-5">
+                  <p className=" bold mobile-small">December 4, 2023</p>
                   <h1 className="IBM bold">SheCodes AI Addon Certification</h1>
                   <p>
                     With this certificate, I learned more about AI technology
@@ -257,14 +270,15 @@ export default function Sect4() {
               </div>
               {/*-------------------------End of Last Entry ^^^ | Start of PRESENT vvv ----------------*/}
               <div className="col-12 d-flex">
-                <div className="col-2 d-flex align-items-center justify-content-end">
+                <div className="col-2 d-flex align-items-center justify-content-end  desktop-small">
                   <p className="m-0 bold">Today</p>
                 </div>
-                <div className="col-1 d-flex justify-content-center align-items-center">
+                <div className="col-1 d-flex justify-content-center align-items-center  desktop-small">
                   <a className="sidenav-btn"></a>
                   <a className="separator"></a>
                 </div>
                 <div className="col my-5">
+                  <p className=" bold mobile-small">Today</p>
                   <h1 className="IBM bold">Started my Career</h1>
                   <a
                     className="btn-link-reverse mt-3 ms-1"

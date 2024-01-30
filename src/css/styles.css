@@ -671,6 +671,7 @@ div#certs-border {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 #timeline-frame {
   width: 100%;
@@ -696,7 +697,6 @@ div#certs-border {
   background-color: var(--text-color);
   align-self: center;
 }
-
 /*---------------------------Fifth Section */
 .hs5 {
   background-color: var(--s5);
@@ -902,6 +902,17 @@ a.btn-success:hover {
   button {
     font-size: 13px;
   }
+  /*Display mobile-small*/
+  .mobile-small {
+    display: flex !important;
+  }
+  .mobile-small-flex-column {
+    flex-direction: column;
+  }
+  .desktop-small {
+    display: none !important;
+  }
+
   /*Nav bar*/
   #header {
     padding: 1vh 8vh;
@@ -1005,8 +1016,7 @@ a.btn-success:hover {
     width: 80% !important;
     align-self: center;
   }
-  .about-frame,
-  .contact-frame {
+  .about-frame {
     padding: 0 !important;
     border: none;
     box-shadow: none;
@@ -1036,9 +1046,13 @@ a.btn-success:hover {
   .proj-description {
     font-size: 12px;
   }
-
+  /*Fourth and Fifth Section (Education)*/
+  #timeline-wrapper {
+    margin: 0 2rem;
+  }
   /*Contact Us Section*/
-  .contact-frame {
+  .contact-frame,
+  #timeline-frame {
     background-color: transparent;
     box-shadow: none;
     border: none;
