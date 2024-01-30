@@ -105,12 +105,11 @@ const Fullpage = function loadFullPage() {
           navigationTooltips={[
             "Home",
             "About",
+            "Education",
+            "Education",
             "Projects",
-            "Education",
-            "Education",
             "Reviews",
             "Reviews",
-            "Contact",
             "Contact",
           ]}
           showActiveTooltip={false}
@@ -158,23 +157,16 @@ const Fullpage = function loadFullPage() {
             /*"Click counter" ensures that the conditions in the if statement will only be met once per
           session. This basically allows the user to be able to toggle the horizontal nav dots back on if they want to. */
             let clickCounter = 0;
-            /*If the active section is s3 (the projects section), the horizontal nav bar is checked, 
+            /*If the active section is s5 (the projects section), the horizontal nav bar is checked, 
           and the "click counter" is less than 1, uncheck the horizontal nav dots by triggering a click event. */
             if (
-              activeSection.anchor === "s3" &&
+              activeSection.anchor === "s5" &&
               isChecked === true &&
               clickCounter < 1
             ) {
               //trigger a click to uncheck the box, and set the click counter to 1 so it doesn't happen again.
               $("#horizNav").trigger("click");
               clickCounter = clickCounter + 1;
-            }
-            if (activeSection.anchor === "s3") {
-              $(".fp-arrow.fp-next").addClass("sect5FPNext");
-              $(".fp-arrow.fp-prev").addClass("sect5FPPrev");
-            } else {
-              $(".fp-arrow.fp-next").removeClass("sect5FPNext");
-              $(".fp-arrow.fp-prev").removeClass("sect5FPPrev");
             }
           }}
           afterSlideLoad={function (origin, destination, direction) {
