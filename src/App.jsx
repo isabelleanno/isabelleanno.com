@@ -27,8 +27,6 @@ import Sect2 from "./sect2";
 import Sect3 from "./sect3";
 import Sect4 from "./sect4";
 import Sect5 from "./sect5";
-import Sect6 from "./sect6";
-import Sect7 from "./sect7";
 import Sect8 from "./sect8";
 import Sect9 from "./sect9";
 
