@@ -364,7 +364,7 @@ hr.mobileHR {
 #fp-nav > ul > li:nth-child(1),
 #fp-nav > ul > li:nth-child(5),
 #fp-nav > ul > li:nth-child(7),
-#fp-nav > ul > li:nth-child(9) {
+#fp-nav > ul > li:nth-child(8) {
   display: none;
 }
 /*Center horizontal nav for slides*/
@@ -840,6 +840,7 @@ button.submit-btn {
 .contact-frame {
   background-color: var(--s9FrameBG);
   box-shadow: -20px 20px 3px var(--s9FrameShadow);
+  padding: 3rem;
 }
 /*Modal*/
 img[src*="WhatsApp"] {
@@ -1126,6 +1127,29 @@ a.btn-success:hover {
   }
   p.skill {
     font-size: 10px;
+  }
+  /*Third Slide*/
+  a.proj-link {
+    font-size: 4vh;
+  }
+
+  .proj-info-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+  .proj-description {
+    font-size: 12px;
+  }
+
+  /*Contact Us Section*/
+  .contact-frame {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 0 0.5vh;
+  }
+  #emailAddress2 {
+    font-size: 12px;
   }
 }
 

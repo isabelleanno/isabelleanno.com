@@ -113,13 +113,10 @@ const Navbar = () => {
               <a href="#s3">Projects</a>
             </li>
             <li>
-              <a href="#s4">Resumé</a>
+              <a href="#s4">Education</a>
             </li>
             <li>
-              <a href="#s6">Reviews</a>
-            </li>
-            <li>
-              <a href="#s8">Contact</a>
+              <a href="#s6">Contact</a>
             </li>
             <li className="mobileSettings">
               <hr className="mobileHR" />

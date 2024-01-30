@@ -48,7 +48,11 @@ class Sect3Layout extends Component {
                         >
                           {slide.Title}
                         </a>
-                        <a href={slide.link} target="_blank">
+                        <a
+                          href={slide.link}
+                          target="_blank"
+                          className="d-flex justify-content-center"
+                        >
                           <div className="project-photo-frame d-flex flex-column ExtraDim">
                             {slide.PhotoSrc}
                           </div>
