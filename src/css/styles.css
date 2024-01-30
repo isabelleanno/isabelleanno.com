@@ -659,7 +659,7 @@ iframe {
   padding: 1.7rem;
 }
 /*---------------------------Third Section (Projects) */
-.hs5 {
+.hs3 {
   background-color: var(--s5);
 }
 #Projects {
@@ -722,8 +722,8 @@ hr#timelineHREnd {
 }
 
 /*---------------------------- Fourth & Fifth Sections (Education) */
-.hs3,
-.hs4 {
+.hs4,
+.hs5 {
   background-color: var(--s3s4);
 }
 #Education {
