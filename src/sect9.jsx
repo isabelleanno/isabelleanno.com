@@ -114,7 +114,10 @@ export default function Sect9() {
                 </div>
               </div>
               {/*-------------------------End of LEFT SIDE ^^^ | Start of RIGHT SIDE vvv ----------------*/}
-              <div className="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+              <div
+                className="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5"
+                id="contact-form"
+              >
                 <h1>
                   Send me a message
                   <FontAwesomeIcon icon={faPaperPlane} />

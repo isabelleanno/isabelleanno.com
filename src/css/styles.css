@@ -1061,6 +1061,9 @@ a.btn-success:hover {
   #emailAddress2 {
     font-size: 12px;
   }
+  #contact-form {
+    margin-top: 5vh;
+  }
 }
 
 /*--------------------------------------"isabelle Anno" breaks on first section*/
