@@ -113,13 +113,10 @@ const Navbar = () => {
               <a href="#s3">Projects</a>
             </li>
             <li>
-              <a href="#s4">Resumé</a>
+              <a href="#s4">Education</a>
             </li>
             <li>
-              <a href="#s6">Reviews</a>
-            </li>
-            <li>
-              <a href="#s8">Contact</a>
+              <a href="#s6">Contact</a>
             </li>
             <li className="mobileSettings">
               <hr className="mobileHR" />
@@ -132,7 +129,11 @@ const Navbar = () => {
               />
 
               <label className="switch">
-                <input type="checkbox" className="accessibility" />
+                <input
+                  type="checkbox"
+                  className="accessibility"
+                  name="accessibility"
+                />
                 <span className="slider"></span>
               </label>
             </li>
@@ -144,7 +145,7 @@ const Navbar = () => {
                 className="me-1"
               />
               <label className="switch">
-                <input type="checkbox" className="darkMode" />
+                <input type="checkbox" className="darkMode" name="darkMode" />
                 <span className="slider"></span>
               </label>
             </li>
@@ -164,7 +165,11 @@ const Navbar = () => {
                   <FontAwesomeIcon icon={faUniversalAccess} />
                   <p className="m-0 mx-3">Accessibility</p>
                   <label className="switch">
-                    <input type="checkbox" className="accessibility" />
+                    <input
+                      type="checkbox"
+                      className="accessibility"
+                      name="accessibilityDesktop"
+                    />
                     <span className="slider"></span>
                   </label>
                 </li>
@@ -172,7 +177,11 @@ const Navbar = () => {
                   <FontAwesomeIcon icon={faMoon} />
                   <p className="m-0 mx-3">Dark Mode</p>
                   <label className="switch">
-                    <input type="checkbox" className="darkMode" />
+                    <input
+                      type="checkbox"
+                      className="darkMode"
+                      name="darkModeDesktop"
+                    />
                     <span className="slider"></span>
                   </label>
                 </li>

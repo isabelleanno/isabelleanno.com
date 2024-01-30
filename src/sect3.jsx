@@ -46,7 +46,7 @@ Add a new project here, as the first call to createProject().*/
     ),
     createProject(
       "Better Balance Safer You",
-      "My old tae kwon do instructor is starting a self-defense program for seniors, and needs my help making a website for it. Eagerly, I deployed my WordPress skills learned in my Content Management Systems class to make him a site. I'm using WordPress since he needs to manage the site's users and add blog posts. This way, we already thave that in the site via the wordpress dashboard, which saves me from building those features from scratch. Although it's not hand-coded, I did have to add custom CSS and JavaScript- something non-developers can't offer. Although it's still a work in progress,  I'm proud of it. I'm curious about how to create and manage a theme.",
+      "My old tae kwon do instructor is starting a self-defense program for seniors, and needs my help making a website for it. Eagerly, I deployed my WordPress skills learned in my Content Management Systems class to make him a site. Although it's not hand-coded, I did have to add custom CSS and JavaScript- something non-developers can't offer. Although it's still a work in progress, I'm proud of it.",
       "BBSU",
       "https://www.balancesaferu.com/",
       "November, 2023 - TODAY"
@@ -154,7 +154,7 @@ Add a new project here, as the first call to createProject().*/
   ];
   //Returns the first two slides and then calls sect5Layout component to render the projects in the timeline
   return (
-    <div className="section hs5">
+    <div className="section hs3">
       <div className="slide">
         <span className="title">Projects</span>
         <h1 id="Projects">Projects</h1>

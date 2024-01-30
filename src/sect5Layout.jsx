@@ -8,7 +8,7 @@ every other slide to keep things interesting.)
 Passes the date, the index, and the lastSlide var to ProjTimeline.js to determine how to display the red timeline
 visual with date.
 */
-class Sect3Layout extends Component {
+class Sect5Layout extends Component {
   //After mounting, add flex-row-reverse class to odd numbered projects, so they appear differently.
   componentDidMount() {
     let rowArray = Array.from(document.getElementsByClassName("layoutCol"));
@@ -48,25 +48,21 @@ class Sect3Layout extends Component {
                         >
                           {slide.Title}
                         </a>
-                        <a
-                          href={slide.link}
-                          target="_blank"
-                          className="d-flex justify-content-center"
-                        >
+                        <a href={slide.link} target="_blank">
                           <div className="project-photo-frame d-flex flex-column ExtraDim">
                             {slide.PhotoSrc}
                           </div>
                         </a>
                       </div>
-                      <div className="col d-flex flex-column justify-content-center proj-info-wrapper">
+                      <div className="col-6 d-flex flex-column justify-content-center mx-3 px-3">
                         <a
                           href={slide.link}
                           target="_blank"
-                          className="proj-link highlight IBM desktop-small"
+                          className="proj-link highlight IBM"
                         >
                           {slide.Title}
                         </a>
-                        <p className="proj-description">{slide.Description}</p>
+                        <p>{slide.Description}</p>
                       </div>
                     </div>
                   </div>
@@ -86,4 +82,4 @@ class Sect3Layout extends Component {
     );
   }
 }
-export default Sect3Layout;
+export default Sect5Layout;
