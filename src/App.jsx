@@ -27,6 +27,8 @@ import Sect2 from "./sect2";
 import Sect3 from "./sect3";
 import Sect4 from "./sect4";
 import Sect5 from "./sect5";
+import Sect6 from "./sect6";
+import Sect7 from "./sect7";
 import Sect8 from "./sect8";
 import Sect9 from "./sect9";
 
@@ -97,7 +99,7 @@ const Fullpage = function loadFullPage() {
           keyboardScrolling={true}
           scrollOverflow={true}
           autoScrolling={true}
-          anchors={["s1", "s2", "s3", "s4", "s5", "s6", "s7"]}
+          anchors={["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9"]}
           navigation={true}
           navigationPosition={"left"}
           navigationTooltips={[
@@ -106,6 +108,8 @@ const Fullpage = function loadFullPage() {
             "Projects",
             "Education",
             "Education",
+            "Reviews",
+            "Reviews",
             "Contact",
             "Contact",
           ]}
@@ -204,7 +208,8 @@ const Fullpage = function loadFullPage() {
                   <Sect3 />
                   <Sect4 />
                   <Sect5 />
-                  {/*Sect 6 and 7 are the reviews section, which I don't want displayed right now */}
+                  <Sect6 />
+                  <Sect7 />
                   <Sect8 />
                   <Sect9 />
                 </ReactFullpage.Wrapper>
