@@ -19,7 +19,7 @@ export default function Sect9() {
           <div className="row mb-4">
             {/*Alert start */}
             <div className="col-12 d-flex flex-column align-items-center">
-              <div className="col-6">
+              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 {/*Alert Body */}
                 <div
                   className="alert alert-success text-center"
@@ -33,12 +33,12 @@ export default function Sect9() {
               </div>
             </div>
             {/*Alert End */}
-            <div className="col d-flex frame contact-frame p-5">
+            <div className="col d-flex frame contact-frame mobile-flex-column ">
               {/*-----------------------------------------Start of LEFT SIDE vvv --------------------------*/}
-              <div className="col-7">
+              <div className="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
                 <h1 className="display-1 avenir chat">Let's Chat</h1>
                 <div className="col-10">
-                  <p>
+                  <p className="desktop">
                     <b> I'm currently on a job search!</b> Before you reach out,
                     please read the next slide to{" "}
                     <b>
@@ -114,7 +114,7 @@ export default function Sect9() {
                 </div>
               </div>
               {/*-------------------------End of LEFT SIDE ^^^ | Start of RIGHT SIDE vvv ----------------*/}
-              <div className="col-5">
+              <div className="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
                 <h1>
                   Send me a message
                   <FontAwesomeIcon icon={faPaperPlane} />
@@ -181,7 +181,7 @@ export default function Sect9() {
               </div>
             </div>
             {/*Alert End */}
-            <div className="col-11 frame contact-frame p-5">
+            <div className="col-11 frame contact-frame">
               <h1 className="display-1 chat m-0">What am I looking for</h1>
               <h2 className="mb-3 avenir ">
                 in a project, new position, and/or work environment?

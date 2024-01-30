@@ -41,7 +41,11 @@ class Sect5Layout extends Component {
                   <div className="row">
                     <div className="col-12 d-flex layoutCol">
                       <div className="col-6 d-flex flex-column align-items-center justify-content-center">
-                        <a href={slide.link} target="_blank">
+                        <a
+                          href={slide.link}
+                          target="_blank"
+                          className="d-flex justify-content-center"
+                        >
                           {" "}
                           <div className="project-photo-frame d-flex flex-column ExtraDim">
                             {slide.PhotoSrc}
