@@ -316,7 +316,7 @@ export default function Sect2() {
                     >
                       Contact Me
                     </a>
-                    !
+                    ! Let's be friends :-)
                   </p>
 
                   <span className="d-flex align-items-center">
