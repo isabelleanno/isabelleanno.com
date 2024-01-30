@@ -111,7 +111,6 @@ const Fullpage = function loadFullPage() {
             "Reviews",
             "Reviews",
             "Contact",
-            "Contact",
           ]}
           showActiveTooltip={false}
           slidesNavigation={true}
