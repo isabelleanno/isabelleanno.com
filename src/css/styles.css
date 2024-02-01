@@ -221,12 +221,12 @@ span.title {
 .mobile-flex-column {
   flex-direction: row;
 }
-.mobile {
-  display: none !important;
-}
+.mobile,
+.mobile-small,
 .mobile-smaller {
   display: none !important;
 }
+
 /*--------------------------------------------3.) Header and nav bar styles--------------------------------------------*/
 
 /*navbar*/
@@ -722,10 +722,16 @@ a.proj-link {
   background-color: var(--s5);
   position: relative;
   z-index: 3;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
   bottom: 30px;
   right: 2px;
 }
 
+.proj-info-wrapper {
+  margin: 0 2vh;
+}
 .date {
   z-index: 5;
   margin: 0;
