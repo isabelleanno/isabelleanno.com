@@ -8,7 +8,7 @@ every other slide to keep things interesting.)
 Passes the date, the index, and the lastSlide var to ProjTimeline.js to determine how to display the red timeline
 visual with date.
 */
-class Sect5Layout extends Component {
+class Sect3Layout extends Component {
   //After mounting, add flex-row-reverse class to odd numbered projects, so they appear differently.
   componentDidMount() {
     let rowArray = Array.from(document.getElementsByClassName("layoutCol"));
@@ -38,29 +38,31 @@ class Sect5Layout extends Component {
             <div key={index}>
               <div className="slide">
                 <div className="container mb-4">
-                  <div className="row">
-                    <div className="col-12 d-flex layoutCol">
-                      <div className="col-6 d-flex flex-column align-items-center justify-content-center">
+                  <div className="row justify-content-center">
+                    <div className="col-xs-10 col-sm-10 col-md-10 col-lg-12 col-xl-12 d-flex mobile-small-flex-column">
+                      <div className="col d-flex flex-column align-items-center justify-content-center">
                         <a
                           href={slide.link}
                           target="_blank"
-                          className="d-flex justify-content-center"
+                          className="proj-link highlight IBM mobile-small"
                         >
-                          {" "}
+                          {slide.Title}
+                        </a>
+                        <a href={slide.link} target="_blank">
                           <div className="project-photo-frame d-flex flex-column ExtraDim">
                             {slide.PhotoSrc}
                           </div>
                         </a>
                       </div>
-                      <div className="col-6 d-flex flex-column justify-content-center mx-3 px-3">
+                      <div className="col d-flex flex-column justify-content-center proj-info-wrapper">
                         <a
                           href={slide.link}
                           target="_blank"
-                          className="proj-link highlight IBM"
+                          className="proj-link highlight IBM desktop-small"
                         >
                           {slide.Title}
                         </a>
-                        <p>{slide.Description}</p>
+                        <p className="proj-description">{slide.Description}</p>
                       </div>
                     </div>
                   </div>
@@ -80,4 +82,4 @@ class Sect5Layout extends Component {
     );
   }
 }
-export default Sect5Layout;
+export default Sect3Layout;

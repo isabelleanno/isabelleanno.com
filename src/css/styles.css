@@ -938,6 +938,15 @@ a.btn-success:hover {
   a.btn-link-reverse-left {
     margin: 5px;
   }
+  /*Project Section*/
+  .project-photo-frame {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  a.proj-link {
+    font-size: 4.4vh;
+  }
 }
 /* ------------------------------------------------Tablets- Portrait Mode ------------------------------------------------*/
 @media (max-width: 600px) {
