@@ -48,6 +48,9 @@ class Sect3Layout extends Component {
                         >
                           {slide.Title}
                         </a>
+                        <p className="m-0 mobile">
+                          <b>{slide.Date}</b>
+                        </p>
                         <a href={slide.link} target="_blank">
                           <div className="project-photo-frame d-flex flex-column ExtraDim">
                             {slide.PhotoSrc}
