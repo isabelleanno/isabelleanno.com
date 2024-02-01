@@ -227,7 +227,9 @@ export default function Sect2() {
                     My associate's degree provides me with a{" "}
                     <b>solid foundation</b> in web development and graphic
                     design, alongside my <b>diverse portfolio</b> showcasing my
-                    skills. While I am a junior developer, my fresh perspective,
+                    skills. My native-level English is also an excellent asset
+                    to a Dutch or international team. While I am a junior
+                    developer, my fresh perspective,
                     <b>enthusiasm, and commitment</b> to continuous learning
                     make me an ideal candidate for your website, whether you’re
                     an individual or a company. There are many options out
