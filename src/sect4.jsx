@@ -282,8 +282,8 @@ export default function Sect5() {
                   <h1 className="IBM bold">Started my Career</h1>
                   <a
                     className="btn-link-reverse mt-3 ms-1"
-                    href="isabelleanno-resume.pdf"
-                    download="isabelleanno-resume.pdf"
+                    href="IsabelleAnno-Resume.pdf"
+                    download="IsabelleAnno-Resume.pdf"
                   >
                     Download my Resume
                   </a>
