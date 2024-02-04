@@ -287,6 +287,9 @@ export default function Sect5() {
                   >
                     Download my Resume
                   </a>
+                  <a className="btn-link-reverse mt-3 ms-1" href="#s5">
+                    See My Projects
+                  </a>
                 </div>
               </div>
               {/*-------------------------End of PRESENT ^^^ | END OF COMPONENT vvv ----------------*/}
