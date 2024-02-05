@@ -39,14 +39,14 @@ Add a new project here, as the first call to createProject().*/
     */
     createProject(
       "Jokes & Poems AI Generator",
-      "At this point, I've been working on this portfolio for months, so I decided to learn more about AI as a fun side-project. I used the SheCodes AI API to make an interface for an AI joke generator and a poem generator. The user's input is trimmed and run through a profanity filter, then sent to the API using AJAX. The response is then displayed in a neat typewriter fashion. I learned about prompt engineering & giving the AI context to generate the best responses.",
+      "I decided to learn more about AI as a fun side-project. I used the SheCodes AI API to make an interface for an AI joke generator and a poem generator. The user's input is trimmed and run through a profanity filter, then sent to the API using AJAX. I learned about prompt engineering & giving the AI context to generate the best responses.",
       "jokes",
       "https://ai-joke-generator.netlify.app/",
       "December 3, 2023"
     ),
     createProject(
       "Better Balance Safer You",
-      "My old tae kwon do instructor is starting a self-defense program for seniors, and needs my help making a website for it. Eagerly, I deployed my WordPress skills learned in my Content Management Systems class to make him a site. Although it's not hand-coded, I did have to add custom CSS and JavaScript- something non-developers can't offer. Although it's still a work in progress, I'm proud of it.",
+      "My old tae kwon do instructor is starting a self-defense program for seniors, and needs my help making a website for it. Eagerly, I deployed my WordPress skills to make him a site. Although it's not hand-coded, I added custom CSS and JavaScript- something non-developers can't offer. Although it's still a work in progress, I'm proud of it.",
       "BBSU",
       "https://www.balancesaferu.com/",
       "November, 2023 - TODAY"
