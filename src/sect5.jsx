@@ -69,7 +69,7 @@ Add a new project here, as the first call to createProject().*/
       "Mama Lu's",
       "This was my absolute favorite project in college. I made this site for my PHP professor, Kathy Ison. She is retiring soon and loves baking, so I made the logo in inkscape and coded site from scratch using PHP. It was a group project and a special honor. No other students besides my team got this privelage - I felt so lucky. Professor Ison and I are still in touch, and I am very fond of her.",
       "mamalu's",
-      "#",
+      "http://mamalus.infinityfreeapp.com/bakery-website/index.php",
       "May 5, 2023"
     ),
     createProject(
