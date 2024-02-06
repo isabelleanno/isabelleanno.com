@@ -116,7 +116,7 @@ const Navbar = () => {
               <a href="#s5">Projects</a>
             </li>
             <li>
-              <a href="#s9">Contact</a>
+              <a href="#s8">Contact</a>
             </li>
             <li className="mobileSettings">
               <hr className="mobileHR" />
