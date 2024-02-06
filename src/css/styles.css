@@ -173,7 +173,10 @@ FontAwesomeIcon {
 img {
   width: 100%;
 }
-
+img [src="chrome-extension://gmpljdlgcdkljlppaekciacdmdlhfeon/images/beside-link-icon.svg"]
+{
+  display: none;
+}
 img.dim {
   opacity: var(--dim);
 }
