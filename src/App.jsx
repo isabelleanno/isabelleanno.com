@@ -193,9 +193,9 @@ const Fullpage = function loadFullPage() {
                 <ReactFullpage.Wrapper>
                   <Sect1 />
                   <Sect2 />
+                  <Sect5 />
                   <Sect3 />
                   <Sect4 />
-                  <Sect5 />
                   <Sect8 />
                   <Sect9 />
                 </ReactFullpage.Wrapper>
