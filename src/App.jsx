@@ -103,9 +103,9 @@ const Fullpage = function loadFullPage() {
           navigationTooltips={[
             "Home",
             "About",
-            "Education",
-            "Education",
             "Projects",
+            "Education",
+            "Education",
             "Contact",
           ]}
           showActiveTooltip={false}
