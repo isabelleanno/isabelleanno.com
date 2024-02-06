@@ -8,7 +8,7 @@ every other slide to keep things interesting.)
 Passes the date, the index, and the lastSlide var to ProjTimeline.js to determine how to display the red timeline
 visual with date.
 */
-class Sect5Layout extends Component {
+class Sect3Layout extends Component {
   //After mounting, add flex-row-reverse class to odd numbered projects, so they appear differently.
   componentDidMount() {
     let rowArray = Array.from(document.getElementsByClassName("layoutCol"));
@@ -85,4 +85,4 @@ class Sect5Layout extends Component {
     );
   }
 }
-export default Sect5Layout;
+export default Sect3Layout;
