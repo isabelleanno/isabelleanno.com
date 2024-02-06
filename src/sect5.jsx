@@ -83,7 +83,7 @@ Add a new project here, as the first call to createProject().*/
       "Web Graphics Design",
       "This was one of my favorite classes in college. We learned how to use GIMP and InkScape, and the difference between vector images, JPG and PNG. I benefitted tremendously from these projects and still use image editing skills to this day.",
       "graphicdesign",
-      "#",
+      "https://webgraphicsdesign.netlify.app/",
       "September-November of 2022"
     ),
     createProject(
