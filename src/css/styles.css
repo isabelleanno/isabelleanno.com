@@ -363,8 +363,7 @@ hr.mobileHR {
 /* Display:none forthe nav dots on sections that aren't the start of the topic, to reduce clutter*/
 #fp-nav > ul > li:nth-child(1),
 #fp-nav > ul > li:nth-child(4),
-#fp-nav > ul > li:nth-child(7),
-#fp-nav > ul > li:nth-child(9) {
+#fp-nav > ul > li:nth-child(7) {
   display: none;
 }
 /*Center horizontal nav for slides*/
