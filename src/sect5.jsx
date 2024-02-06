@@ -2,7 +2,7 @@ import React from "react";
 export default function Sect5() {
   return (
     /*---------------------------------------------------- INTRO START vvv---------------------- */
-    <div className="section hs4">
+    <div className="section hs5">
       <div className="container">
         <div className="row my-5">
           <span className="title">Education Content</span>

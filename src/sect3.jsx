@@ -158,7 +158,7 @@ Add a new project here, as the first call to createProject().*/
   });
   //Returns the first two slides and then calls sect5Layout component to render the projects in the timeline
   return (
-    <div className="section hs5">
+    <div className="section hs3">
       <div className="slide">
         <span className="title">Projects</span>
         <h1 id="Projects">Projects</h1>

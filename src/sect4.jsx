@@ -2,7 +2,7 @@ import React from "react";
 import "./css/styles.css";
 export default function Sect4() {
   return (
-    <div className="section hs3">
+    <div className="section hs4">
       <div className="container">
         <div className="row">
           <div className="col" id="Degrees">
