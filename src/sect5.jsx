@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Sect5Layout from "./sect5Layout";
 import $ from "jquery";
 /*
@@ -152,10 +152,7 @@ Add a new project here, as the first call to createProject().*/
       "March 22, 2021"
     ),
   ];
-  useEffect(() => {
-    $(".fp-arrow.fp-next").addClass("sect5FPNext");
-    $(".fp-arrow.fp-prev").addClass("sect5FPPrev");
-  });
+
   //Returns the first two slides and then calls sect5Layout component to render the projects in the timeline
   return (
     <div className="section hs5">
