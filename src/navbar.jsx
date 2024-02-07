@@ -184,12 +184,23 @@ const Navbar = () => {
                 size="xl"
                 title="Accessibility Settings"
               />
-
               <label className="switch">
                 <input
                   type="checkbox"
                   className="accessibility"
                   aria-label="Accessibility Checkbox Option. Toggle on to open UserWay menu. For more information, visit Userway.org."
+                />
+                <span className="slider"></span>
+              </label>
+            </li>
+            <li className="mobileSettings">
+              <FontAwesomeIcon icon={faEye} size="xl" title="High Contrast" />
+              <label className="switch">
+                <input
+                  type="checkbox"
+                  className="highContrast"
+                  id="highContrastMobile"
+                  aria-label="High Contrast Checkbox Option."
                 />
                 <span className="slider"></span>
               </label>
