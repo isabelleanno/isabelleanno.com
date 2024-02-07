@@ -62,10 +62,10 @@ export default function Sect2() {
   useEffect(() => {
     new Typewriter("#typewriter", {
       strings: [
-        "Junior Web Developer🤖",
-        "Eater of Too Much Chocolate 🍫",
         "UX/UI Design Connoisseur 💻",
         "Likes making logos 🎨",
+        "Eater of Too Much Chocolate 🍫",
+        "Junior Web Developer🤖",
       ],
       autoStart: true,
       loop: true,
