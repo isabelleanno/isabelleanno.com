@@ -20,7 +20,7 @@ Table of contents:
   --dropdownFocus: #f8f9fa;
   --sliderBG: #979797;
   --sliderChecked: #2196f3;
-  --arrowNav: #fff;
+  --arrowNav: #eaeaea;
   --s2: #d5c3f5;
   --s2H1: #d6f6d6;
   --s2FrameBG: #dbcbf7;
@@ -406,20 +406,11 @@ a#whatsAppModalButton:hover {
 
 div.fp-arrow.fp-controlArrow.fp-next {
   border-width: 20.5px 0 20.5px 34px;
-  border-color: transparent transparent transparent var(--arrowNav);
+  border-color: transparent transparent transparent var(--arrowNav) !important;
 }
 div.fp-arrow.fp-controlArrow.fp-prev {
   border-width: 20.5px 34px 20.5px 0;
-  border-color: transparent var(--arrowNav) transparent transparent;
-}
-
-.sect5FPNext {
-  border-color: transparent transparent transparent #dedede !important;
-}
-
-.sect5FPPrev {
-  border-width: 20.5px 34px 20.5px 0 !important;
-  border-color: transparent #dedede transparent transparent !important;
+  border-color: transparent var(--arrowNav) transparent transparent !important;
 }
 
 a.btn-link {
