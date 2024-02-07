@@ -133,6 +133,8 @@ const Navbar = () => {
                 <span className="slider"></span>
               </label>
             </li>
+            {/* Dark mode on mobile is really glitchy now so I'm going to take it out for the time being until I find a solution
+            
             <li className="mobileSettings">
               <FontAwesomeIcon
                 icon={faMoon}
@@ -144,7 +146,7 @@ const Navbar = () => {
                 <input type="checkbox" className="darkMode" />
                 <span className="slider"></span>
               </label>
-            </li>
+            </li> */}
             <div className="btn-group">
               <button
                 className="dropdown-toggle"
