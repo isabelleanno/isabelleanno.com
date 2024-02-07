@@ -25,10 +25,11 @@ Table of contents:
   --s2H1: #d6f6d6;
   --s2FrameBG: #dbcbf7;
   --s2FrameShadow: #b7a5d5de;
-  --highlight: #d6f6d6;
-  --s2Buttons: #d6f6d6;
+  --s2img: #d6f6d6b1;
+  --highlight: var(--s2H1);
+  --s2Buttons: var(--s2H1);
   --icons: var(--text-color);
-  --s2Progress: var(--s2Buttons);
+  --s2Progress: var(--s2H1);
   --s3s4: #d9e4f1;
   --s3H1: #9fc9e1;
   --s4FrameBG: #d0ddeb;
@@ -70,7 +71,7 @@ Table of contents:
   --highlight: #b191e8;
   --s2Buttons: #21124daf;
   --icons: var(--highlight);
-  --s2Progress: var(--text-color);
+  --s2Progress: #3d9f80;
   --s3s4: #011b39;
   --s3H1: #043554;
   --s4FrameBG: #032143;
@@ -93,6 +94,91 @@ Table of contents:
   --clickText: var(--chat);
   --clickTextHover: rgb(75, 164, 115);
   --dim: 60%;
+  --ExtraDim: 50%;
+  --mobileNav: #150c34;
+}
+[data-theme="highContrast"] {
+  --text-color: #2c0a52;
+  --text-color-2: (var(--text-color));
+  --s1: #f6e3e3;
+  --s1H1: #f0d4d4;
+  --dropdownFocus: #f8f9fa;
+  --sliderBG: #979797;
+  --sliderChecked: #2196f3;
+  --arrowNav: #eaeaea;
+  --s2: #d5c3f5;
+  --s2H1: #7b3d9f;
+  --s2FrameBG: #dbcbf7;
+  --s2FrameShadow: #b7a5d5de;
+  --s2img: var(--s2H1);
+  --highlight: var(--s2H1);
+  --s2Buttons: #d2abe9;
+  --icons: var(--text-color);
+  --s2Progress: #a75dd2;
+  --s3s4: #d9e4f1;
+  --s3H1: #75a6c2;
+  --s4FrameBG: #d0ddeb;
+  --s4FrameShadow: #9fc9e1;
+  --s4Button: #9fc9e1;
+  --s5: #ffffff;
+  --s5H1: #ef8d6f;
+  --s5Timeline: #ff3c00;
+  --s6s7: #ffe3d6;
+  --s6H1: #ffffff;
+  --s7FrameBG: #fde6dc;
+  --s7FrameShadow: #f3d6c9;
+  --s8s9: #cad8cf;
+  --s8H1: rgb(75, 164, 115);
+  --s9FrameBG: #c9dcd0;
+  --s9FrameShadow: #b5c7bd;
+  --chat: rgb(75, 164, 115);
+  --formBG: white;
+  --formHover: white;
+  --clickText: #814ebd;
+  --clickTextHover: #643a94;
+  --dim: 100%;
+  --ExtraDim: 100%;
+  --mobileNav: #fef7e5;
+}
+
+[data-theme="highContrastDark"] {
+  --text-color: #3d9f80;
+  --s1: #16052b;
+  --s1H1: #0e021b;
+  --dropdownFocus: #060606;
+  --sliderBG: #323135;
+  --sliderChecked: #351196;
+  --arrowNav: var(--text-color);
+  --s2: var(--s1);
+  --s2H1: #5c3a97;
+  --s2FrameBG: #0e021b;
+  --s2FrameShadow: #21124d;
+  --highlight: #b191e8;
+  --s2Buttons: #21124daf;
+  --icons: var(--highlight);
+  --s2Progress: #3d9f80;
+  --s3s4: #011b39;
+  --s3H1: #043554;
+  --s4FrameBG: #032143;
+  --s4FrameShadow: #001429;
+  --s4Button: #054268;
+  --s5: #161515;
+  --s5H1: #000000;
+  --s5Timeline: #c43582;
+  --s6s7: #311828;
+  --s6H1: #230b1a;
+  --s7FrameBG: #291321;
+  --s7FrameShadow: var(--s6H1);
+  --s8s9: #002529;
+  --s8H1: #011619;
+  --s9FrameBG: var(--s8s9);
+  --s9FrameShadow: #021a1d;
+  --chat: rgb(155, 195, 155);
+  --formBG: var(--s8H1);
+  --formHover: #000c0e;
+  --clickText: var(--chat);
+  --clickTextHover: rgb(75, 164, 115);
+  --dim: 85%;
   --ExtraDim: 50%;
   --mobileNav: #150c34;
 }
@@ -563,7 +649,7 @@ img[src*="isabelleanno"] {
   color: var(--highlight);
 }
 .highlight-s2 {
-  color: #d6f6d6 !important;
+  color: var(--s2H1) !important;
 }
 #s2-2 {
   padding: 4rem;
@@ -618,7 +704,7 @@ img[src*="patrick"] {
 }
 img[src*="isabelleanno"],
 img[src*="patrick"] {
-  box-shadow: 0 0 0 20px #d6f6d6b1;
+  box-shadow: 0 0 0 20px var(--s2img);
   border-radius: 13px;
 }
 img[src="/Images/about/profile.png"] {
