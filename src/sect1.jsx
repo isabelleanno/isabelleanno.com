@@ -12,7 +12,7 @@ export default function Sect1() {
     let ctx = gsap.context(() => {
       gsap
         .timeline()
-        .to("#Hello", { delay: 0.12, duration: 1.25, opacity: 0.8 })
+        .to("#Hello", { delay: 0.32, duration: 1.25, opacity: 0.8 })
         .to("#Hello", { opacity: 0.35 })
         .to("#myName", { duration: 0.75, delay: 0.4, text: "My name is" })
         .from("#Isabelle", { duration: 1.5, xPercent: -200, opacity: 0 })
