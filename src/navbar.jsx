@@ -129,7 +129,11 @@ const Navbar = () => {
               />
 
               <label className="switch">
-                <input type="checkbox" className="accessibility" />
+                <input
+                  type="checkbox"
+                  className="accessibility"
+                  aria-label="Accessibility Checkbox Option. Toggle on to open UserWay menu. For more information, visit Userway.org."
+                />
                 <span className="slider"></span>
               </label>
             </li>
@@ -143,7 +147,7 @@ const Navbar = () => {
                 className="me-1"
               />
               <label className="switch">
-                <input type="checkbox" className="darkMode" />
+                <input type="checkbox" className="darkMode"  aria-label="Dark Mode Checkbox"/>
                 <span className="slider"></span>
               </label>
             </li> */}
@@ -169,7 +173,7 @@ const Navbar = () => {
                     <input
                       type="checkbox"
                       className="accessibility"
-                      aria-label="Accessibility Checkbox Option. Toggle on to open UserWay."
+                      aria-label="Accessibility Checkbox Option. Toggle on to open UserWay menu. For more information, visit Userway.org."
                     />
                     <span className="slider"></span>
                   </label>
