@@ -152,6 +152,9 @@ const Navbar = () => {
                 className="dropdown-toggle"
                 id="desktop-settings"
                 type="button"
+                aria-label="Website Settings"
+                title="Website Settings"
+                alt="a dropdown menu for accessibility options, dark mode, high contrast and more."
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
                 aria-expanded="false"
@@ -163,7 +166,11 @@ const Navbar = () => {
                   <FontAwesomeIcon icon={faUniversalAccess} />
                   <p className="m-0 mx-3">Accessibility</p>
                   <label className="switch">
-                    <input type="checkbox" className="accessibility" />
+                    <input
+                      type="checkbox"
+                      className="accessibility"
+                      aria-label="Accessibility Checkbox Option. Toggle on to open UserWay."
+                    />
                     <span className="slider"></span>
                   </label>
                 </li>
@@ -171,7 +178,11 @@ const Navbar = () => {
                   <FontAwesomeIcon icon={faMoon} />
                   <p className="m-0 mx-3">Dark Mode</p>
                   <label className="switch">
-                    <input type="checkbox" className="darkMode" />
+                    <input
+                      type="checkbox"
+                      className="darkMode"
+                      aria-label="Dark Mode Checkbox"
+                    />
                     <span className="slider"></span>
                   </label>
                 </li>
@@ -179,7 +190,11 @@ const Navbar = () => {
                   <FontAwesomeIcon icon={faEllipsisVertical} />
                   <p className="m-0 mx-3">Vertical Nav</p>
                   <label className="switch">
-                    <input type="checkbox" id="vertNav" />
+                    <input
+                      type="checkbox"
+                      id="vertNav"
+                      aria-label="Toggle vertical nav dots on or off"
+                    />
                     <span className="slider"></span>
                   </label>
                 </li>
@@ -187,7 +202,11 @@ const Navbar = () => {
                   <FontAwesomeIcon icon={faEllipsis} />
                   <p className="m-0 mx-3">Horizontal Nav</p>
                   <label className="switch">
-                    <input type="checkbox" id="horizNav" />
+                    <input
+                      type="checkbox"
+                      id="horizNav"
+                      aria-label="Toggle horizontal nav dots on or off"
+                    />
                     <span className="slider sliderCheckedDefault"></span>
                   </label>
                 </li>
