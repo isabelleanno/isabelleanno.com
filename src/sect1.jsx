@@ -41,7 +41,10 @@ export default function Sect1() {
           </h1>
           <p className="my-4 learnMore">
             I'm an American web developer living in the Netherlands{" "}
-            <img src="/Images/UsaAndNL.png"></img>
+            <img
+              src="/Images/UsaAndNL.png"
+              alt=" the USA and Dutch flag combined to form a single flag "
+            ></img>
           </p>
           <a
             className="btn-link learnMore"
