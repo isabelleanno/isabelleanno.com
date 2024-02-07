@@ -246,19 +246,7 @@ const Navbar = () => {
                     <span className="slider"></span>
                   </label>
                 </li>
-                <li className="dropdown-options">
-                  <FontAwesomeIcon icon={faMoon} />
-                  <p className="m-0 mx-3">Dark Mode</p>
-                  <label className="switch">
-                    <input
-                      type="checkbox"
-                      className="darkMode"
-                      id="darkModeDesktop"
-                      aria-label="Dark Mode Checkbox"
-                    />
-                    <span className="slider"></span>
-                  </label>
-                </li>
+
                 <li className="dropdown-options">
                   <FontAwesomeIcon icon={faEye} />
                   <p className="m-0 mx-3">High Contrast</p>
@@ -268,6 +256,19 @@ const Navbar = () => {
                       className="highContrast"
                       id="highContrastDesktop"
                       aria-label="High Contrast Checkbox"
+                    />
+                    <span className="slider"></span>
+                  </label>
+                </li>
+                <li className="dropdown-options">
+                  <FontAwesomeIcon icon={faMoon} />
+                  <p className="m-0 mx-3">Dark Mode</p>
+                  <label className="switch">
+                    <input
+                      type="checkbox"
+                      className="darkMode"
+                      id="darkModeDesktop"
+                      aria-label="Dark Mode Checkbox"
                     />
                     <span className="slider"></span>
                   </label>
