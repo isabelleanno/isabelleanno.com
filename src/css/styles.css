@@ -16,6 +16,8 @@ Table of contents:
   --text-color: #2c0a52;
   --text-color-2: (var(--text-color));
   --s1: #f6e3e3;
+  --I1: #ff44a9;
+  --I2: #44baff;
   --s1H1: #f0d4d4;
   --dropdownFocus: #f8f9fa;
   --sliderBG: #979797;
@@ -27,6 +29,7 @@ Table of contents:
   --s2FrameShadow: #b7a5d5de;
   --s2img: #d6f6d6b1;
   --highlight: var(--s2H1);
+  --highlight-s2: var(--s2H1);
   --s2Buttons: var(--s2H1);
   --icons: var(--text-color);
   --s2Progress: var(--s2H1);
@@ -38,10 +41,6 @@ Table of contents:
   --s5: #ffffff;
   --s5H1: #4ab795;
   --s5Timeline: #ff3c00;
-  --s6s7: #ffe3d6;
-  --s6H1: #ffffff;
-  --s7FrameBG: #fde6dc;
-  --s7FrameShadow: #f3d6c9;
   --s8s9: #cad8cf;
   --s8H1: #f7f6ec;
   --s9FrameBG: #c9dcd0;
@@ -59,6 +58,8 @@ Table of contents:
 [data-theme="dark"] {
   --text-color: #3d9f80;
   --s1: #16052b;
+  --I1: #ff44a880;
+  --I2: #44baff80;
   --s1H1: #0e021b;
   --dropdownFocus: #060606;
   --sliderBG: #323135;
@@ -69,6 +70,7 @@ Table of contents:
   --s2FrameBG: #0e021b;
   --s2FrameShadow: #21124d;
   --highlight: #b191e8;
+  --highlight-s2: var(--s2H1);
   --s2Buttons: #21124daf;
   --icons: var(--highlight);
   --s2Progress: #3d9f80;
@@ -80,10 +82,6 @@ Table of contents:
   --s5: #161515;
   --s5H1: #000000;
   --s5Timeline: #c43582;
-  --s6s7: #311828;
-  --s6H1: #230b1a;
-  --s7FrameBG: #291321;
-  --s7FrameShadow: var(--s6H1);
   --s8s9: #002529;
   --s8H1: #011619;
   --s9FrameBG: var(--s8s9);
@@ -101,6 +99,8 @@ Table of contents:
   --text-color: #2c0a52;
   --text-color-2: (var(--text-color));
   --s1: #f6e3e3;
+  --I1: #ff44a9;
+  --I2: #44baff;
   --s1H1: #f0d4d4;
   --dropdownFocus: #f8f9fa;
   --sliderBG: #979797;
@@ -112,6 +112,7 @@ Table of contents:
   --s2FrameShadow: #b7a5d5de;
   --s2img: var(--s2H1);
   --highlight: var(--s2H1);
+  --highlight-s2: var(--s2H1);
   --s2Buttons: #d2abe9;
   --icons: var(--text-color);
   --s2Progress: #a75dd2;
@@ -121,12 +122,8 @@ Table of contents:
   --s4FrameShadow: #9fc9e1;
   --s4Button: #9fc9e1;
   --s5: #ffffff;
-  --s5H1: #ef8d6f;
+  --s5H1: #e26e4a;
   --s5Timeline: #ff3c00;
-  --s6s7: #ffe3d6;
-  --s6H1: #ffffff;
-  --s7FrameBG: #fde6dc;
-  --s7FrameShadow: #f3d6c9;
   --s8s9: #cad8cf;
   --s8H1: rgb(75, 164, 115);
   --s9FrameBG: #c9dcd0;
@@ -144,6 +141,8 @@ Table of contents:
 [data-theme="highContrastDark"] {
   --text-color: #3d9f80;
   --s1: #16052b;
+  --I1: #ff44a895;
+  --I2: #44baff95;
   --s1H1: #0e021b;
   --dropdownFocus: #060606;
   --sliderBG: #323135;
@@ -154,31 +153,28 @@ Table of contents:
   --s2FrameBG: #0e021b;
   --s2FrameShadow: #21124d;
   --highlight: #b191e8;
+  --highlight-s2: var(--highlight);
   --s2Buttons: #21124daf;
   --icons: var(--highlight);
   --s2Progress: #3d9f80;
   --s3s4: #011b39;
-  --s3H1: #043554;
+  --s3H1: #074d78;
   --s4FrameBG: #032143;
   --s4FrameShadow: #001429;
   --s4Button: #054268;
-  --s5: #161515;
+  --s5: #373737;
   --s5H1: #000000;
   --s5Timeline: #c43582;
-  --s6s7: #311828;
-  --s6H1: #230b1a;
-  --s7FrameBG: #291321;
-  --s7FrameShadow: var(--s6H1);
-  --s8s9: #002529;
-  --s8H1: #011619;
+  --s8s9: #003f46;
+  --s8H1: #010d0f;
   --s9FrameBG: var(--s8s9);
   --s9FrameShadow: #021a1d;
   --chat: rgb(155, 195, 155);
-  --formBG: var(--s8H1);
+  --formBG: #002c31;
   --formHover: #000c0e;
   --clickText: var(--chat);
   --clickTextHover: rgb(75, 164, 115);
-  --dim: 85%;
+  --dim: 55%;
   --ExtraDim: 50%;
   --mobileNav: #150c34;
 }
@@ -610,7 +606,7 @@ a.third-btn-lr {
   opacity: 1;
   position: relative;
   z-index: 6;
-  color: #ff44a9;
+  color: var(--I1);
 }
 #Isabelle2 {
   font-size: 80px;
@@ -619,7 +615,7 @@ a.third-btn-lr {
   opacity: 0;
   user-select: none;
   transform: translate(5px, -101px);
-  color: #44baff;
+  color: var(--I2);
 }
 span.nl {
   font-family: "Noto Color Emoji", sans-serif;
@@ -649,7 +645,7 @@ img[src*="isabelleanno"] {
   color: var(--highlight);
 }
 .highlight-s2 {
-  color: var(--s2H1) !important;
+  color: var(--highlight-s2) !important;
 }
 #s2-2 {
   padding: 4rem;
@@ -836,18 +832,6 @@ hr#timelineHREnd {
   width: calc(73vw - 4px);
 }
 
-/*---------------------------Sixth and seventh Section */
-.hs6,
-.hs7 {
-  background-color: var(--s6s7);
-}
-#Reviews {
-  color: var(--s6H1);
-}
-.review-frame {
-  background-color: var(--s7FrameBG);
-  box-shadow: -20px 20px 3px var(--s7FrameShadow);
-}
 /*----------------------------eighth and nineth Section, as well as modal*/
 .hs8,
 .hs9 {

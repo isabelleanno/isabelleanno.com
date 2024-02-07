@@ -153,7 +153,7 @@ const Navbar = () => {
     <nav className="top-nav">
       <div className="container navContainer">
         <div className="logo">
-          <img src="/Images/Initials.svg" alt="" />
+          <img src="/Images/Initials.svg" className="dim" alt="" />
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
           <FontAwesomeIcon icon={menuIcon} />

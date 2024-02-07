@@ -43,7 +43,8 @@ export default function Sect1() {
             I'm an American web developer living in the Netherlands{" "}
             <img
               src="/Images/UsaAndNL.png"
-              alt=" the USA and Dutch flag combined to form a single flag "
+              className="dim"
+              alt=" theUsa and Dutch flag combined to form a single flag "
             ></img>
           </p>
           <a
