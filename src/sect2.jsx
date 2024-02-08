@@ -216,11 +216,14 @@ export default function Sect2() {
       {/*------------------------------------------- Slide 3 end ^^^ Slide 4 START vvv---------------------- */}
       <div className="slide">
         <div className="container">
-          <div className="row d-flex flex-column align-items-center mb-4">
+          <div
+            className="row d-flex flex-column align-items-center"
+            id="s2-4Row"
+          >
             <div className="col frame about-frame" id="s2-4">
               <div className="col d-flex mobile-flex-column">
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7  d-flex flex-column justify-content-center">
-                  <h1 className="mb-2">
+                  <h1 className="mb-2" id="whyMe">
                     Why <span className="highlight">choose</span> me?
                   </h1>
                   <p className="lh-lg">

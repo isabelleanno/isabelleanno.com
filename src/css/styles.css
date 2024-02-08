@@ -410,6 +410,11 @@ button.dropdown-toggle:focus {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+.lang-slider {
+  background-size: 200% 100%;
+  background-image: url(Images/lang-slider.png);
+  background-size: cover;
+}
 
 .slider:before {
   border-radius: 50%;
@@ -427,7 +432,12 @@ button.dropdown-toggle:focus {
 input:checked + .slider {
   background-color: var(--sliderChecked);
 }
-
+input:checked + .lang-slider {
+  background-position: 100% 0;
+  -webkit-transition: background-position 0.75s;
+  -moz-transition: background-position 0.75s;
+  transition: background-position 0.75s;
+}
 input:checked + .slider:before {
   -webkit-transform: translateX(16px);
   -ms-transform: translateX(16px);
@@ -579,7 +589,7 @@ a.third-btn-lr {
   margin-left: 1vh;
   font-family: "Roboto Mono", monospace;
 }
-.learnMore > img {
+img[src="/Images/UsaAndNL.png"] {
   width: 25px;
 }
 #myName {
@@ -649,6 +659,9 @@ img[src*="isabelleanno"] {
 }
 #s2-2 {
   padding: 4rem;
+}
+#s2-4Row {
+  margin-bottom: 1.5rem;
 }
 /*Third Slide*/
 .icons {
@@ -1200,6 +1213,12 @@ a.btn-success:hover {
 @media screen and (max-width: 375px) {
   a.proj-link {
     font-size: 3.5vh;
+  }
+  #whyMe {
+    margin-top: 3rem;
+  }
+  #s2-4Row {
+    margin-bottom: 0;
   }
 }
 /*----------------------------------------Isabelle Anno breaks again*/
