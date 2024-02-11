@@ -133,10 +133,6 @@ const Fullpage = function loadFullPage() {
           }
           //Use the afterload and afterSlideLoad fullpage.js methods
           afterLoad={() => {
-            //Get active section and slide
-            let activeSection = fullpage_api.getActiveSection();
-            let activeSlide = fullpage_api.getActiveSlide();
-
             //Grab the navigation dots (vertical and horizontal)
             const vertNavDots = $("#fp-nav");
             const horizNavDots = $(".fp-slidesNav");
@@ -145,32 +141,27 @@ const Fullpage = function loadFullPage() {
             $(".fp-next").show();
             vertNavDots.show();
             horizNavDots.hide();
-
-            //Remove horizontal nav bar dots on s4 and s5 (there are sooo many on projects that it's distracting.)
-            //I did s4 too because it prevents them from popping up for a split second in transition from s4 to s5.
-            if (
-              activeSection.anchor === "s4" ||
-              activeSection.anchor === "s5"
-            ) {
-              horizNavDots.addClass("d-none");
-            } else {
-              horizNavDots.removeClass("d-none");
-              horizNavDots.addClass("d-flex");
-            }
           }}
           afterSlideLoad={function (origin, destination, direction) {
+            //Get active section and slide
+            let activeSection = fullpage_api.getActiveSection();
             let activeSlide = fullpage_api.getActiveSlide();
 
             const vertNavDots = $("#fp-nav");
             const horizNavDots = $(".fp-slidesNav");
-            if (activeSlide.isFirst === true) {
+            if (
+              activeSlide.isFirst === true ||
+              activeSection.anchor === "s4" ||
+              activeSection.anchor === "s5"
+            ) {
               $(".fp-prev").hide();
               vertNavDots.show();
-              horizNavDots.hide();
+              horizNavDots.addClass("d-none");
             } else {
               $(".fp-prev").show();
               vertNavDots.hide();
-              horizNavDots.show();
+              horizNavDots.removeClass("d-none");
+              horizNavDots.addClass("d-flex");
             }
             if (activeSlide.isLast === true) {
               $(".fp-next").hide();

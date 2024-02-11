@@ -3,6 +3,7 @@ import Typewriter from "typewriter-effect/dist/core";
 //Import individual fontawesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faAnglesDown,
   faDatabase,
   faServer,
   faPaintbrush,
@@ -48,10 +49,13 @@ export default function Sect2() {
   if (lastPart[0] === "#s2") {
     useEffect(() => {
       let ctx2 = gsap.context(() => {
-        gsap.to(".about", {
-          opacity: 1,
-          stagger: 0.5,
-        });
+        gsap
+          .timeline()
+          .to(".about", {
+            opacity: 1,
+            stagger: 0.5,
+          })
+          .to("#s2-down", { opacity: 1 });
       });
       return () => ctx2.revert();
     });
@@ -85,6 +89,11 @@ export default function Sect2() {
             <div className="col-12">
               <h1 className="about">About</h1>
               <h1 className="about">Me</h1>
+              <a href="#s22">
+                <h1 id="s2-down" className="fa-5x fa-bounce text-center mt-4">
+                  <FontAwesomeIcon icon={faAnglesDown} />
+                </h1>
+              </a>
             </div>
           </div>
         </div>

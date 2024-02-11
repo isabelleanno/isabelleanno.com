@@ -647,6 +647,11 @@ span.nl {
   background-color: var(--s2FrameBG);
   box-shadow: -20px 20px 3px var(--s2FrameShadow);
 }
+#s2-down {
+  display: none;
+  opacity: 0;
+  color: var(--s2H1);
+}
 /*Second Slide */
 img[src*="isabelleanno"] {
   width: 95%;
@@ -1154,7 +1159,11 @@ a.btn-success:hover {
     margin-top: 5vh;
   }
 }
-
+@media screen and (max-width: 599px) {
+  #s2-down {
+    display: block;
+  }
+}
 /*--------------------------------------"isabelle Anno" breaks on first section*/
 @media screen and (max-width: 492px) {
   #Isabelle {
