@@ -1,28 +1,39 @@
 //Isabelle Anno, 2/7/2024
 //Give functionality to nav bar and render navbarJSX.jsx
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import NavbarJSX from "./navbarJSX";
 import "./css/styles.css";
 import $ from "jquery";
 
 const Navbar = () => {
-  $("#horizNav").prop("checked", true);
+  const [accessibilityOption, setAccessibilityOption] = useState(true);
+
   //Add functionality to settings dropdown menu
   useEffect(() => {
+    function toggleAccessibility() {
+      setAccessibilityOption(!accessibilityOption);
+
+      const accessibilityMenuBG = $(".uai");
+      const accessibilityMenu = $(".uwy");
+      if (accessibilityOption === false) {
+        accessibilityMenu.css("display", "none");
+        accessibilityMenuBG.css("visibility", "hidden");
+      } else {
+        accessibilityMenu.css("display", "block");
+        accessibilityMenuBG.css("visibility", "visible");
+      }
+    }
     //Toggle accessibility on and off (for mobile and desktop)
     $(".accessibility").each(function () {
       $(this).on("click", function () {
-        const accessibilityMenuBG = $(".uai");
-        const accessibilityMenu = $(".uwy");
-        const accessibilityToggle = $(this).is(":checked");
-        if (accessibilityToggle === false) {
-          accessibilityMenu.css("display", "none");
-          accessibilityMenuBG.css("visibility", "hidden");
-        } else {
-          accessibilityMenu.css("display", "block");
-          accessibilityMenuBG.css("visibility", "visible");
-        }
+        toggleAccessibility();
       });
+    });
+    // Check if Ctrl + u is pressed
+    document.addEventListener("keydown", function (event) {
+      if (event.ctrlKey && event.key === "u") {
+        toggleAccessibility();
+      }
     });
     //Language (for both mobile and desktop)
     $(".language").each(function () {

@@ -416,7 +416,8 @@ button.dropdown-toggle:focus {
   background-size: cover;
 }
 
-.slider:before {
+.slider:before,
+.checked {
   border-radius: 50%;
   position: absolute;
   content: "";
@@ -429,7 +430,8 @@ button.dropdown-toggle:focus {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked + .slider,
+.checked {
   background-color: var(--sliderChecked);
 }
 input:checked + .lang-slider {

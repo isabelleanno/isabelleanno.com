@@ -163,6 +163,7 @@ export default function NavbarJSX() {
                     <input
                       type="checkbox"
                       className="accessibility"
+                      id="accessibilityDesktop"
                       aria-label="Accessibility Checkbox Option. Toggle on to open UserWay menu. For more information, visit Userway.org."
                     />
                     <span className="slider"></span>
