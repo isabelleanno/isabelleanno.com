@@ -146,23 +146,16 @@ const Fullpage = function loadFullPage() {
             vertNavDots.show();
             horizNavDots.hide();
 
-            /*Make it so that on the projects section, the horizontal nav dots are toggled off by default 
-          (but the user can still easily toggle them back on.)*/
-
-            let isChecked = $("#horizNav").is(":checked");
-            /*"Click counter" ensures that the conditions in the if statement will only be met once per
-          session. This basically allows the user to be able to toggle the horizontal nav dots back on if they want to. */
-            let clickCounter = 0;
-            /*If the active section is s5 (the projects section), the horizontal nav bar is checked, 
-          and the "click counter" is less than 1, uncheck the horizontal nav dots by triggering a click event. */
+            //Remove horizontal nav bar dots on s4 and s5 (there are sooo many on projects that it's distracting.)
+            //I did s4 too because it prevents them from popping up for a split second in transition from s4 to s5.
             if (
-              activeSection.anchor === "s5" &&
-              isChecked === true &&
-              clickCounter < 1
+              activeSection.anchor === "s4" ||
+              activeSection.anchor === "s5"
             ) {
-              //trigger a click to uncheck the box, and set the click counter to 1 so it doesn't happen again.
-              $("#horizNav").trigger("click");
-              clickCounter = clickCounter + 1;
+              horizNavDots.addClass("d-none");
+            } else {
+              horizNavDots.removeClass("d-none");
+              horizNavDots.addClass("d-flex");
             }
           }}
           afterSlideLoad={function (origin, destination, direction) {
