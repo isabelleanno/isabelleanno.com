@@ -37,7 +37,15 @@ const Navbar = () => {
     });
     //Language (for both mobile and desktop)
     $(".language").each(function () {
-      $(this).on("click", function () {});
+      $(this).on("click", function () {
+        if ($(this).is(":checked")) {
+          $(".dutch").removeClass("d-none");
+          $(".english").addClass("d-none");
+        } else {
+          $(".dutch").addClass("d-none");
+          $(".english").removeClass("d-none");
+        }
+      });
     });
 
     //Dark Mode (for both mobile and desktop)

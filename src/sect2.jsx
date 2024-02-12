@@ -76,6 +76,18 @@ export default function Sect2() {
       delay: 35,
       deleteSpeed: 20,
     });
+    new Typewriter("#typewriterNL", {
+      strings: [
+        "UX/UI Design Kenner 💻",
+        "Houdt van logo's maken 🎨",
+        "Eter van heel te veel chocolade 🍫",
+        "Junior Web Developer🤖",
+      ],
+      autoStart: true,
+      loop: true,
+      delay: 35,
+      deleteSpeed: 20,
+    });
   }, []);
 
   //Return JSX
@@ -87,8 +99,14 @@ export default function Sect2() {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h1 className="about">About</h1>
-              <h1 className="about">Me</h1>
+              <h1 className="about">
+                <span className="english">About</span>
+                <span className="dutch d-none">Over</span>
+              </h1>
+              <h1 className="about">
+                <span className="english">Me</span>
+                <span className="dutch d-none">Mij</span>
+              </h1>
               <a href="#s22">
                 <h1 id="s2-down" className="fa-5x fa-bounce text-center mt-4">
                   <FontAwesomeIcon icon={faAnglesDown} />
@@ -107,9 +125,16 @@ export default function Sect2() {
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column justify-content-center">
                   <span id="slide2-2txt">
                     <h1 className="mb-2">
-                      I am <span className="highlight">Isabelle</span>
+                      <span className="english">
+                        {" "}
+                        I am <span className="highlight">Isabelle</span>
+                      </span>
+                      <span className="dutch d-none">
+                        Ik ben <span className="highlight">Isabelle</span>
+                      </span>
                     </h1>
-                    <h5 className="IBM" id="typewriter"></h5>
+                    <h5 className="IBM english" id="typewriter"></h5>
+                    <h5 className="IBM dutch d-none" id="typewriterNL"></h5>
                   </span>
                   <div className="img-frame mobile-smaller mt-3 mb-4">
                     <img
@@ -119,24 +144,48 @@ export default function Sect2() {
                     />
                   </div>
                   <p className="mb-2 mt-1">
-                    I am <Age /> years old, born on April 23 and raised in Ohio.
-                    I've been passionate about web development for over{" "}
-                    <Career /> years. In February 2022, I moved to the
-                    Netherlands to live with my Dutch husband.
+                    <span className="english">
+                      I am <Age /> years old, born on April 23 and raised in
+                      Ohio. I've been passionate about web development for over{" "}
+                      <Career /> years. In February 2022, I moved to the
+                      Netherlands to live with my Dutch husband.
+                    </span>
+                    <span className="dutch d-none">
+                      Ik ben <Age /> jaar oud, geboren in Ohio op 23 April. Ik
+                      ben al meer dan <Career /> jaar gepassioneerd door web
+                      development. In Februari 2022, ben ik naar Nederland
+                      verhuisd om bij mijn man te gaan wonen.
+                    </span>
                   </p>
                   <p>
-                    I like reading, video games, traveling, motorcycling, and
-                    drawing - basically anything creative or adventurous. I'm an
-                    only child, left-handed, and have an{" "}
-                    <a
-                      href="https://www.16personalities.com/infj-personality"
-                      target="_blank"
-                      className="highlight-s2"
-                    >
-                      INFJ-T
-                    </a>{" "}
-                    personality type. I like to have fun and will thrive in a
-                    healthy work environment filled with humor & good coffee.
+                    <span className="english">
+                      I like reading, video games, traveling, motorcycling, and
+                      drawing - basically anything creative or adventurous. I'm
+                      an only child, left-handed, and have an{" "}
+                      <a
+                        href="https://www.16personalities.com/infj-personality"
+                        target="_blank"
+                        className="highlight-s2"
+                      >
+                        INFJ-T
+                      </a>{" "}
+                      personality type. I like to have fun and will thrive in a
+                      healthy work environment filled with humor & good coffee.
+                    </span>
+                    <span className="dutch d-none">
+                      Ik hou van lezen, videogames, reizen, motorrijden en
+                      tekenen - eigenlijk alles wat creatief of avontuurlijk is.
+                      Ik ben enig kind, linkshandig en heb een{" "}
+                      <a
+                        href="https://www.16personalities.com/infj-personality"
+                        target="_blank"
+                        className="highlight-s2"
+                      >
+                        INFJ-T
+                      </a>{" "}
+                      persoonlijkheidstype. Ik wil een gezonde werkomgeving vol
+                      humor en goede koffie.
+                    </span>
                   </p>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column justify-content-center">
@@ -161,7 +210,14 @@ export default function Sect2() {
               <div className="col m-2 d-flex flex-column align-items-center">
                 <div className="col-xs-12 col-sm-12 col-md-8 ">
                   <h1 className="mb-2 text-center">
-                    My <span className="highlight">Knowledge</span> and Skills
+                    <span className="english">
+                      {" "}
+                      My <span className="highlight">Knowledge</span> and Skills
+                    </span>
+                    <span className="dutch d-none">
+                      Mijn <span className="highlight">Kennis</span> en
+                      Vaardigheid
+                    </span>
                   </h1>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 table-frame">
@@ -233,31 +289,62 @@ export default function Sect2() {
               <div className="col d-flex mobile-flex-column">
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7  d-flex flex-column justify-content-center">
                   <h1 className="mb-2" id="whyMe">
-                    Why <span className="highlight">choose</span> me?
+                    <span className="english">
+                      {" "}
+                      Why <span className="highlight">choose</span> me?
+                    </span>
+                    <span className="dutch d-none">
+                      Waarom <span className="highlight">kies</span> mij?
+                    </span>
                   </h1>
-                  <p className="lh-lg">
-                    My associate's degree provides me with a{" "}
-                    <b>solid foundation</b> in web development and graphic
-                    design, alongside my <b>diverse portfolio</b> showcasing my
-                    skills. My native-level English is also an excellent asset
-                    to a Dutch or international team. While I am a junior
-                    developer, my fresh perspective,
-                    <b>enthusiasm, and commitment</b> to continuous learning
-                    make me an ideal candidate for your website, whether you’re
-                    an individual or a company. There are many options out
-                    there, and <b>I’m honored</b> that you’re considering me for
-                    your project!{" "}
+                  <p className="lh-lg me-2">
+                    <span className="english">
+                      My associate's degree provides me with a{" "}
+                      <b>solid foundation</b> in web development and graphic
+                      design, alongside my <b>diverse portfolio</b> showcasing
+                      my skills. My native-level English is also an excellent
+                      asset to a Dutch or international team. While I am a
+                      junior developer, my fresh perspective,
+                      <b>enthusiasm, and commitment</b> to continuous learning
+                      make me an ideal candidate for your website, whether
+                      you’re an individual or a company. There are many options
+                      out there, and <b>I’m honored</b> that you’re considering
+                      me for your project!{" "}
+                    </span>
+                    <span className="dutch d-none">
+                      Mijn MBO degree biedt mij een <b>solide basis</b> in web
+                      development en grafische vormgeving ontwerp, naast mijn{" "}
+                      <b>diverse portfolio</b> waarin mijn vaardigheden. Mijn
+                      Engelse moedertaal is ook een uitstekende troef aan een
+                      Nederlands of internationaal team. Terwijl ik een nieuwe
+                      developer ben, mijn <b>enthousiasme en toewijding</b> voor
+                      continu leren maak mij een ideale kandidaat voor uw
+                      website, als je een person of bedrijf bent. Er zijn veel
+                      opties, dus <b>ik ben vereerd</b> dat je mij overweegt
+                      jouw project!{" "}
+                    </span>
                   </p>
                   <p className="mb-0">
-                    To learn more, please take the time to look at these
-                    documents{" "}
+                    <span className="english">
+                      To learn more, please take the time to look at these
+                      documents{" "}
+                    </span>
+                    <span className="dutch d-none">
+                      Meer weten? Kijk op deze documenten, alstublieft! (Let op,
+                      ze zijn in het Engels.){" "}
+                    </span>
                     <FontAwesomeIcon icon={faArrowRight} className="desktop" />
                     <FontAwesomeIcon icon={faArrowDown} className="mobile" />
                   </p>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-5 d-flex flex-column learnMoreDiv">
                   <h1>
-                    <span className="highlight">Learn</span> More
+                    <span className="english">
+                      <span className="highlight">Learn</span> More
+                    </span>
+                    <span className="dutch d-none">
+                      Meer <span className="highlight">Weten</span>
+                    </span>
                   </h1>
                   <div className="col-xs-10 col-sm-10 col-md-12 col-lg-12 col-xl-12 d-flex flex-column align-items-center ">
                     <a
@@ -265,23 +352,31 @@ export default function Sect2() {
                       href="isabelleanno-resume.pdf"
                       target="_blank"
                     >
-                      <FontAwesomeIcon icon={faFile} /> View my Resume
+                      <FontAwesomeIcon icon={faFile} />{" "}
+                      <span className="english">View my Resume</span>
+                      <span className="dutch d-none">Bekijk mijn CV</span>
                     </a>
                     <a
                       className="btn-link-reverse-left about-btn second-btn-lr"
                       href="IsabelleAnno-Freelancing-FAQ.pdf"
                       target="_blank"
                     >
-                      <FontAwesomeIcon icon={faUserTie} /> Hire me for your
-                      project
+                      <FontAwesomeIcon icon={faUserTie} />{" "}
+                      <span className="english">Hire me for your project</span>
+                      <span className="dutch d-none">
+                        Huur mij in voor uw projecten
+                      </span>
                     </a>
                     <a
                       className="btn-link-reverse about-btn third-btn-lr"
                       href="Collaboration-FAQ.pdf"
                       target="_blank"
                     >
-                      <FontAwesomeIcon icon={faPaintbrush} /> Collaborate on a
-                      project
+                      <FontAwesomeIcon icon={faPaintbrush} />{" "}
+                      <span className="english">Collaborate on a project</span>{" "}
+                      <span className="dutch d-none">
+                        Samenwerken aan een project
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -315,7 +410,12 @@ export default function Sect2() {
                 {/*Alert End */}
                 <div className="mb-3">
                   <h1 className="mb-3">
-                    Where to <span className="highlight">Find</span> Me
+                    <span className="english">
+                      Where to <span className="highlight">Find</span> Me
+                    </span>
+                    <span className="dutch d-none">
+                      Waar kan je mij <span className="highlight">vinden</span>?
+                    </span>
                   </h1>
                   <img
                     src="/Images/about/profile.png"
@@ -323,13 +423,23 @@ export default function Sect2() {
                     alt="Isabelle Anno's Profile"
                   />
                   <p>
-                    Take a look at my little corner of the internet. Or
+                    <span className="english">
+                      Take a look at my little corner of the internet. Or
+                    </span>
+                    <span className="dutch d-none">
+                      Bekijk op mijn kleine stukje Internet. Of
+                    </span>
+                    <span className="dutch"></span>
                     <a
                       href="https://isabelleanno.com/#s9"
                       className="highlight-s2 ms-2"
                     >
-                      Contact Me
+                      <span className="english">Contact Me</span>
+                      <span className="dutch d-none">
+                        Neem contact met mij op
+                      </span>
                     </a>
+                    !
                   </p>
 
                   <span className="d-flex align-items-center">
@@ -341,7 +451,8 @@ export default function Sect2() {
                       target="_blank"
                       className="clickMe"
                     >
-                      Check out my GitHub
+                      <span className="english"> Check out my GitHub</span>
+                      <span className="dutch d-none">Kijk op mijn GitHub</span>
                     </a>
                   </span>
                   <span className="d-flex align-items-center">
@@ -353,7 +464,8 @@ export default function Sect2() {
                       target="_blank"
                       className="clickMe"
                     >
-                      See my LinkedIn
+                      <span className="english">See my LinkedIn</span>
+                      <span className="dutch d-none">Bekijk mijn LinkedIn</span>
                     </a>
                   </span>
                   <span className="d-flex align-items-center">
@@ -394,22 +506,14 @@ export default function Sect2() {
                       target="_blank"
                       className="clickMe"
                     >
-                      Givewell.org - My Favorite Charity
+                      <span className="english">
+                        Givewell.org - My Favorite Charity
+                      </span>
+                      <span className="dutch d-none">
+                        Givewell.org - Mijn Favoriete liefdadigheidsgroep
+                      </span>
                     </a>
                   </span>
-                  <span className="d-flex align-items-center">
-                    <h2 className="d-inline">
-                      <FontAwesomeIcon icon={faMugSaucer} className="me-3" />
-                    </h2>
-                    <a
-                      href="https://www.buymeacoffee.com/isabelleanno"
-                      target="_blank"
-                      className="clickMe"
-                    >
-                      Buy me a coffee
-                    </a>
-                  </span>
-
                   <span className="d-flex align-items-center ">
                     <h2 className="d-inline">
                       <FontAwesomeIcon icon={faCode} className="me-3" />
@@ -419,7 +523,10 @@ export default function Sect2() {
                       target="_blank"
                       className="clickMe"
                     >
-                      See my SheCodes Profile
+                      <span className="english">See my SheCodes Profile</span>
+                      <span className="dutch d-none">
+                        Mijn SheCodes Profiel
+                      </span>
                     </a>
                   </span>
                 </div>
