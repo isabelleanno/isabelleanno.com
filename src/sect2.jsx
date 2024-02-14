@@ -297,7 +297,7 @@ export default function Sect2() {
                       Waarom <span className="highlight">kies</span> mij?
                     </span>
                   </h1>
-                  <p className="lh-lg me-2">
+                  <p className=" me-2">
                     <span className="english">
                       My associate's degree provides me with a{" "}
                       <b>solid foundation</b> in web development and graphic
