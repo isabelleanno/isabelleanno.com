@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 export default function Sect5() {
   return (
     /*---------------------------------------------------- INTRO START vvv---------------------- */
@@ -164,6 +166,20 @@ export default function Sect5() {
                 <div className="col my-5">
                   <p className=" bold mobile-small">May 14, 2023</p>
                   <h1 className="IBM bold">Graduated College</h1>
+                  <span className="row">
+                    <div className="col d-flex flex-row align-items-center my-2">
+                      <img
+                        src="Images/Nederlands.png"
+                        alt="A Dutch flag to indicate that this is a Dutch version of my degree"
+                      />
+                      <a
+                        href="1826e75f-14e2-49c6-8c84-b566aaaf0519.pdf"
+                        target="_blank"
+                      >
+                        <h3 className="m-0">HBO Diploma</h3>
+                      </a>{" "}
+                    </div>
+                  </span>
                   <p>
                     Getting my associate's degree was a rewarding experience. I
                     graduated with a 4.0 GPA and was on the president's list
@@ -176,11 +192,22 @@ export default function Sect5() {
                     there's always change happening and something new to
                     contribute to.
                   </p>
-                  <img
-                    src="/Images/certs/degree.jpg"
-                    className="ExtraDim"
-                    alt="Stark State College. North Canton, Ohio. May 14, 2023. Associate's of applied business web design and development."
-                  />
+                  <div className="col d-flex ExtraDim certs-border">
+                    <div className="col-6">
+                      <img
+                        src="/Images/certs/degree.jpg"
+                        className="ExtraDim"
+                        alt="Stark State College. North Canton, Ohio. May 14, 2023. Associate's of applied business web design and development."
+                      />
+                    </div>
+                    <div className="col-6">
+                      <img
+                        src="/Images/certs/waardering.jpg"
+                        className="ExtraDim"
+                        alt="A copy of my diplomawardeering, which is a document specifying the equivelant of my degree in the Netherlands."
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
               {/*-------------------------End of entry 6 ^^^ | Start of entry 7 vvv ----------------*/}
@@ -200,7 +227,7 @@ export default function Sect5() {
                     the way. One in web design, and another in SQL, specifically
                     using SSMS.
                   </p>
-                  <div className="col d-flex ExtraDim" id="certs-border">
+                  <div className="col d-flex ExtraDim certs-border">
                     <div className="col-6">
                       <img
                         src="/Images/certs/sql.jpg"

@@ -756,7 +756,7 @@ iframe {
 div.col.my-5 > img {
   border-radius: 10px;
 }
-div#certs-border {
+div.certs-border {
   border: 25px solid white;
   border-radius: 10px;
 }
@@ -789,6 +789,11 @@ div#certs-border {
   border-radius: 3px;
   background-color: var(--text-color);
   align-self: center;
+}
+img[src="Images/Nederlands.png"] {
+  width: 6%;
+  margin-right: 7px;
+  border-radius: 5px;
 }
 /*---------------------------Fifth Section */
 .hs5 {

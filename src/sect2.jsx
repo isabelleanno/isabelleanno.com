@@ -15,7 +15,6 @@ import {
   faHandHoldingHeart,
   faRobot,
   faEnvelopeCircleCheck,
-  faMugSaucer,
   faCode,
 } from "@fortawesome/free-solid-svg-icons";
 import {
