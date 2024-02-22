@@ -109,7 +109,7 @@ const Fullpage = function loadFullPage() {
             "Contact",
           ]}
           showActiveTooltip={false}
-          slidesNavigation={true}
+          slidesNavigation={false}
           //fullpage extensions & keys
           scrollHorizontally={true}
           scrollHorizontallyKey={
@@ -148,20 +148,12 @@ const Fullpage = function loadFullPage() {
             let activeSlide = fullpage_api.getActiveSlide();
 
             const vertNavDots = $("#fp-nav");
-            const horizNavDots = $(".fp-slidesNav");
-            if (
-              activeSlide.isFirst === true ||
-              activeSection.anchor === "s4" ||
-              activeSection.anchor === "s5"
-            ) {
+            if (activeSlide.isFirst === true) {
               $(".fp-prev").hide();
               vertNavDots.show();
-              horizNavDots.addClass("d-none");
             } else {
               $(".fp-prev").show();
               vertNavDots.hide();
-              horizNavDots.removeClass("d-none");
-              horizNavDots.addClass("d-flex");
             }
             if (activeSlide.isLast === true) {
               $(".fp-next").hide();
