@@ -49,7 +49,7 @@ export default function Sect1() {
               Ik ben een Amerikaanse web developer die in Nederland woont{" "}
             </span>
             <span className="english">
-              I'm an American web developer living in the Netherlands . TEST.
+              I'm an American web developer living in the Netherlands{" "}
             </span>
             <img
               src="/Images/UsaAndNL.png"
