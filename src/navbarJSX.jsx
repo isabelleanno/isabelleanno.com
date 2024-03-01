@@ -143,9 +143,7 @@ export default function NavbarJSX() {
                 <FontAwesomeIcon icon={faGear} />
               </button>
               <ul className="dropdown-menu dropdown-menu-lg-end">
-                {/*
-                
-                <li className="dropdown-options">
+                {/*<li className="dropdown-options">
                   <FontAwesomeIcon icon={faEarthAmericas} id="america" />
                   <FontAwesomeIcon icon={faEarthEurope} id="europe" />
                   <p className="m-0 mx-3">language ({currentLang})</p>
@@ -157,8 +155,8 @@ export default function NavbarJSX() {
                     />
                     <span className="slider lang-slider"></span>
                   </label>
-                </li>
-                */}
+                </li> */}
+
                 <li className="dropdown-options">
                   <FontAwesomeIcon icon={faUniversalAccess} />
                   <p className="m-0 mx-3">Accessibility</p>
