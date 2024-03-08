@@ -412,7 +412,7 @@ button.dropdown-toggle:focus {
 }
 .lang-slider {
   background-size: 200% 100%;
-  background-image: url("../../public/Images/lang-slider.png");
+  background-image: url("../../Images/lang-slider.png");
   background-size: cover;
 }
 
@@ -809,6 +809,10 @@ a.proj-link {
   font-size: 5.5vh;
   font-family: "IBM Plex Sans Arabic", sans-serif !important;
   text-decoration: none;
+}
+.dutch-pl {
+  font-size: 4.5vh;
+  line-height: 2.3;
 }
 .project-photo-frame {
   width: 100%;

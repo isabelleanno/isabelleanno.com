@@ -73,13 +73,19 @@ export default function NavbarJSX() {
         >
           <ul className="nav-elements-ul justify-content-end align-items-start">
             <li>
-              <a href="#s2">About</a>
+              <a href="#s2">
+                <span className="english">About</span>
+                <span className="dutch d-none">Over Mij</span>
+              </a>
             </li>
             <li>
               <a href="#s3">Resumé</a>
             </li>
             <li>
-              <a href="#s5">Projects</a>
+              <a href="#s5">
+                <span className="english">Projects</span>
+                <span className="dutch d-none">Projecten</span>
+              </a>
             </li>
             <li>
               <a href="#s8">Contact</a>
@@ -143,10 +149,13 @@ export default function NavbarJSX() {
                 <FontAwesomeIcon icon={faGear} />
               </button>
               <ul className="dropdown-menu dropdown-menu-lg-end">
-                {/*<li className="dropdown-options">
+                <li className="dropdown-options">
                   <FontAwesomeIcon icon={faEarthAmericas} id="america" />
                   <FontAwesomeIcon icon={faEarthEurope} id="europe" />
-                  <p className="m-0 mx-3">language ({currentLang})</p>
+                  <p className="m-0 mx-3">
+                    <span className="english">language</span>{" "}
+                    <span className="dutch d-none">taal </span>({currentLang})
+                  </p>
                   <label className="switch">
                     <input
                       type="checkbox"
@@ -155,8 +164,7 @@ export default function NavbarJSX() {
                     />
                     <span className="slider lang-slider"></span>
                   </label>
-                </li> */}
-
+                </li>
                 <li className="dropdown-options">
                   <FontAwesomeIcon icon={faUniversalAccess} />
                   <p className="m-0 mx-3">Accessibility</p>
@@ -172,7 +180,11 @@ export default function NavbarJSX() {
                 </li>
                 <li className="dropdown-options">
                   <FontAwesomeIcon icon={faEye} />
-                  <p className="m-0 mx-3">High Contrast</p>
+                  <p className="m-0 mx-3">
+                    {" "}
+                    <span className="english">High Contrast</span>{" "}
+                    <span className="dutch d-none">Hoog Contrast</span>
+                  </p>
                   <label className="switch">
                     <input
                       type="checkbox"

@@ -44,12 +44,16 @@ class Sect5Layout extends Component {
                         <a
                           href={slide.link}
                           target="_blank"
-                          className="proj-link highlight IBM mobile-small"
+                          className="proj-link highlight IBM mobile-small english"
                         >
-                          {slide.Title}
+                          <span className="english">{slide.Title}</span>
+                          <span className="dutch d-none">{slide.Titel}</span>
                         </a>
                         <p className="m-0 mobile">
-                          <b>{slide.Date}</b>
+                          <span className="english">
+                            <b>{slide.Date}</b>
+                          </span>
+                          <span className="dutch d-none">{slide.Datum}</span>
                         </p>
                         <a href={slide.link} target="_blank">
                           <div className="project-photo-frame d-flex flex-column ExtraDim">
@@ -63,9 +67,17 @@ class Sect5Layout extends Component {
                           target="_blank"
                           className="proj-link highlight IBM desktop-small"
                         >
-                          {slide.Title}
+                          <span className="english">{slide.Title}</span>
+                          <span className="dutch d-none dutch-pl">
+                            {slide.Titel}
+                          </span>
                         </a>
-                        <p className="proj-description">{slide.Description}</p>
+                        <p className="proj-description english">
+                          {slide.Description}
+                        </p>
+                        <p className="proj-description dutch d-none">
+                          {slide.Beschrijving}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -74,6 +86,7 @@ class Sect5Layout extends Component {
                 <ProjTimeline
                   index={index}
                   Date={slide.Date}
+                  Datum={slide.Datum}
                   lastSlide={lastSlide}
                   isEven={isEven(index)}
                 />

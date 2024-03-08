@@ -8,8 +8,13 @@ export default function Sect3() {
         <div className="row">
           <div className="col" id="Degrees">
             <span className="title">Education Title</span>
-            <h1 id="Education">Degrees</h1>
-            <h1 id="Education">& Certs</h1>
+            <h1 id="Education">
+              <span className="english">Degrees</span>
+              <span className="dutch d-none">Opleiding</span>
+            </h1>
+            <h1 className="english" id="Education">
+              & Certs
+            </h1>
           </div>
         </div>
       </div>

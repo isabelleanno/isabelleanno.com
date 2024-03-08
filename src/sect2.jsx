@@ -311,16 +311,16 @@ export default function Sect2() {
                       me for your project!{" "}
                     </span>
                     <span className="dutch d-none">
-                      Mijn MBO degree biedt mij een <b>solide basis</b> in web
-                      development en grafische vormgeving ontwerp, naast mijn{" "}
-                      <b>diverse portfolio</b> waarin mijn vaardigheden. Mijn
-                      Engelse moedertaal is ook een uitstekende troef aan een
-                      Nederlands of internationaal team. Terwijl ik een nieuwe
-                      developer ben, mijn <b>enthousiasme en toewijding</b> voor
-                      continu leren maak mij een ideale kandidaat voor uw
-                      website, als je een person of bedrijf bent. Er zijn veel
-                      opties, dus <b>ik ben vereerd</b> dat je mij overweegt
-                      jouw project!{" "}
+                      Mijn HBO opleiding biedt mij een <b>solide basis</b> in
+                      web development en grafische vormgeving, evenals mijn
+                      <b>diverse portfolio</b> waarin mijn vaardigheden
+                      afgebeeld worden. Mijn Engelse moedertaal is ook een
+                      uitstekende troef aan een Nederlands of internationaal
+                      team. Ook al ben ik een nieuwe developer, mijn
+                      <b>enthousiasme en toewijding</b> voor continu leren maken
+                      mij een ideale kandidaat voor uw website. Er zijn veel
+                      opties, dus <b>ik ben vereerd</b> dat u mij overweegt in
+                      uw project!
                     </span>
                   </p>
                   <p className="mb-0">
@@ -401,7 +401,12 @@ export default function Sect2() {
                     role="alert"
                     id="email-alert"
                   >
-                    ✅Email address copied successfully:{" "}
+                    <span className="english">
+                      ✅Email address copied successfully:{" "}
+                    </span>
+                    <span className="dutch d-none">
+                      ✅E-mailadres succesvol gekopieerd:{" "}
+                    </span>
                     <strong>isabelleanno.webdev@gmail.com</strong>
                   </div>
                   {/* Alert Body End*/}
@@ -413,7 +418,7 @@ export default function Sect2() {
                       Where to <span className="highlight">Find</span> Me
                     </span>
                     <span className="dutch d-none">
-                      Waar kan je mij <span className="highlight">vinden</span>?
+                      Waar kun je mij <span className="highlight">vinden</span>?
                     </span>
                   </h1>
                   <img
@@ -426,7 +431,7 @@ export default function Sect2() {
                       Take a look at my little corner of the internet. Or
                     </span>
                     <span className="dutch d-none">
-                      Bekijk op mijn kleine stukje Internet. Of
+                      Bekijk mijn klein stukje van het Internet. Of
                     </span>
                     <span className="dutch"></span>
                     <a

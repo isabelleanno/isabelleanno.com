@@ -18,7 +18,8 @@ export default function ProjTimeline(props) {
               <div className="col-6 p-0 d-flex flex-column align-items-start justify-content-start ">
                 <a className="btn-horizontal"></a>
                 <p className="date" id="date-start">
-                  {props.Date}
+                  <span className="english">{props.Date}</span>
+                  <span className="dutch d-none">{props.Datum}</span>
                 </p>
               </div>
             </div>
@@ -36,7 +37,8 @@ export default function ProjTimeline(props) {
             <div className="row">
               <div className="col-6 offset-9 d-flex flex-column align-items-center justify-content-center">
                 <a className="btn-horizontal"></a>
-                <p className="date">{props.Date}</p>
+                <p className="date english">{props.Date}</p>
+                <p className="date dutch d-none">{props.Datum}</p>
               </div>
             </div>
           </div>
@@ -57,7 +59,8 @@ export default function ProjTimeline(props) {
                   id="timeline-col"
                 >
                   <a className="btn-horizontal"></a>
-                  <p className="date">{props.Date}</p>
+                  <p className="date english">{props.Date}</p>
+                  <p className="date dutch d-none">{props.Datum}</p>
                 </div>
               </div>
             </div>
@@ -76,7 +79,8 @@ export default function ProjTimeline(props) {
                   id="timeline-col"
                 >
                   <a className="btn-horizontal"></a>
-                  <p className="date">{props.Date}</p>
+                  <p className="date english">{props.Date}</p>
+                  <p className="date dutch d-none">{props.Datum}</p>
                 </div>
               </div>
             </div>

@@ -26,7 +26,12 @@ export default function Sect9() {
                   role="alert"
                   id="email-alert2"
                 >
-                  ✅Email address copied successfully:{" "}
+                  <span className="english">
+                    ✅Email address copied successfully:{" "}
+                  </span>
+                  <span className="dutch d-none">
+                    ✅E-mailadres succesvol gekopieerd:{" "}
+                  </span>
                   <strong>isabelleanno.webdev@gmail.com</strong>
                 </div>
                 {/* Alert Body End*/}
@@ -39,14 +44,25 @@ export default function Sect9() {
                 <h1 className="display-1 avenir chat">Let's Chat</h1>
                 <div className="col-10">
                   <p className="desktop">
-                    <b> I'm currently on a job search!</b> Before you reach out,
-                    please read the next slide to{" "}
+                    <span className="english">
+                      <b> I'm currently on a job search!</b> Before you reach
+                      out, please read the next slide to{" "}
+                    </span>
+                    <span className="dutch d-none">
+                      <b> Ik ben momenteel op zoek naar een baan!</b> Lees eerst
+                      de volgende pagina voordat u contact met mij opneemt{" "}
+                    </span>
                     <b>
                       <a
                         href="https://isabelleanno.com/#s9/1"
                         className="clickMe"
                       >
-                        see what I'm looking for in a job{" "}
+                        <span className="english">
+                          see what I'm looking for in a job{" "}
+                        </span>
+                        <span className="dutch d-none">
+                          Kijk wat ik zoek in een baan
+                        </span>
                         <FontAwesomeIcon icon={faArrowRight} />
                       </a>
                     </b>
@@ -65,7 +81,10 @@ export default function Sect9() {
                     target="_blank"
                     className="clickMe"
                   >
-                    Message me on LinkedIn
+                    <span className="english">Message me on LinkedIn</span>
+                    <span className="dutch d-none">
+                      Stuur mij een bericht op LinkedIn
+                    </span>
                   </a>
                 </span>
                 <span className="d-flex align-items-center">
@@ -92,7 +111,12 @@ export default function Sect9() {
                       });
                     }}
                   >
-                    Email me at isabelleanno.webdev@gmail.com
+                    <span className="english">
+                      Email me at isabelleanno.webdev@gmail.com
+                    </span>
+                    <span className="dutch d-none">
+                      E-mail mij op isabelleanno.webdev@gmail.com
+                    </span>
                   </button>
                 </span>
                 <span className="d-flex align-items-center">
@@ -108,8 +132,15 @@ export default function Sect9() {
 
                 <div className="col-10 mt-3">
                   <p>
-                    <b>Thank you </b> For viewing my portfolio. It means a lot
-                    to me! I will respond within 1-3 business days. :){" "}
+                    <span className="english">
+                      <b>Thank you </b> For viewing my portfolio. It means a lot
+                      to me! I will respond within 1-3 business days. :)
+                    </span>
+                    <span className="dutch d-none">
+                      <b> Bedankt</b> voor het bekijken van mijn portfolio. Het
+                      betekent veel voor mij! Ik reageer binnen 1-3 werkdagen.
+                      :)
+                    </span>
                   </p>
                 </div>
               </div>
@@ -119,13 +150,17 @@ export default function Sect9() {
                 id="contact-form"
               >
                 <h1>
-                  Send me a message
+                  <span className="english">Send me a message</span>
+                  <span className="dutch d-none">Stuur mij een bericht</span>
                   <FontAwesomeIcon icon={faPaperPlane} />
                 </h1>
                 <form action="https://formspree.io/f/mnqkoalk" method="POST">
                   <div className="form-row">
                     <div className="col">
-                      <label htmlFor="fullName">Full name</label>
+                      <label htmlFor="fullName">
+                        <span className="english">Full Name</span>
+                        <span className="dutch d-none">Voor-en achternaam</span>
+                      </label>
                       <input
                         type="text"
                         name="Full Name"
@@ -139,14 +174,20 @@ export default function Sect9() {
                         id="email"
                         className="form-control"
                       />
-                      <label htmlFor="subject">Subject</label>
+                      <label htmlFor="subject">
+                        <span className="english">Subject</span>
+                        <span className="dutch d-none">Onderwerp</span>
+                      </label>
                       <input
                         type="text"
                         name="Subject"
                         id="subject"
                         className="form-control"
                       />
-                      <label htmlFor="textarea">Message</label>
+                      <label htmlFor="textarea">
+                        <span className="english">Message</span>
+                        <span className="dutch d-none">Bericht</span>
+                      </label>
                       <textarea
                         className="form-control"
                         name="message"
@@ -157,7 +198,8 @@ export default function Sect9() {
                         type="submit"
                         className="btn btn-outline-secondary submit-btn mb-2 px-5"
                       >
-                        Send
+                        <span className="english">Send</span>
+                        <span className="dutch d-none">Versturen</span>
                       </button>
                     </div>
                   </div>
@@ -177,7 +219,12 @@ export default function Sect9() {
               <div className="col-6">
                 {/*Alert Body */}
                 <div className="alert" role="alert">
-                  ✅Email address copied successfully:{" "}
+                  <span className="english">
+                    ✅Email address copied successfully:{" "}
+                  </span>
+                  <span className="dutch d-none">
+                    ✅E-mailadres succesvol gekopieerd:{" "}
+                  </span>
                   <strong>isabelleanno.webdev@gmail.com</strong>
                 </div>
                 {/* Alert Body End*/}
@@ -185,11 +232,19 @@ export default function Sect9() {
             </div>
             {/*Alert End */}
             <div className="col-12 frame contact-frame">
-              <h1 className="display-1 chat m-0">What am I looking for</h1>
-              <h2 className="mb-3 avenir ">
-                in a project, new position, and/or work environment?
+              <h1 className="display-1 chat m-0">
+                <span className="english"> What am I looking for</span>
+                <span className="dutch d-none">Waar ben ik naar op zoek</span>
+              </h1>
+              <h2 className="mb-3 avenir">
+                <span className="english">
+                  in a project, new position, and/or work environment?
+                </span>
+                <span className="dutch d-none">
+                  in een project, nieuwe functie en/of werkomgeving?
+                </span>
               </h2>
-              <p>
+              <p className="english">
                 I've been honing my skills in front-end web development
                 including JavaScript, React.js and CSS, as well as UX/UI design.
                 I'm looking for a position to exercise and <b>improve</b> these
@@ -202,7 +257,23 @@ export default function Sect9() {
                 job, too.
                 <b> Laughter and positivity</b> make the day so much better!
               </p>
-              <p>
+              <p className="dutch d-none">
+                Ik heb mijn vaardigheden op het gebied van front-end web
+                development aangescherpt, waaronder JavaScript, React.js en CSS,
+                evenals UX/UI-ontwerp. Ik ben op zoek naar een functie om deze
+                vaardigheden te <b>verbeteren</b>. Ik wil ook graag mijn
+                <b>creativiteit</b> uiten, zodat ik een persoonlijke flair kan
+                toevoegen aan elk project dat mij wordt toegewezen. Ik word
+                gemotiveerd door een aantal creatieve vrijheden, maar ook
+                doordat ik deel uitmaak van een{" "}
+                <b>gezonde, ondersteunende werkomgeving</b> die{" "}
+                <b>geduldig met mij</b>
+                is naarmate ik meer ervaring op dit gebied opdoe. Ik hou ervan
+                om plezier te hebben en ik waardeer ook een gevoel voor{" "}
+                <b> humor</b> op mijn werk. <b>Lachen en positiviteit</b> maken
+                de dag beter!
+              </p>
+              <p className="english">
                 Ultimately, I'd love to be a part of a team that fosters{" "}
                 <b>growth and improvement,</b> where I can{" "}
                 <b>contribute to a better, more vibrant web</b> that leaves a
@@ -212,6 +283,17 @@ export default function Sect9() {
                   <b>Get in touch with me</b>
                 </a>{" "}
                 and let's create something magical together!💚
+              </p>
+              <p className="dutch d-none">
+                Uiteindelijk zou ik graag deel uitmaken van een team dat{" "}
+                <b>groei en verbetering bevordert</b>, waar ik kan{" "}
+                <b>bijdragen aan een betere, levendigere internet</b> dat een
+                unieke indruk achterlaat op de gebruiker. Ik ben erg enthousiast
+                over wat de toekomst brengt! Delen wij dezelfde waarden?{" "}
+                <a href="https://isabelleanno.com/#s9" className="clickMe">
+                  <b>Neem contact met mij op </b>
+                </a>{" "}
+                en laten we samen iets magisch creëren!💚
               </p>
             </div>
           </div>
