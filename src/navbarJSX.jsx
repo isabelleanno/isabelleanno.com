@@ -71,7 +71,7 @@ export default function NavbarJSX() {
           className={`nav-elements  ${showNavbar && "showing"} `}
           ref={wrapperRef}
         >
-          <ul className="nav-elements-ul justify-content-end align-items-start">
+          <ul className="nav-elements-ul justify-content-end align-items-center m-0">
             <li>
               <a href="#s2">
                 <span className="english">About</span>
