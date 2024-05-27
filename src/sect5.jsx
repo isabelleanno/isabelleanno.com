@@ -61,8 +61,8 @@ Add a new project here, as the first call to createProject().*/
     createProject(
       "Better Balance Safer You",
       "Better Balance Safer You",
-      "My old tae kwon do instructor is starting a self-defense program for seniors, and needs my help making a website for it. Eagerly, I deployed my WordPress skills to make him a site. Although it's not hand-coded, I added custom CSS and JavaScript- something non-developers can't offer. Although it's still a work in progress, I'm proud of it.",
-      "Mijn oude taekwon-do-instructeur heeft een zelfverdedigingsprogramma voor senioren gestart en heeft mij om mijn hulp gevraagt om een website voor hem te maken. Gretig zette ik mijn WordPress-vaardigheden in om een ​​site voor hem te maken. Hoewel het niet met de hand is gecodeerd, heb ik aangepaste CSS en JavaScript toegevoegd, iets dat mensen die geen webdeveloper zijn niet kunnen bieden. Hoewel het nog een work in progress is, ben ik er trots op.",
+      "This company was founded by my former martial arts instructor. He came to me asking for my assistance in developing a new website for his project. I used my extensive knowledge of WordPress to create him the site. Although it's not hand-coded, I added custom CSS and JavaScript- something non-developers can't offer. The site is a work in progress with many different elements including several secure pages for members and instructors as well as an online store. ",
+      "Mijn voormalige taekwon-do-instructeur heeft een zelfverdedigingsprogramma voor senioren gestart en heeft mij om mijn hulp gevraagt om een website voor hem te maken. Gretig zette ik mijn WordPress-vaardigheden in om een ​​site voor hem te maken. Hoewel het niet met de hand is gecodeerd, heb ik aangepaste CSS en JavaScript toegevoegd, iets dat mensen die geen webdeveloper zijn niet kunnen bieden. Hoewel het nog een work in progress is, ben ik er trots op.",
       "BBSU",
       "https://www.balancesaferu.com/",
       "November, 2023 - TODAY",
