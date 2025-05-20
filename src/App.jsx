@@ -103,8 +103,8 @@ const Fullpage = function loadFullPage() {
           navigationTooltips={[
             "Home",
             "About",
-            "Education",
-            "Education",
+            "Career",
+            "Career",
             "Projects",
             "Contact",
           ]}
