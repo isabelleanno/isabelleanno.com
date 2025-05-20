@@ -1,12 +1,12 @@
 import React from "react";
-import "./css/styles.css";
+import "./css/styles.scss";
 
 export default function Sect3() {
   return (
     <div className="section hs3">
       <div className="container">
         <div className="row">
-          <div className="col" id="Degrees">
+          <div className="col overflow-hidden" id="Degrees">
             <span className="title">Education Title</span>
             <h1 id="Education">
               <span className="english">Degrees</span>

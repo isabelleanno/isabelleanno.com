@@ -16,7 +16,7 @@ PART 3: Miscellaneous JavaScript functions/event listeners with plenty of commen
 
 /* ----------------------------PART 1- Import stuff & initialize variables. ----------------------------------*/
 import { useState, useEffect } from "react";
-import "./css/styles.css";
+import "./css/styles.scss";
 import $ from "jquery";
 import { useResizeDetector } from "react-resize-detector";
 import ReactFullpage from "@fullpage/react-fullpage";

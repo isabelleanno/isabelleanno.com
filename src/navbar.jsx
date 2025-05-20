@@ -2,7 +2,7 @@
 //Give functionality to nav bar and render navbarJSX.jsx
 import { useEffect, useState } from "react";
 import NavbarJSX from "./navbarJSX";
-import "./css/styles.css";
+import "./css/styles.scss";
 import $ from "jquery";
 
 const Navbar = () => {

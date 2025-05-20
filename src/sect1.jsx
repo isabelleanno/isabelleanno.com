@@ -30,7 +30,7 @@ export default function Sect1() {
   return (
     <div className="section hs1 d-flex align-items-center" ref={intro}>
       <span className="title">Hello</span>
-      <h1 id="Hello">
+      <h1 id="Hello" className="overflow-hidden">
         <span className="english">Hello!</span>
         <span className="dutch d-none">Hallo!</span>
       </h1>
