@@ -12,9 +12,9 @@ export default function Sect5() {
           >
             <div className="col-12 d-flex justify-content-center py-5 my-1">
               <h1 className="display-1 text-center ">
-                <span className="english"> A Timeline of my Education</span>
+                <span className="english"> My Career & Education</span>
                 <span className="dutch d-none">
-                  Een tijdlijn van mijn opleiding
+                  Mijn Carrière & Opleiding
                 </span>
               </h1>
             </div>
@@ -527,33 +527,29 @@ export default function Sect5() {
                   </p>
                   <h1 className="IBM bold">
                     <span className="english">
-                      Cornerstones Media
+                      Began working at Cornerstones Media
                     </span>
                     <span className="dutch d-none">
-                      Cornerstones Media
+                       Begonnen te werken bij Cornerstones
                     </span>
                   </h1>
                   <p>
                     <span className="english">
-                        I got my first job as a junior front-end web developer at <a href="https://www.cornerstones.nl/" target='_blank' rel="noopener noreferrer">Cornerstones</a> in
-                        the Netherlands! I am so excited to start my career and
-                        learn more about the industry. I will be working with a
-                        team of developers to create and maintain websites for
-                        clients. I am looking forward to gaining more experience
-                        and expanding my skills in web development. I am grateful
-                        for this opportunity and can't wait to see what the
-                        future holds!
+                        I am currently working my first job as a junior front-end web developer at <a href="https://www.cornerstones.nl/" target='_blank' rel="noopener noreferrer">Cornerstones</a> in
+                        the Netherlands! I am so excited to start my career and learn more about the industry. I work with a
+                        team of developers specializing in websites and webshops using Symfony frameworks (Shopware and Sulu) 
+                        as well as custom WordPress sites. We create and maintain websites for businesses, targeting customers (BTC). have learned so much already at this role,
+                        expanding my skills in web development. I am grateful
+                        for this opportunity and can't wait to see what the future holds!
                     </span>
                     <span className="dutch d-none">
-                        Ik heb mijn eerste baan als junior front-end webdeveloper
-                        bij <a href="https://www.cornerstones.nl/" target='_blank' rel="noopener noreferrer">Cornerstones</a> in Nederland! Ik ben zo
-                        enthousiast om mijn carrière te beginnen en meer te leren
-                        over de industrie. Ik ga samenwerken met een team van
-                        ontwikkelaars om websites voor klanten te maken en te
-                        onderhouden. Ik kijk ernaar uit om meer ervaring op te
-                        doen en mijn vaardigheden in webontwikkeling uit te breiden.
-                        Ik ben dankbaar voor deze kans en kan niet wachten om te
-                        zien wat de toekomst brengt!
+                        Ik werk momenteel mijn eerste baan als junior front-end webontwikkelaar
+                        bij <a href="https://www.cornerstones.nl/" target='_blank' rel="noopener noreferrer">Cornerstones</a> in Nederland! 
+                        Ik ben zo enthousiast om mijn carrière te beginnen en meer te leren over de industrie. Ik werk met een team 
+                        van ontwikkelaars die gespecialiseerd zijn in websites en webshops met Symfony-frameworks (Shopware en Sulu) 
+                        en op maat gemaakte WordPress-sites. We creëren en onderhouden websites voor bedrijven, 
+                        gericht op klanten. Heb al zoveel geleerd in deze rol, mijn vaardigheden in webontwikkeling uitbreiden. 
+                        Ik ben dankbaar voor deze kans en kan niet wachten om te zien wat de toekomst brengt!
                     </span>
                   </p>
                   <img
