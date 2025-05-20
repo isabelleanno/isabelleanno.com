@@ -95,7 +95,7 @@ export default function Sect5() {
                   </p>
                   <h1 className="IBM bold">
                     {" "}
-                    <span className="english">Graduaed SheCodes Basic</span>
+                    <span className="english">Graduated SheCodes Basic</span>
                     <span className="dutch d-none">
                       Afgestudeerd aan SheCodes Basic
                     </span>
@@ -507,6 +507,62 @@ export default function Sect5() {
                   />
                 </div>
               </div>
+
+              {/*-------------------------End of entry 9 ^^^ | Start of entry 10 vvv ----------------*/}
+                  <div className="col-12 d-flex">
+                <div className="col-2 d-flex align-items-center justify-content-end  desktop-small">
+                  <p className="m-0 bold">
+                    <span className="english">October 25, 2024</span>
+                    <span className="dutch d-none">25 Oktober, 2024</span>
+                  </p>
+                </div>
+                <div className="col-1 d-flex justify-content-center align-items-center  desktop-small">
+                  <a className="sidenav-btn"></a>
+                  <a className="separator"></a>
+                </div>
+                <div className="col my-5">
+                  <p className=" bold mobile-small">
+                    <span className="english">October 25, 2024</span>
+                    <span className="dutch d-none">25 Oktober, 2024</span>
+                  </p>
+                  <h1 className="IBM bold">
+                    <span className="english">
+                      Cornerstones Media
+                    </span>
+                    <span className="dutch d-none">
+                      Cornerstones Media
+                    </span>
+                  </h1>
+                  <p>
+                    <span className="english">
+                        I got my first job as a junior front-end web developer at <a href="https://www.cornerstones.nl/" target='_blank' rel="noopener noreferrer">Cornerstones</a> in
+                        the Netherlands! I am so excited to start my career and
+                        learn more about the industry. I will be working with a
+                        team of developers to create and maintain websites for
+                        clients. I am looking forward to gaining more experience
+                        and expanding my skills in web development. I am grateful
+                        for this opportunity and can't wait to see what the
+                        future holds!
+                    </span>
+                    <span className="dutch d-none">
+                        Ik heb mijn eerste baan als junior front-end webdeveloper
+                        bij <a href="https://www.cornerstones.nl/" target='_blank' rel="noopener noreferrer">Cornerstones</a> in Nederland! Ik ben zo
+                        enthousiast om mijn carrière te beginnen en meer te leren
+                        over de industrie. Ik ga samenwerken met een team van
+                        ontwikkelaars om websites voor klanten te maken en te
+                        onderhouden. Ik kijk ernaar uit om meer ervaring op te
+                        doen en mijn vaardigheden in webontwikkeling uit te breiden.
+                        Ik ben dankbaar voor deze kans en kan niet wachten om te
+                        zien wat de toekomst brengt!
+                    </span>
+                  </p>
+                  <img
+                    src="/Images/certs/cornerstones.jpg"
+                    className="dim"
+                    alt="SheCodes Verified Certificate of Achievement. December 4, 2023. Isabelle Anno has successfully completed the Introduction to Artificial Intelligence workshop."
+                  />
+                </div>
+              </div>
               {/*-------------------------End of Last Entry ^^^ | Start of PRESENT vvv ----------------*/}
               <div className="col-12 d-flex">
                 <div className="col-2 d-flex align-items-center justify-content-end  desktop-small">
@@ -525,17 +581,9 @@ export default function Sect5() {
                     <span className="dutch d-none">Vandaag</span>
                   </p>
                   <h1 className="IBM bold">
-                    <span className="english">Began my Career</span>
-                    <span className="dutch d-none">Begon mijn carrière</span>
+                    <span className="english">A Growing Professional</span>
+                    <span className="dutch d-none">Een groeiende professional</span>
                   </h1>
-                  <a
-                    className="btn-link-reverse mt-3 ms-1"
-                    href="IsabelleAnno-Resume.pdf"
-                    download="IsabelleAnno-Resume.pdf"
-                  >
-                    <span className="english">Download my Resume</span>
-                    <span className="dutch d-none">Download mijn CV</span>
-                  </a>
                   <a className="btn-link-reverse mt-3 ms-1" href="#s5">
                     <span className="english">See My Projects</span>
                     <span className="dutch d-none">Zie Mijn projecten</span>
